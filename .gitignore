@@ -1,0 +1,10 @@
+# Prerequisities
+*.d
+
+# compiled object files
+*.slo
+*.lo
+*.o
+*.obj
+
+
