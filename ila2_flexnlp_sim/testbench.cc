@@ -181,12 +181,60 @@ SC_MODULE(testbench) {
     
     std::ifstream fin;
     fin.open(./flexnlp_result.txt, ios::in);
-    string flex_str;
-    string addr_str, data_byte_str;
-    while(std::getline(fin, flex_str, "\n")) {
-        addr_str = 
+    stringstream fs;
 
+    string flex_str;
+    string addr_str, data_str, data_byte_str;
+    int addr_int;
+    int total = 0;
+    int err = 0;
+    int err_total = 0;
+    int passed = 0;
+
+    while(std::getline(fin, addr_str, ",")) {
+      err = 0;
+
+      fs << "\n\n\n"
+      fs << "comparing addr @ " << addr_str << '\t';  
+      addr_str = addr_str.substr(5,5);
+      addr_int = stoi(addr_str, nullptr, 16);
+      data_str = getline(fin, data_str, '\n');
+      
+      for (int j = 0; j < 16; j++) {
+        index_ila = addr_int + 15 - k;
+        int data_ila = flex.flex_sim_gb_core_large_buffer[index_ila].to_int();
+        int data_flex = stoi(data_str.substr(2+2*j, 2), nullptr, 16);
+        if (data_ila == data_flex) {
+          passed++;
+        } else {
+          err++;
+        }
+        total++;
+      }
+
+      if (err > 0) {
+        fs << "ERROR!" << '\n';
+        fs << "flex data: " << data_str << '\n';
+        fs << "ila2 data: ";
+        for (int j = 0; j < 16; j++) {
+          int data_ila = flex.flex_sim_gb_core_large_buffer[addr_int + 15 - k].to_int();
+          fs << data_ila;
+        }
+        fs << '\n';
+      } else {
+        fs << "PASSED" << '\n';
+      }
+      err_total += err;
     }
+
+    fout << "Comparison results" << '\n';
+    fout << dec << "#total: " << total << '\t';
+    fout << "#passed: " << passed << '\t';
+    fout << "#failed: " << err_total << '\n';
+
+    fout << fs.rdbuf();
+
+    fout.close();
     
 
     wait(10000, SC_NS);
