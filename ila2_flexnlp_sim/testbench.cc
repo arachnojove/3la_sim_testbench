@@ -46,7 +46,7 @@ SC_MODULE(Source) {
 
     wait(10, SC_NS);
 
-    fin.open("./lstm_testbench_input.txt", ios::in);
+    fin.open("./axi_commands_for_maxpool.csv", ios::in);
 
     while(std::getline(fin, temp, ',')) {
       std::getline(fin, mode, ',');
@@ -180,28 +180,26 @@ SC_MODULE(testbench) {
     }
     
     std::ifstream fin;
-    fin.open(./flexnlp_result.txt, ios::in);
-    stringstream fs;
+    fin.open("./flex_result.txt", ios::in);
+    std::stringstream fs;
 
-    string flex_str;
-    string addr_str, data_str, data_byte_str;
+    std::string flex_str;
+    std::string addr_str, data_str, data_byte_str;
     int addr_int;
     int total = 0;
     int err = 0;
     int err_total = 0;
     int passed = 0;
 
-    while(std::getline(fin, addr_str, ",")) {
+    while(std::getline(fin, addr_str, ',')) {
       err = 0;
-
-      fs << "\n\n\n"
       fs << "comparing addr @ " << addr_str << '\t';  
       addr_str = addr_str.substr(5,5);
       addr_int = stoi(addr_str, nullptr, 16);
-      data_str = getline(fin, data_str, '\n');
+      std::getline(fin, data_str, '\n');
       
       for (int j = 0; j < 16; j++) {
-        index_ila = addr_int + 15 - k;
+        int index_ila = addr_int + 15 - j;
         int data_ila = flex.flex_sim_gb_core_large_buffer[index_ila].to_int();
         int data_flex = stoi(data_str.substr(2+2*j, 2), nullptr, 16);
         if (data_ila == data_flex) {
@@ -217,7 +215,7 @@ SC_MODULE(testbench) {
         fs << "flex data: " << data_str << '\n';
         fs << "ila2 data: ";
         for (int j = 0; j < 16; j++) {
-          int data_ila = flex.flex_sim_gb_core_large_buffer[addr_int + 15 - k].to_int();
+          int data_ila = flex.flex_sim_gb_core_large_buffer[addr_int + 15 - j].to_int();
           fs << data_ila;
         }
         fs << '\n';
