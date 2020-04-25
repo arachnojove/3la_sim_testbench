@@ -45,7 +45,8 @@ SC_MODULE(Source) {
 
     wait(10, SC_NS);
 
-    fin.open("./lstm_testbench_input.txt", ios::in);
+    //fin.open("./lstm_testbench_input.txt", ios::in);
+    fin.open("./lstm_4t_flex_input.txt", ios::in);
 
     while(std::getline(fin, temp, ',')) {
       std::getline(fin, mode, ',');
@@ -168,6 +169,7 @@ SC_MODULE(testbench) {
     while (undone) {
       if (flex.flex_sim_addr_in.to_int() == stop_addr) {
           undone = false;
+          cout << "\n\n";
           cout << "@" << sc_time_stamp() << "******** testbench input commands end ***********" << endl;
       }
       cout << "current simulation time: " << sc_time_stamp() << "\r" << std::flush;
