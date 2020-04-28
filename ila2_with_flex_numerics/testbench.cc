@@ -4,7 +4,7 @@
 #include <fstream>
 #include <sstream>
 
-#include "/u/yl29/3LA/flexnlp_ila/include/flex_sim.h"
+#include "flex_sim.h"
 // source module of the testbench
 // creating signals for flex_sim model
 SC_MODULE(Source) {

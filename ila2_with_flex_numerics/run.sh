@@ -1,20 +1,20 @@
 rm -f *.o
-export FLEX_SIM_DIR=/u/yl29/3LA/flexnlp_ila
+export FLEX_SIM_DIR=/home/yl29/3LA/flexnlp-ila/build/sim_model
 export FLEX_MODEL_DIR=$FLEX_SIM_DIR/build/CMakeFiles/flex_sim.dir/src
 export FLEX_APP_DIR=$FLEX_SIM_DIR/build/CMakeFiles/flex_sim.dir/app
 export FLEX_MODEL_UF_DIR=$FLEX_SIM_DIR/build/CMakeFiles/flex_sim.dir/extern
 
-export SYSTEMC_DIR=/u/yl29/local/systemc-2.3.3
+export SYSTEMC_DIR=/home/yl29/local/systemc-2.3.3
 
-export FLEX_ROOT=/u/yl29/3LA/FlexNLP
-export CONNECTION_HOME=$FLEX_ROOT/matchlib/connections
+export FLEX_ROOT=/home/yl29/3LA/FlexNLP
+export CONNECTION_HOME=$FLEX_ROOT/matchlib/matchlib_connections
 export RAPIDJSON_HOME=$FLEX_ROOT/matchlib/rapidjson
 export MATCHLIB_HOME=$FLEX_ROOT/matchlib/cmod
 export FLEX_HOME=$FLEX_ROOT/cmod
 
 export BOOST_HOME=/usr/local
 export SYSTEMC_HOME=$SYSTEMC_DIR
-export CATAPULT_HOME=/usr/licensed/MentorGraphics2020/Catapult_Synthesis_10.5a-871028
+export CATAPULT_HOME=/home/yl29/3LA/MentorGraphics2020/Catapult_Synthesis_10.5a-871028
 
 export INCDIR="-I. -I$SYSTEMC_HOME/include -I$BOOST_HOME/include -I$CATAPULT_HOME/Mgc_home/shared/include "
 export INCDIR+="-I$CONNECTION_HOME/include "
