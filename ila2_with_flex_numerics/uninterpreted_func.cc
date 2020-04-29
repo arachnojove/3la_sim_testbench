@@ -33,7 +33,7 @@ sc_biguint<8> flex_sim::signed_gt(sc_biguint<8> arg_0, sc_biguint<8> arg_1) {
 }
 
 sc_biguint<20> flex_sim::PEActEadd(sc_biguint<20> arg_0, sc_biguint<20> arg_1) {
-  // TODO: need to implement signed Add
+
   sc_bigint<20> arg_0_s = arg_0;
   sc_bigint<20> arg_1_s = arg_1;
 
@@ -49,7 +49,7 @@ sc_biguint<20> flex_sim::PEActEadd(sc_biguint<20> arg_0, sc_biguint<20> arg_1) {
 }
 
 sc_biguint<20> flex_sim::PEActEmul(sc_biguint<20> arg_0, sc_biguint<20> arg_1) {
-  // TODO: implement signed multiply
+
   sc_bigint<20> arg_0_s = arg_0;
   sc_bigint<20> arg_1_s = arg_1;
   
@@ -68,7 +68,7 @@ sc_biguint<20> flex_sim::PEActEmul(sc_biguint<20> arg_0, sc_biguint<20> arg_1) {
 }
 
 sc_biguint<20> flex_sim::PEActSigmoid(sc_biguint<20> arg_0) {
-  // TODO: implement Sigmoid
+
   sc_bigint<20> arg_0_s = arg_0;
   
   spec::ActScalarType arg_0_ac = arg_0_s.to_int();
@@ -90,7 +90,7 @@ sc_biguint<20> flex_sim::PEActSigmoid(sc_biguint<20> arg_0) {
 }
 
 sc_biguint<20> flex_sim::PEActTanh(sc_biguint<20> arg_0) {
-  // TODO: implement Tanh
+
   sc_bigint<20> arg_0_s = arg_0;
 
   spec::ActScalarType arg_0_ac = arg_0_s.to_int();
@@ -113,7 +113,7 @@ sc_biguint<20> flex_sim::PEActTanh(sc_biguint<20> arg_0) {
 }
 
 sc_biguint<20> flex_sim::PEActRelu(sc_biguint<20> arg_0) {
-  // TODO: implement Relu
+
   sc_bigint<20> arg_0_s = arg_0;
 
   spec::ActScalarType arg_0_ac = arg_0_s.to_int();
@@ -131,7 +131,7 @@ sc_biguint<20> flex_sim::PEActRelu(sc_biguint<20> arg_0) {
 }
 
 sc_biguint<20> flex_sim::PEActOnex(sc_biguint<20> arg_0) {
-  // TODO: implement Onex
+
   sc_bigint<20> arg_0_s = arg_0;
 
   spec::ActScalarType arg_0_ac = arg_0_s.to_int();
@@ -146,7 +146,7 @@ sc_biguint<20> flex_sim::PEActOnex(sc_biguint<20> arg_0) {
 }
 
 sc_biguint<20> flex_sim::Adptflow2Fixed(sc_biguint<8> arg_0, sc_biguint<3> arg_1) {
-  // TODO: implement adptflow to fixed
+
   spec::ScalarType in = arg_0.to_uint();
   spec::AdpfloatBiasType bias = arg_1.to_uint(); 
   spec::ActScalarType out_tmp;
@@ -161,7 +161,7 @@ sc_biguint<20> flex_sim::Adptflow2Fixed(sc_biguint<8> arg_0, sc_biguint<3> arg_1
 }
 
 sc_biguint<8> flex_sim::Fixed2Adaptflow(sc_biguint<20> arg_0, sc_biguint<3> arg_1) {
-  // TODO: implement fixed to adaptflow
+
   sc_bigint<20> arg_0_s = arg_0;
   spec::ActScalarType in = arg_0_s.to_int();
   spec::AdpfloatBiasType bias = arg_1.to_uint();
@@ -175,11 +175,3 @@ sc_biguint<8> flex_sim::Fixed2Adaptflow(sc_biguint<20> arg_0, sc_biguint<3> arg_
 
   return result;
 }
-
-
-
-
-
-
-
-

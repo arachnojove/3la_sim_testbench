@@ -31,14 +31,14 @@ export CFLAGS="$INCDIR $LIBDIR -Wall -Wno-unknown-pragmas -Wno-virtual-move-assi
 export CFLAGS+=" -DSC_INCLUDE_DYNAMIC_PROCESSES -DCONNECTIONS_ACCURATE_SIM"
 export CFLAGS+=" -DHLS_CATAPULT"
 export CFLAGS_UF=$CFLAGS" -g -c -o uninterpreted_func.o"
-export CFLAGS_T=$CFLAGS" -g -o testbench.o"
+export CFLAGS_T=$CFLAGS" -g -o maxp_testbench.o"
 
 export LIBS=" -lstdc++ -lsystemc -lm -lpthread -lboost_chrono -lboost_system"
 
 echo $CFLAGS_UF
 
 g++ $CFLAGS_UF uninterpreted_func.cc $LIBS
-g++ $CFLAGS_T testbench.cc $FLEX_MODEL_DIR/*.o *.o $LIBS
+g++ $CFLAGS_T maxp_testbench.cc $FLEX_MODEL_DIR/*.o *.o $LIBS
 
 
 # g++ -I $SYSTEMC_DIR/include -L $SYSTEMC_DIR/lib64 -Wl,-rpath=$SYSTEMC_DIR/lib64 -I $FLEX_SIM_DIR/include -std=c++11 -g -c -o uninterpreted_func.o uninterpreted_func.cc -lsystemc

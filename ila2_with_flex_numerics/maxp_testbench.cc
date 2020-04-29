@@ -159,8 +159,8 @@ SC_MODULE(testbench) {
     bool undone = true;
     int stop_addr = 0xdeaddead;
     std::ofstream fout;
-    fout.open("./test_output.txt", ofstream::out | ofstream::trunc);
-    flex.instr_log.open("./instr_log.txt", ofstream::out | ofstream::trunc);
+    fout.open("./test_output_maxp.txt", ofstream::out | ofstream::trunc);
+    //flex.instr_log.open("./instr_log.txt", ofstream::out | ofstream::trunc);
     
     wait(10, SC_NS);
     std::cout << "@" << sc_time_stamp() << " ********* simulation start *********" << std::endl;
@@ -180,7 +180,7 @@ SC_MODULE(testbench) {
     }
     
     std::ifstream fin;
-    fin.open("./flex_result.txt", ios::in);
+    fin.open("./flex_maxp_result.txt", ios::in);
     std::stringstream fs;
 
     std::string flex_str;
@@ -240,7 +240,7 @@ SC_MODULE(testbench) {
 //    std::fstream instr_log;
 //    instr_log.open("./instr_out_flex.txt", ofstream::out | ofstream::trunc);
 //    instr_log << flex.instr_log.rdbuf();
-    flex.instr_log.close();
+    //flex.instr_log.close();
     sc_stop();
   }
 };
