@@ -1,4 +1,4 @@
-#include "systemc.h"
+#include <systemc>
 #include <iostream>
 #include <string>
 #include <fstream>
@@ -46,7 +46,9 @@ SC_MODULE(Source) {
 
     wait(10, SC_NS);
 
-    fin.open("./testbench_input/axi_commands_for_maxpool.csv", ios::in);
+    //fin.open("./lstm_testbench_input.txt", ios::in);
+    fin.open("./testbench_input/axi_commands_1_LSTM_timesteps_clustered_weights_with_read_commands.txt", ios::in);
+    //fin.open("./testbench_input/axi_commands_for_kmeans_clustering_for_LSTM_4_timesteps_zero_first_enabled_4PEs.csv", ios::in);
 
     while(std::getline(fin, temp, ',')) {
       std::getline(fin, mode, ',');
@@ -159,8 +161,8 @@ SC_MODULE(testbench) {
     bool undone = true;
     int stop_addr = 0xdeaddead;
     std::ofstream fout;
-    fout.open("./test_output/test_output_maxp.txt", ofstream::out | ofstream::trunc);
-    //flex.instr_log.open("./instr_log.txt", ofstream::out | ofstream::trunc);
+    fout.open("./test_output/test_output_lstm.txt", ofstream::out | ofstream::trunc);
+    flex.instr_log.open("./instr_log/instr_log_lstm.txt", ofstream::out | ofstream::trunc);
     
     wait(10, SC_NS);
     std::cout << "@" << sc_time_stamp() << " ********* simulation start *********" << std::endl;
@@ -173,56 +175,62 @@ SC_MODULE(testbench) {
           cout << "@" << sc_time_stamp() << "******** testbench input commands end ***********" << endl;
       }
       cout << "current simulation time: " << sc_time_stamp() << "\r" << std::flush;
+      //fout << "@ " << sc_time_stamp() << '\t';
+      //fout << "is write? :" << '\t' << flex.flex_sim_if_axi_wr_in << '\t';
+      //fout << "addr in:" << '\t' << hex << flex.flex_sim_addr_in << '\t';
+      //fout << "data in:" << '\t';
+      //for (int k=0; k < 16; k++) {
+      //  fout << hex << flex_data_signal[15-k] << ' ';
+     // }
+      //fout << endl;
     //  fout << "flex status:" << '\t';
     //  fout << "reduce valid: " << '\t' << flex.flex_sim_gb_layer_reduce_is_valid << '\t';
     //  fout << "grouping num: " << '\t' << flex.flex_sim_gb_layer_reduce_grouping_num << '\n' << endl;
       wait(10, SC_NS);
     }
-    
+
     std::ifstream fin;
-    fin.open("./flexnlp_results/flex_maxp_result.txt", ios::in);
+    fin.open("./flexnlp_results/flex_lstm_result.txt", ios::in);
+    //fin.open("./flexnlp_results/flex_lstm_4t_result.txt", ios::in);
     std::stringstream fs;
 
     std::string flex_str;
     std::string addr_str, data_str, data_byte_str;
-    int addr_int;
-    int total = 0;
-    int err = 0;
-    int err_total = 0;
-    int passed = 0;
+    int addr_int, total, err, err_total, passed;
+    total = err = err_total = passed = 0;
 
     while(std::getline(fin, addr_str, ',')) {
-      err = 0;
-      fs << "comparing addr @ " << addr_str << '\t';  
-      addr_str = addr_str.substr(5,5);
-      addr_int = stoi(addr_str, nullptr, 16);
-      std::getline(fin, data_str, '\n');
-      
-      for (int j = 0; j < 16; j++) {
-        int index_ila = addr_int + 15 - j;
-        int data_ila = flex.flex_sim_gb_core_large_buffer[index_ila].to_int();
-        int data_flex = stoi(data_str.substr(2+2*j, 2), nullptr, 16);
-        if (data_ila == data_flex) {
-          passed++;
-        } else {
-          err++;
-        }
-        total++;
-      }
+        err = 0;
+        fs << "comparing addr @ " << addr_str << '\t';
+        addr_str = addr_str.substr(5,5);
+        addr_int = stoi(addr_str, nullptr, 16);
+        std::getline(fin, data_str, '\n');
 
-      if (err > 0) {
-        fs << "ERROR!" << '\n';
-        fs << "flex data: " << data_str << '\n';
-        fs << "ila2 data: ";
         for (int j = 0; j < 16; j++) {
-          int data_ila = flex.flex_sim_gb_core_large_buffer[addr_int + 15 - j].to_int();
-          fs << data_ila;
+            int index_ila = addr_int + 15 - j;
+            int data_ila = flex.flex_sim_gb_core_large_buffer[index_ila].to_int();
+            int data_flex = stoi(data_str.substr(2+2*j, 2), nullptr, 16);
+            if (data_ila == data_flex)
+                passed++;
+            else
+                err++;
+
+            total++;
         }
-        fs << '\n';
-      } else {
-        fs << "PASSED" << '\n';
-      }
-      err_total += err;
+
+        if (err>0) {
+            fs << "ERROR!" << '\n';
+            fs << "flex data: " << data_str << '\n';
+            fs << "ila2 data : ";
+            for (int j = 0; j < 16; j++) {
+                int data_ila = flex.flex_sim_gb_core_large_buffer[addr_int + 15 - j].to_int();
+                fs << data_ila;
+            }
+            fs << '\n';
+        } else {
+            fs << "PASSED!" << '\n';
+        }
+        err_total += err;
     }
 
     fout << "Comparison results" << '\n';
@@ -233,14 +241,13 @@ SC_MODULE(testbench) {
     fout << fs.rdbuf();
 
     fout.close();
-    
 
     wait(10000, SC_NS);
     std::cout << "@" << sc_time_stamp() << " *********     sc_stop      *********" << std::endl;
 //    std::fstream instr_log;
 //    instr_log.open("./instr_out_flex.txt", ofstream::out | ofstream::trunc);
 //    instr_log << flex.instr_log.rdbuf();
-    //flex.instr_log.close();
+    flex.instr_log.close();
     sc_stop();
   }
 };

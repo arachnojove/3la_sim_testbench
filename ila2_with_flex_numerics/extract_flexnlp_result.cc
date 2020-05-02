@@ -7,7 +7,11 @@ using namespace std;
 
 int main() {
     ifstream fin;
-    fin.open("./flexnlp_sim_output_maxp.txt", ios::in);
+    cout << "Please enter the file path and name" << endl;
+    string file_in;
+    cin >> file_in;
+
+    fin.open(file_in, ios::in);
     string data_line;
     stringstream fs;
     // cout << fin.is_open() << endl;
@@ -51,7 +55,11 @@ int main() {
     }
 
     ofstream fout;
-    fout.open("./flex_result.txt", ofstream::out | ofstream::trunc);
+    cout << "please enter output file name" << endl;
+    string file_out;
+    cin >> file_out;
+
+    fout.open(file_out, ofstream::out | ofstream::trunc);
     fout << fs.rdbuf();
     fout.close();
 
