@@ -1,1 +1,82 @@
-lstm status: 1/1 finished
+gb_control_child_send_prep: timestep_base_addr: 000000	timestep_index0
+
+gb_control_child_send: data_out_addr: 0	pe_mngr index: 000
+data_out: 05a 000 081 000 000 0db 001 000 000 0bd 081 081 000 000 081 000
+
+gb_control_child_send: data_out_addr: 0	pe_mngr index: 001
+data_out: 004 087 081 094 000 000 001 0b6 0b2 000 000 000 081 0aa 0bb 002
+
+gb_control_child_send: data_out_addr: 0	pe_mngr index: 002
+data_out: 000 03f 0e7 081 000 08d 000 0bd 000 00e 081 0d1 001 037 000 060
+
+gb_control_child_send: data_out_addr: 0	pe_mngr index: 003
+data_out: 000 000 032 000 02c 000 0e4 000 000 038 000 088 000 000 09e 000
+
+gb_control_pe_start: timestep_base_addr000000	vector counter: 0
+gb_control_child_recv: 
+data_in: 0ad 0b1 0b4 000 0b1 0ba 0aa 0a6 0b7 0d3 0cf 0b3 028 0c3 0bf 0b7
+
+gb_control_child_recv: 
+data_in: 08d 0b2 09a 0a3 0c9 0c3 000 0c4 0c3 0c0 0bb 0b7 0b9 0a4 0a2 0c7
+
+gb_control_child_recv: 
+data_in: 0b6 0a0 0b5 0be 010 0bc 0bb 0ca 0c0 0b4 0cb 0c3 0d1 0b7 0b8 0c6
+
+gb_control_child_recv: 
+data_in: 0d6 0c2 0b8 0a8 0c3 0af 0be 0ad 0c5 0c3 0b1 0c8 0c7 02d 0cc 0be
+
+child_send_back_prep: timestep_base_addr: 000000	vector_cntr: 000
+gb_control_child_send_back: vector_cntr: 1	data_out index: 1
+data_out: 0ad 0b1 0b4 000 0b1 0ba 0aa 0a6 0b7 0d3 0cf 0b3 028 0c3 0bf 0b7
+
+gb_control_child_send_back: vector_cntr: 2	data_out index: 1
+data_out: 08d 0b2 09a 0a3 0c9 0c3 000 0c4 0c3 0c0 0bb 0b7 0b9 0a4 0a2 0c7
+
+gb_control_child_send_back: vector_cntr: 3	data_out index: 1
+data_out: 0b6 0a0 0b5 0be 010 0bc 0bb 0ca 0c0 0b4 0cb 0c3 0d1 0b7 0b8 0c6
+
+gb_control_child_send_back: vector_cntr: 4	data_out index: 1
+data_out: 0d6 0c2 0b8 0a8 0c3 0af 0be 0ad 0c5 0c3 0b1 0c8 0c7 02d 0cc 0be
+
+
+gb_control_child_send_prep: timestep_base_addr: 000010	timestep_index1
+
+gb_control_child_send: data_out_addr: 0	pe_mngr index: 000
+data_out: 057 001 000 000 000 0be 001 001 000 061 000 081 000 000 081 090
+
+gb_control_child_send: data_out_addr: 0	pe_mngr index: 001
+data_out: 004 081 081 081 000 000 000 031 036 000 000 000 000 093 000 000
+
+gb_control_child_send: data_out_addr: 0	pe_mngr index: 002
+data_out: 000 046 0e3 000 000 000 000 0ca 000 000 000 0ca 000 034 000 01f
+
+gb_control_child_send: data_out_addr: 0	pe_mngr index: 003
+data_out: 000 000 022 000 026 000 0e1 000 000 025 000 032 000 000 0a5 08c
+
+gb_control_pe_start: timestep_base_addr000010	vector counter: 0
+gb_control_child_recv: 
+data_in: 0b3 0b7 0b8 000 0b3 0c0 0b4 0b2 0c1 0d9 0d5 0b9 029 0c9 0c3 0bc
+
+gb_control_child_recv: 
+data_in: 088 0b5 09b 0ad 0d1 0c7 000 0cc 0cd 0c5 0c2 0bc 0bf 0b1 0a5 0cf
+
+gb_control_child_recv: 
+data_in: 0be 0a7 0bf 0c0 018 0c5 0c1 0d2 0c5 0b8 0d2 0cb 0d7 0bb 0c0 0cc
+
+gb_control_child_recv: 
+data_in: 0dc 0c9 0bb 0ae 0cb 0b0 0c3 0b2 0cd 0c8 0b8 0cf 0cd 031 0d1 0c2
+
+child_send_back_prep: timestep_base_addr: 000010	vector_cntr: 000
+gb_control_child_send_back: vector_cntr: 1	data_out index: 1
+data_out: 0b3 0b7 0b8 000 0b3 0c0 0b4 0b2 0c1 0d9 0d5 0b9 029 0c9 0c3 0bc
+
+gb_control_child_send_back: vector_cntr: 2	data_out index: 1
+data_out: 088 0b5 09b 0ad 0d1 0c7 000 0cc 0cd 0c5 0c2 0bc 0bf 0b1 0a5 0cf
+
+gb_control_child_send_back: vector_cntr: 3	data_out index: 1
+data_out: 0be 0a7 0bf 0c0 018 0c5 0c1 0d2 0c5 0b8 0d2 0cb 0d7 0bb 0c0 0cc
+
+gb_control_child_send_back: vector_cntr: 4	data_out index: 1
+data_out: 0dc 0c9 0bb 0ae 0cb 0b0 0c3 0b2 0cd 0c8 0b8 0cf 0cd 031 0d1 0c2
+
+
