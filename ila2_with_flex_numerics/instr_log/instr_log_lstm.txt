@@ -1,82 +1,7196 @@
 gb_control_child_send_prep: timestep_base_addr: 000000	timestep_index0
 
-gb_control_child_send: data_out_addr: 0	pe_mngr index: 000
+gb_control_child_send: data_out_addr: 000	pe_mngr index: 0
 data_out: 05a 000 081 000 000 0db 001 000 000 0bd 081 081 000 000 081 000
 
-gb_control_child_send: data_out_addr: 0	pe_mngr index: 001
+gb_control_child_send: data_out_addr: 001	pe_mngr index: 0
 data_out: 004 087 081 094 000 000 001 0b6 0b2 000 000 000 081 0aa 0bb 002
 
-gb_control_child_send: data_out_addr: 0	pe_mngr index: 002
+gb_control_child_send: data_out_addr: 002	pe_mngr index: 0
 data_out: 000 03f 0e7 081 000 08d 000 0bd 000 00e 081 0d1 001 037 000 060
 
-gb_control_child_send: data_out_addr: 0	pe_mngr index: 003
+gb_control_child_send: data_out_addr: 003	pe_mngr index: 0
 data_out: 000 000 032 000 02c 000 0e4 000 000 038 000 088 000 000 09e 000
 
+gb_control_child_send: data_out_addr: 004	pe_mngr index: 0
+data_out: 000 0bb 084 000 005 001 0bf 000 0c3 081 098 000 000 081 000 000
+
+gb_control_child_send: data_out_addr: 005	pe_mngr index: 0
+data_out: 000 085 000 031 036 000 000 000 021 0b8 0b8 09d 081 0ce 000 0c3
+
+gb_control_child_send: data_out_addr: 006	pe_mngr index: 0
+data_out: 0a7 0a3 09e 090 097 001 089 038 09e 000 000 0c6 001 005 0b5 001
+
+gb_control_child_send: data_out_addr: 007	pe_mngr index: 0
+data_out: 043 000 000 04d 001 000 000 001 010 013 001 019 033 000 001 081
+
+gb_control_child_send: data_out_addr: 008	pe_mngr index: 0
+data_out: 000 04e 051 0a2 001 04f 014 012 041 000 000 010 028 000 027 081
+
+gb_control_child_send: data_out_addr: 009	pe_mngr index: 0
+data_out: 000 000 000 000 09f 0a2 000 02a 064 000 01f 042 021 081 031 000
+
+gb_control_child_send: data_out_addr: 00a	pe_mngr index: 0
+data_out: 000 00a 000 01a 0b5 02d 000 041 000 03a 000 001 000 094 081 000
+
+gb_control_child_send: data_out_addr: 00b	pe_mngr index: 0
+data_out: 000 001 004 004 000 014 033 000 000 000 081 0a5 08a 019 006 001
+
+gb_control_child_send: data_out_addr: 00c	pe_mngr index: 0
+data_out: 000 04a 0c3 001 000 034 081 000 086 007 0b9 000 000 081 000 001
+
+gb_control_child_send: data_out_addr: 00d	pe_mngr index: 0
+data_out: 000 000 000 000 000 03d 09e 001 000 001 000 000 086 001 000 081
+
+gb_control_child_send: data_out_addr: 00e	pe_mngr index: 0
+data_out: 081 000 0f1 001 001 09c 09a 000 090 008 010 000 000 000 000 000
+
+gb_control_child_send: data_out_addr: 00f	pe_mngr index: 0
+data_out: 000 0b0 08a 000 0c2 00a 081 020 056 001 009 0bc 001 000 000 000
+
 gb_control_pe_start: timestep_base_addr000000	vector counter: 0
-gb_control_child_recv: 
-data_in: 0ad 0b1 0b4 000 0b1 0ba 0aa 0a6 0b7 0d3 0cf 0b3 028 0c3 0bf 0b7
+Instr NO.19191	PE0_core_prep	is activated
+pe_is_zero_first: 1	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.19202	PE0_act_child_initiate	is activated
+Instr NO.21326	PE0_act_child_op_inpe	is activated
+result[0]: 0f9547
+result[1]: 0fcc65
+result[2]: 0f9662
+result[3]: 0fbd3b
+result[4]: 0f9d5d
+result[5]: 0febf5
+result[6]: 0fe7ba
+result[7]: 0f9a65
+result[8]: 0fb1ed
+result[9]: 0fb4c1
+result[10]: 0fd8af
+result[11]: 0fb4e2
+result[12]: 0f64fa
+result[13]: 0fe70f
+result[14]: 0fd3e2
+result[15]: 0fffbc
+
+Instr NO.21334	PE0_core_prep	is activated
+pe_is_zero_first: 1	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.21350	PE0_core_prep	is activated
+pe_is_zero_first: 1	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.21359	PE0_act_child_op_inpe	is activated
+result[0]: 0fe600
+result[1]: 0ff280
+result[2]: 0fe400
+result[3]: 0feb00
+result[4]: 0fef00
+result[5]: 0ff680
+result[6]: 0000b8
+result[7]: 0ff100
+result[8]: 0ffd00
+result[9]: 0fed00
+result[10]: 0ffc40
+result[11]: 0fee00
+result[12]: 0fda00
+result[13]: 0ffa00
+result[14]: 0ffa80
+result[15]: 0ffd20
+
+Instr NO.21391	PE0_act_child_op_eadd	is activated
+result[0]: 0f7b47
+result[1]: 0fbee5
+result[2]: 0f7a62
+result[3]: 0fa83b
+result[4]: 0f8c5d
+result[5]: 0fe275
+result[6]: 0fe872
+result[7]: 0f8b65
+result[8]: 0faeed
+result[9]: 0fa1c1
+result[10]: 0fd4ef
+result[11]: 0fa2e2
+result[12]: 0f3efa
+result[13]: 0fe10f
+result[14]: 0fce62
+result[15]: 0ffcdc
+
+Instr NO.21423	PE0_act_child_op_sigm	is activated
+result[0]: 00073a
+result[1]: 001127
+result[2]: 000725
+result[3]: 000d03
+result[4]: 000902
+result[5]: 0018c9
+result[6]: 001a3e
+result[7]: 0008de
+result[8]: 000dfa
+result[9]: 000c14
+result[10]: 0015a1
+result[11]: 000c3e
+result[12]: 0002ff
+result[13]: 001874
+result[14]: 00144e
+result[15]: 001f2e
+
+Instr NO.23526	PE0_act_child_op_inpe	is activated
+result[0]: 0ffc92
+result[1]: 000d47
+result[2]: 000019
+result[3]: 0003bd
+result[4]: 0000ab
+result[5]: 0ffc4e
+result[6]: 000afa
+result[7]: 00026e
+result[8]: 0004af
+result[9]: 0ffc0b
+result[10]: 0ffc44
+result[11]: 0ffbf1
+result[12]: 0fec32
+result[13]: 0ff837
+result[14]: 0ffc8a
+result[15]: 0011a8
+
+Instr NO.23534	PE0_core_prep	is activated
+pe_is_zero_first: 1	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.23550	PE0_core_prep	is activated
+pe_is_zero_first: 1	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.23559	PE0_act_child_op_inpe	is activated
+result[0]: 000180
+result[1]: 0ffb00
+result[2]: 000000
+result[3]: 0003a0
+result[4]: 000000
+result[5]: 000200
+result[6]: 0000e8
+result[7]: 0ffe50
+result[8]: 0fff68
+result[9]: 0fff50
+result[10]: 0002a0
+result[11]: 0ffe20
+result[12]: 0002c0
+result[13]: 0ff8c0
+result[14]: 000500
+result[15]: 0001c0
+
+Instr NO.23591	PE0_act_child_op_eadd	is activated
+result[0]: 0ffe12
+result[1]: 000847
+result[2]: 000019
+result[3]: 00075d
+result[4]: 0000ab
+result[5]: 0ffe4e
+result[6]: 000be2
+result[7]: 0000be
+result[8]: 000417
+result[9]: 0ffb5b
+result[10]: 0ffee4
+result[11]: 0ffa11
+result[12]: 0feef2
+result[13]: 0ff0f7
+result[14]: 00018a
+result[15]: 001368
+
+Instr NO.23623	PE0_act_child_op_tanh	is activated
+result[0]: 0ffe0d
+result[1]: 00082a
+result[2]: 000027
+result[3]: 000747
+result[4]: 0000b4
+result[5]: 0ffe48
+result[6]: 000bb4
+result[7]: 0000c8
+result[8]: 00040f
+result[9]: 0ffb63
+result[10]: 0ffed9
+result[11]: 0ffa21
+result[12]: 0fef55
+result[13]: 0ff133
+result[14]: 000190
+result[15]: 0012bb
+
+Instr NO.23655	PE0_act_child_op_emul	is activated
+result[0]: 0fffc7
+result[1]: 000230
+result[2]: 000004
+result[3]: 00017a
+result[4]: 000019
+result[5]: 0fff55
+result[6]: 0004cc
+result[7]: 00001b
+result[8]: 0000e2
+result[9]: 0fff21
+result[10]: 0fff9c
+result[11]: 0ffee0
+result[12]: 0fff38
+result[13]: 0ffa58
+result[14]: 00007e
+result[15]: 000920
+
+Instr NO.25742	PE0_act_child_op_inpe	is activated
+result[0]: 0fe3e8
+result[1]: 0feca2
+result[2]: 0fd75f
+result[3]: 0fda47
+result[4]: 0fbd1a
+result[5]: 001a73
+result[6]: 00170a
+result[7]: 0ffecc
+result[8]: 0fefd2
+result[9]: 0fb7f9
+result[10]: 0002ee
+result[11]: 0fd9df
+result[12]: 0fb38e
+result[13]: 0ffc17
+result[14]: 0ffb04
+result[15]: 00098b
+
+Instr NO.25750	PE0_core_prep	is activated
+pe_is_zero_first: 1	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.25766	PE0_core_prep	is activated
+pe_is_zero_first: 1	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.25775	PE0_act_child_op_inpe	is activated
+result[0]: 0ff300
+result[1]: 0ff8c0
+result[2]: 0fee00
+result[3]: 0ff280
+result[4]: 0ff280
+result[5]: 000220
+result[6]: 001300
+result[7]: 0001c0
+result[8]: 0ffc60
+result[9]: 0fef00
+result[10]: 0ffa40
+result[11]: 0ffac0
+result[12]: 0fe100
+result[13]: 0fff30
+result[14]: 0ff980
+result[15]: 000440
+
+Instr NO.25807	PE0_act_child_op_eadd	is activated
+result[0]: 0fd6e8
+result[1]: 0fe562
+result[2]: 0fc55f
+result[3]: 0fccc7
+result[4]: 0faf9a
+result[5]: 001c93
+result[6]: 002a0a
+result[7]: 00008c
+result[8]: 0fec32
+result[9]: 0fa6f9
+result[10]: 0ffd2e
+result[11]: 0fd49f
+result[12]: 0f948e
+result[13]: 0ffb47
+result[14]: 0ff484
+result[15]: 000dcb
+
+Instr NO.25839	PE0_act_child_op_sigm	is activated
+result[0]: 001609
+result[1]: 00197e
+result[2]: 001279
+result[3]: 0013fb
+result[4]: 000e13
+result[5]: 0026fa
+result[6]: 002a27
+result[7]: 00202f
+result[8]: 001b26
+result[9]: 000cd5
+result[10]: 001f41
+result[11]: 001591
+result[12]: 000a30
+result[13]: 001ecd
+result[14]: 001d2a
+result[15]: 002366
+
+Instr NO.25871	PE0_act_child_op_load_zero	is activated
+result[0]: 000000
+result[1]: 000000
+result[2]: 000000
+result[3]: 000000
+result[4]: 000000
+result[5]: 000000
+result[6]: 000000
+result[7]: 000000
+result[8]: 000000
+result[9]: 000000
+result[10]: 000000
+result[11]: 000000
+result[12]: 000000
+result[13]: 000000
+result[14]: 000000
+result[15]: 000000
+
+Instr NO.25903	PE0_act_child_op_emul	is activated
+result[0]: 000000
+result[1]: 000000
+result[2]: 000000
+result[3]: 000000
+result[4]: 000000
+result[5]: 000000
+result[6]: 000000
+result[7]: 000000
+result[8]: 000000
+result[9]: 000000
+result[10]: 000000
+result[11]: 000000
+result[12]: 000000
+result[13]: 000000
+result[14]: 000000
+result[15]: 000000
+
+Instr NO.25935	PE0_act_child_op_eadd	is activated
+result[0]: 0fffc7
+result[1]: 000230
+result[2]: 000004
+result[3]: 00017a
+result[4]: 000019
+result[5]: 0fff55
+result[6]: 0004cc
+result[7]: 00001b
+result[8]: 0000e2
+result[9]: 0fff21
+result[10]: 0fff9c
+result[11]: 0ffee0
+result[12]: 0fff38
+result[13]: 0ffa58
+result[14]: 00007e
+result[15]: 000920
+
+Instr NO.25995	PE0_act_child_op_tanh	is activated
+result[0]: 0fffb9
+result[1]: 000235
+result[2]: 000013
+result[3]: 000180
+result[4]: 000027
+result[5]: 0fff4b
+result[6]: 0004c4
+result[7]: 000027
+result[8]: 0000eb
+result[9]: 0fff18
+result[10]: 0fff8d
+result[11]: 0ffed5
+result[12]: 0fff2b
+result[13]: 0ffa64
+result[14]: 000089
+result[15]: 000902
+
+Instr NO.28018	PE0_act_child_op_inpe	is activated
+result[0]: 0f9806
+result[1]: 0fcc6a
+result[2]: 0f9afc
+result[3]: 0fc741
+result[4]: 0f9eb7
+result[5]: 0ff4a2
+result[6]: 0fe9df
+result[7]: 0f9db2
+result[8]: 0fb7a8
+result[9]: 0fbd31
+result[10]: 0fcda6
+result[11]: 0fb63c
+result[12]: 0f6eec
+result[13]: 0ff141
+result[14]: 0fd12a
+result[15]: 0ff1dd
+
+Instr NO.28026	PE0_core_prep	is activated
+pe_is_zero_first: 1	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.28042	PE0_core_prep	is activated
+pe_is_zero_first: 1	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.28051	PE0_act_child_op_inpe	is activated
+result[0]: 0fe500
+result[1]: 0ff080
+result[2]: 0feb00
+result[3]: 0fef00
+result[4]: 0fed00
+result[5]: 0ffc40
+result[6]: 0fff78
+result[7]: 0fe600
+result[8]: 0ff940
+result[9]: 0fe600
+result[10]: 0ff700
+result[11]: 0fee00
+result[12]: 0fd800
+result[13]: 0ff180
+result[14]: 0ff700
+result[15]: 0000b0
+
+Instr NO.28083	PE0_act_child_op_eadd	is activated
+result[0]: 0f7d06
+result[1]: 0fbcea
+result[2]: 0f85fc
+result[3]: 0fb641
+result[4]: 0f8bb7
+result[5]: 0ff0e2
+result[6]: 0fe957
+result[7]: 0f83b2
+result[8]: 0fb0e8
+result[9]: 0fa331
+result[10]: 0fc4a6
+result[11]: 0fa43c
+result[12]: 0f46ec
+result[13]: 0fe2c1
+result[14]: 0fc82a
+result[15]: 0ff28d
+
+Instr NO.28115	PE0_act_child_op_sigm	is activated
+result[0]: 000762
+result[1]: 0010c2
+result[2]: 000832
+result[3]: 000f67
+result[4]: 0008ea
+result[5]: 001c49
+result[6]: 001a75
+result[7]: 0007fd
+result[8]: 000e50
+result[9]: 000c49
+result[10]: 001252
+result[11]: 000c70
+result[12]: 00036c
+result[13]: 0018dc
+result[14]: 001309
+result[15]: 001cae
+
+Instr NO.28147	PE0_act_child_op_emul	is activated
+result[0]: 0ffff7
+result[1]: 000093
+result[2]: 000002
+result[3]: 00005c
+result[4]: 000005
+result[5]: 0fffb0
+result[6]: 0001f8
+result[7]: 000004
+result[8]: 000034
+result[9]: 0fffd3
+result[10]: 0fffdf
+result[11]: 0fffc5
+result[12]: 0ffff4
+result[13]: 0ffdd2
+result[14]: 000028
+result[15]: 000409
 
 gb_control_child_recv: 
-data_in: 08d 0b2 09a 0a3 0c9 0c3 000 0c4 0c3 0c0 0bb 0b7 0b9 0a4 0a2 0c7
+data_in: 040 000 0b1 000 000 000 000 000 000 030 084 000 007 000 012 000
 
 gb_control_child_recv: 
-data_in: 0b6 0a0 0b5 0be 010 0bc 0bb 0ca 0c0 0b4 0cb 0c3 0d1 0b7 0b8 0c6
+data_in: 092 000 000 00e 000 000 000 000 08a 0a6 003 000 000 000 000 000
 
 gb_control_child_recv: 
-data_in: 0d6 0c2 0b8 0a8 0c3 0af 0be 0ad 0c5 0c3 0b1 0c8 0c7 02d 0cc 0be
+data_in: 000 000 000 000 000 000 080 000 000 000 092 000 000 000 000 000
+
+gb_control_child_recv: 
+data_in: 024 000 000 000 000 082 082 000 000 000 000 09f 000 000 00c 000
+
+Instr NO.30250	PE0_act_child_op_inpe	is activated
+result[0]: 0f8814
+result[1]: 0fa70c
+result[2]: 0f8751
+result[3]: 0ff1a0
+result[4]: 0fb434
+result[5]: 0f8c1e
+result[6]: 0fa1a2
+result[7]: 0fdf88
+result[8]: 0fd3d6
+result[9]: 0fe3ec
+result[10]: 0fbb08
+result[11]: 0fe18c
+result[12]: 0fe288
+result[13]: 0fab1a
+result[14]: 0fd471
+result[15]: 0f980e
+
+Instr NO.30258	PE0_core_prep	is activated
+pe_is_zero_first: 1	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.30274	PE0_core_prep	is activated
+pe_is_zero_first: 1	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.30283	PE0_act_child_op_inpe	is activated
+result[0]: 0fe700
+result[1]: 0fe600
+result[2]: 0fe600
+result[3]: 000700
+result[4]: 0fe400
+result[5]: 0fe100
+result[6]: 0fe400
+result[7]: 0ff480
+result[8]: 0ffb40
+result[9]: 0ff940
+result[10]: 0fed00
+result[11]: 0ff300
+result[12]: 0ff940
+result[13]: 0fe600
+result[14]: 0ff280
+result[15]: 0fe100
+
+Instr NO.30315	PE0_act_child_op_eadd	is activated
+result[0]: 0f6f14
+result[1]: 0f8d0c
+result[2]: 0f6d51
+result[3]: 0ff8a0
+result[4]: 0f9834
+result[5]: 0f6d1e
+result[6]: 0f85a2
+result[7]: 0fd408
+result[8]: 0fcf16
+result[9]: 0fdd2c
+result[10]: 0fa808
+result[11]: 0fd48c
+result[12]: 0fdbc8
+result[13]: 0f911a
+result[14]: 0fc6f1
+result[15]: 0f790e
+
+Instr NO.30347	PE0_act_child_op_sigm	is activated
+result[0]: 00061e
+result[1]: 00091a
+result[2]: 0005f5
+result[3]: 001e28
+result[4]: 000ab6
+result[5]: 0005f1
+result[6]: 00082a
+result[7]: 001572
+result[8]: 001472
+result[9]: 001782
+result[10]: 000cfc
+result[11]: 00158d
+result[12]: 00172d
+result[13]: 0009b0
+result[14]: 0012ca
+result[15]: 000706
+
+Instr NO.32450	PE0_act_child_op_inpe	is activated
+result[0]: 0ff914
+result[1]: 0007e5
+result[2]: 0ffaf7
+result[3]: 000698
+result[4]: 0004ba
+result[5]: 0001e1
+result[6]: 0ff197
+result[7]: 0fe61d
+result[8]: 0fffff
+result[9]: 0005d9
+result[10]: 000381
+result[11]: 0003e1
+result[12]: 0fff5a
+result[13]: 00000d
+result[14]: 0ffc2a
+result[15]: 00020b
+
+Instr NO.32458	PE0_core_prep	is activated
+pe_is_zero_first: 1	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.32474	PE0_core_prep	is activated
+pe_is_zero_first: 1	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.32483	PE0_act_child_op_inpe	is activated
+result[0]: 000380
+result[1]: 0ffdc0
+result[2]: 0003e0
+result[3]: 0ffc40
+result[4]: 000100
+result[5]: 000200
+result[6]: 000300
+result[7]: 000440
+result[8]: 000540
+result[9]: 0ffb80
+result[10]: 0ffb00
+result[11]: 0000b0
+result[12]: 0ffeb0
+result[13]: 0ffd60
+result[14]: 000080
+result[15]: 0ffe40
+
+Instr NO.32515	PE0_act_child_op_eadd	is activated
+result[0]: 0ffc94
+result[1]: 0005a5
+result[2]: 0ffed7
+result[3]: 0002d8
+result[4]: 0005ba
+result[5]: 0003e1
+result[6]: 0ff497
+result[7]: 0fea5d
+result[8]: 00053f
+result[9]: 000159
+result[10]: 0ffe81
+result[11]: 000491
+result[12]: 0ffe0a
+result[13]: 0ffd6d
+result[14]: 0ffcaa
+result[15]: 00004b
+
+Instr NO.32547	PE0_act_child_op_tanh	is activated
+result[0]: 0ffc95
+result[1]: 000597
+result[2]: 0ffecd
+result[3]: 0002d9
+result[4]: 0005ab
+result[5]: 0003dc
+result[6]: 0ff4c1
+result[7]: 0feb54
+result[8]: 000531
+result[9]: 000161
+result[10]: 0ffe7b
+result[11]: 000489
+result[12]: 0ffe05
+result[13]: 0ffd6c
+result[14]: 0ffcac
+result[15]: 000056
+
+Instr NO.32579	PE0_act_child_op_emul	is activated
+result[0]: 0fffac
+result[1]: 0000cb
+result[2]: 0fffe3
+result[3]: 000157
+result[4]: 0000f2
+result[5]: 00005b
+result[6]: 0ffe90
+result[7]: 0ff912
+result[8]: 0001a8
+result[9]: 000081
+result[10]: 0fffb1
+result[11]: 000186
+result[12]: 0fff48
+result[13]: 0fff9c
+result[14]: 0fff05
+result[15]: 000009
+
+Instr NO.34666	PE0_act_child_op_inpe	is activated
+result[0]: 0fbaaa
+result[1]: 0fe887
+result[2]: 0fd330
+result[3]: 002b15
+result[4]: 0fd333
+result[5]: 0fc09f
+result[6]: 0fe2fd
+result[7]: 0fe1a5
+result[8]: 0ffa8e
+result[9]: 000985
+result[10]: 0fb46d
+result[11]: 0008eb
+result[12]: 002425
+result[13]: 0fea56
+result[14]: 00013a
+result[15]: 0fd32d
+
+Instr NO.34674	PE0_core_prep	is activated
+pe_is_zero_first: 1	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.34690	PE0_core_prep	is activated
+pe_is_zero_first: 1	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.34699	PE0_act_child_op_inpe	is activated
+result[0]: 0fe800
+result[1]: 0ffa80
+result[2]: 0ff000
+result[3]: 001200
+result[4]: 0fe900
+result[5]: 0fe800
+result[6]: 0ff380
+result[7]: 0ff580
+result[8]: 000180
+result[9]: 0ffe30
+result[10]: 0fef00
+result[11]: 000360
+result[12]: 001600
+result[13]: 0ff600
+result[14]: 0ffec0
+result[15]: 0ff680
+
+Instr NO.34731	PE0_act_child_op_eadd	is activated
+result[0]: 0fa2aa
+result[1]: 0fe307
+result[2]: 0fc330
+result[3]: 003d15
+result[4]: 0fbc33
+result[5]: 0fa89f
+result[6]: 0fd67d
+result[7]: 0fd725
+result[8]: 0ffc0e
+result[9]: 0007b5
+result[10]: 0fa36d
+result[11]: 000c4b
+result[12]: 003a25
+result[13]: 0fe056
+result[14]: 0ffffa
+result[15]: 0fc9ad
+
+Instr NO.34763	PE0_act_child_op_sigm	is activated
+result[0]: 000c37
+result[1]: 0018ed
+result[2]: 001207
+result[3]: 002e06
+result[4]: 00109b
+result[5]: 000d11
+result[6]: 0015f2
+result[7]: 001615
+result[8]: 001efd
+result[9]: 0021ed
+result[10]: 000c52
+result[11]: 002308
+result[12]: 002d6e
+result[13]: 001846
+result[14]: 001ff0
+result[15]: 001358
+
+Instr NO.34795	PE0_act_child_op_load_zero	is activated
+result[0]: 000000
+result[1]: 000000
+result[2]: 000000
+result[3]: 000000
+result[4]: 000000
+result[5]: 000000
+result[6]: 000000
+result[7]: 000000
+result[8]: 000000
+result[9]: 000000
+result[10]: 000000
+result[11]: 000000
+result[12]: 000000
+result[13]: 000000
+result[14]: 000000
+result[15]: 000000
+
+Instr NO.34827	PE0_act_child_op_emul	is activated
+result[0]: 000000
+result[1]: 000000
+result[2]: 000000
+result[3]: 000000
+result[4]: 000000
+result[5]: 000000
+result[6]: 000000
+result[7]: 000000
+result[8]: 000000
+result[9]: 000000
+result[10]: 000000
+result[11]: 000000
+result[12]: 000000
+result[13]: 000000
+result[14]: 000000
+result[15]: 000000
+
+Instr NO.34859	PE0_act_child_op_eadd	is activated
+result[0]: 0fffac
+result[1]: 0000cb
+result[2]: 0fffe3
+result[3]: 000157
+result[4]: 0000f2
+result[5]: 00005b
+result[6]: 0ffe90
+result[7]: 0ff912
+result[8]: 0001a8
+result[9]: 000081
+result[10]: 0fffb1
+result[11]: 000186
+result[12]: 0fff48
+result[13]: 0fff9c
+result[14]: 0fff05
+result[15]: 000009
+
+Instr NO.34919	PE0_act_child_op_tanh	is activated
+result[0]: 0fff9d
+result[1]: 0000d4
+result[2]: 0fffd4
+result[3]: 00015d
+result[4]: 0000fb
+result[5]: 000066
+result[6]: 0ffe87
+result[7]: 0ff926
+result[8]: 0001af
+result[9]: 00008d
+result[10]: 0fffa5
+result[11]: 00018c
+result[12]: 0fff3b
+result[13]: 0fff8d
+result[14]: 0ffefc
+result[15]: 000017
+
+Instr NO.36942	PE0_act_child_op_inpe	is activated
+result[0]: 0f89d6
+result[1]: 0fa209
+result[2]: 0f7e14
+result[3]: 0fe6c6
+result[4]: 0facfd
+result[5]: 0f9232
+result[6]: 0f9dab
+result[7]: 0fdb79
+result[8]: 0fdba0
+result[9]: 0fece9
+result[10]: 0fc6dd
+result[11]: 0fe11f
+result[12]: 0fe4ed
+result[13]: 0faa97
+result[14]: 0fdd3f
+result[15]: 0f8e88
+
+Instr NO.36950	PE0_core_prep	is activated
+pe_is_zero_first: 1	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.36966	PE0_core_prep	is activated
+pe_is_zero_first: 1	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.36975	PE0_act_child_op_inpe	is activated
+result[0]: 0fe100
+result[1]: 0fe500
+result[2]: 0fe000
+result[3]: 0ffc80
+result[4]: 0fe600
+result[5]: 0fe300
+result[6]: 0fe400
+result[7]: 0ffb40
+result[8]: 0ffa40
+result[9]: 0ff700
+result[10]: 0feb00
+result[11]: 0ffa00
+result[12]: 0fff70
+result[13]: 0fe800
+result[14]: 0ff580
+result[15]: 0fe500
+
+Instr NO.37007	PE0_act_child_op_eadd	is activated
+result[0]: 0f6ad6
+result[1]: 0f8709
+result[2]: 0f5e14
+result[3]: 0fe346
+result[4]: 0f92fd
+result[5]: 0f7532
+result[6]: 0f81ab
+result[7]: 0fd6b9
+result[8]: 0fd5e0
+result[9]: 0fe3e9
+result[10]: 0fb1dd
+result[11]: 0fdb1f
+result[12]: 0fe45d
+result[13]: 0f9297
+result[14]: 0fd2bf
+result[15]: 0f7388
+
+Instr NO.37039	PE0_act_child_op_sigm	is activated
+result[0]: 0005bc
+result[1]: 00084b
+result[2]: 0004a6
+result[3]: 0018fb
+result[4]: 0009f5
+result[5]: 0006ad
+result[6]: 0007ce
+result[7]: 0015ff
+result[8]: 0015d2
+result[9]: 001925
+result[10]: 000e83
+result[11]: 001704
+result[12]: 00193f
+result[13]: 0009e7
+result[14]: 00152f
+result[15]: 000686
+
+Instr NO.37071	PE0_act_child_op_emul	is activated
+result[0]: 0ffff7
+result[1]: 00001b
+result[2]: 0ffffc
+result[3]: 000088
+result[4]: 000027
+result[5]: 00000a
+result[6]: 0fffd2
+result[7]: 0ffda5
+result[8]: 000092
+result[9]: 000037
+result[10]: 0fffeb
+result[11]: 00008e
+result[12]: 0fffb2
+result[13]: 0fffee
+result[14]: 0fffa9
+result[15]: 000002
+
+gb_control_child_recv: 
+data_in: 000 086 000 083 012 000 000 012 0b3 000 000 000 011 000 000 000
+
+gb_control_child_recv: 
+data_in: 088 0a8 029 0ba 000 000 000 000 000 000 000 083 000 000 009 000
+
+gb_control_child_recv: 
+data_in: 00d 02c 000 010 012 08e 000 000 000 000 080 000 000 000 000 000
+
+gb_control_child_recv: 
+data_in: 000 083 000 025 000 000 000 000 000 000 000 000 000 086 085 000
+
+Instr NO.39174	PE0_act_child_op_inpe	is activated
+result[0]: 0f7796
+result[1]: 0fc535
+result[2]: 0fb5b1
+result[3]: 0fac14
+result[4]: 0f9ca1
+result[5]: 0facb9
+result[6]: 0fc563
+result[7]: 0feba8
+result[8]: 0fc927
+result[9]: 0fe317
+result[10]: 0ff989
+result[11]: 0fb2b2
+result[12]: 0fb907
+result[13]: 0fd8a5
+result[14]: 0fb3e3
+result[15]: 0fb29e
+
+Instr NO.39182	PE0_core_prep	is activated
+pe_is_zero_first: 1	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.39198	PE0_core_prep	is activated
+pe_is_zero_first: 1	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.39207	PE0_act_child_op_inpe	is activated
+result[0]: 0fe100
+result[1]: 0fea00
+result[2]: 0ff000
+result[3]: 0fed00
+result[4]: 0feb00
+result[5]: 0fee00
+result[6]: 0ff700
+result[7]: 0ffe00
+result[8]: 0ff180
+result[9]: 0ffd80
+result[10]: 0ff980
+result[11]: 0fe800
+result[12]: 0ff380
+result[13]: 0ff280
+result[14]: 0fe200
+result[15]: 0feb00
+
+Instr NO.39239	PE0_act_child_op_eadd	is activated
+result[0]: 0f5896
+result[1]: 0faf35
+result[2]: 0fa5b1
+result[3]: 0f9914
+result[4]: 0f87a1
+result[5]: 0f9ab9
+result[6]: 0fbc63
+result[7]: 0fe9a8
+result[8]: 0fbaa7
+result[9]: 0fe097
+result[10]: 0ff309
+result[11]: 0f9ab2
+result[12]: 0fac87
+result[13]: 0fcb25
+result[14]: 0f95e3
+result[15]: 0f9d9e
+
+Instr NO.39271	PE0_act_child_op_sigm	is activated
+result[0]: 00045c
+result[1]: 000e04
+result[2]: 000ca5
+result[3]: 000ad5
+result[4]: 000858
+result[5]: 000b12
+result[6]: 0010a5
+result[7]: 001a89
+result[8]: 00104c
+result[9]: 001857
+result[10]: 001cce
+result[11]: 000b12
+result[12]: 000da1
+result[13]: 0013a5
+result[14]: 000a61
+result[15]: 000b7d
+
+Instr NO.41374	PE0_act_child_op_inpe	is activated
+result[0]: 0fffd9
+result[1]: 001481
+result[2]: 0001b2
+result[3]: 0ff893
+result[4]: 0ffb7b
+result[5]: 0ffd06
+result[6]: 0ffc25
+result[7]: 000279
+result[8]: 0005bf
+result[9]: 0ffea7
+result[10]: 0fe474
+result[11]: 0ffd28
+result[12]: 0000e6
+result[13]: 001672
+result[14]: 0ff543
+result[15]: 0ffa07
+
+Instr NO.41382	PE0_core_prep	is activated
+pe_is_zero_first: 1	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.41398	PE0_core_prep	is activated
+pe_is_zero_first: 1	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.41407	PE0_act_child_op_inpe	is activated
+result[0]: 0ffd60
+result[1]: 0ff980
+result[2]: 0003a0
+result[3]: 0fff00
+result[4]: 0003e0
+result[5]: 000240
+result[6]: 0ffac0
+result[7]: 000000
+result[8]: 000580
+result[9]: 0001e0
+result[10]: 0ffac0
+result[11]: 0ff9c0
+result[12]: 0ffca0
+result[13]: 000110
+result[14]: 000260
+result[15]: 000440
+
+Instr NO.41439	PE0_act_child_op_eadd	is activated
+result[0]: 0ffd39
+result[1]: 000e01
+result[2]: 000552
+result[3]: 0ff793
+result[4]: 0fff5b
+result[5]: 0fff46
+result[6]: 0ff6e5
+result[7]: 000279
+result[8]: 000b3f
+result[9]: 000087
+result[10]: 0fdf34
+result[11]: 0ff6e8
+result[12]: 0ffd86
+result[13]: 001782
+result[14]: 0ff7a3
+result[15]: 0ffe47
+
+Instr NO.41471	PE0_act_child_op_tanh	is activated
+result[0]: 0ffd39
+result[1]: 000dca
+result[2]: 000545
+result[3]: 0ff7ae
+result[4]: 0fff4f
+result[5]: 0fff3b
+result[6]: 0ff705
+result[7]: 00027b
+result[8]: 000b13
+result[9]: 000091
+result[10]: 0fe1b2
+result[11]: 0ff705
+result[12]: 0ffd84
+result[13]: 001650
+result[14]: 0ff7bd
+result[15]: 0ffe40
+
+Instr NO.41503	PE0_act_child_op_emul	is activated
+result[0]: 0fffcf
+result[1]: 000305
+result[2]: 00010a
+result[3]: 0ffe97
+result[4]: 0fffe8
+result[5]: 0fffdd
+result[6]: 0ffdaa
+result[7]: 000107
+result[8]: 0002d1
+result[9]: 000037
+result[10]: 0ff25c
+result[11]: 0ffe72
+result[12]: 0fff78
+result[13]: 0006d9
+result[14]: 0ffea9
+result[15]: 0fffaf
+
+Instr NO.43590	PE0_act_child_op_inpe	is activated
+result[0]: 0fc849
+result[1]: 0fc214
+result[2]: 0fe08a
+result[3]: 0fc6b4
+result[4]: 0fcfaf
+result[5]: 0fda64
+result[6]: 0fdf02
+result[7]: 0fe948
+result[8]: 0fd807
+result[9]: 0ff418
+result[10]: 0fe04c
+result[11]: 0fe0bc
+result[12]: 0fda4e
+result[13]: 0fc414
+result[14]: 0fd8fd
+result[15]: 0fce28
+
+Instr NO.43598	PE0_core_prep	is activated
+pe_is_zero_first: 1	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.43614	PE0_core_prep	is activated
+pe_is_zero_first: 1	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.43623	PE0_act_child_op_inpe	is activated
+result[0]: 0fec00
+result[1]: 0fe500
+result[2]: 0ff000
+result[3]: 0ff200
+result[4]: 0ff500
+result[5]: 0ff280
+result[6]: 0fed00
+result[7]: 0ffb80
+result[8]: 0ff480
+result[9]: 0ffcc0
+result[10]: 0ffac0
+result[11]: 0ff080
+result[12]: 0ff100
+result[13]: 0fe800
+result[14]: 0fed00
+result[15]: 0ff200
+
+Instr NO.43655	PE0_act_child_op_eadd	is activated
+result[0]: 0fb449
+result[1]: 0fa714
+result[2]: 0fd08a
+result[3]: 0fb8b4
+result[4]: 0fc4af
+result[5]: 0fcce4
+result[6]: 0fcc02
+result[7]: 0fe4c8
+result[8]: 0fcc87
+result[9]: 0ff0d8
+result[10]: 0fdb0c
+result[11]: 0fd13c
+result[12]: 0fcb4e
+result[13]: 0fac14
+result[14]: 0fc5fd
+result[15]: 0fc028
+
+Instr NO.43687	PE0_act_child_op_sigm	is activated
+result[0]: 000f01
+result[1]: 000cd9
+result[2]: 0014be
+result[3]: 000fe7
+result[4]: 001254
+result[5]: 0013ff
+result[6]: 0013d2
+result[7]: 00195a
+result[8]: 0013ec
+result[9]: 001c46
+result[10]: 0016ff
+result[11]: 0014e2
+result[12]: 0013ad
+result[13]: 000d91
+result[14]: 001299
+result[15]: 001168
+
+Instr NO.43719	PE0_act_child_op_load_zero	is activated
+result[0]: 000000
+result[1]: 000000
+result[2]: 000000
+result[3]: 000000
+result[4]: 000000
+result[5]: 000000
+result[6]: 000000
+result[7]: 000000
+result[8]: 000000
+result[9]: 000000
+result[10]: 000000
+result[11]: 000000
+result[12]: 000000
+result[13]: 000000
+result[14]: 000000
+result[15]: 000000
+
+Instr NO.43751	PE0_act_child_op_emul	is activated
+result[0]: 000000
+result[1]: 000000
+result[2]: 000000
+result[3]: 000000
+result[4]: 000000
+result[5]: 000000
+result[6]: 000000
+result[7]: 000000
+result[8]: 000000
+result[9]: 000000
+result[10]: 000000
+result[11]: 000000
+result[12]: 000000
+result[13]: 000000
+result[14]: 000000
+result[15]: 000000
+
+Instr NO.43783	PE0_act_child_op_eadd	is activated
+result[0]: 0fffcf
+result[1]: 000305
+result[2]: 00010a
+result[3]: 0ffe97
+result[4]: 0fffe8
+result[5]: 0fffdd
+result[6]: 0ffdaa
+result[7]: 000107
+result[8]: 0002d1
+result[9]: 000037
+result[10]: 0ff25c
+result[11]: 0ffe72
+result[12]: 0fff78
+result[13]: 0006d9
+result[14]: 0ffea9
+result[15]: 0fffaf
+
+Instr NO.43843	PE0_act_child_op_tanh	is activated
+result[0]: 0fffc0
+result[1]: 000304
+result[2]: 000112
+result[3]: 0ffe8f
+result[4]: 0fffd8
+result[5]: 0fffd0
+result[6]: 0ffda7
+result[7]: 00010e
+result[8]: 0002d1
+result[9]: 000042
+result[10]: 0ff290
+result[11]: 0ffe6b
+result[12]: 0fff6a
+result[13]: 0006c5
+result[14]: 0ffea2
+result[15]: 0fffa1
+
+Instr NO.45866	PE0_act_child_op_inpe	is activated
+result[0]: 0f80ab
+result[1]: 0fc777
+result[2]: 0faf62
+result[3]: 0faa37
+result[4]: 0f9a4b
+result[5]: 0fb67a
+result[6]: 0fd150
+result[7]: 0fe546
+result[8]: 0fc203
+result[9]: 0fe0c9
+result[10]: 00090d
+result[11]: 0fb6b9
+result[12]: 0fad50
+result[13]: 0fde9a
+result[14]: 0fb29b
+result[15]: 0fb29e
+
+Instr NO.45874	PE0_core_prep	is activated
+pe_is_zero_first: 1	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.45890	PE0_core_prep	is activated
+pe_is_zero_first: 1	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.45899	PE0_act_child_op_inpe	is activated
+result[0]: 0fe000
+result[1]: 0fee00
+result[2]: 0ff480
+result[3]: 0fea00
+result[4]: 0fe400
+result[5]: 0fed00
+result[6]: 0fee00
+result[7]: 0ffde0
+result[8]: 0ff000
+result[9]: 0ffca0
+result[10]: 0ffec0
+result[11]: 0fee00
+result[12]: 0fec00
+result[13]: 0feb00
+result[14]: 0fe100
+result[15]: 0fee00
+
+Instr NO.45931	PE0_act_child_op_eadd	is activated
+result[0]: 0f60ab
+result[1]: 0fb577
+result[2]: 0fa3e2
+result[3]: 0f9437
+result[4]: 0f7e4b
+result[5]: 0fa37a
+result[6]: 0fbf50
+result[7]: 0fe326
+result[8]: 0fb203
+result[9]: 0fdd69
+result[10]: 0007cd
+result[11]: 0fa4b9
+result[12]: 0f9950
+result[13]: 0fc99a
+result[14]: 0f939b
+result[15]: 0fa09e
+
+Instr NO.45963	PE0_act_child_op_sigm	is activated
+result[0]: 0004d1
+result[1]: 000f3e
+result[2]: 000c63
+result[3]: 000a23
+result[4]: 000780
+result[5]: 000c54
+result[6]: 00113e
+result[7]: 0018f4
+result[8]: 000e89
+result[9]: 001790
+result[10]: 0021f1
+result[11]: 000c82
+result[12]: 000ade
+result[13]: 001354
+result[14]: 000a0c
+result[15]: 000beb
+
+Instr NO.45995	PE0_act_child_op_emul	is activated
+result[0]: 0ffffb
+result[1]: 0000b7
+result[2]: 000035
+result[3]: 0fffc5
+result[4]: 0ffffb
+result[5]: 0ffff6
+result[6]: 0fff5e
+result[7]: 000069
+result[8]: 0000a3
+result[9]: 000018
+result[10]: 0ff8df
+result[11]: 0fffb0
+result[12]: 0fffe6
+result[13]: 00020b
+result[14]: 0fffc9
+result[15]: 0fffee
+
+gb_control_child_recv: 
+data_in: 000 000 030 000 084 0cd 000 014 00a 094 000 000 000 000 017 000
+
+gb_control_child_recv: 
+data_in: 000 000 000 004 000 000 086 083 08b 000 000 000 0b6 000 088 08b
+
+gb_control_child_recv: 
+data_in: 000 0b1 0aa 000 000 08b 02d 000 000 000 098 036 000 000 095 000
+
+gb_control_child_recv: 
+data_in: 000 000 000 01c 035 000 000 000 000 000 000 000 000 023 000 000
+
+Instr NO.48098	PE0_act_child_op_inpe	is activated
+result[0]: 0f8e36
+result[1]: 0f86e5
+result[2]: 0f56a6
+result[3]: 0fafb4
+result[4]: 0fc680
+result[5]: 0fbf4d
+result[6]: 0f9469
+result[7]: 0f5bd6
+result[8]: 0fe323
+result[9]: 0f99e7
+result[10]: 0f695d
+result[11]: 0fb1b8
+result[12]: 0f6c88
+result[13]: 0f52e0
+result[14]: 0fcd2b
+result[15]: 0fb5a8
+
+Instr NO.48106	PE0_core_prep	is activated
+pe_is_zero_first: 1	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.48122	PE0_core_prep	is activated
+pe_is_zero_first: 1	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.48131	PE0_act_child_op_inpe	is activated
+result[0]: 0fe200
+result[1]: 0fea00
+result[2]: 0fcc00
+result[3]: 0fe700
+result[4]: 0fef00
+result[5]: 0ff840
+result[6]: 0fe500
+result[7]: 0fda00
+result[8]: 0ff380
+result[9]: 0feb00
+result[10]: 0fd800
+result[11]: 0fed00
+result[12]: 0fd600
+result[13]: 0fce00
+result[14]: 0ff200
+result[15]: 0fe700
+
+Instr NO.48163	PE0_act_child_op_eadd	is activated
+result[0]: 0f7036
+result[1]: 0f70e5
+result[2]: 0f22a6
+result[3]: 0f96b4
+result[4]: 0fb580
+result[5]: 0fb78d
+result[6]: 0f7969
+result[7]: 0f35d6
+result[8]: 0fd6a3
+result[9]: 0f84e7
+result[10]: 0f415d
+result[11]: 0f9eb8
+result[12]: 0f4288
+result[13]: 0f20e0
+result[14]: 0fbf2b
+result[15]: 0f9ca8
+
+Instr NO.48195	PE0_act_child_op_sigm	is activated
+result[0]: 000639
+result[1]: 000649
+result[2]: 0001fe
+result[3]: 000a7f
+result[4]: 000f40
+result[5]: 000faa
+result[6]: 00070e
+result[7]: 00028f
+result[8]: 0015fa
+result[9]: 000819
+result[10]: 000320
+result[11]: 000ba6
+result[12]: 00032f
+result[13]: 0001f0
+result[14]: 001136
+result[15]: 000b59
+
+Instr NO.50298	PE0_act_child_op_inpe	is activated
+result[0]: 0ffac2
+result[1]: 0ffa8c
+result[2]: 0ffcad
+result[3]: 00109f
+result[4]: 0ffb50
+result[5]: 0ff4b5
+result[6]: 0ffa64
+result[7]: 0fffcb
+result[8]: 0ffd22
+result[9]: 0ff9e7
+result[10]: 0ffe8a
+result[11]: 00049d
+result[12]: 000055
+result[13]: 0ffdac
+result[14]: 000848
+result[15]: 0006ef
+
+Instr NO.50306	PE0_core_prep	is activated
+pe_is_zero_first: 1	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.50322	PE0_core_prep	is activated
+pe_is_zero_first: 1	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.50331	PE0_act_child_op_inpe	is activated
+result[0]: 0000e8
+result[1]: 000200
+result[2]: 0ff8c0
+result[3]: 0ffa80
+result[4]: 000220
+result[5]: 000480
+result[6]: 000400
+result[7]: 0ffc20
+result[8]: 000600
+result[9]: 0001e0
+result[10]: 0ffa40
+result[11]: 0ffbc0
+result[12]: 0ffbc0
+result[13]: 000220
+result[14]: 0ffa40
+result[15]: 000380
+
+Instr NO.50363	PE0_act_child_op_eadd	is activated
+result[0]: 0ffbaa
+result[1]: 0ffc8c
+result[2]: 0ff56d
+result[3]: 000b1f
+result[4]: 0ffd70
+result[5]: 0ff935
+result[6]: 0ffe64
+result[7]: 0ffbeb
+result[8]: 000322
+result[9]: 0ffbc7
+result[10]: 0ff8ca
+result[11]: 00005d
+result[12]: 0ffc15
+result[13]: 0fffcc
+result[14]: 000288
+result[15]: 000a6f
+
+Instr NO.50395	PE0_act_child_op_tanh	is activated
+result[0]: 0ffbb1
+result[1]: 0ffc8d
+result[2]: 0ff594
+result[3]: 000af4
+result[4]: 0ffd6c
+result[5]: 0ff949
+result[6]: 0ffe5c
+result[7]: 0ffbf0
+result[8]: 000320
+result[9]: 0ffbcd
+result[10]: 0ff8e0
+result[11]: 00006a
+result[12]: 0ffc1b
+result[13]: 0fffbd
+result[14]: 00028b
+result[15]: 000a47
+
+Instr NO.50427	PE0_act_child_op_emul	is activated
+result[0]: 0fff94
+result[1]: 0fffa9
+result[2]: 0fffac
+result[3]: 0001cb
+result[4]: 0fff62
+result[5]: 0ffe5b
+result[6]: 0fffd1
+result[7]: 0fffd6
+result[8]: 000112
+result[9]: 0fff77
+result[10]: 0fffa6
+result[11]: 000013
+result[12]: 0fffce
+result[13]: 0ffffd
+result[14]: 0000af
+result[15]: 0001d2
+
+Instr NO.52514	PE0_act_child_op_inpe	is activated
+result[0]: 0fcd02
+result[1]: 0fe365
+result[2]: 0fbdcc
+result[3]: 0fce39
+result[4]: 0fdf7c
+result[5]: 0fe10e
+result[6]: 0fd7fd
+result[7]: 0fb0e2
+result[8]: 0ff1c7
+result[9]: 0fee08
+result[10]: 0faf4d
+result[11]: 0ff1d4
+result[12]: 0fbd2e
+result[13]: 0fbbae
+result[14]: 0feb59
+result[15]: 0fd59f
+
+Instr NO.52522	PE0_core_prep	is activated
+pe_is_zero_first: 1	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.52538	PE0_core_prep	is activated
+pe_is_zero_first: 1	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.52547	PE0_act_child_op_inpe	is activated
+result[0]: 0fed00
+result[1]: 0ff100
+result[2]: 0fe700
+result[3]: 0ff680
+result[4]: 0ffb40
+result[5]: 0ff780
+result[6]: 0fed00
+result[7]: 0fe800
+result[8]: 0ffa80
+result[9]: 0fee00
+result[10]: 0fe500
+result[11]: 0ff780
+result[12]: 0fe700
+result[13]: 0feb00
+result[14]: 0ff700
+result[15]: 0ff600
+
+Instr NO.52579	PE0_act_child_op_eadd	is activated
+result[0]: 0fba02
+result[1]: 0fd465
+result[2]: 0fa4cc
+result[3]: 0fc4b9
+result[4]: 0fdabc
+result[5]: 0fd88e
+result[6]: 0fc4fd
+result[7]: 0f98e2
+result[8]: 0fec47
+result[9]: 0fdc08
+result[10]: 0f944d
+result[11]: 0fe954
+result[12]: 0fa42e
+result[13]: 0fa6ae
+result[14]: 0fe259
+result[15]: 0fcb9f
+
+Instr NO.52611	PE0_act_child_op_sigm	is activated
+result[0]: 00102a
+result[1]: 001585
+result[2]: 000c84
+result[3]: 001256
+result[4]: 0016eb
+result[5]: 001664
+result[6]: 001264
+result[7]: 000ace
+result[8]: 001b2b
+result[9]: 00173b
+result[10]: 000a26
+result[11]: 001a73
+result[12]: 000c6d
+result[13]: 000cc9
+result[14]: 0018c4
+result[15]: 0013be
+
+Instr NO.52643	PE0_act_child_op_load_zero	is activated
+result[0]: 000000
+result[1]: 000000
+result[2]: 000000
+result[3]: 000000
+result[4]: 000000
+result[5]: 000000
+result[6]: 000000
+result[7]: 000000
+result[8]: 000000
+result[9]: 000000
+result[10]: 000000
+result[11]: 000000
+result[12]: 000000
+result[13]: 000000
+result[14]: 000000
+result[15]: 000000
+
+Instr NO.52675	PE0_act_child_op_emul	is activated
+result[0]: 000000
+result[1]: 000000
+result[2]: 000000
+result[3]: 000000
+result[4]: 000000
+result[5]: 000000
+result[6]: 000000
+result[7]: 000000
+result[8]: 000000
+result[9]: 000000
+result[10]: 000000
+result[11]: 000000
+result[12]: 000000
+result[13]: 000000
+result[14]: 000000
+result[15]: 000000
+
+Instr NO.52707	PE0_act_child_op_eadd	is activated
+result[0]: 0fff94
+result[1]: 0fffa9
+result[2]: 0fffac
+result[3]: 0001cb
+result[4]: 0fff62
+result[5]: 0ffe5b
+result[6]: 0fffd1
+result[7]: 0fffd6
+result[8]: 000112
+result[9]: 0fff77
+result[10]: 0fffa6
+result[11]: 000013
+result[12]: 0fffce
+result[13]: 0ffffd
+result[14]: 0000af
+result[15]: 0001d2
+
+Instr NO.52767	PE0_act_child_op_tanh	is activated
+result[0]: 0fff86
+result[1]: 0fff9d
+result[2]: 0fff9d
+result[3]: 0001cf
+result[4]: 0fff57
+result[5]: 0ffe54
+result[6]: 0fffc4
+result[7]: 0fffc8
+result[8]: 00011a
+result[9]: 0fff6a
+result[10]: 0fff99
+result[11]: 00001f
+result[12]: 0fffc0
+result[13]: 0ffff0
+result[14]: 0000b8
+result[15]: 0001d6
+
+Instr NO.54790	PE0_act_child_op_inpe	is activated
+result[0]: 0f87eb
+result[1]: 0f8d2f
+result[2]: 0f5ce2
+result[3]: 0fb721
+result[4]: 0fc461
+result[5]: 0fbd26
+result[6]: 0f93db
+result[7]: 0f5f34
+result[8]: 0fdc97
+result[9]: 0f979a
+result[10]: 0f5c45
+result[11]: 0fc296
+result[12]: 0f6f00
+result[13]: 0f5374
+result[14]: 0fd053
+result[15]: 0fa940
+
+Instr NO.54798	PE0_core_prep	is activated
+pe_is_zero_first: 1	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.54815	PE0_act_child_op_inpe	is activated
+result[0]: 0fe100
+result[1]: 0fde00
+result[2]: 0fd000
+result[3]: 0fe200
+result[4]: 0ff080
+result[5]: 0ff200
+result[6]: 0fe000
+result[7]: 0fd000
+result[8]: 0ffec0
+result[9]: 0fe600
+result[10]: 0fda00
+result[11]: 0ff080
+result[12]: 0fdc00
+result[13]: 0fd800
+result[14]: 0ff600
+result[15]: 0fe600
+
+Instr NO.54831	PE0_act_child_op_eadd	is activated
+result[0]: 0f68eb
+result[1]: 0f6b2f
+result[2]: 0f2ce2
+result[3]: 0f9921
+result[4]: 0fb4e1
+result[5]: 0faf26
+result[6]: 0f73db
+result[7]: 0f2f34
+result[8]: 0fdb57
+result[9]: 0f7d9a
+result[10]: 0f3645
+result[11]: 0fb316
+result[12]: 0f4b00
+result[13]: 0f2b74
+result[14]: 0fc653
+result[15]: 0f8f40
+
+Instr NO.54847	PE0_act_child_op_sigm	is activated
+result[0]: 000590
+result[1]: 0005c5
+result[2]: 00024b
+result[3]: 000ad8
+result[4]: 000f1f
+result[5]: 000e01
+result[6]: 00068e
+result[7]: 00025d
+result[8]: 001710
+result[9]: 00076f
+result[10]: 000293
+result[11]: 000ec2
+result[12]: 0003a3
+result[13]: 000241
+result[14]: 0012a9
+result[15]: 00096c
+
+Instr NO.54863	PE0_act_child_op_emul	is activated
+result[0]: 0ffff5
+result[1]: 0ffff7
+result[2]: 0ffffc
+result[3]: 00004e
+result[4]: 0fffd8
+result[5]: 0fffa2
+result[6]: 0ffff9
+result[7]: 0ffffd
+result[8]: 000065
+result[9]: 0fffee
+result[10]: 0ffffb
+result[11]: 000007
+result[12]: 0ffffc
+result[13]: 0fffff
+result[14]: 000035
+result[15]: 000045
+
+gb_control_child_recv: 
+data_in: 001 000 000 000 000 000 000 009 000 000 087 000 004 000 000 000
+
+Instr NO.54885	PE0_act_child_send_done	is activated
+gb_control_child_recv: 
+data_in: 000 020 000 000 01d 000 000 007 000 000 000 000 031 000 000 000
+
+gb_control_child_recv: 
+data_in: 018 011 000 0b0 000 000 000 000 000 000 012 000 000 000 000 08e
+
+gb_control_child_recv: 
+data_in: 031 0b0 000 000 000 000 000 031 000 000 000 000 000 022 000 0b1
 
 child_send_back_prep: timestep_base_addr: 000000	vector_cntr: 000
-gb_control_child_send_back: vector_cntr: 1	data_out index: 1
-data_out: 0ad 0b1 0b4 000 0b1 0ba 0aa 0a6 0b7 0d3 0cf 0b3 028 0c3 0bf 0b7
+gb_control_child_send_back: data_out addr: 0	data_out index: 1
+data_out: 040 000 0b1 000 000 000 000 000 000 030 084 000 007 000 012 000
 
-gb_control_child_send_back: vector_cntr: 2	data_out index: 1
-data_out: 08d 0b2 09a 0a3 0c9 0c3 000 0c4 0c3 0c0 0bb 0b7 0b9 0a4 0a2 0c7
+gb_control_child_send_back: data_out addr: 1	data_out index: 1
+data_out: 000 086 000 083 012 000 000 012 0b3 000 000 000 011 000 000 000
 
-gb_control_child_send_back: vector_cntr: 3	data_out index: 1
-data_out: 0b6 0a0 0b5 0be 010 0bc 0bb 0ca 0c0 0b4 0cb 0c3 0d1 0b7 0b8 0c6
+gb_control_child_send_back: data_out addr: 2	data_out index: 1
+data_out: 000 000 030 000 084 0cd 000 014 00a 094 000 000 000 000 017 000
 
-gb_control_child_send_back: vector_cntr: 4	data_out index: 1
-data_out: 0d6 0c2 0b8 0a8 0c3 0af 0be 0ad 0c5 0c3 0b1 0c8 0c7 02d 0cc 0be
+gb_control_child_send_back: data_out addr: 3	data_out index: 1
+data_out: 001 000 000 000 000 000 000 009 000 000 087 000 004 000 000 000
+
+gb_control_child_send_back: data_out addr: 4	data_out index: 1
+data_out: 092 000 000 00e 000 000 000 000 08a 0a6 003 000 000 000 000 000
+
+gb_control_child_send_back: data_out addr: 5	data_out index: 1
+data_out: 088 0a8 029 0ba 000 000 000 000 000 000 000 083 000 000 009 000
+
+gb_control_child_send_back: data_out addr: 6	data_out index: 1
+data_out: 000 000 000 004 000 000 086 083 08b 000 000 000 0b6 000 088 08b
+
+gb_control_child_send_back: data_out addr: 7	data_out index: 1
+data_out: 000 020 000 000 01d 000 000 007 000 000 000 000 031 000 000 000
+
+gb_control_child_send_back: data_out addr: 8	data_out index: 1
+data_out: 000 000 000 000 000 000 080 000 000 000 092 000 000 000 000 000
+
+gb_control_child_send_back: data_out addr: 9	data_out index: 1
+data_out: 00d 02c 000 010 012 08e 000 000 000 000 080 000 000 000 000 000
+
+gb_control_child_send_back: data_out addr: 10	data_out index: 1
+data_out: 000 0b1 0aa 000 000 08b 02d 000 000 000 098 036 000 000 095 000
+
+gb_control_child_send_back: data_out addr: 11	data_out index: 1
+data_out: 018 011 000 0b0 000 000 000 000 000 000 012 000 000 000 000 08e
+
+gb_control_child_send_back: data_out addr: 12	data_out index: 1
+data_out: 024 000 000 000 000 082 082 000 000 000 000 09f 000 000 00c 000
+
+gb_control_child_send_back: data_out addr: 13	data_out index: 1
+data_out: 000 083 000 025 000 000 000 000 000 000 000 000 000 086 085 000
+
+gb_control_child_send_back: data_out addr: 14	data_out index: 1
+data_out: 000 000 000 01c 035 000 000 000 000 000 000 000 000 023 000 000
+
+gb_control_child_send_back: data_out addr: 15	data_out index: 1
+data_out: 031 0b0 000 000 000 000 000 031 000 000 000 000 000 022 000 0b1
 
 
 gb_control_child_send_prep: timestep_base_addr: 000010	timestep_index1
 
-gb_control_child_send: data_out_addr: 0	pe_mngr index: 000
+gb_control_child_send: data_out_addr: 000	pe_mngr index: 0
 data_out: 057 001 000 000 000 0be 001 001 000 061 000 081 000 000 081 090
 
-gb_control_child_send: data_out_addr: 0	pe_mngr index: 001
+gb_control_child_send: data_out_addr: 001	pe_mngr index: 0
 data_out: 004 081 081 081 000 000 000 031 036 000 000 000 000 093 000 000
 
-gb_control_child_send: data_out_addr: 0	pe_mngr index: 002
+gb_control_child_send: data_out_addr: 002	pe_mngr index: 0
 data_out: 000 046 0e3 000 000 000 000 0ca 000 000 000 0ca 000 034 000 01f
 
-gb_control_child_send: data_out_addr: 0	pe_mngr index: 003
+gb_control_child_send: data_out_addr: 003	pe_mngr index: 0
 data_out: 000 000 022 000 026 000 0e1 000 000 025 000 032 000 000 0a5 08c
 
+gb_control_child_send: data_out_addr: 004	pe_mngr index: 0
+data_out: 001 082 000 000 000 000 0c0 000 0a2 081 000 01a 000 000 000 000
+
+gb_control_child_send: data_out_addr: 005	pe_mngr index: 0
+data_out: 000 081 000 022 01b 006 000 000 0b6 0ca 0ae 094 051 0d1 000 0e9
+
+gb_control_child_send: data_out_addr: 006	pe_mngr index: 0
+data_out: 0b9 000 081 00e 0a3 001 000 038 083 000 000 039 000 000 0ba 001
+
+gb_control_child_send: data_out_addr: 007	pe_mngr index: 0
+data_out: 0a6 000 000 000 001 000 000 022 081 000 000 062 02a 000 001 081
+
+gb_control_child_send: data_out_addr: 008	pe_mngr index: 0
+data_out: 000 04d 0d1 0b4 001 09a 00e 084 004 000 000 081 025 000 099 000
+
+gb_control_child_send: data_out_addr: 009	pe_mngr index: 0
+data_out: 000 000 000 000 0a8 05f 000 0cc 061 000 004 055 030 095 088 000
+
+gb_control_child_send: data_out_addr: 00a	pe_mngr index: 0
+data_out: 000 011 000 011 0bd 001 000 083 000 03d 011 002 000 0a2 081 000
+
+gb_control_child_send: data_out_addr: 00b	pe_mngr index: 0
+data_out: 000 000 001 010 000 0bb 001 000 000 000 000 0b2 000 081 000 001
+
+gb_control_child_send: data_out_addr: 00c	pe_mngr index: 0
+data_out: 081 09a 0c5 006 000 062 0a9 000 000 021 093 000 000 082 000 001
+
+gb_control_child_send: data_out_addr: 00d	pe_mngr index: 0
+data_out: 081 000 000 000 000 035 0a9 000 000 000 000 000 000 081 000 081
+
+gb_control_child_send: data_out_addr: 00e	pe_mngr index: 0
+data_out: 000 0bd 0ea 000 006 0a1 0cf 092 081 001 005 000 000 000 000 000
+
+gb_control_child_send: data_out_addr: 00f	pe_mngr index: 0
+data_out: 081 0b4 000 000 001 0df 081 05d 033 001 0a1 030 000 016 000 081
+
 gb_control_pe_start: timestep_base_addr000010	vector counter: 0
-gb_control_child_recv: 
-data_in: 0b3 0b7 0b8 000 0b3 0c0 0b4 0b2 0c1 0d9 0d5 0b9 029 0c9 0c3 0bc
+Instr NO.55064	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.55075	PE0_act_child_initiate	is activated
+Instr NO.57199	PE0_act_child_op_inpe	is activated
+result[0]: 0f66d6
+result[1]: 0fb32e
+result[2]: 0f8240
+result[3]: 0faf0a
+result[4]: 0f7e34
+result[5]: 0feea2
+result[6]: 0fd473
+result[7]: 0f8ad8
+result[8]: 0facbd
+result[9]: 0f8959
+result[10]: 0fc655
+result[11]: 0f9b48
+result[12]: 0f27a0
+result[13]: 0fe7db
+result[14]: 0fb7d8
+result[15]: 000eca
+
+Instr NO.57207	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.59339	PE0_act_child_op_inpe	is activated
+result[0]: 0fe099
+result[1]: 0fef2a
+result[2]: 0fe1fc
+result[3]: 0fef06
+result[4]: 0fec57
+result[5]: 0ff296
+result[6]: 000196
+result[7]: 0ff24e
+result[8]: 0ffe8c
+result[9]: 0fea28
+result[10]: 0ffa4c
+result[11]: 0feb58
+result[12]: 0fd967
+result[13]: 0ff49f
+result[14]: 0ff806
+result[15]: 0fffc6
+
+Instr NO.59347	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.59368	PE0_act_child_op_eadd	is activated
+result[0]: 0f476f
+result[1]: 0fa258
+result[2]: 0f643c
+result[3]: 0f9e10
+result[4]: 0f6a8b
+result[5]: 0fe138
+result[6]: 0fd609
+result[7]: 0f7d26
+result[8]: 0fab49
+result[9]: 0f7381
+result[10]: 0fc0a1
+result[11]: 0f86a0
+result[12]: 0f0107
+result[13]: 0fdc7a
+result[14]: 0fafde
+result[15]: 000e90
+
+Instr NO.59400	PE0_act_child_op_sigm	is activated
+result[0]: 000372
+result[1]: 000c2a
+result[2]: 000523
+result[3]: 000b8d
+result[4]: 0005b5
+result[5]: 00187d
+result[6]: 0015da
+result[7]: 000765
+result[8]: 000d73
+result[9]: 000686
+result[10]: 001183
+result[11]: 000841
+result[12]: 000134
+result[13]: 001756
+result[14]: 000e1d
+result[15]: 002394
+
+Instr NO.61511	PE0_act_child_op_inpe	is activated
+result[0]: 0ffc40
+result[1]: 00011e
+result[2]: 000352
+result[3]: 00073d
+result[4]: 0ffec2
+result[5]: 0ff271
+result[6]: 00146a
+result[7]: 0fff26
+result[8]: 0ff9d5
+result[9]: 0ffd38
+result[10]: 0fef1e
+result[11]: 00058e
+result[12]: 0ff6b4
+result[13]: 0ff392
+result[14]: 000163
+result[15]: 002486
+
+Instr NO.61519	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.63651	PE0_act_child_op_inpe	is activated
+result[0]: 000236
+result[1]: 0ffb1d
+result[2]: 0ffea6
+result[3]: 0004e2
+result[4]: 0ffa0a
+result[5]: 00044a
+result[6]: 0fff31
+result[7]: 0001c2
+result[8]: 000093
+result[9]: 0ffe09
+result[10]: 000718
+result[11]: 0ffb09
+result[12]: 0001de
+result[13]: 0ff3d0
+result[14]: 0006ae
+result[15]: 0fff58
+
+Instr NO.63659	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.63680	PE0_act_child_op_eadd	is activated
+result[0]: 0ffe76
+result[1]: 0ffc3b
+result[2]: 0001f8
+result[3]: 000c1f
+result[4]: 0ff8cc
+result[5]: 0ff6bb
+result[6]: 00139b
+result[7]: 0000e8
+result[8]: 0ffa68
+result[9]: 0ffb41
+result[10]: 0ff636
+result[11]: 000097
+result[12]: 0ff892
+result[13]: 0fe762
+result[14]: 000811
+result[15]: 0023de
+
+Instr NO.63712	PE0_act_child_op_tanh	is activated
+result[0]: 0ffe6f
+result[1]: 0ffc3e
+result[2]: 0001fe
+result[3]: 000bef
+result[4]: 0ff8e0
+result[5]: 0ff6da
+result[6]: 0012e5
+result[7]: 0000f3
+result[8]: 0ffa73
+result[9]: 0ffb4b
+result[10]: 0ff658
+result[11]: 0000a1
+result[12]: 0ff8a9
+result[13]: 0fe8b7
+result[14]: 0007f7
+result[15]: 00206b
+
+Instr NO.63744	PE0_act_child_op_emul	is activated
+result[0]: 0fffea
+result[1]: 0fff49
+result[2]: 000028
+result[3]: 000227
+result[4]: 0fff5d
+result[5]: 0ffc7f
+result[6]: 000673
+result[7]: 00001c
+result[8]: 0ffed5
+result[9]: 0fff85
+result[10]: 0ffd5b
+result[11]: 000014
+result[12]: 0fffdc
+result[13]: 0ff782
+result[14]: 0001c1
+result[15]: 001205
+
+Instr NO.65839	PE0_act_child_op_inpe	is activated
+result[0]: 0fbe3b
+result[1]: 0fdac4
+result[2]: 0fc251
+result[3]: 0fc86f
+result[4]: 0faa75
+result[5]: 0010bd
+result[6]: 000173
+result[7]: 0fe897
+result[8]: 0fed66
+result[9]: 0f9b60
+result[10]: 0ff61d
+result[11]: 0fba52
+result[12]: 0f864c
+result[13]: 00040f
+result[14]: 0fe855
+result[15]: 001557
+
+Instr NO.65847	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.67979	PE0_act_child_op_inpe	is activated
+result[0]: 0ff2c2
+result[1]: 0ff57c
+result[2]: 0ff0ad
+result[3]: 0fefc2
+result[4]: 0ff128
+result[5]: 0ffb84
+result[6]: 000e60
+result[7]: 000251
+result[8]: 0ff994
+result[9]: 0feec9
+result[10]: 0fff1c
+result[11]: 0ffce1
+result[12]: 0fe0a5
+result[13]: 0ffc9e
+result[14]: 0fffe4
+result[15]: 00050b
+
+Instr NO.67987	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.68008	PE0_act_child_op_eadd	is activated
+result[0]: 0fb0fd
+result[1]: 0fd040
+result[2]: 0fb2fe
+result[3]: 0fb831
+result[4]: 0f9b9d
+result[5]: 000c41
+result[6]: 000fd3
+result[7]: 0feae8
+result[8]: 0fe6fa
+result[9]: 0f8a29
+result[10]: 0ff539
+result[11]: 0fb733
+result[12]: 0f66f1
+result[13]: 0000ad
+result[14]: 0fe839
+result[15]: 001a62
+
+Instr NO.68040	PE0_act_child_op_sigm	is activated
+result[0]: 000e54
+result[1]: 0014ad
+result[2]: 000ebe
+result[3]: 000fcc
+result[4]: 000b33
+result[5]: 002306
+result[6]: 0023e4
+result[7]: 001ad6
+result[8]: 0019e2
+result[9]: 0008b1
+result[10]: 001d55
+result[11]: 000f97
+result[12]: 000562
+result[13]: 002039
+result[14]: 001a2f
+result[15]: 002672
+
+Instr NO.68072	PE0_act_child_op_load	is activated
+result[0]: 000000
+result[1]: 000240
+result[2]: 000000
+result[3]: 000180
+result[4]: 000000
+result[5]: 0fff58
+result[6]: 0004c0
+result[7]: 000000
+result[8]: 0000e0
+result[9]: 0fff20
+result[10]: 0fff9c
+result[11]: 0ffee0
+result[12]: 0fff38
+result[13]: 0ffa40
+result[14]: 000080
+result[15]: 000900
+
+Instr NO.68104	PE0_act_child_op_emul	is activated
+result[0]: 000000
+result[1]: 0000ba
+result[2]: 000000
+result[3]: 00005e
+result[4]: 000000
+result[5]: 0fffa4
+result[6]: 0002a9
+result[7]: 000000
+result[8]: 00005a
+result[9]: 0fffe1
+result[10]: 0fffd2
+result[11]: 0fffb9
+result[12]: 0fffef
+result[13]: 0ffd1a
+result[14]: 000034
+result[15]: 000568
+
+Instr NO.68136	PE0_act_child_op_eadd	is activated
+result[0]: 0fffea
+result[1]: 000003
+result[2]: 000028
+result[3]: 000285
+result[4]: 0fff5d
+result[5]: 0ffc23
+result[6]: 00091c
+result[7]: 00001c
+result[8]: 0fff2f
+result[9]: 0fff66
+result[10]: 0ffd2d
+result[11]: 0fffcd
+result[12]: 0fffcb
+result[13]: 0ff49c
+result[14]: 0001f5
+result[15]: 00176d
+
+Instr NO.68196	PE0_act_child_op_tanh	is activated
+result[0]: 0fffdc
+result[1]: 000010
+result[2]: 000037
+result[3]: 000287
+result[4]: 0fff53
+result[5]: 0ffc27
+result[6]: 0008fe
+result[7]: 00002b
+result[8]: 0fff24
+result[9]: 0fff5a
+result[10]: 0ffd2e
+result[11]: 0fffc0
+result[12]: 0fffbd
+result[13]: 0ff4c4
+result[14]: 0001fa
+result[15]: 00163e
+
+Instr NO.70227	PE0_act_child_op_inpe	is activated
+result[0]: 0f5c6a
+result[1]: 0fb5dc
+result[2]: 0f8391
+result[3]: 0fb3cd
+result[4]: 0f7e9f
+result[5]: 0fec8d
+result[6]: 0fde89
+result[7]: 0f8d8c
+result[8]: 0faf7d
+result[9]: 0f8c55
+result[10]: 0fc178
+result[11]: 0f9e5e
+result[12]: 0f2510
+result[13]: 0fed98
+result[14]: 0fc099
+result[15]: 0feea9
+
+Instr NO.70235	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.72367	PE0_act_child_op_inpe	is activated
+result[0]: 0fdd9d
+result[1]: 0fef6b
+result[2]: 0fe625
+result[3]: 0ff276
+result[4]: 0fef93
+result[5]: 0ffcd0
+result[6]: 0ffd5d
+result[7]: 0fe760
+result[8]: 0ffd1b
+result[9]: 0fe1fe
+result[10]: 0ff6d7
+result[11]: 0ff375
+result[12]: 0fd4a9
+result[13]: 0ff1b8
+result[14]: 0ff5fb
+result[15]: 00013e
+
+Instr NO.72375	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.72396	PE0_act_child_op_eadd	is activated
+result[0]: 0f3a07
+result[1]: 0fa547
+result[2]: 0f69b6
+result[3]: 0fa643
+result[4]: 0f6e32
+result[5]: 0fe95d
+result[6]: 0fdbe6
+result[7]: 0f74ec
+result[8]: 0fac98
+result[9]: 0f6e53
+result[10]: 0fb84f
+result[11]: 0f91d3
+result[12]: 0ef9b9
+result[13]: 0fdf50
+result[14]: 0fb694
+result[15]: 0fefe7
+
+Instr NO.72428	PE0_act_child_op_sigm	is activated
+result[0]: 0002bc
+result[1]: 000c97
+result[2]: 0005a2
+result[3]: 000cbb
+result[4]: 00060a
+result[5]: 001a75
+result[6]: 001734
+result[7]: 0006a6
+result[8]: 000da4
+result[9]: 00060d
+result[10]: 000fd2
+result[11]: 0009cb
+result[12]: 000117
+result[13]: 001807
+result[14]: 000f77
+result[15]: 001c0c
+
+Instr NO.72460	PE0_act_child_op_emul	is activated
+result[0]: 0ffffe
+result[1]: 000003
+result[2]: 000004
+result[3]: 000080
+result[4]: 0fffef
+result[5]: 0ffe68
+result[6]: 000342
+result[7]: 000004
+result[8]: 0fffd1
+result[9]: 0ffff0
+result[10]: 0fff4d
+result[11]: 0ffff6
+result[12]: 0ffffe
+result[13]: 0ffbc8
+result[14]: 00007a
+result[15]: 0009bf
 
 gb_control_child_recv: 
-data_in: 088 0b5 09b 0ad 0d1 0c7 000 0cc 0cd 0c5 0c2 0bc 0bf 0b1 0a5 0cf
+data_in: 053 00f 0c1 000 000 096 000 000 000 03a 0a9 000 010 000 000 000
 
 gb_control_child_recv: 
-data_in: 0be 0a7 0bf 0c0 018 0c5 0c1 0d2 0c5 0b8 0d2 0cb 0d7 0bb 0c0 0cc
+data_in: 00b 000 000 000 000 000 000 000 000 0a8 000 000 000 000 000 080
 
 gb_control_child_recv: 
-data_in: 0dc 0c9 0bb 0ae 0cb 0b0 0c3 0b2 0cd 0c8 0b8 0cf 0cd 031 0d1 0c2
+data_in: 000 000 000 000 000 008 000 000 000 000 000 000 000 000 086 000
+
+gb_control_child_recv: 
+data_in: 08a 000 000 000 000 0a0 0a0 0a1 000 000 000 000 000 000 022 000
+
+Instr NO.74571	PE0_act_child_op_inpe	is activated
+result[0]: 0f7620
+result[1]: 0f9c24
+result[2]: 0f818f
+result[3]: 0fe365
+result[4]: 0fb0c8
+result[5]: 0f7c14
+result[6]: 0f6357
+result[7]: 0fc4c7
+result[8]: 0fc451
+result[9]: 0fec80
+result[10]: 0f95b0
+result[11]: 0ff01a
+result[12]: 0fc41a
+result[13]: 0fac88
+result[14]: 0fda8c
+result[15]: 0f8862
+
+Instr NO.74579	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.76711	PE0_act_child_op_inpe	is activated
+result[0]: 0fe57d
+result[1]: 0fe773
+result[2]: 0fe297
+result[3]: 0000fc
+result[4]: 0fe6a5
+result[5]: 0fdd53
+result[6]: 0fdf1d
+result[7]: 0ff331
+result[8]: 0ffd1d
+result[9]: 0ffe20
+result[10]: 0ff025
+result[11]: 0fef5f
+result[12]: 0ff5d6
+result[13]: 0fe498
+result[14]: 0ff5c4
+result[15]: 0fdba6
+
+Instr NO.76719	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.76740	PE0_act_child_op_eadd	is activated
+result[0]: 0f5b9d
+result[1]: 0f8397
+result[2]: 0f6426
+result[3]: 0fe461
+result[4]: 0f976d
+result[5]: 0f5967
+result[6]: 0f4274
+result[7]: 0fb7f8
+result[8]: 0fc16e
+result[9]: 0feaa0
+result[10]: 0f85d5
+result[11]: 0fdf79
+result[12]: 0fb9f0
+result[13]: 0f9120
+result[14]: 0fd050
+result[15]: 0f6408
+
+Instr NO.76772	PE0_act_child_op_sigm	is activated
+result[0]: 000485
+result[1]: 0007fa
+result[2]: 000521
+result[3]: 001942
+result[4]: 000a99
+result[5]: 000467
+result[6]: 00032e
+result[7]: 000fc0
+result[8]: 0011ab
+result[9]: 001ac3
+result[10]: 00082f
+result[11]: 001811
+result[12]: 001025
+result[13]: 0009b1
+result[14]: 0014b1
+result[15]: 00051f
+
+Instr NO.78883	PE0_act_child_op_inpe	is activated
+result[0]: 0ffe03
+result[1]: 000482
+result[2]: 0ff2d5
+result[3]: 0ffb4a
+result[4]: 0ffa8c
+result[5]: 0ff5d3
+result[6]: 0ff922
+result[7]: 0ff71b
+result[8]: 0ffd00
+result[9]: 000037
+result[10]: 0008f9
+result[11]: 0ff7e9
+result[12]: 0ffd69
+result[13]: 00011f
+result[14]: 0ffa14
+result[15]: 0ffbc1
+
+Instr NO.78891	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.81023	PE0_act_child_op_inpe	is activated
+result[0]: 0fff3a
+result[1]: 000064
+result[2]: 0fffec
+result[3]: 0ff740
+result[4]: 00059c
+result[5]: 00054c
+result[6]: 0004b8
+result[7]: 00044b
+result[8]: 00007e
+result[9]: 0ffc07
+result[10]: 0ff4cd
+result[11]: 0ffbe2
+result[12]: 0ffbad
+result[13]: 0ffc6f
+result[14]: 0ffeba
+result[15]: 00005e
+
+Instr NO.81031	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.81052	PE0_act_child_op_eadd	is activated
+result[0]: 0ffd3d
+result[1]: 0004e6
+result[2]: 0ff2c1
+result[3]: 0ff28a
+result[4]: 000028
+result[5]: 0ffb1f
+result[6]: 0ffdda
+result[7]: 0ffb66
+result[8]: 0ffd7e
+result[9]: 0ffc3e
+result[10]: 0ffdc6
+result[11]: 0ff3cb
+result[12]: 0ff916
+result[13]: 0ffd8e
+result[14]: 0ff8ce
+result[15]: 0ffc1f
+
+Instr NO.81084	PE0_act_child_op_tanh	is activated
+result[0]: 0ffd3d
+result[1]: 0004db
+result[2]: 0ff2f6
+result[3]: 0ff2bf
+result[4]: 000037
+result[5]: 0ffb28
+result[6]: 0ffdd6
+result[7]: 0ffb6e
+result[8]: 0ffd7c
+result[9]: 0ffc42
+result[10]: 0ffdc3
+result[11]: 0ff3f9
+result[12]: 0ff92a
+result[13]: 0ffd8c
+result[14]: 0ff8e3
+result[15]: 0ffc23
+
+Instr NO.81116	PE0_act_child_op_emul	is activated
+result[0]: 0fffce
+result[1]: 00009a
+result[2]: 0ffef4
+result[3]: 0ffac4
+result[4]: 000009
+result[5]: 0fffaa
+result[6]: 0fffe4
+result[7]: 0ffee0
+result[8]: 0fff4e
+result[9]: 0ffe6f
+result[10]: 0fffb6
+result[11]: 0ffb7a
+result[12]: 0ffe46
+result[13]: 0fffa0
+result[14]: 0ffdb3
+result[15]: 0fffb0
+
+Instr NO.83211	PE0_act_child_op_inpe	is activated
+result[0]: 0fb08c
+result[1]: 0fc9bf
+result[2]: 0fcc27
+result[3]: 002434
+result[4]: 0fc647
+result[5]: 0fa341
+result[6]: 0fbb51
+result[7]: 0fc3bf
+result[8]: 0ffac5
+result[9]: 001c19
+result[10]: 0f9acf
+result[11]: 001002
+result[12]: 000a0b
+result[13]: 0fe7d1
+result[14]: 000ed8
+result[15]: 0fcbd7
+
+Instr NO.83219	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.85351	PE0_act_child_op_inpe	is activated
+result[0]: 0fe8ad
+result[1]: 00004f
+result[2]: 0ff192
+result[3]: 001157
+result[4]: 0fe6d1
+result[5]: 0fecc1
+result[6]: 0ff520
+result[7]: 0ff13b
+result[8]: 0005e1
+result[9]: 0ff93f
+result[10]: 0febc8
+result[11]: 0005eb
+result[12]: 001575
+result[13]: 0ff23a
+result[14]: 000097
+result[15]: 0ff4b7
+
+Instr NO.85359	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.85380	PE0_act_child_op_eadd	is activated
+result[0]: 0f9939
+result[1]: 0fca0e
+result[2]: 0fbdb9
+result[3]: 00358b
+result[4]: 0fad18
+result[5]: 0f9002
+result[6]: 0fb071
+result[7]: 0fb4fa
+result[8]: 0000a6
+result[9]: 001558
+result[10]: 0f8697
+result[11]: 0015ed
+result[12]: 001f80
+result[13]: 0fda0b
+result[14]: 000f6f
+result[15]: 0fc08e
+
+Instr NO.85412	PE0_act_child_op_sigm	is activated
+result[0]: 000adb
+result[1]: 00136c
+result[2]: 0010eb
+result[3]: 002c7e
+result[4]: 000db7
+result[5]: 000988
+result[6]: 000e38
+result[7]: 000f24
+result[8]: 002036
+result[9]: 00253a
+result[10]: 000840
+result[11]: 00255e
+result[12]: 0027b0
+result[13]: 0016c0
+result[14]: 0023cc
+result[15]: 00117f
+
+Instr NO.85444	PE0_act_child_op_load	is activated
+result[0]: 0fffac
+result[1]: 0000c8
+result[2]: 000000
+result[3]: 000150
+result[4]: 0000f0
+result[5]: 00005c
+result[6]: 0ffe90
+result[7]: 0ff900
+result[8]: 0001b0
+result[9]: 000080
+result[10]: 0fffb0
+result[11]: 000180
+result[12]: 0fff48
+result[13]: 0fff9c
+result[14]: 0fff08
+result[15]: 000000
+
+Instr NO.85476	PE0_act_child_op_emul	is activated
+result[0]: 0ffff1
+result[1]: 00003c
+result[2]: 000000
+result[3]: 0000e9
+result[4]: 000033
+result[5]: 00000d
+result[6]: 0fffae
+result[7]: 0ffe58
+result[8]: 0000d9
+result[9]: 00004a
+result[10]: 0ffff5
+result[11]: 0000e0
+result[12]: 0fff8d
+result[13]: 0fffdc
+result[14]: 0fff75
+result[15]: 000000
+
+Instr NO.85508	PE0_act_child_op_eadd	is activated
+result[0]: 0fffbf
+result[1]: 0000d6
+result[2]: 0ffef4
+result[3]: 0ffbad
+result[4]: 00003c
+result[5]: 0fffb7
+result[6]: 0fff92
+result[7]: 0ffd38
+result[8]: 000027
+result[9]: 0ffeb9
+result[10]: 0fffab
+result[11]: 0ffc5a
+result[12]: 0ffdd3
+result[13]: 0fff7c
+result[14]: 0ffd28
+result[15]: 0fffb0
+
+Instr NO.85568	PE0_act_child_op_tanh	is activated
+result[0]: 0fffb1
+result[1]: 0000df
+result[2]: 0ffee9
+result[3]: 0ffbb5
+result[4]: 00004a
+result[5]: 0fffa9
+result[6]: 0fff86
+result[7]: 0ffd35
+result[8]: 000033
+result[9]: 0ffeb2
+result[10]: 0fff9d
+result[11]: 0ffc5e
+result[12]: 0ffdce
+result[13]: 0fff6e
+result[14]: 0ffd26
+result[15]: 0fffa1
+
+Instr NO.87599	PE0_act_child_op_inpe	is activated
+result[0]: 0f70f3
+result[1]: 0fa2cc
+result[2]: 0f75b9
+result[3]: 0fe663
+result[4]: 0fa0c3
+result[5]: 0f8159
+result[6]: 0f517b
+result[7]: 0fc507
+result[8]: 0fc99c
+result[9]: 0ff03f
+result[10]: 0f9d4f
+result[11]: 0fe91f
+result[12]: 0fe1cb
+result[13]: 0fa47a
+result[14]: 0fd942
+result[15]: 0f843d
+
+Instr NO.87607	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.89739	PE0_act_child_op_inpe	is activated
+result[0]: 0fe03f
+result[1]: 0fe509
+result[2]: 0fdbb2
+result[3]: 0ff89e
+result[4]: 0fe4d4
+result[5]: 0fe626
+result[6]: 0fdf13
+result[7]: 0ff807
+result[8]: 0ffdfa
+result[9]: 0ffa78
+result[10]: 0fedaf
+result[11]: 0ff871
+result[12]: 0ffec3
+result[13]: 0fe4ba
+result[14]: 0ff7ca
+result[15]: 0fe049
+
+Instr NO.89747	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.89768	PE0_act_child_op_eadd	is activated
+result[0]: 0f5132
+result[1]: 0f87d5
+result[2]: 0f516b
+result[3]: 0fdf01
+result[4]: 0f8597
+result[5]: 0f677f
+result[6]: 0f308e
+result[7]: 0fbd0e
+result[8]: 0fc796
+result[9]: 0feab7
+result[10]: 0f8afe
+result[11]: 0fe190
+result[12]: 0fe08e
+result[13]: 0f8934
+result[14]: 0fd10c
+result[15]: 0f6486
+
+Instr NO.89800	PE0_act_child_op_sigm	is activated
+result[0]: 0003f7
+result[1]: 00085d
+result[2]: 0003fa
+result[3]: 0017f3
+result[4]: 000829
+result[5]: 00056e
+result[6]: 000267
+result[7]: 0010c8
+result[8]: 0012ec
+result[9]: 001aca
+result[10]: 0008d0
+result[11]: 001891
+result[12]: 001854
+result[13]: 00088e
+result[14]: 0014d8
+result[15]: 00052a
+
+Instr NO.89832	PE0_act_child_op_emul	is activated
+result[0]: 0ffffb
+result[1]: 00001d
+result[2]: 0fffee
+result[3]: 0ffe64
+result[4]: 000009
+result[5]: 0ffff8
+result[6]: 0ffffb
+result[7]: 0fff44
+result[8]: 00000f
+result[9]: 0fff74
+result[10]: 0ffff2
+result[11]: 0ffe9b
+result[12]: 0fff2a
+result[13]: 0fffec
+result[14]: 0fff12
+result[15]: 0ffff8
+
+gb_control_child_recv: 
+data_in: 000 09e 000 09b 0a6 000 091 000 097 000 000 000 0aa 000 000 000
+
+gb_control_child_recv: 
+data_in: 093 0b1 029 0c1 000 000 000 000 000 000 000 000 000 09b 000 000
+
+gb_control_child_recv: 
+data_in: 000 02c 000 000 023 000 000 000 000 000 088 000 000 000 000 000
+
+gb_control_child_recv: 
+data_in: 000 000 000 019 000 000 000 000 000 000 000 000 000 0aa 08b 000
+
+Instr NO.91943	PE0_act_child_op_inpe	is activated
+result[0]: 0f4212
+result[1]: 0fb384
+result[2]: 0faba7
+result[3]: 0f91d5
+result[4]: 0f6ecf
+result[5]: 0f96cb
+result[6]: 0fb1b2
+result[7]: 0fd6d8
+result[8]: 0fa9aa
+result[9]: 0fd54f
+result[10]: 0ff5de
+result[11]: 0f9efa
+result[12]: 0fa76e
+result[13]: 0f94c0
+result[14]: 0f95a4
+result[15]: 0fa04e
+
+Instr NO.91951	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.94083	PE0_act_child_op_inpe	is activated
+result[0]: 0fdc65
+result[1]: 0feb14
+result[2]: 0fefee
+result[3]: 0fea39
+result[4]: 0feb94
+result[5]: 0ff115
+result[6]: 0ff19a
+result[7]: 0000db
+result[8]: 0ff2a1
+result[9]: 000484
+result[10]: 0ff722
+result[11]: 0feb27
+result[12]: 0ff40d
+result[13]: 0ff512
+result[14]: 0fe9d3
+result[15]: 0ff381
+
+Instr NO.94091	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.94112	PE0_act_child_op_eadd	is activated
+result[0]: 0f1e77
+result[1]: 0f9e98
+result[2]: 0f9b95
+result[3]: 0f7c0e
+result[4]: 0f5a63
+result[5]: 0f87e0
+result[6]: 0fa34c
+result[7]: 0fd7b3
+result[8]: 0f9c4b
+result[9]: 0fd9d3
+result[10]: 0fed00
+result[11]: 0f8a21
+result[12]: 0f9b7b
+result[13]: 0f89d2
+result[14]: 0f7f77
+result[15]: 0f93cf
+
+Instr NO.94144	PE0_act_child_op_sigm	is activated
+result[0]: 0001de
+result[1]: 000ba1
+result[2]: 000b31
+result[3]: 00074c
+result[4]: 000474
+result[5]: 00085e
+result[6]: 000c4e
+result[7]: 001631
+result[8]: 000b4c
+result[9]: 0016b1
+result[10]: 001b56
+result[11]: 0008b0
+result[12]: 000b2e
+result[13]: 0008a5
+result[14]: 00079b
+result[15]: 000a13
+
+Instr NO.96255	PE0_act_child_op_inpe	is activated
+result[0]: 0003fe
+result[1]: 0ff953
+result[2]: 0ffd7d
+result[3]: 000a2a
+result[4]: 0ffc0b
+result[5]: 0ff6c4
+result[6]: 00026b
+result[7]: 000df5
+result[8]: 0ff479
+result[9]: 0ffb95
+result[10]: 0feb32
+result[11]: 000552
+result[12]: 0001ec
+result[13]: 0fec12
+result[14]: 0ff433
+result[15]: 0ff46f
+
+Instr NO.96263	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.98395	PE0_act_child_op_inpe	is activated
+result[0]: 0ffd17
+result[1]: 0ff6e4
+result[2]: 000332
+result[3]: 0fffb6
+result[4]: 0ffea7
+result[5]: 000302
+result[6]: 0ff86d
+result[7]: 0ffe65
+result[8]: 0006c0
+result[9]: 0ffc0e
+result[10]: 0ffd36
+result[11]: 0ff71e
+result[12]: 0fff83
+result[13]: 000189
+result[14]: 00020a
+result[15]: 000206
+
+Instr NO.98403	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.98424	PE0_act_child_op_eadd	is activated
+result[0]: 000115
+result[1]: 0ff037
+result[2]: 0000af
+result[3]: 0009e0
+result[4]: 0ffab2
+result[5]: 0ff9c6
+result[6]: 0ffad8
+result[7]: 000c5a
+result[8]: 0ffb39
+result[9]: 0ff7a3
+result[10]: 0fe868
+result[11]: 0ffc70
+result[12]: 00016f
+result[13]: 0fed9b
+result[14]: 0ff63d
+result[15]: 0ff675
+
+Instr NO.98456	PE0_act_child_op_tanh	is activated
+result[0]: 00011e
+result[1]: 0ff076
+result[2]: 0000b8
+result[3]: 0009be
+result[4]: 0ffabe
+result[5]: 0ff9d7
+result[6]: 0ffae1
+result[7]: 000c2a
+result[8]: 0ffb43
+result[9]: 0ff7bd
+result[10]: 0fe99b
+result[11]: 0ffc71
+result[12]: 000174
+result[13]: 0fee28
+result[14]: 0ff660
+result[15]: 0ff697
+
+Instr NO.98488	PE0_act_child_op_emul	is activated
+result[0]: 000008
+result[1]: 0ffd2d
+result[2]: 000020
+result[3]: 00011c
+result[4]: 0fffa2
+result[5]: 0fff31
+result[6]: 0fff03
+result[7]: 000437
+result[8]: 0fff29
+result[9]: 0ffd12
+result[10]: 0ff66f
+result[11]: 0fff84
+result[12]: 000040
+result[13]: 0ffd96
+result[14]: 0ffedb
+result[15]: 0ffe84
+
+Instr NO.100583	PE0_act_child_op_inpe	is activated
+result[0]: 0fa7fd
+result[1]: 0fab59
+result[2]: 0fdcaf
+result[3]: 0fa0b6
+result[4]: 0fae1b
+result[5]: 0fc8ff
+result[6]: 0fd264
+result[7]: 0fe47d
+result[8]: 0fca8c
+result[9]: 0feaae
+result[10]: 0fdd5b
+result[11]: 0fd26a
+result[12]: 0fdd9e
+result[13]: 0fb124
+result[14]: 0fbf05
+result[15]: 0fbc5d
+
+Instr NO.100591	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.102723	PE0_act_child_op_inpe	is activated
+result[0]: 0fed19
+result[1]: 0fe5f1
+result[2]: 0fefc8
+result[3]: 0ff911
+result[4]: 0ff9ea
+result[5]: 0ff501
+result[6]: 0febd2
+result[7]: 0ffb9a
+result[8]: 0fefe9
+result[9]: 0ffdf2
+result[10]: 0001d0
+result[11]: 0ff07e
+result[12]: 0ff21c
+result[13]: 0fe7e7
+result[14]: 0fe9cd
+result[15]: 0ff4eb
+
+Instr NO.102731	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.102752	PE0_act_child_op_eadd	is activated
+result[0]: 0f9516
+result[1]: 0f914a
+result[2]: 0fcc77
+result[3]: 0f99c7
+result[4]: 0fa805
+result[5]: 0fbe00
+result[6]: 0fbe36
+result[7]: 0fe017
+result[8]: 0fba75
+result[9]: 0fe8a0
+result[10]: 0fdf2b
+result[11]: 0fc2e8
+result[12]: 0fcfba
+result[13]: 0f990b
+result[14]: 0fa8d2
+result[15]: 0fb148
+
+Instr NO.102784	PE0_act_child_op_sigm	is activated
+result[0]: 000a43
+result[1]: 0009b7
+result[2]: 0013ea
+result[3]: 000aef
+result[4]: 000cfc
+result[5]: 0010f9
+result[6]: 001105
+result[7]: 001837
+result[8]: 001042
+result[9]: 001a47
+result[10]: 0017fd
+result[11]: 0011f9
+result[12]: 001493
+result[13]: 000ad4
+result[14]: 000d18
+result[15]: 000e65
+
+Instr NO.102816	PE0_act_child_op_load	is activated
+result[0]: 000000
+result[1]: 000300
+result[2]: 000110
+result[3]: 0ffe90
+result[4]: 000000
+result[5]: 000000
+result[6]: 0ffda0
+result[7]: 000100
+result[8]: 0002e0
+result[9]: 000000
+result[10]: 0ff280
+result[11]: 0ffe70
+result[12]: 0fff78
+result[13]: 0006c0
+result[14]: 0ffeb0
+result[15]: 0fffb0
+
+Instr NO.102848	PE0_act_child_op_emul	is activated
+result[0]: 000000
+result[1]: 000074
+result[2]: 000054
+result[3]: 0fffc1
+result[4]: 000000
+result[5]: 000000
+result[6]: 0fff5e
+result[7]: 000060
+result[8]: 0000ba
+result[9]: 000000
+result[10]: 0ffaf0
+result[11]: 0fff8f
+result[12]: 0fffd4
+result[13]: 000124
+result[14]: 0fffbb
+result[15]: 0fffee
+
+Instr NO.102880	PE0_act_child_op_eadd	is activated
+result[0]: 000008
+result[1]: 0ffda1
+result[2]: 000074
+result[3]: 0000dd
+result[4]: 0fffa2
+result[5]: 0fff31
+result[6]: 0ffe61
+result[7]: 000497
+result[8]: 0fffe3
+result[9]: 0ffd12
+result[10]: 0ff15f
+result[11]: 0fff13
+result[12]: 000014
+result[13]: 0ffeba
+result[14]: 0ffe96
+result[15]: 0ffe72
+
+Instr NO.102940	PE0_act_child_op_tanh	is activated
+result[0]: 000017
+result[1]: 0ffd9f
+result[2]: 000081
+result[3]: 0000e7
+result[4]: 0fff95
+result[5]: 0fff27
+result[6]: 0ffe5c
+result[7]: 00048d
+result[8]: 0fffd4
+result[9]: 0ffd12
+result[10]: 0ff199
+result[11]: 0fff08
+result[12]: 000023
+result[13]: 0ffeb2
+result[14]: 0ffe8f
+result[15]: 0ffe6b
+
+Instr NO.104971	PE0_act_child_op_inpe	is activated
+result[0]: 0f4193
+result[1]: 0fb2f2
+result[2]: 0fa088
+result[3]: 0f84e5
+result[4]: 0f5f43
+result[5]: 0fa431
+result[6]: 0fb659
+result[7]: 0fcf16
+result[8]: 0fa4f1
+result[9]: 0fcd10
+result[10]: 000aaf
+result[11]: 0fac27
+result[12]: 0f8f3b
+result[13]: 0fa774
+result[14]: 0f975e
+result[15]: 0f9c8a
+
+Instr NO.104979	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.107111	PE0_act_child_op_inpe	is activated
+result[0]: 0fe028
+result[1]: 0febcf
+result[2]: 0ff3fa
+result[3]: 0fe884
+result[4]: 0fe951
+result[5]: 0fedb9
+result[6]: 0feff0
+result[7]: 0ffda9
+result[8]: 0fe98b
+result[9]: 0ffd87
+result[10]: 0fffd2
+result[11]: 0ff184
+result[12]: 0fed4c
+result[13]: 0fe5e7
+result[14]: 0fdae7
+result[15]: 0ff953
+
+Instr NO.107119	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.107140	PE0_act_child_op_eadd	is activated
+result[0]: 0f21bb
+result[1]: 0f9ec1
+result[2]: 0f9482
+result[3]: 0f6d69
+result[4]: 0f4894
+result[5]: 0f91ea
+result[6]: 0fa649
+result[7]: 0fccbf
+result[8]: 0f8e7c
+result[9]: 0fca97
+result[10]: 000a81
+result[11]: 0f9dab
+result[12]: 0f7c87
+result[13]: 0f8d5b
+result[14]: 0f7245
+result[15]: 0f95dd
+
+Instr NO.107172	PE0_act_child_op_sigm	is activated
+result[0]: 0001f7
+result[1]: 000ba7
+result[2]: 000a2d
+result[3]: 0005f8
+result[4]: 000382
+result[5]: 0009ce
+result[6]: 000cbb
+result[7]: 0013f9
+result[8]: 000950
+result[9]: 001389
+result[10]: 002299
+result[11]: 000b7f
+result[12]: 000757
+result[13]: 000926
+result[14]: 000669
+result[15]: 000a5f
+
+Instr NO.107204	PE0_act_child_op_emul	is activated
+result[0]: 000000
+result[1]: 0fff91
+result[2]: 000014
+result[3]: 000015
+result[4]: 0ffffa
+result[5]: 0fffde
+result[6]: 0fffac
+result[7]: 00016b
+result[8]: 0ffff9
+result[9]: 0fff1b
+result[10]: 0ff836
+result[11]: 0fffd3
+result[12]: 000004
+result[13]: 0fffd0
+result[14]: 0fffdb
+result[15]: 0fffbe
+
+gb_control_child_recv: 
+data_in: 080 000 000 000 000 0cf 09d 000 027 085 000 000 000 000 08c 000
+
+gb_control_child_recv: 
+data_in: 000 000 000 00d 000 000 000 016 000 000 09f 000 0bd 000 000 092
+
+gb_control_child_recv: 
+data_in: 000 0da 0b0 000 000 009 02a 000 000 000 088 047 000 000 08d 000
+
+gb_control_child_recv: 
+data_in: 000 000 000 000 050 000 000 000 000 000 000 000 000 01d 000 000
+
+Instr NO.109315	PE0_act_child_op_inpe	is activated
+result[0]: 0f63fd
+result[1]: 0f9554
+result[2]: 0f0e81
+result[3]: 0f9789
+result[4]: 0f9e28
+result[5]: 0fa4bf
+result[6]: 0f8246
+result[7]: 0f2524
+result[8]: 0fe8a1
+result[9]: 0f9dfa
+result[10]: 0f2a29
+result[11]: 0f8067
+result[12]: 0f388d
+result[13]: 0f4f77
+result[14]: 0fd402
+result[15]: 0fa478
+
+Instr NO.109323	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.111455	PE0_act_child_op_inpe	is activated
+result[0]: 0fdc3c
+result[1]: 0fece4
+result[2]: 0fc9ee
+result[3]: 0fe423
+result[4]: 0fef86
+result[5]: 0ff96e
+result[6]: 0fe6dc
+result[7]: 0fd9fe
+result[8]: 0fef76
+result[9]: 0fef75
+result[10]: 0fd7a2
+result[11]: 0fed80
+result[12]: 0fd449
+result[13]: 0fca85
+result[14]: 0ff57a
+result[15]: 0fe927
+
+Instr NO.111463	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.111484	PE0_act_child_op_eadd	is activated
+result[0]: 0f4039
+result[1]: 0f8238
+result[2]: 0ed86f
+result[3]: 0f7bac
+result[4]: 0f8dae
+result[5]: 0f9e2d
+result[6]: 0f6922
+result[7]: 0eff22
+result[8]: 0fd817
+result[9]: 0f8d6f
+result[10]: 0f01cb
+result[11]: 0f6de7
+result[12]: 0f0cd6
+result[13]: 0f19fc
+result[14]: 0fc97c
+result[15]: 0f8d9f
+
+Instr NO.111516	PE0_act_child_op_sigm	is activated
+result[0]: 000310
+result[1]: 0007da
+result[2]: 00009a
+result[3]: 000743
+result[4]: 000933
+result[5]: 000b91
+result[6]: 000594
+result[7]: 00012c
+result[8]: 001647
+result[9]: 000929
+result[10]: 000137
+result[11]: 000603
+result[12]: 000163
+result[13]: 0001bc
+result[14]: 00134e
+result[15]: 000930
+
+Instr NO.113627	PE0_act_child_op_inpe	is activated
+result[0]: 0ffe26
+result[1]: 0ff53b
+result[2]: 000523
+result[3]: 0ffbcb
+result[4]: 0001e3
+result[5]: 0ff8c3
+result[6]: 0ff988
+result[7]: 0fffa6
+result[8]: 0ffa5e
+result[9]: 0ffd2e
+result[10]: 0ff939
+result[11]: 0ffeb2
+result[12]: 0006c2
+result[13]: 0ffea7
+result[14]: 0ffe0f
+result[15]: 00002c
+
+Instr NO.113635	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.115767	PE0_act_child_op_inpe	is activated
+result[0]: 000423
+result[1]: 0ffcff
+result[2]: 0ff9a8
+result[3]: 0ff40c
+result[4]: 0ffdc4
+result[5]: 000212
+result[6]: 0006e1
+result[7]: 0ff6d3
+result[8]: 0fffeb
+result[9]: 000155
+result[10]: 0ff6c6
+result[11]: 0ffa7f
+result[12]: 0ff6ae
+result[13]: 00031b
+result[14]: 0ffebd
+result[15]: 000889
+
+Instr NO.115775	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.115796	PE0_act_child_op_eadd	is activated
+result[0]: 000249
+result[1]: 0ff23a
+result[2]: 0ffecb
+result[3]: 0fefd7
+result[4]: 0fffa7
+result[5]: 0ffad5
+result[6]: 000069
+result[7]: 0ff679
+result[8]: 0ffa49
+result[9]: 0ffe83
+result[10]: 0fefff
+result[11]: 0ff931
+result[12]: 0ffd70
+result[13]: 0001c2
+result[14]: 0ffccc
+result[15]: 0008b5
+
+Instr NO.115828	PE0_act_child_op_tanh	is activated
+result[0]: 00024c
+result[1]: 0ff270
+result[2]: 0ffec2
+result[3]: 0ff01d
+result[4]: 0fff99
+result[5]: 0ffae1
+result[6]: 000075
+result[7]: 0ff69b
+result[8]: 0ffa58
+result[9]: 0ffe7b
+result[10]: 0ff040
+result[11]: 0ff945
+result[12]: 0ffd6c
+result[13]: 0001c7
+result[14]: 0ffccc
+result[15]: 000898
+
+Instr NO.115860	PE0_act_child_op_emul	is activated
+result[0]: 00001c
+result[1]: 0ffe56
+result[2]: 0ffffd
+result[3]: 0ffe32
+result[4]: 0ffff1
+result[5]: 0fff13
+result[6]: 00000a
+result[7]: 0fffd3
+result[8]: 0ffe07
+result[9]: 0fffc8
+result[10]: 0fffb3
+result[11]: 0fff5e
+result[12]: 0ffff1
+result[13]: 00000c
+result[14]: 0fff08
+result[15]: 00013b
+
+Instr NO.117955	PE0_act_child_op_inpe	is activated
+result[0]: 0fb3b3
+result[1]: 0fd74f
+result[2]: 0f96c3
+result[3]: 0fc477
+result[4]: 0fcf64
+result[5]: 0fc68f
+result[6]: 0fbf05
+result[7]: 0f918c
+result[8]: 0ff78e
+result[9]: 0fe6c2
+result[10]: 0f8db9
+result[11]: 0fcbc6
+result[12]: 0fa328
+result[13]: 0faa32
+result[14]: 0ffeb9
+result[15]: 0fd486
+
+Instr NO.117963	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.120095	PE0_act_child_op_inpe	is activated
+result[0]: 0febd8
+result[1]: 0fec6e
+result[2]: 0fe65c
+result[3]: 0ff6f9
+result[4]: 0ffc51
+result[5]: 0ff517
+result[6]: 0ff636
+result[7]: 0fea18
+result[8]: 000213
+result[9]: 0ff2f9
+result[10]: 0fe55d
+result[11]: 0ffa8b
+result[12]: 0fee94
+result[13]: 0fefbb
+result[14]: 0ffbb7
+result[15]: 0ff02e
+
+Instr NO.120103	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.120124	PE0_act_child_op_eadd	is activated
+result[0]: 0f9f8b
+result[1]: 0fc3bd
+result[2]: 0f7d1f
+result[3]: 0fbb70
+result[4]: 0fcbb5
+result[5]: 0fbba6
+result[6]: 0fb53b
+result[7]: 0f7ba4
+result[8]: 0ff9a1
+result[9]: 0fd9bb
+result[10]: 0f7316
+result[11]: 0fc651
+result[12]: 0f91bc
+result[13]: 0f99ed
+result[14]: 0ffa70
+result[15]: 0fc4b4
+
+Instr NO.120156	PE0_act_child_op_sigm	is activated
+result[0]: 000bc4
+result[1]: 001223
+result[2]: 000764
+result[3]: 001075
+result[4]: 0013c2
+result[5]: 00107f
+result[6]: 000f32
+result[7]: 000742
+result[8]: 001e65
+result[9]: 0016ac
+result[10]: 00067c
+result[11]: 0012a9
+result[12]: 0009c7
+result[13]: 000af5
+result[14]: 001e98
+result[15]: 001256
+
+Instr NO.120188	PE0_act_child_op_load	is activated
+result[0]: 0fff94
+result[1]: 0fffa8
+result[2]: 0fffac
+result[3]: 0001d0
+result[4]: 0fff60
+result[5]: 0ffe60
+result[6]: 000000
+result[7]: 000000
+result[8]: 000110
+result[9]: 0fff78
+result[10]: 0fffa8
+result[11]: 000000
+result[12]: 000000
+result[13]: 000000
+result[14]: 0000b0
+result[15]: 0001d0
+
+Instr NO.120220	PE0_act_child_op_emul	is activated
+result[0]: 0fffec
+result[1]: 0fffe7
+result[2]: 0ffff6
+result[3]: 000077
+result[4]: 0fffce
+result[5]: 0fff94
+result[6]: 000000
+result[7]: 000000
+result[8]: 000081
+result[9]: 0fffcf
+result[10]: 0ffff7
+result[11]: 000000
+result[12]: 000000
+result[13]: 000000
+result[14]: 000054
+result[15]: 000084
+
+Instr NO.120252	PE0_act_child_op_eadd	is activated
+result[0]: 000008
+result[1]: 0ffe3d
+result[2]: 0ffff3
+result[3]: 0ffea9
+result[4]: 0fffbf
+result[5]: 0ffea7
+result[6]: 00000a
+result[7]: 0fffd3
+result[8]: 0ffe88
+result[9]: 0fff97
+result[10]: 0fffaa
+result[11]: 0fff5e
+result[12]: 0ffff1
+result[13]: 00000c
+result[14]: 0fff5c
+result[15]: 0001bf
+
+Instr NO.120312	PE0_act_child_op_tanh	is activated
+result[0]: 000017
+result[1]: 0ffe38
+result[2]: 0fffe4
+result[3]: 0ffea2
+result[4]: 0fffb1
+result[5]: 0ffe9e
+result[6]: 000017
+result[7]: 0fffc4
+result[8]: 0ffe7f
+result[9]: 0fff8a
+result[10]: 0fff9d
+result[11]: 0fff53
+result[12]: 0fffe4
+result[13]: 00001b
+result[14]: 0fff4f
+result[15]: 0001c3
+
+Instr NO.122343	PE0_act_child_op_inpe	is activated
+result[0]: 0f6005
+result[1]: 0f9367
+result[2]: 0f0eab
+result[3]: 0f9770
+result[4]: 0f956b
+result[5]: 0f9e11
+result[6]: 0f840e
+result[7]: 0f2322
+result[8]: 0fd387
+result[9]: 0fa1f7
+result[10]: 0f235f
+result[11]: 0f88c5
+result[12]: 0f27b5
+result[13]: 0f4741
+result[14]: 0febab
+result[15]: 0f9e16
+
+Instr NO.122351	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.124483	PE0_act_child_op_inpe	is activated
+result[0]: 0fdde6
+result[1]: 0fdfe8
+result[2]: 0fd0bc
+result[3]: 0fdac4
+result[4]: 0fee51
+result[5]: 0ff372
+result[6]: 0fd8c2
+result[7]: 0fd09e
+result[8]: 0001d4
+result[9]: 0fedde
+result[10]: 0fd3ac
+result[11]: 0ff5e3
+result[12]: 0fdbb1
+result[13]: 0fd579
+result[14]: 0ff39f
+result[15]: 0fe7be
+
+Instr NO.124496	PE0_act_child_op_eadd	is activated
+result[0]: 0f3deb
+result[1]: 0f734f
+result[2]: 0edf67
+result[3]: 0f7234
+result[4]: 0f83bc
+result[5]: 0f9183
+result[6]: 0f5cd0
+result[7]: 0ef3c0
+result[8]: 0fd55b
+result[9]: 0f8fd5
+result[10]: 0ef70b
+result[11]: 0f7ea8
+result[12]: 0f0366
+result[13]: 0f1cba
+result[14]: 0fdf4a
+result[15]: 0f85d4
+
+Instr NO.124512	PE0_act_child_op_sigm	is activated
+result[0]: 0002f1
+result[1]: 000681
+result[2]: 0000ab
+result[3]: 000667
+result[4]: 0007fe
+result[5]: 0009c0
+result[6]: 000495
+result[7]: 0000ff
+result[8]: 0015b7
+result[9]: 000982
+result[10]: 00010c
+result[11]: 000788
+result[12]: 00013d
+result[13]: 0001d1
+result[14]: 001804
+result[15]: 00082f
+
+Instr NO.124528	PE0_act_child_op_emul	is activated
+result[0]: 000001
+result[1]: 0fffd1
+result[2]: 0fffff
+result[3]: 0fffdc
+result[4]: 0ffff6
+result[5]: 0fffca
+result[6]: 000001
+result[7]: 0fffff
+result[8]: 0fff7d
+result[9]: 0fffee
+result[10]: 0ffffe
+result[11]: 0fffeb
+result[12]: 0fffff
+result[13]: 000000
+result[14]: 0fffbd
+result[15]: 000039
+
+gb_control_child_recv: 
+data_in: 000 081 000 000 000 000 000 090 000 000 000 000 000 000 000 000
+
+Instr NO.124550	PE0_act_child_send_done	is activated
+gb_control_child_recv: 
+data_in: 000 017 000 081 029 000 081 000 000 000 000 000 000 000 000 000
+
+gb_control_child_recv: 
+data_in: 01b 00a 000 0c4 000 000 000 096 000 000 0ad 000 09d 000 000 000
+
+gb_control_child_recv: 
+data_in: 016 0b9 000 000 000 000 000 03d 000 000 000 000 000 098 000 0b3
 
 child_send_back_prep: timestep_base_addr: 000010	vector_cntr: 000
-gb_control_child_send_back: vector_cntr: 1	data_out index: 1
-data_out: 0b3 0b7 0b8 000 0b3 0c0 0b4 0b2 0c1 0d9 0d5 0b9 029 0c9 0c3 0bc
+gb_control_child_send_back: data_out addr: 0	data_out index: 1
+data_out: 053 00f 0c1 000 000 096 000 000 000 03a 0a9 000 010 000 000 000
 
-gb_control_child_send_back: vector_cntr: 2	data_out index: 1
-data_out: 088 0b5 09b 0ad 0d1 0c7 000 0cc 0cd 0c5 0c2 0bc 0bf 0b1 0a5 0cf
+gb_control_child_send_back: data_out addr: 1	data_out index: 1
+data_out: 000 09e 000 09b 0a6 000 091 000 097 000 000 000 0aa 000 000 000
 
-gb_control_child_send_back: vector_cntr: 3	data_out index: 1
-data_out: 0be 0a7 0bf 0c0 018 0c5 0c1 0d2 0c5 0b8 0d2 0cb 0d7 0bb 0c0 0cc
+gb_control_child_send_back: data_out addr: 2	data_out index: 1
+data_out: 080 000 000 000 000 0cf 09d 000 027 085 000 000 000 000 08c 000
 
-gb_control_child_send_back: vector_cntr: 4	data_out index: 1
-data_out: 0dc 0c9 0bb 0ae 0cb 0b0 0c3 0b2 0cd 0c8 0b8 0cf 0cd 031 0d1 0c2
+gb_control_child_send_back: data_out addr: 3	data_out index: 1
+data_out: 000 081 000 000 000 000 000 090 000 000 000 000 000 000 000 000
+
+gb_control_child_send_back: data_out addr: 4	data_out index: 1
+data_out: 00b 000 000 000 000 000 000 000 000 0a8 000 000 000 000 000 080
+
+gb_control_child_send_back: data_out addr: 5	data_out index: 1
+data_out: 093 0b1 029 0c1 000 000 000 000 000 000 000 000 000 09b 000 000
+
+gb_control_child_send_back: data_out addr: 6	data_out index: 1
+data_out: 000 000 000 00d 000 000 000 016 000 000 09f 000 0bd 000 000 092
+
+gb_control_child_send_back: data_out addr: 7	data_out index: 1
+data_out: 000 017 000 081 029 000 081 000 000 000 000 000 000 000 000 000
+
+gb_control_child_send_back: data_out addr: 8	data_out index: 1
+data_out: 000 000 000 000 000 008 000 000 000 000 000 000 000 000 086 000
+
+gb_control_child_send_back: data_out addr: 9	data_out index: 1
+data_out: 000 02c 000 000 023 000 000 000 000 000 088 000 000 000 000 000
+
+gb_control_child_send_back: data_out addr: 10	data_out index: 1
+data_out: 000 0da 0b0 000 000 009 02a 000 000 000 088 047 000 000 08d 000
+
+gb_control_child_send_back: data_out addr: 11	data_out index: 1
+data_out: 01b 00a 000 0c4 000 000 000 096 000 000 0ad 000 09d 000 000 000
+
+gb_control_child_send_back: data_out addr: 12	data_out index: 1
+data_out: 08a 000 000 000 000 0a0 0a0 0a1 000 000 000 000 000 000 022 000
+
+gb_control_child_send_back: data_out addr: 13	data_out index: 1
+data_out: 000 000 000 019 000 000 000 000 000 000 000 000 000 0aa 08b 000
+
+gb_control_child_send_back: data_out addr: 14	data_out index: 1
+data_out: 000 000 000 000 050 000 000 000 000 000 000 000 000 01d 000 000
+
+gb_control_child_send_back: data_out addr: 15	data_out index: 1
+data_out: 016 0b9 000 000 000 000 000 03d 000 000 000 000 000 098 000 0b3
+
+
+gb_control_child_send_prep: timestep_base_addr: 000020	timestep_index2
+
+gb_control_child_send: data_out_addr: 000	pe_mngr index: 0
+data_out: 056 000 000 001 000 0a1 001 001 000 05f 000 081 000 081 081 000
+
+gb_control_child_send: data_out_addr: 001	pe_mngr index: 0
+data_out: 004 081 081 081 000 000 000 039 037 000 000 000 09d 089 013 000
+
+gb_control_child_send: data_out_addr: 002	pe_mngr index: 0
+data_out: 000 04c 0e2 000 000 00c 000 0e2 000 000 000 0a8 000 030 000 025
+
+gb_control_child_send: data_out_addr: 003	pe_mngr index: 0
+data_out: 000 000 054 000 024 000 0df 000 000 00c 000 032 000 000 0a7 000
+
+gb_control_child_send: data_out_addr: 004	pe_mngr index: 0
+data_out: 000 001 000 000 000 000 0d3 000 095 081 081 022 000 000 001 000
+
+gb_control_child_send: data_out_addr: 005	pe_mngr index: 0
+data_out: 000 081 000 058 001 000 000 000 039 0cd 04d 091 04d 0ce 000 0e6
+
+gb_control_child_send: data_out_addr: 006	pe_mngr index: 0
+data_out: 0bd 000 000 01a 0a5 001 000 038 099 000 000 0c3 000 000 0b7 001
+
+gb_control_child_send: data_out_addr: 007	pe_mngr index: 0
+data_out: 0a0 000 000 014 001 000 000 03f 000 000 081 060 026 000 000 081
+
+gb_control_child_send: data_out_addr: 008	pe_mngr index: 0
+data_out: 000 04d 0cf 032 001 081 000 001 022 000 000 096 03c 000 0a4 000
+
+gb_control_child_send: data_out_addr: 009	pe_mngr index: 0
+data_out: 000 000 000 000 0a8 062 000 001 05a 000 081 052 032 094 000 000
+
+gb_control_child_send: data_out_addr: 00a	pe_mngr index: 0
+data_out: 000 000 081 0cf 0b8 000 081 0aa 000 063 013 000 000 0a5 000 000
+
+gb_control_child_send: data_out_addr: 00b	pe_mngr index: 0
+data_out: 081 000 001 00f 000 0c1 01b 000 000 000 081 041 000 001 001 001
+
+gb_control_child_send: data_out_addr: 00c	pe_mngr index: 0
+data_out: 081 0a6 0c8 003 000 062 0ab 000 096 03c 081 000 000 083 000 001
+
+gb_control_child_send: data_out_addr: 00d	pe_mngr index: 0
+data_out: 081 000 000 001 081 033 0a6 000 000 000 081 000 000 081 000 081
+
+gb_control_child_send: data_out_addr: 00e	pe_mngr index: 0
+data_out: 000 0e7 0ca 000 003 002 0ca 09e 000 000 001 000 000 000 000 001
+
+gb_control_child_send: data_out_addr: 00f	pe_mngr index: 0
+data_out: 000 0b1 000 000 000 0de 081 05b 0a5 001 09c 034 000 032 002 001
+
+gb_control_pe_start: timestep_base_addr000020	vector counter: 0
+Instr NO.124729	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.124740	PE0_act_child_initiate	is activated
+Instr NO.126864	PE0_act_child_op_inpe	is activated
+result[0]: 0f658a
+result[1]: 0fb1bc
+result[2]: 0f71a4
+result[3]: 0f9f0a
+result[4]: 0f6fc2
+result[5]: 0ff0f6
+result[6]: 0fdb8b
+result[7]: 0f7b16
+result[8]: 0fb09f
+result[9]: 0f71c3
+result[10]: 0fc9a6
+result[11]: 0f91f2
+result[12]: 0f1eef
+result[13]: 0fe154
+result[14]: 0fb1d9
+result[15]: 001694
+
+Instr NO.126872	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.129004	PE0_act_child_op_inpe	is activated
+result[0]: 0fd71e
+result[1]: 0fe6e0
+result[2]: 0fdecf
+result[3]: 0fec52
+result[4]: 0feb18
+result[5]: 0feef3
+result[6]: 0006ec
+result[7]: 0ff23e
+result[8]: 0ffeef
+result[9]: 0fe739
+result[10]: 0ffcf9
+result[11]: 0fee08
+result[12]: 0fd8b4
+result[13]: 0ff87f
+result[14]: 0ffc1d
+result[15]: 00006e
+
+Instr NO.129012	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.129033	PE0_act_child_op_eadd	is activated
+result[0]: 0f3ca8
+result[1]: 0f989c
+result[2]: 0f5073
+result[3]: 0f8b5c
+result[4]: 0f5ada
+result[5]: 0fdfe9
+result[6]: 0fe277
+result[7]: 0f6d54
+result[8]: 0faf8e
+result[9]: 0f58fc
+result[10]: 0fc69f
+result[11]: 0f7ffa
+result[12]: 0ef7a3
+result[13]: 0fd9d3
+result[14]: 0fadf6
+result[15]: 001702
+
+Instr NO.129065	PE0_act_child_op_sigm	is activated
+result[0]: 0002e0
+result[1]: 000ac4
+result[2]: 0003ed
+result[3]: 0008dd
+result[4]: 00047a
+result[5]: 00182b
+result[6]: 0018cb
+result[7]: 0005f6
+result[8]: 000e11
+result[9]: 000461
+result[10]: 0012ba
+result[11]: 0007a7
+result[12]: 00010e
+result[13]: 0016b1
+result[14]: 000dd6
+result[15]: 0025a0
+
+Instr NO.131176	PE0_act_child_op_inpe	is activated
+result[0]: 0fff48
+result[1]: 0ffb4a
+result[2]: 00031e
+result[3]: 0006b5
+result[4]: 0001e4
+result[5]: 0ff0d1
+result[6]: 0013d4
+result[7]: 0fff39
+result[8]: 0ffec1
+result[9]: 000002
+result[10]: 0fe9bd
+result[11]: 000367
+result[12]: 0ff259
+result[13]: 0ff0f5
+result[14]: 0001a7
+result[15]: 0027a8
+
+Instr NO.131184	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.133316	PE0_act_child_op_inpe	is activated
+result[0]: 0000b7
+result[1]: 0ffe9f
+result[2]: 0fffdf
+result[3]: 000519
+result[4]: 0ff4a8
+result[5]: 000a78
+result[6]: 0fff00
+result[7]: 0008dc
+result[8]: 0008aa
+result[9]: 00001f
+result[10]: 00075c
+result[11]: 000233
+result[12]: 0ffcdc
+result[13]: 0ff244
+result[14]: 000652
+result[15]: 000090
+
+Instr NO.133324	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.133345	PE0_act_child_op_eadd	is activated
+result[0]: 0fffff
+result[1]: 0ff9e9
+result[2]: 0002fd
+result[3]: 000bce
+result[4]: 0ff68c
+result[5]: 0ffb49
+result[6]: 0012d4
+result[7]: 000815
+result[8]: 00076b
+result[9]: 000021
+result[10]: 0ff119
+result[11]: 00059a
+result[12]: 0fef35
+result[13]: 0fe339
+result[14]: 0007f9
+result[15]: 002838
+
+Instr NO.133377	PE0_act_child_op_tanh	is activated
+result[0]: 0ffff0
+result[1]: 0ff9fa
+result[2]: 0002fd
+result[3]: 000ba1
+result[4]: 0ff6ab
+result[5]: 0ffb53
+result[6]: 001239
+result[7]: 0007fb
+result[8]: 000752
+result[9]: 00002f
+result[10]: 0ff156
+result[11]: 00058c
+result[12]: 0fef91
+result[13]: 0fe514
+result[14]: 0007e0
+result[15]: 00236e
+
+Instr NO.133409	PE0_act_child_op_emul	is activated
+result[0]: 0fffff
+result[1]: 0ffefc
+result[2]: 00002e
+result[3]: 00019c
+result[4]: 0fff58
+result[5]: 0ffe3b
+result[6]: 00070f
+result[7]: 0000be
+result[8]: 00019b
+result[9]: 000003
+result[10]: 0ffbb5
+result[11]: 0000a9
+result[12]: 0fffba
+result[13]: 0ff674
+result[14]: 0001b3
+result[15]: 0014d4
+
+Instr NO.135504	PE0_act_child_op_inpe	is activated
+result[0]: 0fb6d2
+result[1]: 0fd056
+result[2]: 0facf7
+result[3]: 0fbd2c
+result[4]: 0f9e6f
+result[5]: 001a2d
+result[6]: 000f60
+result[7]: 0fd497
+result[8]: 0fe9c0
+result[9]: 0f88d3
+result[10]: 0ff1b5
+result[11]: 0faf49
+result[12]: 0f6cef
+result[13]: 0000ea
+result[14]: 0fe8d8
+result[15]: 00229c
+
+Instr NO.135512	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.137644	PE0_act_child_op_inpe	is activated
+result[0]: 0ff730
+result[1]: 0ff8ec
+result[2]: 0fe9ba
+result[3]: 0febd8
+result[4]: 0fec1a
+result[5]: 0ff9f5
+result[6]: 000812
+result[7]: 000246
+result[8]: 0ffef9
+result[9]: 0fed42
+result[10]: 0ffdd5
+result[11]: 0001dc
+result[12]: 0fdf78
+result[13]: 000494
+result[14]: 0008c4
+result[15]: 000a92
+
+Instr NO.137652	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.137673	PE0_act_child_op_eadd	is activated
+result[0]: 0fae02
+result[1]: 0fc942
+result[2]: 0f96b1
+result[3]: 0fa904
+result[4]: 0f8a89
+result[5]: 001422
+result[6]: 001772
+result[7]: 0fd6dd
+result[8]: 0fe8b9
+result[9]: 0f7615
+result[10]: 0fef8a
+result[11]: 0fb125
+result[12]: 0f4c67
+result[13]: 00057e
+result[14]: 0ff19c
+result[15]: 002d2e
+
+Instr NO.137705	PE0_act_child_op_sigm	is activated
+result[0]: 000dd8
+result[1]: 001342
+result[2]: 000a7d
+result[3]: 000d20
+result[4]: 0008be
+result[5]: 0024ef
+result[6]: 0025bd
+result[7]: 001607
+result[8]: 001a4e
+result[9]: 0006c1
+result[10]: 001bf4
+result[11]: 000e5c
+result[12]: 0003b6
+result[13]: 002163
+result[14]: 001c74
+result[15]: 002acc
+
+Instr NO.137737	PE0_act_child_op_load	is activated
+result[0]: 000000
+result[1]: 000000
+result[2]: 000000
+result[3]: 000280
+result[4]: 0fff60
+result[5]: 0ffc20
+result[6]: 000900
+result[7]: 000000
+result[8]: 0fff30
+result[9]: 0fff68
+result[10]: 0ffd20
+result[11]: 000000
+result[12]: 000000
+result[13]: 0ff480
+result[14]: 0001f0
+result[15]: 001700
+
+Instr NO.137769	PE0_act_child_op_emul	is activated
+result[0]: 000000
+result[1]: 000000
+result[2]: 000000
+result[3]: 000083
+result[4]: 0fffea
+result[5]: 0ffdc3
+result[6]: 00054e
+result[7]: 000000
+result[8]: 0fffaa
+result[9]: 0fffef
+result[10]: 0ffebe
+result[11]: 000000
+result[12]: 000000
+result[13]: 0ffa00
+result[14]: 0000dc
+result[15]: 000f61
+
+Instr NO.137801	PE0_act_child_op_eadd	is activated
+result[0]: 0fffff
+result[1]: 0ffefc
+result[2]: 00002e
+result[3]: 00021f
+result[4]: 0fff42
+result[5]: 0ffbfe
+result[6]: 000c5d
+result[7]: 0000be
+result[8]: 000145
+result[9]: 0ffff2
+result[10]: 0ffa73
+result[11]: 0000a9
+result[12]: 0fffba
+result[13]: 0ff074
+result[14]: 00028f
+result[15]: 002435
+
+Instr NO.137861	PE0_act_child_op_tanh	is activated
+result[0]: 0ffff0
+result[1]: 0ffef1
+result[2]: 00003b
+result[3]: 000221
+result[4]: 0fff37
+result[5]: 0ffc04
+result[6]: 000c2e
+result[7]: 0000c8
+result[8]: 00014d
+result[9]: 0fffe4
+result[10]: 0ffa7f
+result[11]: 0000b4
+result[12]: 0fffad
+result[13]: 0ff0b1
+result[14]: 00028f
+result[15]: 0020a7
+
+Instr NO.139892	PE0_act_child_op_inpe	is activated
+result[0]: 0f5820
+result[1]: 0fb5e7
+result[2]: 0f7300
+result[3]: 0fa602
+result[4]: 0f6cfb
+result[5]: 0fe4f0
+result[6]: 0fd78f
+result[7]: 0f80b4
+result[8]: 0fb100
+result[9]: 0f7379
+result[10]: 0fc326
+result[11]: 0f8d6b
+result[12]: 0f1575
+result[13]: 0fe8a2
+result[14]: 0fb613
+result[15]: 0ff5b5
+
+Instr NO.139900	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.142032	PE0_act_child_op_inpe	is activated
+result[0]: 0fd574
+result[1]: 0fedfe
+result[2]: 0fe2ac
+result[3]: 0ff3a0
+result[4]: 0ff044
+result[5]: 0ff99a
+result[6]: 0fffff
+result[7]: 0feeb3
+result[8]: 0ffc83
+result[9]: 0fd4ab
+result[10]: 0ff293
+result[11]: 0ff64a
+result[12]: 0fcf23
+result[13]: 0fee06
+result[14]: 0ff460
+result[15]: 0ffdb5
+
+Instr NO.142040	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.142061	PE0_act_child_op_eadd	is activated
+result[0]: 0f2d94
+result[1]: 0fa3e5
+result[2]: 0f55ac
+result[3]: 0f99a2
+result[4]: 0f5d3f
+result[5]: 0fde8a
+result[6]: 0fd78e
+result[7]: 0f6f67
+result[8]: 0fad83
+result[9]: 0f4824
+result[10]: 0fb5b9
+result[11]: 0f83b5
+result[12]: 0ee498
+result[13]: 0fd6a8
+result[14]: 0faa73
+result[15]: 0ff36a
+
+Instr NO.142093	PE0_act_child_op_sigm	is activated
+result[0]: 000251
+result[1]: 000c63
+result[2]: 000434
+result[3]: 000aeb
+result[4]: 00049b
+result[5]: 0017d6
+result[6]: 001629
+result[7]: 000626
+result[8]: 000dc5
+result[9]: 00037c
+result[10]: 000f4a
+result[11]: 0007fd
+result[12]: 0000b8
+result[13]: 0015fa
+result[14]: 000d55
+result[15]: 001ce4
+
+Instr NO.142125	PE0_act_child_op_emul	is activated
+result[0]: 0fffff
+result[1]: 0fffcb
+result[2]: 000003
+result[3]: 00005c
+result[4]: 0ffff1
+result[5]: 0ffe84
+result[6]: 000437
+result[7]: 000013
+result[8]: 000047
+result[9]: 0ffffe
+result[10]: 0ffeaf
+result[11]: 000016
+result[12]: 0fffff
+result[13]: 0ffabe
+result[14]: 000088
+result[15]: 000ebd
+
+gb_control_child_recv: 
+data_in: 05d 011 0c5 000 000 0a5 000 002 000 041 0a8 000 007 000 000 000
+
+gb_control_child_recv: 
+data_in: 011 000 000 000 000 000 000 000 08a 0a9 000 000 000 000 000 081
+
+gb_control_child_recv: 
+data_in: 000 000 000 082 000 086 000 000 000 000 000 000 000 000 000 000
+
+gb_control_child_recv: 
+data_in: 099 000 000 000 000 0b3 092 096 000 000 000 00d 000 000 02a 000
+
+Instr NO.144236	PE0_act_child_op_inpe	is activated
+result[0]: 0f6d03
+result[1]: 0f8e66
+result[2]: 0f65ce
+result[3]: 0ff8fc
+result[4]: 0fa977
+result[5]: 0f6a20
+result[6]: 0f6049
+result[7]: 0fb388
+result[8]: 0fbf44
+result[9]: 0ff471
+result[10]: 0f87ee
+result[11]: 0ff466
+result[12]: 0fc2db
+result[13]: 0fa4c4
+result[14]: 0fdf51
+result[15]: 0f7688
+
+Instr NO.144244	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.146376	PE0_act_child_op_inpe	is activated
+result[0]: 0fe5d5
+result[1]: 0fe948
+result[2]: 0fe533
+result[3]: 0ffeff
+result[4]: 0fe001
+result[5]: 0fd703
+result[6]: 0fd8d0
+result[7]: 0ff134
+result[8]: 0ffcf8
+result[9]: 0ffc69
+result[10]: 0ff0cc
+result[11]: 0ff5ed
+result[12]: 0ff361
+result[13]: 0fe17b
+result[14]: 0ff91a
+result[15]: 0fd5f9
+
+Instr NO.146384	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.146405	PE0_act_child_op_eadd	is activated
+result[0]: 0f52d8
+result[1]: 0f77ae
+result[2]: 0f4b01
+result[3]: 0ff7fb
+result[4]: 0f8978
+result[5]: 0f4123
+result[6]: 0f3919
+result[7]: 0fa4bc
+result[8]: 0fbc3c
+result[9]: 0ff0da
+result[10]: 0f78ba
+result[11]: 0fea53
+result[12]: 0fb63c
+result[13]: 0f863f
+result[14]: 0fd86b
+result[15]: 0f4c81
+
+Instr NO.146437	PE0_act_child_op_sigm	is activated
+result[0]: 00040e
+result[1]: 0006e7
+result[2]: 0003a3
+result[3]: 001dff
+result[4]: 000898
+result[5]: 00031d
+result[6]: 0002af
+result[7]: 000c83
+result[8]: 00109d
+result[9]: 001c46
+result[10]: 0006fe
+result[11]: 001ab2
+result[12]: 000f67
+result[13]: 000838
+result[14]: 00165a
+result[15]: 0003b7
+
+Instr NO.148548	PE0_act_child_op_inpe	is activated
+result[0]: 000168
+result[1]: 000269
+result[2]: 0ff5c3
+result[3]: 0ff366
+result[4]: 0ff719
+result[5]: 0ff807
+result[6]: 0ff408
+result[7]: 0ff36c
+result[8]: 0ff8a4
+result[9]: 0ff7c3
+result[10]: 000e00
+result[11]: 0fef9c
+result[12]: 0ffcc6
+result[13]: 0ffc87
+result[14]: 0ff622
+result[15]: 0ffd0b
+
+Instr NO.148556	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.150688	PE0_act_child_op_inpe	is activated
+result[0]: 0fffd4
+result[1]: 000896
+result[2]: 0fffbf
+result[3]: 0ff0cc
+result[4]: 0007d7
+result[5]: 000bbd
+result[6]: 000598
+result[7]: 000a0d
+result[8]: 000124
+result[9]: 0ffa57
+result[10]: 0ffa75
+result[11]: 0ffc4a
+result[12]: 0ff33e
+result[13]: 0ff4fa
+result[14]: 0ffcf8
+result[15]: 000648
+
+Instr NO.150696	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.150717	PE0_act_child_op_eadd	is activated
+result[0]: 00013c
+result[1]: 000aff
+result[2]: 0ff582
+result[3]: 0fe432
+result[4]: 0ffef0
+result[5]: 0003c4
+result[6]: 0ff9a0
+result[7]: 0ffd79
+result[8]: 0ff9c8
+result[9]: 0ff21a
+result[10]: 000875
+result[11]: 0febe6
+result[12]: 0ff004
+result[13]: 0ff181
+result[14]: 0ff31a
+result[15]: 000353
+
+Instr NO.150749	PE0_act_child_op_tanh	is activated
+result[0]: 000145
+result[1]: 000ad5
+result[2]: 0ff5a8
+result[3]: 0fe5ed
+result[4]: 0ffee5
+result[5]: 0003c1
+result[6]: 0ff9af
+result[7]: 0ffd78
+result[8]: 0ff9d7
+result[9]: 0ff251
+result[10]: 000859
+result[11]: 0fecab
+result[12]: 0ff043
+result[13]: 0ff1bc
+result[14]: 0ff34c
+result[15]: 00034f
+
+Instr NO.150781	PE0_act_child_op_emul	is activated
+result[0]: 000014
+result[1]: 00012b
+result[2]: 0fff69
+result[3]: 0ff3c7
+result[4]: 0fffd9
+result[5]: 00002e
+result[6]: 0fffbc
+result[7]: 0fff81
+result[8]: 0ffe66
+result[9]: 0ff9f4
+result[10]: 0000e9
+result[11]: 0ff7ef
+result[12]: 0ffc36
+result[13]: 0ffe2b
+result[14]: 0ffb90
+result[15]: 000031
+
+Instr NO.152876	PE0_act_child_op_inpe	is activated
+result[0]: 0f9d2d
+result[1]: 0fb872
+result[2]: 0faf04
+result[3]: 003ae8
+result[4]: 0fb76d
+result[5]: 0f85ea
+result[6]: 0fb625
+result[7]: 0fab3c
+result[8]: 0ffb86
+result[9]: 001e24
+result[10]: 0f94cb
+result[11]: 001351
+result[12]: 001d3a
+result[13]: 0fdc56
+result[14]: 000fb2
+result[15]: 0fb17f
+
+Instr NO.152884	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.155016	PE0_act_child_op_inpe	is activated
+result[0]: 0fe3e0
+result[1]: 00082c
+result[2]: 0ff38a
+result[3]: 000afc
+result[4]: 0fe24e
+result[5]: 0ff262
+result[6]: 0ff992
+result[7]: 0fed02
+result[8]: 000749
+result[9]: 0ff63a
+result[10]: 0fed74
+result[11]: 000bfe
+result[12]: 000d3a
+result[13]: 0fed8b
+result[14]: 000625
+result[15]: 0ff497
+
+Instr NO.155024	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.155045	PE0_act_child_op_eadd	is activated
+result[0]: 0f810d
+result[1]: 0fc09e
+result[2]: 0fa28e
+result[3]: 0045e4
+result[4]: 0f99bb
+result[5]: 0f784c
+result[6]: 0fafb7
+result[7]: 0f983e
+result[8]: 0002cf
+result[9]: 00145e
+result[10]: 0f823f
+result[11]: 001f4f
+result[12]: 002a74
+result[13]: 0fc9e1
+result[14]: 0015d7
+result[15]: 0fa616
+
+Instr NO.155077	PE0_act_child_op_sigm	is activated
+result[0]: 0007bf
+result[1]: 001181
+result[2]: 000c32
+result[3]: 002fcf
+result[4]: 000aee
+result[5]: 0006f4
+result[6]: 000e17
+result[7]: 000ab7
+result[8]: 0020bb
+result[9]: 0024fd
+result[10]: 0007db
+result[11]: 0027a3
+result[12]: 002a3d
+result[13]: 001362
+result[14]: 002557
+result[15]: 000cb4
+
+Instr NO.155109	PE0_act_child_op_load	is activated
+result[0]: 000000
+result[1]: 0000d8
+result[2]: 0ffef0
+result[3]: 0ffbc0
+result[4]: 000000
+result[5]: 0fffb8
+result[6]: 0fff94
+result[7]: 0ffd40
+result[8]: 000000
+result[9]: 0ffec0
+result[10]: 0fffac
+result[11]: 0ffc60
+result[12]: 0ffde0
+result[13]: 0fff80
+result[14]: 0ffd20
+result[15]: 0fffb0
+
+Instr NO.155141	PE0_act_child_op_emul	is activated
+result[0]: 000000
+result[1]: 00003b
+result[2]: 0fffcc
+result[3]: 0ffcd3
+result[4]: 000000
+result[5]: 0ffff8
+result[6]: 0fffe8
+result[7]: 0fff8a
+result[8]: 000000
+result[9]: 0fff47
+result[10]: 0ffff5
+result[11]: 0ffdc1
+result[12]: 0ffe98
+result[13]: 0fffd9
+result[14]: 0ffe52
+result[15]: 0ffff0
+
+Instr NO.155173	PE0_act_child_op_eadd	is activated
+result[0]: 000014
+result[1]: 000166
+result[2]: 0fff35
+result[3]: 0ff09a
+result[4]: 0fffd9
+result[5]: 000026
+result[6]: 0fffa4
+result[7]: 0fff0b
+result[8]: 0ffe66
+result[9]: 0ff93b
+result[10]: 0000de
+result[11]: 0ff5b0
+result[12]: 0fface
+result[13]: 0ffe04
+result[14]: 0ff9e2
+result[15]: 000021
+
+Instr NO.155233	PE0_act_child_op_tanh	is activated
+result[0]: 000023
+result[1]: 00016d
+result[2]: 0fff2b
+result[3]: 0ff0d8
+result[4]: 0fffcc
+result[5]: 000033
+result[6]: 0fff95
+result[7]: 0fff00
+result[8]: 0ffe5f
+result[9]: 0ff94d
+result[10]: 0000e7
+result[11]: 0ff5d3
+result[12]: 0ffad9
+result[13]: 0ffdfd
+result[14]: 0ff9f2
+result[15]: 00002f
+
+Instr NO.157264	PE0_act_child_op_inpe	is activated
+result[0]: 0f6443
+result[1]: 0f92a5
+result[2]: 0f62e1
+result[3]: 0fe129
+result[4]: 0f946f
+result[5]: 0f6e3d
+result[6]: 0f464c
+result[7]: 0fb021
+result[8]: 0fc27c
+result[9]: 0feeea
+result[10]: 0f9328
+result[11]: 0fe6bf
+result[12]: 0fd7d3
+result[13]: 0fa26f
+result[14]: 0fd3f2
+result[15]: 0f705c
+
+Instr NO.157272	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.159404	PE0_act_child_op_inpe	is activated
+result[0]: 0fd9f1
+result[1]: 0fe095
+result[2]: 0fd3ad
+result[3]: 0ff91e
+result[4]: 0fe6e5
+result[5]: 0fe2ce
+result[6]: 0fd81a
+result[7]: 0ff25f
+result[8]: 0ffecf
+result[9]: 0fff17
+result[10]: 0ff0dd
+result[11]: 0ff83e
+result[12]: 0ffc74
+result[13]: 0fe3c5
+result[14]: 0ffb5c
+result[15]: 0fda52
+
+Instr NO.159412	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.159433	PE0_act_child_op_eadd	is activated
+result[0]: 0f3e34
+result[1]: 0f733a
+result[2]: 0f368e
+result[3]: 0fda47
+result[4]: 0f7b54
+result[5]: 0f510b
+result[6]: 0f1e66
+result[7]: 0fa280
+result[8]: 0fc14b
+result[9]: 0fee01
+result[10]: 0f8405
+result[11]: 0fdefd
+result[12]: 0fd447
+result[13]: 0f8634
+result[14]: 0fcf4e
+result[15]: 0f4aae
+
+Instr NO.159465	PE0_act_child_op_sigm	is activated
+result[0]: 0002f5
+result[1]: 00067f
+result[2]: 000295
+result[3]: 0016ce
+result[4]: 00073b
+result[5]: 0003f5
+result[6]: 0001de
+result[7]: 000c30
+result[8]: 0011a5
+result[9]: 001b95
+result[10]: 000804
+result[11]: 0017f3
+result[12]: 00157f
+result[13]: 000837
+result[14]: 00147d
+result[15]: 00039f
+
+Instr NO.159497	PE0_act_child_op_emul	is activated
+result[0]: 000001
+result[1]: 000025
+result[2]: 0ffff7
+result[3]: 0ffa99
+result[4]: 0ffffa
+result[5]: 000003
+result[6]: 0ffffc
+result[7]: 0fffcf
+result[8]: 0fff8d
+result[9]: 0ffd1c
+result[10]: 00001c
+result[11]: 0ffc31
+result[12]: 0ffe44
+result[13]: 0fffbd
+result[14]: 0ffe0f
+result[15]: 000002
+
+gb_control_child_recv: 
+data_in: 000 0af 081 0ac 0be 000 0b7 08d 000 000 000 000 0c6 000 000 000
+
+gb_control_child_recv: 
+data_in: 091 09c 027 0b1 000 000 000 000 000 000 000 000 000 093 000 000
+
+gb_control_child_recv: 
+data_in: 000 02b 000 000 025 000 000 000 000 000 089 000 000 000 000 000
+
+gb_control_child_recv: 
+data_in: 000 000 000 011 000 000 000 000 000 000 000 000 000 0bd 081 000
+
+Instr NO.161608	PE0_act_child_op_inpe	is activated
+result[0]: 0f3012
+result[1]: 0f93be
+result[2]: 0fa2fd
+result[3]: 0f7c9a
+result[4]: 0f6277
+result[5]: 0f7b29
+result[6]: 0fba17
+result[7]: 0fd401
+result[8]: 0f9aff
+result[9]: 0fd868
+result[10]: 0feb73
+result[11]: 0f85c2
+result[12]: 0fa418
+result[13]: 0f76dc
+result[14]: 0f7c53
+result[15]: 0f7d9c
+
+Instr NO.161616	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.163748	PE0_act_child_op_inpe	is activated
+result[0]: 0fd39f
+result[1]: 0ff03b
+result[2]: 0feb02
+result[3]: 0feae6
+result[4]: 0fe6a5
+result[5]: 0fea0b
+result[6]: 0fe703
+result[7]: 000525
+result[8]: 0ff3a2
+result[9]: 001178
+result[10]: 0ffb8b
+result[11]: 0feed9
+result[12]: 0ff2ab
+result[13]: 0ff1ee
+result[14]: 0fe9dd
+result[15]: 0ff6bf
+
+Instr NO.163756	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.163777	PE0_act_child_op_eadd	is activated
+result[0]: 0f03b1
+result[1]: 0f83f9
+result[2]: 0f8dff
+result[3]: 0f6780
+result[4]: 0f491c
+result[5]: 0f6534
+result[6]: 0fa11a
+result[7]: 0fd926
+result[8]: 0f8ea1
+result[9]: 0fe9e0
+result[10]: 0fe6fe
+result[11]: 0f749b
+result[12]: 0f96c3
+result[13]: 0f68ca
+result[14]: 0f6630
+result[15]: 0f745b
+
+Instr NO.163809	PE0_act_child_op_sigm	is activated
+result[0]: 00013f
+result[1]: 000803
+result[2]: 00093e
+result[3]: 00056e
+result[4]: 000389
+result[5]: 00053a
+result[6]: 000bfd
+result[7]: 001688
+result[8]: 000955
+result[9]: 001a95
+result[10]: 0019e2
+result[11]: 00069f
+result[12]: 000a80
+result[13]: 00058c
+result[14]: 000551
+result[15]: 000699
+
+Instr NO.165920	PE0_act_child_op_inpe	is activated
+result[0]: 000021
+result[1]: 00009d
+result[2]: 0ffdb6
+result[3]: 000d3f
+result[4]: 0ffa3e
+result[5]: 0ffa2b
+result[6]: 000df9
+result[7]: 0010c3
+result[8]: 0ff61b
+result[9]: 0ff9ce
+result[10]: 0ff3f3
+result[11]: 000689
+result[12]: 0ff74e
+result[13]: 0fef6b
+result[14]: 0fec6a
+result[15]: 0ff3d6
+
+Instr NO.165928	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.168060	PE0_act_child_op_inpe	is activated
+result[0]: 00007c
+result[1]: 0ff773
+result[2]: 000cb2
+result[3]: 00034f
+result[4]: 000140
+result[5]: 00079e
+result[6]: 0ffbb0
+result[7]: 000000
+result[8]: 000272
+result[9]: 0ffc6b
+result[10]: 00044a
+result[11]: 0fff21
+result[12]: 0fff8c
+result[13]: 0003dc
+result[14]: 000ab1
+result[15]: 000539
+
+Instr NO.168068	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.168089	PE0_act_child_op_eadd	is activated
+result[0]: 00009d
+result[1]: 0ff810
+result[2]: 000a68
+result[3]: 00108e
+result[4]: 0ffb7e
+result[5]: 0001c9
+result[6]: 0009a9
+result[7]: 0010c3
+result[8]: 0ff88d
+result[9]: 0ff639
+result[10]: 0ff83d
+result[11]: 0005aa
+result[12]: 0ff6da
+result[13]: 0ff347
+result[14]: 0ff71b
+result[15]: 0ff90f
+
+Instr NO.168121	PE0_act_child_op_tanh	is activated
+result[0]: 0000a8
+result[1]: 0ff827
+result[2]: 000a43
+result[3]: 00103a
+result[4]: 0ffb86
+result[5]: 0001cf
+result[6]: 000987
+result[7]: 001068
+result[8]: 0ff8a5
+result[9]: 0ff65c
+result[10]: 0ff856
+result[11]: 00059b
+result[12]: 0ff6f9
+result[13]: 0ff377
+result[14]: 0ff738
+result[15]: 0ff922
+
+Instr NO.168153	PE0_act_child_op_emul	is activated
+result[0]: 000003
+result[1]: 0fff04
+result[2]: 00017b
+result[3]: 000160
+result[4]: 0fffc0
+result[5]: 000025
+result[6]: 0001c8
+result[7]: 0005c6
+result[8]: 0ffeed
+result[9]: 0ffbfe
+result[10]: 0ffce6
+result[11]: 000094
+result[12]: 0ffe84
+result[13]: 0ffee9
+result[14]: 0fff45
+result[15]: 0fff4a
+
+Instr NO.170248	PE0_act_child_op_inpe	is activated
+result[0]: 0f9265
+result[1]: 0f8726
+result[2]: 0fce9a
+result[3]: 0f8f54
+result[4]: 0f9ed6
+result[5]: 0fb17d
+result[6]: 0fbcd9
+result[7]: 0fe966
+result[8]: 0fb689
+result[9]: 0fe1e8
+result[10]: 0fc122
+result[11]: 0fba51
+result[12]: 0fd797
+result[13]: 0f9038
+result[14]: 0fb415
+result[15]: 0f984d
+
+Instr NO.170256	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.172388	PE0_act_child_op_inpe	is activated
+result[0]: 0fe4d0
+result[1]: 0fe9e7
+result[2]: 0ff493
+result[3]: 0ff992
+result[4]: 0ff73d
+result[5]: 0ff3f2
+result[6]: 0fee90
+result[7]: 0ff7eb
+result[8]: 0fe9f0
+result[9]: 0ff923
+result[10]: 0004bc
+result[11]: 0ff045
+result[12]: 0ff07d
+result[13]: 0fe516
+result[14]: 0fecb4
+result[15]: 0ff285
+
+Instr NO.172396	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.172417	PE0_act_child_op_eadd	is activated
+result[0]: 0f7735
+result[1]: 0f710d
+result[2]: 0fc32d
+result[3]: 0f88e6
+result[4]: 0f9613
+result[5]: 0fa56f
+result[6]: 0fab69
+result[7]: 0fe151
+result[8]: 0fa079
+result[9]: 0fdb0b
+result[10]: 0fc5de
+result[11]: 0faa96
+result[12]: 0fc814
+result[13]: 0f754e
+result[14]: 0fa0c9
+result[15]: 0f8ad2
+
+Instr NO.172449	PE0_act_child_op_sigm	is activated
+result[0]: 0006db
+result[1]: 00064c
+result[2]: 001207
+result[3]: 000882
+result[4]: 000a66
+result[5]: 000c9d
+result[6]: 000d79
+result[7]: 001882
+result[8]: 000be6
+result[9]: 0016ff
+result[10]: 001293
+result[11]: 000d59
+result[12]: 001305
+result[13]: 0006af
+result[14]: 000bf2
+result[15]: 0008c8
+
+Instr NO.172481	PE0_act_child_op_load	is activated
+result[0]: 000000
+result[1]: 0ffda0
+result[2]: 000074
+result[3]: 0000e0
+result[4]: 0fffa4
+result[5]: 0fff30
+result[6]: 0ffe60
+result[7]: 000480
+result[8]: 000000
+result[9]: 0ffd20
+result[10]: 0ff180
+result[11]: 0fff10
+result[12]: 000000
+result[13]: 0ffec0
+result[14]: 0ffe90
+result[15]: 0ffe70
+
+Instr NO.172513	PE0_act_child_op_emul	is activated
+result[0]: 000000
+result[1]: 0fffc4
+result[2]: 000020
+result[3]: 00001d
+result[4]: 0ffff1
+result[5]: 0fffd7
+result[6]: 0fffa8
+result[7]: 0001b9
+result[8]: 000000
+result[9]: 0ffef7
+result[10]: 0ffbca
+result[11]: 0fffcd
+result[12]: 000000
+result[13]: 0fffde
+result[14]: 0fffbb
+result[15]: 0fffc9
+
+Instr NO.172545	PE0_act_child_op_eadd	is activated
+result[0]: 000003
+result[1]: 0ffec8
+result[2]: 00019b
+result[3]: 00017d
+result[4]: 0fffb1
+result[5]: 0ffffc
+result[6]: 000170
+result[7]: 00077f
+result[8]: 0ffeed
+result[9]: 0ffaf5
+result[10]: 0ff8b0
+result[11]: 000061
+result[12]: 0ffe84
+result[13]: 0ffec7
+result[14]: 0fff00
+result[15]: 0fff13
+
+Instr NO.172605	PE0_act_child_op_tanh	is activated
+result[0]: 000010
+result[1]: 0ffebe
+result[2]: 0001a0
+result[3]: 000184
+result[4]: 0fffa5
+result[5]: 0fffec
+result[6]: 000178
+result[7]: 000766
+result[8]: 0ffee5
+result[9]: 0ffb01
+result[10]: 0ff8c4
+result[11]: 00006e
+result[12]: 0ffe7b
+result[13]: 0ffebe
+result[14]: 0ffef5
+result[15]: 0fff08
+
+Instr NO.174636	PE0_act_child_op_inpe	is activated
+result[0]: 0f2ad3
+result[1]: 0f9048
+result[2]: 0f9413
+result[3]: 0f76ea
+result[4]: 0f53af
+result[5]: 0f8963
+result[6]: 0fb8a9
+result[7]: 0fd4e4
+result[8]: 0f9784
+result[9]: 0fcacf
+result[10]: 0ffd4a
+result[11]: 0f935a
+result[12]: 0f8c54
+result[13]: 0f828b
+result[14]: 0f818b
+result[15]: 0f77b4
+
+Instr NO.174644	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.176776	PE0_act_child_op_inpe	is activated
+result[0]: 0fe04b
+result[1]: 0febf1
+result[2]: 0ff325
+result[3]: 0fe379
+result[4]: 0fea4a
+result[5]: 0febc9
+result[6]: 0ff242
+result[7]: 0ffaae
+result[8]: 0fe568
+result[9]: 0ff771
+result[10]: 000095
+result[11]: 0fe830
+result[12]: 0fea2a
+result[13]: 0fdd0a
+result[14]: 0fd73e
+result[15]: 0ff8c8
+
+Instr NO.176784	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.176805	PE0_act_child_op_eadd	is activated
+result[0]: 0f0b1e
+result[1]: 0f7c39
+result[2]: 0f8738
+result[3]: 0f5a63
+result[4]: 0f3df9
+result[5]: 0f752c
+result[6]: 0faaeb
+result[7]: 0fcf92
+result[8]: 0f7cec
+result[9]: 0fc240
+result[10]: 0ffddf
+result[11]: 0f7b8a
+result[12]: 0f767e
+result[13]: 0f5f95
+result[14]: 0f58c9
+result[15]: 0f707c
+
+Instr NO.176837	PE0_act_child_op_sigm	is activated
+result[0]: 00015c
+result[1]: 000750
+result[2]: 00084e
+result[3]: 000474
+result[4]: 0002f2
+result[5]: 0006ac
+result[6]: 000d66
+result[7]: 00148b
+result[8]: 000760
+result[9]: 0011d6
+result[10]: 001f6d
+result[11]: 00073f
+result[12]: 0006ca
+result[13]: 0004bb
+result[14]: 00045e
+result[15]: 00063f
+
+Instr NO.176869	PE0_act_child_op_emul	is activated
+result[0]: 000000
+result[1]: 0fffdb
+result[2]: 000035
+result[3]: 00001a
+result[4]: 0ffffb
+result[5]: 0ffffd
+result[6]: 00004e
+result[7]: 00025f
+result[8]: 0fffdf
+result[9]: 0ffe9b
+result[10]: 0ffc72
+result[11]: 00000c
+result[12]: 0fffd6
+result[13]: 0fffe8
+result[14]: 0fffed
+result[15]: 0fffe7
+
+gb_control_child_recv: 
+data_in: 000 000 000 000 000 0bc 0a6 000 033 004 000 000 000 000 000 000
+
+gb_control_child_recv: 
+data_in: 000 000 000 000 000 000 000 01d 000 000 0a0 000 0a0 000 000 088
+
+gb_control_child_recv: 
+data_in: 000 0e6 093 000 000 000 014 000 000 000 000 051 000 000 000 000
+
+gb_control_child_recv: 
+data_in: 000 000 000 000 058 000 000 000 000 000 080 000 000 01a 092 000
+
+Instr NO.178980	PE0_act_child_op_inpe	is activated
+result[0]: 0f5cfb
+result[1]: 0f793c
+result[2]: 0ef3cc
+result[3]: 0f75a6
+result[4]: 0f864c
+result[5]: 0f9a40
+result[6]: 0f716a
+result[7]: 0f1aa8
+result[8]: 0ff94d
+result[9]: 0f90a4
+result[10]: 0f0732
+result[11]: 0f7839
+result[12]: 0f2d0d
+result[13]: 0f3ce2
+result[14]: 0fadab
+result[15]: 0f8fd7
+
+Instr NO.178988	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.181120	PE0_act_child_op_inpe	is activated
+result[0]: 0fd876
+result[1]: 0febef
+result[2]: 0fca4d
+result[3]: 0fe332
+result[4]: 0fe9fa
+result[5]: 0ffa3e
+result[6]: 0fe7e9
+result[7]: 0fd636
+result[8]: 0ff2e8
+result[9]: 0fed7a
+result[10]: 0fd49c
+result[11]: 0fec8c
+result[12]: 0fd239
+result[13]: 0fc9dc
+result[14]: 0ff3a2
+result[15]: 0fe6a3
+
+Instr NO.181128	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.181149	PE0_act_child_op_eadd	is activated
+result[0]: 0f3571
+result[1]: 0f652b
+result[2]: 0ebe19
+result[3]: 0f58d8
+result[4]: 0f7046
+result[5]: 0f947e
+result[6]: 0f5953
+result[7]: 0ef0de
+result[8]: 0fec35
+result[9]: 0f7e1e
+result[10]: 0edbce
+result[11]: 0f64c5
+result[12]: 0eff46
+result[13]: 0f06be
+result[14]: 0fa14d
+result[15]: 0f767a
+
+Instr NO.181181	PE0_act_child_op_sigm	is activated
+result[0]: 00028d
+result[1]: 000539
+result[2]: 000000
+result[3]: 00045f
+result[4]: 00063a
+result[5]: 000a2d
+result[6]: 000466
+result[7]: 0000f3
+result[8]: 001b26
+result[9]: 00077b
+result[10]: 0000a2
+result[11]: 000530
+result[12]: 00012d
+result[13]: 00014b
+result[14]: 000c04
+result[15]: 0006ca
+
+Instr NO.183292	PE0_act_child_op_inpe	is activated
+result[0]: 0ffcfa
+result[1]: 0ffb9e
+result[2]: 00074d
+result[3]: 0ffe74
+result[4]: 0000d1
+result[5]: 0ffb25
+result[6]: 0ffb6b
+result[7]: 0fffec
+result[8]: 000797
+result[9]: 0ffb46
+result[10]: 0ffa99
+result[11]: 0ffdd0
+result[12]: 000b7c
+result[13]: 0ffe72
+result[14]: 0ffb86
+result[15]: 000366
+
+Instr NO.183300	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.185432	PE0_act_child_op_inpe	is activated
+result[0]: 000664
+result[1]: 0ff73e
+result[2]: 0003c9
+result[3]: 0ff107
+result[4]: 0fff6e
+result[5]: 0ffcb8
+result[6]: 000b8f
+result[7]: 0ff91d
+result[8]: 00024f
+result[9]: 0004fa
+result[10]: 0ff065
+result[11]: 0ff73e
+result[12]: 0ff2c4
+result[13]: 00048c
+result[14]: 000383
+result[15]: 00040a
+
+Instr NO.185440	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.185461	PE0_act_child_op_eadd	is activated
+result[0]: 00035e
+result[1]: 0ff2dc
+result[2]: 000b16
+result[3]: 0fef7b
+result[4]: 00003f
+result[5]: 0ff7dd
+result[6]: 0006fa
+result[7]: 0ff909
+result[8]: 0009e6
+result[9]: 000040
+result[10]: 0feafe
+result[11]: 0ff50e
+result[12]: 0ffe40
+result[13]: 0002fe
+result[14]: 0fff09
+result[15]: 000770
+
+Instr NO.185493	PE0_act_child_op_tanh	is activated
+result[0]: 00035b
+result[1]: 0ff30d
+result[2]: 000aec
+result[3]: 0fefcc
+result[4]: 00004a
+result[5]: 0ff7f8
+result[6]: 0006e5
+result[7]: 0ff91e
+result[8]: 0009c2
+result[9]: 00004e
+result[10]: 0febe0
+result[11]: 0ff536
+result[12]: 0ffe38
+result[13]: 0002fd
+result[14]: 0fff00
+result[15]: 00075a
+
+Instr NO.185525	PE0_act_child_op_emul	is activated
+result[0]: 000022
+result[1]: 0ffef1
+result[2]: 000000
+result[3]: 0ffee4
+result[4]: 000007
+result[5]: 0ffeb9
+result[6]: 000079
+result[7]: 0fffe5
+result[8]: 000423
+result[9]: 000009
+result[10]: 0fffcd
+result[11]: 0fff20
+result[12]: 0ffff7
+result[13]: 00000f
+result[14]: 0fffcf
+result[15]: 0000c7
+
+Instr NO.187620	PE0_act_child_op_inpe	is activated
+result[0]: 0fabad
+result[1]: 0fba78
+result[2]: 0f7c13
+result[3]: 0f9ef4
+result[4]: 0fc29c
+result[5]: 0fc00a
+result[6]: 0fad74
+result[7]: 0f7d82
+result[8]: 0ffe5f
+result[9]: 0fc4b6
+result[10]: 0f6c4c
+result[11]: 0fcf0c
+result[12]: 0f8fb2
+result[13]: 0f90fe
+result[14]: 0fc3ef
+result[15]: 0fc26d
+
+Instr NO.187628	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.189760	PE0_act_child_op_inpe	is activated
+result[0]: 0fecc6
+result[1]: 0ff1b9
+result[2]: 0fec22
+result[3]: 0ffc71
+result[4]: 0ff965
+result[5]: 0ff6d5
+result[6]: 0ff9b9
+result[7]: 0fe3f3
+result[8]: 000233
+result[9]: 0ffaa1
+result[10]: 0fe724
+result[11]: 0ffb2a
+result[12]: 0feb0e
+result[13]: 0fedfc
+result[14]: 0003e4
+result[15]: 0fed0f
+
+Instr NO.189768	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.189789	PE0_act_child_op_eadd	is activated
+result[0]: 0f9873
+result[1]: 0fac31
+result[2]: 0f6835
+result[3]: 0f9b65
+result[4]: 0fbc01
+result[5]: 0fb6df
+result[6]: 0fa72d
+result[7]: 0f6175
+result[8]: 000092
+result[9]: 0fbf57
+result[10]: 0f5370
+result[11]: 0fca36
+result[12]: 0f7ac0
+result[13]: 0f7efa
+result[14]: 0fc7d3
+result[15]: 0faf7c
+
+Instr NO.189821	PE0_act_child_op_sigm	is activated
+result[0]: 000abe
+result[1]: 000d96
+result[2]: 000580
+result[3]: 000b2b
+result[4]: 001091
+result[5]: 000f87
+result[6]: 000cdc
+result[7]: 0004e3
+result[8]: 002031
+result[9]: 001140
+result[10]: 000416
+result[11]: 001375
+result[12]: 00072d
+result[13]: 00078f
+result[14]: 0012f9
+result[15]: 000e0e
+
+Instr NO.189853	PE0_act_child_op_load	is activated
+result[0]: 000000
+result[1]: 0ffe40
+result[2]: 000000
+result[3]: 0ffeb0
+result[4]: 000000
+result[5]: 0ffea0
+result[6]: 000000
+result[7]: 000000
+result[8]: 0ffe90
+result[9]: 0fff98
+result[10]: 0fffac
+result[11]: 0fff60
+result[12]: 000000
+result[13]: 000000
+result[14]: 0fff60
+result[15]: 0001c0
+
+Instr NO.189885	PE0_act_child_op_emul	is activated
+result[0]: 000000
+result[1]: 0fffa0
+result[2]: 000000
+result[3]: 0fffc5
+result[4]: 000000
+result[5]: 0fffaa
+result[6]: 000000
+result[7]: 000000
+result[8]: 0fff46
+result[9]: 0fffe3
+result[10]: 0ffffa
+result[11]: 0fffcf
+result[12]: 000000
+result[13]: 000000
+result[14]: 0fffd0
+result[15]: 000062
+
+Instr NO.189917	PE0_act_child_op_eadd	is activated
+result[0]: 000022
+result[1]: 0ffe91
+result[2]: 000000
+result[3]: 0ffea9
+result[4]: 000007
+result[5]: 0ffe63
+result[6]: 000079
+result[7]: 0fffe5
+result[8]: 000369
+result[9]: 0fffec
+result[10]: 0fffc7
+result[11]: 0ffeef
+result[12]: 0ffff7
+result[13]: 00000f
+result[14]: 0fff9f
+result[15]: 000129
+
+Instr NO.189977	PE0_act_child_op_tanh	is activated
+result[0]: 00002f
+result[1]: 0ffe8b
+result[2]: 000010
+result[3]: 0ffea2
+result[4]: 000013
+result[5]: 0ffe5c
+result[6]: 000085
+result[7]: 0fffd8
+result[8]: 000366
+result[9]: 0fffdc
+result[10]: 0fffb9
+result[11]: 0ffee5
+result[12]: 0fffe8
+result[13]: 00001b
+result[14]: 0fff91
+result[15]: 000132
+
+Instr NO.192008	PE0_act_child_op_inpe	is activated
+result[0]: 0f55c6
+result[1]: 0f78ef
+result[2]: 0eec55
+result[3]: 0f75df
+result[4]: 0f7faa
+result[5]: 0f9414
+result[6]: 0f7488
+result[7]: 0f127b
+result[8]: 0fe147
+result[9]: 0f9148
+result[10]: 0efaae
+result[11]: 0f8840
+result[12]: 0f1556
+result[13]: 0f36ea
+result[14]: 0fc4ea
+result[15]: 0f8cc7
+
+Instr NO.192016	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.194148	PE0_act_child_op_inpe	is activated
+result[0]: 0fdaa7
+result[1]: 0fe4a5
+result[2]: 0fd3a7
+result[3]: 0fd778
+result[4]: 0feb55
+result[5]: 0ff12c
+result[6]: 0fd10b
+result[7]: 0fcbb7
+result[8]: 0ffcd1
+result[9]: 0fea8e
+result[10]: 0fcf55
+result[11]: 0ff70f
+result[12]: 0fdf4a
+result[13]: 0fd12b
+result[14]: 0ff928
+result[15]: 0fe328
+
+Instr NO.194161	PE0_act_child_op_eadd	is activated
+result[0]: 0f306d
+result[1]: 0f5d94
+result[2]: 0ebffc
+result[3]: 0f4d57
+result[4]: 0f6aff
+result[5]: 0f8540
+result[6]: 0f4593
+result[7]: 0ede32
+result[8]: 0fde18
+result[9]: 0f7bd6
+result[10]: 0eca03
+result[11]: 0f7f4f
+result[12]: 0ef4a0
+result[13]: 0f0815
+result[14]: 0fbe12
+result[15]: 0f6fef
+
+Instr NO.194177	PE0_act_child_op_sigm	is activated
+result[0]: 000267
+result[1]: 0004a0
+result[2]: 000000
+result[3]: 0003c3
+result[4]: 0005c0
+result[5]: 000821
+result[6]: 000359
+result[7]: 0000a8
+result[8]: 0017bc
+result[9]: 000747
+result[10]: 000078
+result[11]: 000797
+result[12]: 000102
+result[13]: 000150
+result[14]: 0010fd
+result[15]: 000632
+
+Instr NO.194193	PE0_act_child_op_emul	is activated
+result[0]: 000001
+result[1]: 0fffe5
+result[2]: 000000
+result[3]: 0fffeb
+result[4]: 000001
+result[5]: 0fffca
+result[6]: 000006
+result[7]: 0fffff
+result[8]: 000142
+result[9]: 0ffffb
+result[10]: 0fffff
+result[11]: 0fffde
+result[12]: 0fffff
+result[13]: 000000
+result[14]: 0fffe2
+result[15]: 00001d
+
+gb_control_child_recv: 
+data_in: 000 000 000 000 000 000 000 024 000 000 000 000 000 000 000 000
+
+Instr NO.194215	PE0_act_child_send_done	is activated
+gb_control_child_recv: 
+data_in: 000 023 000 000 01c 000 000 000 000 000 000 000 000 000 000 000
+
+gb_control_child_recv: 
+data_in: 013 095 000 0ca 000 000 000 09a 000 000 0ba 000 0a8 000 000 000
+
+gb_control_child_recv: 
+data_in: 0b5 0b0 000 000 000 000 000 045 000 000 000 000 000 0b4 000 09b
+
+child_send_back_prep: timestep_base_addr: 000020	vector_cntr: 000
+gb_control_child_send_back: data_out addr: 0	data_out index: 1
+data_out: 05d 011 0c5 000 000 0a5 000 002 000 041 0a8 000 007 000 000 000
+
+gb_control_child_send_back: data_out addr: 1	data_out index: 1
+data_out: 000 0af 081 0ac 0be 000 0b7 08d 000 000 000 000 0c6 000 000 000
+
+gb_control_child_send_back: data_out addr: 2	data_out index: 1
+data_out: 000 000 000 000 000 0bc 0a6 000 033 004 000 000 000 000 000 000
+
+gb_control_child_send_back: data_out addr: 3	data_out index: 1
+data_out: 000 000 000 000 000 000 000 024 000 000 000 000 000 000 000 000
+
+gb_control_child_send_back: data_out addr: 4	data_out index: 1
+data_out: 011 000 000 000 000 000 000 000 08a 0a9 000 000 000 000 000 081
+
+gb_control_child_send_back: data_out addr: 5	data_out index: 1
+data_out: 091 09c 027 0b1 000 000 000 000 000 000 000 000 000 093 000 000
+
+gb_control_child_send_back: data_out addr: 6	data_out index: 1
+data_out: 000 000 000 000 000 000 000 01d 000 000 0a0 000 0a0 000 000 088
+
+gb_control_child_send_back: data_out addr: 7	data_out index: 1
+data_out: 000 023 000 000 01c 000 000 000 000 000 000 000 000 000 000 000
+
+gb_control_child_send_back: data_out addr: 8	data_out index: 1
+data_out: 000 000 000 082 000 086 000 000 000 000 000 000 000 000 000 000
+
+gb_control_child_send_back: data_out addr: 9	data_out index: 1
+data_out: 000 02b 000 000 025 000 000 000 000 000 089 000 000 000 000 000
+
+gb_control_child_send_back: data_out addr: 10	data_out index: 1
+data_out: 000 0e6 093 000 000 000 014 000 000 000 000 051 000 000 000 000
+
+gb_control_child_send_back: data_out addr: 11	data_out index: 1
+data_out: 013 095 000 0ca 000 000 000 09a 000 000 0ba 000 0a8 000 000 000
+
+gb_control_child_send_back: data_out addr: 12	data_out index: 1
+data_out: 099 000 000 000 000 0b3 092 096 000 000 000 00d 000 000 02a 000
+
+gb_control_child_send_back: data_out addr: 13	data_out index: 1
+data_out: 000 000 000 011 000 000 000 000 000 000 000 000 000 0bd 081 000
+
+gb_control_child_send_back: data_out addr: 14	data_out index: 1
+data_out: 000 000 000 000 058 000 000 000 000 000 080 000 000 01a 092 000
+
+gb_control_child_send_back: data_out addr: 15	data_out index: 1
+data_out: 0b5 0b0 000 000 000 000 000 045 000 000 000 000 000 0b4 000 09b
+
+
+gb_control_child_send_prep: timestep_base_addr: 000030	timestep_index3
+
+gb_control_child_send: data_out_addr: 000	pe_mngr index: 0
+data_out: 001 000 000 000 000 08e 001 001 000 061 000 081 000 081 081 000
+
+gb_control_child_send: data_out_addr: 001	pe_mngr index: 0
+data_out: 004 081 081 081 000 000 000 03d 037 000 000 000 097 08c 002 000
+
+gb_control_child_send: data_out_addr: 002	pe_mngr index: 0
+data_out: 000 046 0cc 081 000 009 000 0e3 000 000 000 0a4 000 031 000 052
+
+gb_control_child_send: data_out_addr: 003	pe_mngr index: 0
+data_out: 000 000 056 000 025 000 0e0 000 000 000 000 034 000 000 09d 000
+
+gb_control_child_send: data_out_addr: 004	pe_mngr index: 0
+data_out: 000 001 000 000 090 000 0d9 000 09b 081 001 096 000 000 001 000
+
+gb_control_child_send: data_out_addr: 005	pe_mngr index: 0
+data_out: 000 081 000 05a 001 000 000 000 02d 0c2 051 094 000 0d1 000 0e8
+
+gb_control_child_send: data_out_addr: 006	pe_mngr index: 0
+data_out: 0bc 000 081 010 000 001 000 038 0a3 000 000 0b9 000 000 0bb 001
+
+gb_control_child_send: data_out_addr: 007	pe_mngr index: 0
+data_out: 001 000 000 010 001 000 000 040 000 001 081 061 027 000 000 081
+
+gb_control_child_send: data_out_addr: 008	pe_mngr index: 0
+data_out: 000 03e 0d1 032 001 088 00c 081 01f 000 000 096 040 000 0a3 000
+
+gb_control_child_send: data_out_addr: 009	pe_mngr index: 0
+data_out: 001 000 000 000 0a8 064 000 01f 043 000 001 054 032 000 001 000
+
+gb_control_child_send: data_out_addr: 00a	pe_mngr index: 0
+data_out: 000 000 000 0d2 0b8 000 081 0a6 000 064 013 000 000 0a4 081 000
+
+gb_control_child_send: data_out_addr: 00b	pe_mngr index: 0
+data_out: 081 000 001 00f 000 0bf 01f 000 000 000 081 045 001 081 000 001
+
+gb_control_child_send: data_out_addr: 00c	pe_mngr index: 0
+data_out: 081 044 0c5 002 000 063 0af 000 086 026 086 000 001 083 000 001
+
+gb_control_child_send: data_out_addr: 00d	pe_mngr index: 0
+data_out: 000 000 000 000 000 033 0a8 000 000 000 081 000 000 001 000 081
+
+gb_control_child_send: data_out_addr: 00e	pe_mngr index: 0
+data_out: 000 0e8 0c9 000 000 003 0b9 094 000 000 001 000 000 000 000 000
+
+gb_control_child_send: data_out_addr: 00f	pe_mngr index: 0
+data_out: 000 0b1 000 000 005 0da 081 05c 040 001 052 0c5 000 04a 000 000
+
+gb_control_pe_start: timestep_base_addr000030	vector counter: 0
+Instr NO.194394	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.194405	PE0_act_child_initiate	is activated
+Instr NO.196529	PE0_act_child_op_inpe	is activated
+result[0]: 0f8054
+result[1]: 0fbbe9
+result[2]: 0f8194
+result[3]: 0fa136
+result[4]: 0f75a9
+result[5]: 0ff771
+result[6]: 0fde3a
+result[7]: 0f78d5
+result[8]: 0fb4d1
+result[9]: 0f6e00
+result[10]: 0fcc6b
+result[11]: 0f9c22
+result[12]: 0f3976
+result[13]: 0fe327
+result[14]: 0fb861
+result[15]: 001519
+
+Instr NO.196537	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.198669	PE0_act_child_op_inpe	is activated
+result[0]: 0fd074
+result[1]: 0fe4a5
+result[2]: 0fe1a9
+result[3]: 0fee24
+result[4]: 0fec02
+result[5]: 0fec9e
+result[6]: 000caa
+result[7]: 0ff05b
+result[8]: 0000e8
+result[9]: 0feab3
+result[10]: 0001b7
+result[11]: 0ff40e
+result[12]: 0fda8f
+result[13]: 000008
+result[14]: 00019d
+result[15]: 0000d2
+
+Instr NO.198677	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.198698	PE0_act_child_op_eadd	is activated
+result[0]: 0f50c8
+result[1]: 0fa08e
+result[2]: 0f633d
+result[3]: 0f8f5a
+result[4]: 0f61ab
+result[5]: 0fe40f
+result[6]: 0feae4
+result[7]: 0f6930
+result[8]: 0fb5b9
+result[9]: 0f58b3
+result[10]: 0fce22
+result[11]: 0f9030
+result[12]: 0f1405
+result[13]: 0fe32f
+result[14]: 0fb9fe
+result[15]: 0015eb
+
+Instr NO.198730	PE0_act_child_op_sigm	is activated
+result[0]: 0003f1
+result[1]: 000be9
+result[2]: 00050c
+result[3]: 00096f
+result[4]: 0004e7
+result[5]: 00192c
+result[6]: 001ad4
+result[7]: 000596
+result[8]: 000f4a
+result[9]: 00045d
+result[10]: 001440
+result[11]: 00098f
+result[12]: 00018f
+result[13]: 0018f7
+result[14]: 00102a
+result[15]: 00255c
+
+Instr NO.200841	PE0_act_child_op_inpe	is activated
+result[0]: 0fff5b
+result[1]: 0ffe14
+result[2]: 00053c
+result[3]: 000810
+result[4]: 000051
+result[5]: 0ff1e3
+result[6]: 00164a
+result[7]: 0ffe00
+result[8]: 00000d
+result[9]: 0ffd45
+result[10]: 0feb3a
+result[11]: 0001ff
+result[12]: 0fedc8
+result[13]: 0fefc8
+result[14]: 000495
+result[15]: 0025c5
+
+Instr NO.200849	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.202981	PE0_act_child_op_inpe	is activated
+result[0]: 0ffae2
+result[1]: 00003d
+result[2]: 00029d
+result[3]: 00037a
+result[4]: 0ff05e
+result[5]: 000d3f
+result[6]: 000125
+result[7]: 0007bc
+result[8]: 000e7b
+result[9]: 0fff1d
+result[10]: 000916
+result[11]: 00061a
+result[12]: 0ff8bd
+result[13]: 0ff356
+result[14]: 000688
+result[15]: 00027b
+
+Instr NO.202989	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.203010	PE0_act_child_op_eadd	is activated
+result[0]: 0ffa3d
+result[1]: 0ffe51
+result[2]: 0007d9
+result[3]: 000b8a
+result[4]: 0ff0af
+result[5]: 0fff22
+result[6]: 00176f
+result[7]: 0005bc
+result[8]: 000e88
+result[9]: 0ffc62
+result[10]: 0ff450
+result[11]: 000819
+result[12]: 0fe685
+result[13]: 0fe31e
+result[14]: 000b1d
+result[15]: 002840
+
+Instr NO.203042	PE0_act_child_op_tanh	is activated
+result[0]: 0ffa4c
+result[1]: 0ffe4c
+result[2]: 0007c0
+result[3]: 000b5e
+result[4]: 0ff0ec
+result[5]: 0fff18
+result[6]: 00163e
+result[7]: 0005af
+result[8]: 000e4f
+result[9]: 0ffc66
+result[10]: 0ff47a
+result[11]: 0007ff
+result[12]: 0fe7f7
+result[13]: 0fe4fc
+result[14]: 000af4
+result[15]: 002374
+
+Instr NO.203074	PE0_act_child_op_emul	is activated
+result[0]: 0fffa6
+result[1]: 0fffae
+result[2]: 00009c
+result[3]: 0001ac
+result[4]: 0ffed8
+result[5]: 0fffa4
+result[6]: 000952
+result[7]: 00007e
+result[8]: 00036b
+result[9]: 0fffc1
+result[10]: 0ffc5a
+result[11]: 000131
+result[12]: 0fff6a
+result[13]: 0ff576
+result[14]: 0002c4
+result[15]: 0014b2
+
+Instr NO.205169	PE0_act_child_op_inpe	is activated
+result[0]: 0fc706
+result[1]: 0fcdaa
+result[2]: 0fb4ce
+result[3]: 0fc172
+result[4]: 0f9c0a
+result[5]: 001ba8
+result[6]: 000fdd
+result[7]: 0fcc46
+result[8]: 0fe203
+result[9]: 0f85f0
+result[10]: 0fecb8
+result[11]: 0fb6d8
+result[12]: 0f7913
+result[13]: 000244
+result[14]: 0fe8b3
+result[15]: 0023a8
+
+Instr NO.205177	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.207309	PE0_act_child_op_inpe	is activated
+result[0]: 0ffcb4
+result[1]: 0ffeb1
+result[2]: 0fe57f
+result[3]: 0fedb8
+result[4]: 0fe9e6
+result[5]: 0ff8b3
+result[6]: 000337
+result[7]: 0ffec9
+result[8]: 00056b
+result[9]: 0fef32
+result[10]: 0ffc01
+result[11]: 000146
+result[12]: 0fe091
+result[13]: 00081e
+result[14]: 000b87
+result[15]: 000960
+
+Instr NO.207317	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.207338	PE0_act_child_op_eadd	is activated
+result[0]: 0fc3ba
+result[1]: 0fcc5b
+result[2]: 0f9a4d
+result[3]: 0faf2a
+result[4]: 0f85f0
+result[5]: 00145b
+result[6]: 001314
+result[7]: 0fcb0f
+result[8]: 0fe76e
+result[9]: 0f7522
+result[10]: 0fe8b9
+result[11]: 0fb81e
+result[12]: 0f59a4
+result[13]: 000a62
+result[14]: 0ff43a
+result[15]: 002d08
+
+Instr NO.207370	PE0_act_child_op_sigm	is activated
+result[0]: 001223
+result[1]: 0013e4
+result[2]: 000b03
+result[3]: 000e03
+result[4]: 000830
+result[5]: 0024fb
+result[6]: 0024ad
+result[7]: 0013a1
+result[8]: 0019ff
+result[9]: 0006ab
+result[10]: 001a4e
+result[11]: 000fc8
+result[12]: 00046a
+result[13]: 002291
+result[14]: 001d17
+result[15]: 002ac4
+
+Instr NO.207402	PE0_act_child_op_load	is activated
+result[0]: 000000
+result[1]: 0fff00
+result[2]: 000000
+result[3]: 000220
+result[4]: 0fff40
+result[5]: 0ffc00
+result[6]: 000c80
+result[7]: 0000c0
+result[8]: 000140
+result[9]: 000000
+result[10]: 0ffa80
+result[11]: 0000a8
+result[12]: 0fffbc
+result[13]: 0ff080
+result[14]: 000280
+result[15]: 002400
+
+Instr NO.207434	PE0_act_child_op_emul	is activated
+result[0]: 000000
+result[1]: 0fffb0
+result[2]: 000000
+result[3]: 000077
+result[4]: 0fffe7
+result[5]: 0ffdb0
+result[6]: 000729
+result[7]: 00003a
+result[8]: 000081
+result[9]: 000000
+result[10]: 0ffdbd
+result[11]: 000029
+result[12]: 0ffffb
+result[13]: 0ff7a0
+result[14]: 000122
+result[15]: 00180e
+
+Instr NO.207466	PE0_act_child_op_eadd	is activated
+result[0]: 0fffa6
+result[1]: 0fff5e
+result[2]: 00009c
+result[3]: 000223
+result[4]: 0ffebf
+result[5]: 0ffd54
+result[6]: 00107b
+result[7]: 0000b8
+result[8]: 0003ec
+result[9]: 0fffc1
+result[10]: 0ffa17
+result[11]: 00015a
+result[12]: 0fff65
+result[13]: 0fed16
+result[14]: 0003e6
+result[15]: 002cc0
+
+Instr NO.207526	PE0_act_child_op_tanh	is activated
+result[0]: 0fff99
+result[1]: 0fff53
+result[2]: 0000a8
+result[3]: 000225
+result[4]: 0ffeb6
+result[5]: 0ffd51
+result[6]: 001029
+result[7]: 0000c4
+result[8]: 0003e8
+result[9]: 0fffb5
+result[10]: 0ffa25
+result[11]: 000161
+result[12]: 0fff5a
+result[13]: 0fedb5
+result[14]: 0003e0
+result[15]: 002690
+
+Instr NO.209557	PE0_act_child_op_inpe	is activated
+result[0]: 0f741b
+result[1]: 0fbdf2
+result[2]: 0f8272
+result[3]: 0faada
+result[4]: 0f7194
+result[5]: 0fe408
+result[6]: 0fd90e
+result[7]: 0f7d99
+result[8]: 0fb31d
+result[9]: 0f7172
+result[10]: 0fc348
+result[11]: 0f9370
+result[12]: 0f2e83
+result[13]: 0fe606
+result[14]: 0fb9ae
+result[15]: 0ff710
+
+Instr NO.209565	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.211697	PE0_act_child_op_inpe	is activated
+result[0]: 0fd0da
+result[1]: 0fec96
+result[2]: 0fe07c
+result[3]: 0ff74e
+result[4]: 0ff0f7
+result[5]: 0ff962
+result[6]: 0006a8
+result[7]: 0ff729
+result[8]: 0ffa38
+result[9]: 0fcf62
+result[10]: 0feb2f
+result[11]: 0ff671
+result[12]: 0fcc7a
+result[13]: 0fe6f9
+result[14]: 0ff7ef
+result[15]: 0ff9fa
+
+Instr NO.211705	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.211726	PE0_act_child_op_eadd	is activated
+result[0]: 0f44f5
+result[1]: 0faa88
+result[2]: 0f62ee
+result[3]: 0fa228
+result[4]: 0f628b
+result[5]: 0fdd6a
+result[6]: 0fdfb6
+result[7]: 0f74c2
+result[8]: 0fad55
+result[9]: 0f40d4
+result[10]: 0fae77
+result[11]: 0f89e1
+result[12]: 0efafd
+result[13]: 0fccff
+result[14]: 0fb19d
+result[15]: 0ff10a
+
+Instr NO.211758	PE0_act_child_op_sigm	is activated
+result[0]: 000350
+result[1]: 000d58
+result[2]: 000504
+result[3]: 000c24
+result[4]: 0004fc
+result[5]: 001790
+result[6]: 00181f
+result[7]: 0006a3
+result[8]: 000dbf
+result[9]: 000319
+result[10]: 000de9
+result[11]: 0008a6
+result[12]: 00011c
+result[13]: 001405
+result[14]: 000e75
+result[15]: 001c52
+
+Instr NO.211790	PE0_act_child_op_emul	is activated
+result[0]: 0ffffa
+result[1]: 0fffdb
+result[2]: 00000d
+result[3]: 000068
+result[4]: 0fffe6
+result[5]: 0fff03
+result[6]: 000617
+result[7]: 000014
+result[8]: 0000d6
+result[9]: 0ffffc
+result[10]: 0ffeba
+result[11]: 00002f
+result[12]: 0ffffd
+result[13]: 0ffa47
+result[14]: 0000e0
+result[15]: 001110
+
+gb_control_child_recv: 
+data_in: 061 01c 0c7 000 000 0a4 000 01b 000 048 0a0 000 00a 000 000 000
+
+gb_control_child_recv: 
+data_in: 016 000 000 000 000 000 000 085 091 0b0 002 000 000 000 000 081
+
+gb_control_child_recv: 
+data_in: 000 000 000 088 000 09b 000 000 000 000 000 000 000 000 000 000
+
+gb_control_child_recv: 
+data_in: 09e 000 009 000 000 0c1 000 000 000 000 000 01c 000 000 02e 000
+
+Instr NO.213901	PE0_act_child_op_inpe	is activated
+result[0]: 0f7b65
+result[1]: 0f8ff5
+result[2]: 0f6967
+result[3]: 00021b
+result[4]: 0fab73
+result[5]: 0f6f65
+result[6]: 0f6d9f
+result[7]: 0fad2c
+result[8]: 0fc234
+result[9]: 000485
+result[10]: 0f9243
+result[11]: 0ffcba
+result[12]: 0fc7f7
+result[13]: 0fb51a
+result[14]: 0fec10
+result[15]: 0f7c5a
+
+Instr NO.213909	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.216041	PE0_act_child_op_inpe	is activated
+result[0]: 0fe587
+result[1]: 0fe7d8
+result[2]: 0fe85f
+result[3]: 0ffce3
+result[4]: 0fde6f
+result[5]: 0fd53a
+result[6]: 0fd479
+result[7]: 0fefad
+result[8]: 0ffe3b
+result[9]: 0ffbc4
+result[10]: 0ff001
+result[11]: 0ffb22
+result[12]: 0ff0d6
+result[13]: 0fe2a1
+result[14]: 000024
+result[15]: 0fd0ef
+
+Instr NO.216049	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.216070	PE0_act_child_op_eadd	is activated
+result[0]: 0f60ec
+result[1]: 0f77cd
+result[2]: 0f51c6
+result[3]: 0ffefe
+result[4]: 0f89e2
+result[5]: 0f449f
+result[6]: 0f4218
+result[7]: 0f9cd9
+result[8]: 0fc06f
+result[9]: 000049
+result[10]: 0f8244
+result[11]: 0ff7dc
+result[12]: 0fb8cd
+result[13]: 0f97bb
+result[14]: 0fec34
+result[15]: 0f4d49
+
+Instr NO.216102	PE0_act_child_op_sigm	is activated
+result[0]: 0004d6
+result[1]: 0006e9
+result[2]: 0003ff
+result[3]: 001fb3
+result[4]: 0008a6
+result[5]: 00034c
+result[6]: 00032a
+result[7]: 000b61
+result[8]: 001179
+result[9]: 002020
+result[10]: 0007db
+result[11]: 001df8
+result[12]: 000feb
+result[13]: 000aa4
+result[14]: 001b26
+result[15]: 0003c2
+
+Instr NO.218213	PE0_act_child_op_inpe	is activated
+result[0]: 000066
+result[1]: 00032d
+result[2]: 0ff425
+result[3]: 0ff218
+result[4]: 0ff413
+result[5]: 0ff9b9
+result[6]: 0ff0b9
+result[7]: 0fead0
+result[8]: 0ff8ed
+result[9]: 0fedaf
+result[10]: 000dfe
+result[11]: 0fef3f
+result[12]: 0ffc3f
+result[13]: 0ff9c9
+result[14]: 0ff546
+result[15]: 0ffdd8
+
+Instr NO.218221	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.220353	PE0_act_child_op_inpe	is activated
+result[0]: 000080
+result[1]: 000ce9
+result[2]: 0001a2
+result[3]: 0feea3
+result[4]: 000611
+result[5]: 000d05
+result[6]: 00044b
+result[7]: 0009e8
+result[8]: 00052c
+result[9]: 0ffa8d
+result[10]: 00007b
+result[11]: 0fffe8
+result[12]: 0fef3e
+result[13]: 0fef44
+result[14]: 0ff93e
+result[15]: 000a5a
+
+Instr NO.220361	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.220382	PE0_act_child_op_eadd	is activated
+result[0]: 0000e6
+result[1]: 001016
+result[2]: 0ff5c7
+result[3]: 0fe0bb
+result[4]: 0ffa24
+result[5]: 0006be
+result[6]: 0ff504
+result[7]: 0ff4b8
+result[8]: 0ffe19
+result[9]: 0fe83c
+result[10]: 000e79
+result[11]: 0fef27
+result[12]: 0feb7d
+result[13]: 0fe90d
+result[14]: 0fee84
+result[15]: 000832
+
+Instr NO.220414	PE0_act_child_op_tanh	is activated
+result[0]: 0000ef
+result[1]: 000fd1
+result[2]: 0ff5eb
+result[3]: 0fe2e4
+result[4]: 0ffa31
+result[5]: 0006aa
+result[6]: 0ff52a
+result[7]: 0ff4e0
+result[8]: 0ffe15
+result[9]: 0fe974
+result[10]: 000e3f
+result[11]: 0fef83
+result[12]: 0fec50
+result[13]: 0fea2e
+result[14]: 0feef3
+result[15]: 000817
+
+Instr NO.220446	PE0_act_child_op_emul	is activated
+result[0]: 000012
+result[1]: 0001b5
+result[2]: 0fff5e
+result[3]: 0ff195
+result[4]: 0fff37
+result[5]: 000057
+result[6]: 0fff76
+result[7]: 0ffe05
+result[8]: 0fff79
+result[9]: 0ff4ae
+result[10]: 0001bf
+result[11]: 0ff847
+result[12]: 0ffb1a
+result[13]: 0ffc5f
+result[14]: 0ff8c4
+result[15]: 000079
+
+Instr NO.222541	PE0_act_child_op_inpe	is activated
+result[0]: 0f9f1e
+result[1]: 0fb69e
+result[2]: 0fa6fc
+result[3]: 003f3a
+result[4]: 0fb5e6
+result[5]: 0f8157
+result[6]: 0fbd44
+result[7]: 0fab7a
+result[8]: 0ff740
+result[9]: 002431
+result[10]: 0fa2c6
+result[11]: 0018e6
+result[12]: 00211e
+result[13]: 0fe245
+result[14]: 00116e
+result[15]: 0fb207
+
+Instr NO.222549	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.224681	PE0_act_child_op_inpe	is activated
+result[0]: 0fe13a
+result[1]: 0009f5
+result[2]: 0ff5aa
+result[3]: 000148
+result[4]: 0fe6a1
+result[5]: 0ffc3e
+result[6]: 0ffac4
+result[7]: 0fedfb
+result[8]: 000a46
+result[9]: 0ff57b
+result[10]: 0fed8b
+result[11]: 000f9c
+result[12]: 00066f
+result[13]: 0feba3
+result[14]: 00083b
+result[15]: 0ff63b
+
+Instr NO.224689	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.224710	PE0_act_child_op_eadd	is activated
+result[0]: 0f8058
+result[1]: 0fc093
+result[2]: 0f9ca6
+result[3]: 004082
+result[4]: 0f9c87
+result[5]: 0f7d95
+result[6]: 0fb808
+result[7]: 0f9975
+result[8]: 000186
+result[9]: 0019ac
+result[10]: 0f9051
+result[11]: 002882
+result[12]: 00278d
+result[13]: 0fcde8
+result[14]: 0019a9
+result[15]: 0fa842
+
+Instr NO.224742	PE0_act_child_op_sigm	is activated
+result[0]: 0007af
+result[1]: 00117f
+result[2]: 000b59
+result[3]: 002eb7
+result[4]: 000b55
+result[5]: 00076f
+result[6]: 000fc4
+result[7]: 000ae4
+result[8]: 00206c
+result[9]: 002647
+result[10]: 000993
+result[11]: 0029d8
+result[12]: 0029a2
+result[13]: 001433
+result[14]: 002644
+result[15]: 000d04
+
+Instr NO.224774	PE0_act_child_op_load	is activated
+result[0]: 000000
+result[1]: 000160
+result[2]: 0fff38
+result[3]: 0ff080
+result[4]: 000000
+result[5]: 000000
+result[6]: 0fffa4
+result[7]: 0fff08
+result[8]: 0ffe60
+result[9]: 0ff940
+result[10]: 0000e0
+result[11]: 0ff580
+result[12]: 0ffac0
+result[13]: 0ffe00
+result[14]: 0ffa00
+result[15]: 000000
+
+Instr NO.224806	PE0_act_child_op_emul	is activated
+result[0]: 000000
+result[1]: 000060
+result[2]: 0fffdc
+result[3]: 0ff4af
+result[4]: 000000
+result[5]: 000000
+result[6]: 0fffe9
+result[7]: 0fffd5
+result[8]: 0fff2d
+result[9]: 0ffbf6
+result[10]: 000021
+result[11]: 0ff922
+result[12]: 0ffc95
+result[13]: 0fff5e
+result[14]: 0ffc69
+result[15]: 000000
+
+Instr NO.224838	PE0_act_child_op_eadd	is activated
+result[0]: 000012
+result[1]: 000215
+result[2]: 0fff3a
+result[3]: 0fe644
+result[4]: 0fff37
+result[5]: 000057
+result[6]: 0fff5f
+result[7]: 0ffdda
+result[8]: 0ffea6
+result[9]: 0ff0a4
+result[10]: 0001e0
+result[11]: 0ff169
+result[12]: 0ff7af
+result[13]: 0ffbbd
+result[14]: 0ff52d
+result[15]: 000079
+
+Instr NO.224898	PE0_act_child_op_tanh	is activated
+result[0]: 00001f
+result[1]: 000219
+result[2]: 0fff2f
+result[3]: 0fe7bb
+result[4]: 0fff2b
+result[5]: 000062
+result[6]: 0fff53
+result[7]: 0ffdd6
+result[8]: 0ffe9e
+result[9]: 0ff0e0
+result[10]: 0001e6
+result[11]: 0ff1a4
+result[12]: 0ff7c9
+result[13]: 0ffbc5
+result[14]: 0ff556
+result[15]: 000085
+
+Instr NO.226929	PE0_act_child_op_inpe	is activated
+result[0]: 0f720f
+result[1]: 0f93a8
+result[2]: 0f65f1
+result[3]: 0fe507
+result[4]: 0f9741
+result[5]: 0f7094
+result[6]: 0f50ce
+result[7]: 0faa2e
+result[8]: 0fc5b3
+result[9]: 0ffb87
+result[10]: 0f9d62
+result[11]: 0fed78
+result[12]: 0fd6a7
+result[13]: 0fb49d
+result[14]: 0fd8e0
+result[15]: 0f74e6
+
+Instr NO.226937	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.229069	PE0_act_child_op_inpe	is activated
+result[0]: 0fd832
+result[1]: 0fdb98
+result[2]: 0fd101
+result[3]: 0ffa00
+result[4]: 0fe9a8
+result[5]: 0fe1a3
+result[6]: 0fd043
+result[7]: 0ff231
+result[8]: 0ffec5
+result[9]: 0001e5
+result[10]: 0ff161
+result[11]: 0ffa83
+result[12]: 0ff923
+result[13]: 0fe3ec
+result[14]: 0fffb7
+result[15]: 0fd633
+
+Instr NO.229077	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.229098	PE0_act_child_op_eadd	is activated
+result[0]: 0f4a41
+result[1]: 0f6f40
+result[2]: 0f36f2
+result[3]: 0fdf07
+result[4]: 0f80e9
+result[5]: 0f5237
+result[6]: 0f2111
+result[7]: 0f9c5f
+result[8]: 0fc478
+result[9]: 0ffd6c
+result[10]: 0f8ec3
+result[11]: 0fe7fb
+result[12]: 0fcfca
+result[13]: 0f9889
+result[14]: 0fd897
+result[15]: 0f4b19
+
+Instr NO.229130	PE0_act_child_op_sigm	is activated
+result[0]: 000399
+result[1]: 000623
+result[2]: 000298
+result[3]: 0017f6
+result[4]: 0007bc
+result[5]: 000405
+result[6]: 0001f2
+result[7]: 000b4f
+result[8]: 00124a
+result[9]: 001f52
+result[10]: 00095a
+result[11]: 001a20
+result[12]: 001497
+result[13]: 000ac1
+result[14]: 001666
+result[15]: 0003a4
+
+Instr NO.229162	PE0_act_child_op_emul	is activated
+result[0]: 000001
+result[1]: 000033
+result[2]: 0ffff7
+result[3]: 0ff6e9
+result[4]: 0fffe6
+result[5]: 000006
+result[6]: 0ffffa
+result[7]: 0fff9e
+result[8]: 0fff9a
+result[9]: 0ff899
+result[10]: 000047
+result[11]: 0ffa23
+result[12]: 0ffd5b
+result[13]: 0fff4a
+result[14]: 0ffc44
+result[15]: 000007
+
+gb_control_child_recv: 
+data_in: 000 0be 097 0b5 0c7 002 0ce 089 088 000 000 000 0d2 000 000 000
+
+gb_control_child_recv: 
+data_in: 092 000 026 09b 000 000 007 000 000 000 000 000 000 08b 002 000
+
+gb_control_child_recv: 
+data_in: 000 026 000 000 025 000 002 000 000 000 090 000 000 000 000 000
+
+gb_control_child_recv: 
+data_in: 000 000 000 015 000 000 000 095 000 000 000 000 000 0c4 000 000
+
+Instr NO.231273	PE0_act_child_op_inpe	is activated
+result[0]: 0f4097
+result[1]: 0f8f6f
+result[2]: 0fadda
+result[3]: 0f7871
+result[4]: 0f760a
+result[5]: 0f7ee3
+result[6]: 0fcff3
+result[7]: 0fd9ad
+result[8]: 0fa578
+result[9]: 0fdc4c
+result[10]: 0fe865
+result[11]: 0f8d38
+result[12]: 0fb095
+result[13]: 0f815f
+result[14]: 0f89eb
+result[15]: 0f7502
+
+Instr NO.231281	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.233413	PE0_act_child_op_inpe	is activated
+result[0]: 0fd18e
+result[1]: 0ff79b
+result[2]: 0fe44b
+result[3]: 0fee1d
+result[4]: 0fdd9a
+result[5]: 0fe748
+result[6]: 0fddd2
+result[7]: 000617
+result[8]: 0ff63c
+result[9]: 001982
+result[10]: 0ffd5e
+result[11]: 0ff5a4
+result[12]: 0ff383
+result[13]: 0ff024
+result[14]: 0fea86
+result[15]: 0ff85f
+
+Instr NO.233421	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.233442	PE0_act_child_op_eadd	is activated
+result[0]: 0f1225
+result[1]: 0f870a
+result[2]: 0f9225
+result[3]: 0f668e
+result[4]: 0f53a4
+result[5]: 0f662b
+result[6]: 0fadc5
+result[7]: 0fdfc4
+result[8]: 0f9bb4
+result[9]: 0ff5ce
+result[10]: 0fe5c3
+result[11]: 0f82dc
+result[12]: 0fa418
+result[13]: 0f7183
+result[14]: 0f7471
+result[15]: 0f6d61
+
+Instr NO.233474	PE0_act_child_op_sigm	is activated
+result[0]: 000180
+result[1]: 00084b
+result[2]: 0009d7
+result[3]: 000559
+result[4]: 000418
+result[5]: 000550
+result[6]: 000dcf
+result[7]: 001824
+result[8]: 000b37
+result[9]: 001d7a
+result[10]: 001996
+result[11]: 0007ea
+result[12]: 000c6b
+result[13]: 000657
+result[14]: 00069b
+result[15]: 0005f7
+
+Instr NO.235585	PE0_act_child_op_inpe	is activated
+result[0]: 0ffcd5
+result[1]: 000635
+result[2]: 0ffe5c
+result[3]: 000d81
+result[4]: 0ff521
+result[5]: 0ffb19
+result[6]: 0011de
+result[7]: 0010ae
+result[8]: 0ffa23
+result[9]: 0ff76a
+result[10]: 0ff67c
+result[11]: 00036e
+result[12]: 0ff007
+result[13]: 0ff38c
+result[14]: 0fee07
+result[15]: 0ff73b
+
+Instr NO.235593	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.237725	PE0_act_child_op_inpe	is activated
+result[0]: 0005ee
+result[1]: 0ff751
+result[2]: 001268
+result[3]: 000a13
+result[4]: 00010a
+result[5]: 0009f1
+result[6]: 000397
+result[7]: 0002af
+result[8]: 0ffccb
+result[9]: 0ffc04
+result[10]: 000c12
+result[11]: 0007a7
+result[12]: 0002c1
+result[13]: 000381
+result[14]: 001102
+result[15]: 000719
+
+Instr NO.237733	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.237754	PE0_act_child_op_eadd	is activated
+result[0]: 0002c3
+result[1]: 0ffd86
+result[2]: 0010c4
+result[3]: 001794
+result[4]: 0ff62b
+result[5]: 00050a
+result[6]: 001575
+result[7]: 00135d
+result[8]: 0ff6ee
+result[9]: 0ff36e
+result[10]: 00028e
+result[11]: 000b15
+result[12]: 0ff2c8
+result[13]: 0ff70d
+result[14]: 0fff09
+result[15]: 0ffe54
+
+Instr NO.237786	PE0_act_child_op_tanh	is activated
+result[0]: 0002c2
+result[1]: 0ffd84
+result[2]: 00106b
+result[3]: 001661
+result[4]: 0ff64d
+result[5]: 0004fe
+result[6]: 001485
+result[7]: 0012b0
+result[8]: 0ff70d
+result[9]: 0ff39e
+result[10]: 00028f
+result[11]: 000aec
+result[12]: 0ff2fa
+result[13]: 0ff72c
+result[14]: 0fff00
+result[15]: 0ffe4c
+
+Instr NO.237818	PE0_act_child_op_emul	is activated
+result[0]: 000010
+result[1]: 0fffad
+result[2]: 000286
+result[3]: 0001de
+result[4]: 0fff61
+result[5]: 00006a
+result[6]: 00046d
+result[7]: 00070c
+result[8]: 0ffe6e
+result[9]: 0ffa4b
+result[10]: 000105
+result[11]: 000159
+result[12]: 0ffd79
+result[13]: 0fff20
+result[14]: 0fffe5
+result[15]: 0fffd7
+
+Instr NO.239913	PE0_act_child_op_inpe	is activated
+result[0]: 0f9a21
+result[1]: 0f835a
+result[2]: 0fcf03
+result[3]: 0f9409
+result[4]: 0fa842
+result[5]: 0fb2cb
+result[6]: 0fc1f9
+result[7]: 0ff10e
+result[8]: 0fb21f
+result[9]: 0fe33f
+result[10]: 0fba34
+result[11]: 0fba12
+result[12]: 0fdb48
+result[13]: 0f8d2d
+result[14]: 0fb8ff
+result[15]: 0f9664
+
+Instr NO.239921	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.242053	PE0_act_child_op_inpe	is activated
+result[0]: 0fdf48
+result[1]: 0ff094
+result[2]: 0ff9c2
+result[3]: 0ff986
+result[4]: 0ff3ce
+result[5]: 0ff0fb
+result[6]: 0ff597
+result[7]: 0ff39f
+result[8]: 0fe6c4
+result[9]: 0ff6b2
+result[10]: 000808
+result[11]: 0fecc0
+result[12]: 0feeef
+result[13]: 0fe322
+result[14]: 0ff288
+result[15]: 0feffc
+
+Instr NO.242061	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.242082	PE0_act_child_op_eadd	is activated
+result[0]: 0f7969
+result[1]: 0f73ee
+result[2]: 0fc8c5
+result[3]: 0f8d8f
+result[4]: 0f9c10
+result[5]: 0fa3c6
+result[6]: 0fb790
+result[7]: 0fe4ad
+result[8]: 0f98e3
+result[9]: 0fd9f1
+result[10]: 0fc23c
+result[11]: 0fa6d2
+result[12]: 0fca37
+result[13]: 0f704f
+result[14]: 0fab87
+result[15]: 0f8660
+
+Instr NO.242114	PE0_act_child_op_sigm	is activated
+result[0]: 00070e
+result[1]: 000690
+result[2]: 001329
+result[3]: 00092f
+result[4]: 000b44
+result[5]: 000c5f
+result[6]: 000fac
+result[7]: 001953
+result[8]: 000ace
+result[9]: 0016b9
+result[10]: 0011d6
+result[11]: 000ccf
+result[12]: 001375
+result[13]: 00063b
+result[14]: 000d7d
+result[15]: 00083b
+
+Instr NO.242146	PE0_act_child_op_load	is activated
+result[0]: 000000
+result[1]: 0ffed0
+result[2]: 0001a0
+result[3]: 000180
+result[4]: 0fffb0
+result[5]: 000000
+result[6]: 000170
+result[7]: 000780
+result[8]: 0ffef0
+result[9]: 0ffb00
+result[10]: 0ff8c0
+result[11]: 000060
+result[12]: 0ffe80
+result[13]: 0ffec0
+result[14]: 0fff00
+result[15]: 0fff10
+
+Instr NO.242178	PE0_act_child_op_emul	is activated
+result[0]: 000000
+result[1]: 0fffe0
+result[2]: 00007c
+result[3]: 000037
+result[4]: 0ffff1
+result[5]: 000000
+result[6]: 00005a
+result[7]: 0002f7
+result[8]: 0fffd2
+result[9]: 0ffe39
+result[10]: 0ffdfa
+result[11]: 000013
+result[12]: 0fff8b
+result[13]: 0fffe0
+result[14]: 0fffca
+result[15]: 0fffe1
+
+Instr NO.242210	PE0_act_child_op_eadd	is activated
+result[0]: 000010
+result[1]: 0fff8d
+result[2]: 000302
+result[3]: 000215
+result[4]: 0fff52
+result[5]: 00006a
+result[6]: 0004c7
+result[7]: 000a03
+result[8]: 0ffe40
+result[9]: 0ff884
+result[10]: 0ffeff
+result[11]: 00016c
+result[12]: 0ffd04
+result[13]: 0fff00
+result[14]: 0fffaf
+result[15]: 0fffb8
+
+Instr NO.242270	PE0_act_child_op_tanh	is activated
+result[0]: 00001f
+result[1]: 0fff82
+result[2]: 000301
+result[3]: 000219
+result[4]: 0fff47
+result[5]: 000075
+result[6]: 0004bc
+result[7]: 0009de
+result[8]: 0ffe38
+result[9]: 0ff899
+result[10]: 0ffef5
+result[11]: 000174
+result[12]: 0ffd02
+result[13]: 0ffef5
+result[14]: 0fffa1
+result[15]: 0fffa9
+
+Instr NO.244301	PE0_act_child_op_inpe	is activated
+result[0]: 0f362b
+result[1]: 0f8a33
+result[2]: 0f9dd0
+result[3]: 0f77ff
+result[4]: 0f6546
+result[5]: 0f894a
+result[6]: 0fc8d0
+result[7]: 0fd651
+result[8]: 0fa007
+result[9]: 0fcfbe
+result[10]: 0ff685
+result[11]: 0f959a
+result[12]: 0f9b18
+result[13]: 0f8982
+result[14]: 0f8e99
+result[15]: 0f70d9
+
+Instr NO.244309	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.246441	PE0_act_child_op_inpe	is activated
+result[0]: 0fe37f
+result[1]: 0fed89
+result[2]: 0ff658
+result[3]: 0fdec3
+result[4]: 0fe859
+result[5]: 0fee20
+result[6]: 0ff8cb
+result[7]: 0ff7b7
+result[8]: 0fe562
+result[9]: 0ff383
+result[10]: 0fff41
+result[11]: 0fdfca
+result[12]: 0fe5e0
+result[13]: 0fdb62
+result[14]: 0fd7cc
+result[15]: 0ff51b
+
+Instr NO.246449	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.246470	PE0_act_child_op_eadd	is activated
+result[0]: 0f19aa
+result[1]: 0f77bc
+result[2]: 0f9428
+result[3]: 0f56c2
+result[4]: 0f4d9f
+result[5]: 0f776a
+result[6]: 0fc19b
+result[7]: 0fce08
+result[8]: 0f8569
+result[9]: 0fc341
+result[10]: 0ff5c6
+result[11]: 0f7564
+result[12]: 0f80f8
+result[13]: 0f64e4
+result[14]: 0f6665
+result[15]: 0f65f4
+
+Instr NO.246502	PE0_act_child_op_sigm	is activated
+result[0]: 0001b9
+result[1]: 0006e7
+result[2]: 000a20
+result[3]: 000443
+result[4]: 0003c6
+result[5]: 0006e0
+result[6]: 0011b6
+result[7]: 00143c
+result[8]: 000825
+result[9]: 00120b
+result[10]: 001d77
+result[11]: 0006b1
+result[12]: 0007bd
+result[13]: 000533
+result[14]: 000555
+result[15]: 00054b
+
+Instr NO.246534	PE0_act_child_op_emul	is activated
+result[0]: 000000
+result[1]: 0ffff2
+result[2]: 000079
+result[3]: 000023
+result[4]: 0ffff5
+result[5]: 00000c
+result[6]: 00014f
+result[7]: 00031e
+result[8]: 0fffc5
+result[9]: 0ffde9
+result[10]: 0fff85
+result[11]: 000026
+result[12]: 0fffa3
+result[13]: 0fffea
+result[14]: 0ffff8
+result[15]: 0ffff8
+
+gb_control_child_recv: 
+data_in: 000 000 000 087 000 08f 0b1 000 039 025 000 000 000 00e 000 000
+
+gb_control_child_recv: 
+data_in: 000 000 000 085 000 000 081 01f 082 000 099 000 000 000 000 000
+
+gb_control_child_recv: 
+data_in: 000 0ea 01a 000 000 087 08c 000 000 000 011 056 000 000 085 000
+
+gb_control_child_recv: 
+data_in: 000 000 000 000 05e 000 000 000 000 000 084 000 000 021 0a1 000
+
+Instr NO.248645	PE0_act_child_op_inpe	is activated
+result[0]: 0f6520
+result[1]: 0f7c00
+result[2]: 0efc8a
+result[3]: 0f7b4e
+result[4]: 0f840f
+result[5]: 0f9ef7
+result[6]: 0f7895
+result[7]: 0f2c7e
+result[8]: 0003ae
+result[9]: 0f9239
+result[10]: 0f1029
+result[11]: 0f899d
+result[12]: 0f4264
+result[13]: 0f4e01
+result[14]: 0f9bae
+result[15]: 0f9370
+
+Instr NO.248653	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.250785	PE0_act_child_op_inpe	is activated
+result[0]: 0fd835
+result[1]: 0fe6c0
+result[2]: 0fcacf
+result[3]: 0fe7ac
+result[4]: 0fe637
+result[5]: 0ffc0c
+result[6]: 0fe5aa
+result[7]: 0fd2e8
+result[8]: 0ff618
+result[9]: 0fe9c2
+result[10]: 0fd12c
+result[11]: 0ff366
+result[12]: 0fd760
+result[13]: 0fca81
+result[14]: 0ff0c0
+result[15]: 0fe907
+
+Instr NO.250793	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.250814	PE0_act_child_op_eadd	is activated
+result[0]: 0f3d55
+result[1]: 0f62c0
+result[2]: 0ec759
+result[3]: 0f62fa
+result[4]: 0f6a46
+result[5]: 0f9b03
+result[6]: 0f5e3f
+result[7]: 0eff66
+result[8]: 0ff9c6
+result[9]: 0f7bfb
+result[10]: 0ee155
+result[11]: 0f7d03
+result[12]: 0f19c4
+result[13]: 0f1882
+result[14]: 0f8c6e
+result[15]: 0f7c77
+
+Instr NO.250846	PE0_act_child_op_sigm	is activated
+result[0]: 0002e9
+result[1]: 000501
+result[2]: 000071
+result[3]: 000506
+result[4]: 0005af
+result[5]: 000b1d
+result[6]: 0004a9
+result[7]: 00012d
+result[8]: 001e6e
+result[9]: 00074a
+result[10]: 0000b0
+result[11]: 000762
+result[12]: 0001ba
+result[13]: 0001b1
+result[14]: 000905
+result[15]: 000755
+
+Instr NO.252957	PE0_act_child_op_inpe	is activated
+result[0]: 0ffeec
+result[1]: 0ffd44
+result[2]: 000b1e
+result[3]: 0000f3
+result[4]: 0003b1
+result[5]: 0ffcfd
+result[6]: 0ffb95
+result[7]: 0ffff8
+result[8]: 000caf
+result[9]: 0ffa81
+result[10]: 0ff915
+result[11]: 0002b3
+result[12]: 0007fa
+result[13]: 000095
+result[14]: 0ffb8a
+result[15]: 000564
+
+Instr NO.252965	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.255097	PE0_act_child_op_inpe	is activated
+result[0]: 00084d
+result[1]: 0ff1cd
+result[2]: 000f22
+result[3]: 0fef41
+result[4]: 000113
+result[5]: 0ff57c
+result[6]: 000f97
+result[7]: 0ffc17
+result[8]: 00079d
+result[9]: 00099a
+result[10]: 0fe5c5
+result[11]: 0ff471
+result[12]: 0ff033
+result[13]: 000283
+result[14]: 0003d6
+result[15]: 0fff31
+
+Instr NO.255105	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.255126	PE0_act_child_op_eadd	is activated
+result[0]: 000739
+result[1]: 0fef11
+result[2]: 001a40
+result[3]: 0ff034
+result[4]: 0004c4
+result[5]: 0ff279
+result[6]: 000b2c
+result[7]: 0ffc0f
+result[8]: 00144c
+result[9]: 00041b
+result[10]: 0fdeda
+result[11]: 0ff724
+result[12]: 0ff82d
+result[13]: 000318
+result[14]: 0fff60
+result[15]: 000495
+
+Instr NO.255158	PE0_act_child_op_tanh	is activated
+result[0]: 000723
+result[1]: 0fef71
+result[2]: 0018b8
+result[3]: 0ff072
+result[4]: 0004bc
+result[5]: 0ff2af
+result[6]: 000b04
+result[7]: 0ffc13
+result[8]: 001382
+result[9]: 000413
+result[10]: 0fe176
+result[11]: 0ff740
+result[12]: 0ff847
+result[13]: 000318
+result[14]: 0fff53
+result[15]: 00048d
+
+Instr NO.255190	PE0_act_child_op_emul	is activated
+result[0]: 000053
+result[1]: 0ffeb4
+result[2]: 00002b
+result[3]: 0ffec7
+result[4]: 00006b
+result[5]: 0ffdb0
+result[6]: 0000cd
+result[7]: 0fffed
+result[8]: 000946
+result[9]: 000076
+result[10]: 0fffac
+result[11]: 0ffefd
+result[12]: 0fffca
+result[13]: 000014
+result[14]: 0fffe7
+result[15]: 000085
+
+Instr NO.257285	PE0_act_child_op_inpe	is activated
+result[0]: 0fb032
+result[1]: 0fb65f
+result[2]: 0f7b7e
+result[3]: 0f980e
+result[4]: 0fbdcf
+result[5]: 0fbc2a
+result[6]: 0fb094
+result[7]: 0f7db6
+result[8]: 000156
+result[9]: 0fba04
+result[10]: 0f6d46
+result[11]: 0fdceb
+result[12]: 0f98cc
+result[13]: 0f91e0
+result[14]: 0fa79a
+result[15]: 0fc10b
+
+Instr NO.257293	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.259425	PE0_act_child_op_inpe	is activated
+result[0]: 0fef8f
+result[1]: 0ff6a6
+result[2]: 0ff57a
+result[3]: 0ffdd1
+result[4]: 0ff51d
+result[5]: 0ff931
+result[6]: 0ffbec
+result[7]: 0fe3f4
+result[8]: 0ffe06
+result[9]: 000044
+result[10]: 0fea77
+result[11]: 0ffd15
+result[12]: 0fe98b
+result[13]: 0feee6
+result[14]: 0006c9
+result[15]: 0fefdb
+
+Instr NO.259433	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 0	1st zero active: 0	2nd zero active: 1
+Instr NO.259454	PE0_act_child_op_eadd	is activated
+result[0]: 0f9fc1
+result[1]: 0fad05
+result[2]: 0f70f8
+result[3]: 0f95df
+result[4]: 0fb2ec
+result[5]: 0fb55b
+result[6]: 0fac80
+result[7]: 0f61aa
+result[8]: 0fff5c
+result[9]: 0fba48
+result[10]: 0f57bd
+result[11]: 0fda00
+result[12]: 0f8257
+result[13]: 0f80c6
+result[14]: 0fae63
+result[15]: 0fb0e6
+
+Instr NO.259486	PE0_act_child_op_sigm	is activated
+result[0]: 000bcb
+result[1]: 000db4
+result[2]: 00064b
+result[3]: 000a5f
+result[4]: 000eba
+result[5]: 000f38
+result[6]: 000da0
+result[7]: 0004e7
+result[8]: 001fc9
+result[9]: 001038
+result[10]: 000450
+result[11]: 0016bd
+result[12]: 0007dd
+result[13]: 0007b9
+result[14]: 000de6
+result[15]: 000e50
+
+Instr NO.259518	PE0_act_child_op_load	is activated
+result[0]: 000000
+result[1]: 0ffe90
+result[2]: 000000
+result[3]: 0ffeb0
+result[4]: 000000
+result[5]: 0ffe60
+result[6]: 000078
+result[7]: 000000
+result[8]: 000360
+result[9]: 000000
+result[10]: 000000
+result[11]: 0ffef0
+result[12]: 000000
+result[13]: 000000
+result[14]: 0fffa0
+result[15]: 000130
+
+Instr NO.259550	PE0_act_child_op_emul	is activated
+result[0]: 000000
+result[1]: 0fffb1
+result[2]: 000000
+result[3]: 0fffc9
+result[4]: 000000
+result[5]: 0fff9d
+result[6]: 000019
+result[7]: 000000
+result[8]: 0001ad
+result[9]: 000000
+result[10]: 000000
+result[11]: 0fff9f
+result[12]: 000000
+result[13]: 000000
+result[14]: 0fffeb
+result[15]: 000043
+
+Instr NO.259582	PE0_act_child_op_eadd	is activated
+result[0]: 000053
+result[1]: 0ffe65
+result[2]: 00002b
+result[3]: 0ffe90
+result[4]: 00006b
+result[5]: 0ffd4d
+result[6]: 0000e6
+result[7]: 0fffed
+result[8]: 000af3
+result[9]: 000076
+result[10]: 0fffac
+result[11]: 0ffe9c
+result[12]: 0fffca
+result[13]: 000014
+result[14]: 0fffd2
+result[15]: 0000c8
+
+Instr NO.259642	PE0_act_child_op_tanh	is activated
+result[0]: 00005e
+result[1]: 0ffe5f
+result[2]: 000037
+result[3]: 0ffe87
+result[4]: 000075
+result[5]: 0ffd4d
+result[6]: 0000ef
+result[7]: 0fffe0
+result[8]: 000ac9
+result[9]: 000081
+result[10]: 0fff9d
+result[11]: 0ffe92
+result[12]: 0fffbd
+result[13]: 000023
+result[14]: 0fffc4
+result[15]: 0000d4
+
+Instr NO.261673	PE0_act_child_op_inpe	is activated
+result[0]: 0f6116
+result[1]: 0f7c7e
+result[2]: 0ef85a
+result[3]: 0f7707
+result[4]: 0f7eb7
+result[5]: 0f98fb
+result[6]: 0f7d24
+result[7]: 0f24ea
+result[8]: 0fea66
+result[9]: 0f921a
+result[10]: 0f03da
+result[11]: 0f98cf
+result[12]: 0f2a3d
+result[13]: 0f476c
+result[14]: 0faec6
+result[15]: 0f9169
+
+Instr NO.261681	PE0_core_prep	is activated
+pe_is_zero_first: 0	manager_cntr: 1	1st zero active: 0	2nd zero active: 1
+Instr NO.263813	PE0_act_child_op_inpe	is activated
+result[0]: 0fdbc1
+result[1]: 0fe464
+result[2]: 0fd788
+result[3]: 0fdb41
+result[4]: 0fec8d
+result[5]: 0ff1a0
+result[6]: 0fcbb1
+result[7]: 0fc9a3
+result[8]: 0ff5e7
+result[9]: 0fe83b
+result[10]: 0fcf33
+result[11]: 0ffa0a
+result[12]: 0fe254
+result[13]: 0fd1a6
+result[14]: 0ffd96
+result[15]: 0fe33e
+
+Instr NO.263826	PE0_act_child_op_eadd	is activated
+result[0]: 0f3cd7
+result[1]: 0f60e2
+result[2]: 0ecfe2
+result[3]: 0f5248
+result[4]: 0f6b44
+result[5]: 0f8a9b
+result[6]: 0f48d5
+result[7]: 0eee8d
+result[8]: 0fe04d
+result[9]: 0f7a55
+result[10]: 0ed30d
+result[11]: 0f92d9
+result[12]: 0f0c91
+result[13]: 0f1912
+result[14]: 0fac5c
+result[15]: 0f74a7
+
+Instr NO.263842	PE0_act_child_op_sigm	is activated
+result[0]: 0002e2
+result[1]: 0004d5
+result[2]: 000086
+result[3]: 000406
+result[4]: 0005c6
+result[5]: 0008c1
+result[6]: 000386
+result[7]: 0000ea
+result[8]: 001843
+result[9]: 000723
+result[10]: 00008d
+result[11]: 0009f1
+result[12]: 000162
+result[13]: 0001b5
+result[14]: 000d9b
+result[15]: 0006a0
+
+Instr NO.263858	PE0_act_child_op_emul	is activated
+result[0]: 000004
+result[1]: 0fffe0
+result[2]: 000000
+result[3]: 0fffe8
+result[4]: 00000a
+result[5]: 0fffa1
+result[6]: 00000d
+result[7]: 0fffff
+result[8]: 000416
+result[9]: 00000e
+result[10]: 0fffff
+result[11]: 0fffc7
+result[12]: 0ffffe
+result[13]: 000000
+result[14]: 0ffff3
+result[15]: 000015
+
+gb_control_child_recv: 
+data_in: 000 000 000 000 000 000 000 040 000 000 088 000 000 000 000 000
+
+Instr NO.263880	PE0_act_child_send_done	is activated
+gb_control_child_recv: 
+data_in: 000 026 000 08d 013 000 000 000 000 000 000 000 000 000 000 000
+
+gb_control_child_recv: 
+data_in: 00b 09c 000 0cd 002 000 000 097 000 000 0b9 000 0af 000 000 000
+
+gb_control_child_recv: 
+data_in: 0cf 0a8 000 000 000 000 000 048 000 000 000 000 000 0bb 000 08a
+
+child_send_back_prep: timestep_base_addr: 000030	vector_cntr: 000
+gb_control_child_send_back: data_out addr: 0	data_out index: 1
+data_out: 061 01c 0c7 000 000 0a4 000 01b 000 048 0a0 000 00a 000 000 000
+
+gb_control_child_send_back: data_out addr: 1	data_out index: 1
+data_out: 000 0be 097 0b5 0c7 002 0ce 089 088 000 000 000 0d2 000 000 000
+
+gb_control_child_send_back: data_out addr: 2	data_out index: 1
+data_out: 000 000 000 087 000 08f 0b1 000 039 025 000 000 000 00e 000 000
+
+gb_control_child_send_back: data_out addr: 3	data_out index: 1
+data_out: 000 000 000 000 000 000 000 040 000 000 088 000 000 000 000 000
+
+gb_control_child_send_back: data_out addr: 4	data_out index: 1
+data_out: 016 000 000 000 000 000 000 085 091 0b0 002 000 000 000 000 081
+
+gb_control_child_send_back: data_out addr: 5	data_out index: 1
+data_out: 092 000 026 09b 000 000 007 000 000 000 000 000 000 08b 002 000
+
+gb_control_child_send_back: data_out addr: 6	data_out index: 1
+data_out: 000 000 000 085 000 000 081 01f 082 000 099 000 000 000 000 000
+
+gb_control_child_send_back: data_out addr: 7	data_out index: 1
+data_out: 000 026 000 08d 013 000 000 000 000 000 000 000 000 000 000 000
+
+gb_control_child_send_back: data_out addr: 8	data_out index: 1
+data_out: 000 000 000 088 000 09b 000 000 000 000 000 000 000 000 000 000
+
+gb_control_child_send_back: data_out addr: 9	data_out index: 1
+data_out: 000 026 000 000 025 000 002 000 000 000 090 000 000 000 000 000
+
+gb_control_child_send_back: data_out addr: 10	data_out index: 1
+data_out: 000 0ea 01a 000 000 087 08c 000 000 000 011 056 000 000 085 000
+
+gb_control_child_send_back: data_out addr: 11	data_out index: 1
+data_out: 00b 09c 000 0cd 002 000 000 097 000 000 0b9 000 0af 000 000 000
+
+gb_control_child_send_back: data_out addr: 12	data_out index: 1
+data_out: 09e 000 009 000 000 0c1 000 000 000 000 000 01c 000 000 02e 000
+
+gb_control_child_send_back: data_out addr: 13	data_out index: 1
+data_out: 000 000 000 015 000 000 000 095 000 000 000 000 000 0c4 000 000
+
+gb_control_child_send_back: data_out addr: 14	data_out index: 1
+data_out: 000 000 000 000 05e 000 000 000 000 000 084 000 000 021 0a1 000
+
+gb_control_child_send_back: data_out addr: 15	data_out index: 1
+data_out: 0cf 0a8 000 000 000 000 000 048 000 000 000 000 000 0bb 000 08a
 
 

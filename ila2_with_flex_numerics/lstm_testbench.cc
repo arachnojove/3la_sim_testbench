@@ -48,8 +48,8 @@ SC_MODULE(Source) {
 
     //fin.open("./lstm_testbench_input.txt", ios::in);
     //fin.open("./testbench_input/axi_commands_1_LSTM_timesteps_clustered_weights_with_read_commands.txt", ios::in);
-    //fin.open("./testbench_input/axi_commands_for_kmeans_clustering_for_LSTM_4_timesteps_zero_first_enabled_4PEs.csv", ios::in);
-    fin.open("./testbench_input/axi_commands_for_2_lstm_64x64.txt", ios::in);
+    fin.open("./testbench_input/axi_commands_for_kmeans_clustering_for_LSTM_4_timesteps_zero_first_enabled_4PEs.csv", ios::in);
+    //fin.open("./testbench_input/axi_commands_for_2_lstm_64x64.txt", ios::in);
 
     while(std::getline(fin, temp, ',')) {
       std::getline(fin, mode, ',');
@@ -191,9 +191,9 @@ SC_MODULE(testbench) {
     }
 
     std::ifstream fin;
-    fin.open("./flexnlp_results/flex_lstm_non_cluster.txt", ios::in);
+    //fin.open("./flexnlp_results/flex_lstm_non_cluster.txt", ios::in);
     //fin.open("./flexnlp_results/flex_lstm_result.txt", ios::in);
-    //fin.open("./flexnlp_results/flex_lstm_4t_result.txt", ios::in);
+    fin.open("./flexnlp_results/flex_lstm_4t_result.txt", ios::in);
     std::stringstream fs;
 
     std::string flex_str;
@@ -225,8 +225,7 @@ SC_MODULE(testbench) {
             fs << "flex data: " << data_str << '\n';
             fs << "ila2 data : ";
             for (int j = 0; j < 16; j++) {
-                int data_ila = flex.flex_sim_gb_core_large_buffer[addr_int + 15 - j].to_int();
-                fs << data_ila;
+                fs << hex << flex.flex_sim_gb_core_large_buffer[addr_int + 15 - j] << " ";
             }
             fs << '\n';
         } else {
@@ -236,6 +235,10 @@ SC_MODULE(testbench) {
     }
 
     fout << "Comparison results" << '\n';
+    if (total == passed)
+        fout << "*********** TESTBENCH PASSED !!! **********" << '\n';
+    else
+        fout << "*********** TESTBENCH FAILED ... **********" << '\n';
     fout << dec << "#total: " << total << '\t';
     fout << "#passed: " << passed << '\t';
     fout << "#failed: " << err_total << '\n';
