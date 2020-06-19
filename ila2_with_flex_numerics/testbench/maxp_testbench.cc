@@ -160,7 +160,7 @@ SC_MODULE(testbench) {
     int stop_addr = 0xdeaddead;
     std::ofstream fout;
     fout.open("./test_output/test_output_maxp.txt", ofstream::out | ofstream::trunc);
-    //flex.instr_log.open("./instr_log.txt", ofstream::out | ofstream::trunc);
+    flex.instr_log.open("./instr_log/instr_log_maxp.txt", ofstream::out | ofstream::trunc);
     
     wait(10, SC_NS);
     std::cout << "@" << sc_time_stamp() << " ********* simulation start *********" << std::endl;

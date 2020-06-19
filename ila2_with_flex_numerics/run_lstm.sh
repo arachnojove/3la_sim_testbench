@@ -33,7 +33,7 @@ export CFLAGS="$INCDIR $LIBDIR -Wall -Wno-unknown-pragmas -Wno-virtual-move-assi
 export CFLAGS+=" -DSC_INCLUDE_DYNAMIC_PROCESSES -DCONNECTIONS_ACCURATE_SIM"
 export CFLAGS+=" -DHLS_CATAPULT"
 export CFLAGS_UF=$CFLAGS" -g -c -o uninterpreted_func.o"
-export CFLAGS_T=$CFLAGS" -g -o lstm_testbench.o"
+export CFLAGS_T=$CFLAGS" -g -o lstm_testbench.out"
 
 export LIBS=" -lstdc++ -lsystemc -lm -lpthread -lboost_chrono -lboost_system"
 

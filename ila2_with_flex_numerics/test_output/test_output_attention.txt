@@ -1,4 +1,5 @@
 Comparison results
+*********** TESTBENCH PASSED !!! **********
 #total: 24832	#passed: 24832	#failed: 0
 comparing addr @ 0x33500000	PASSED
 comparing addr @ 0x33500010	PASSED
