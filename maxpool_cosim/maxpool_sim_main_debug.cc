@@ -99,10 +99,10 @@ SC_MODULE(Source) {
 
     wait(10, SC_NS);
 
+    //fin_relay.open("./test_input_relay_large.csv", ios::in);
     fin_relay.open("./test_input_relay.csv", ios::in);
-    fin_flex.open("./test_input_flex.csv", ios::in);
-    cout << "file open relay? " << fin_relay.is_open() << endl;
-    cout << "file open flex? " << fin_flex.is_open() << endl;
+    //fin_flex.open("./test_input_flex_large.csv", ios::in);
+    fin_flex.open("./test_input_flex_smallest.csv", ios::in);
 
     char c_relay, c_flex;
     char x;
@@ -366,7 +366,8 @@ SC_MODULE(testbench) {
     bool done = false;
     int stop_addr = 0xdead;
 
-    //flex.instr_log.open("./instr_out_flex.txt", ofstream::out | ofstream::trunc);
+    flex.instr_log.open("./instr_out_flex.txt", ofstream::out | ofstream::trunc);
+    relay.instr_log.open("./instr_out_relay.txt", ofstream::out | ofstream::trunc);
 
     std::cout << "before open new output file" << endl;
     std::ofstream fout;
@@ -483,10 +484,6 @@ SC_MODULE(testbench) {
       fout.close();
       wait(1000, SC_NS);
 
-      std::fstream instr_log;
-      instr_log.open("./instr_out_flex.txt", ofstream::out | ofstream::trunc);
-      instr_log << flex.instr_log.rdbuf();
-      instr_log.close();
       sc_stop();
     }
 

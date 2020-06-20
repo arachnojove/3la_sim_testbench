@@ -161,7 +161,6 @@ SC_MODULE(testbench) {
     std::ofstream fout;
     fout.open("./test_output/test_output_maxp.txt", ofstream::out | ofstream::trunc);
     flex.instr_log.open("./instr_log/instr_log_maxp_flex.txt", ofstream::out | ofstream::trunc);
-    relay.instr_log.open("./instr_log/instr_log_maxp_relay.txt", ofstream::out | ofstream::trunc);
     
     wait(10, SC_NS);
     std::cout << "@" << sc_time_stamp() << " ********* simulation start *********" << std::endl;
