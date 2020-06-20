@@ -1,4 +1,4 @@
-rm -f *.o
+rm -f *.o *.out
 export FLEX_SIM_DIR=/home/yl29/3LA/flexnlp-ila/build/sim_model
 export FLEX_MODEL_DIR=$FLEX_SIM_DIR/build/CMakeFiles/flex_sim.dir/src
 export FLEX_APP_DIR=$FLEX_SIM_DIR/build/CMakeFiles/flex_sim.dir/app
