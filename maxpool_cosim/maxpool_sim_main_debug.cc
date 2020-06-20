@@ -4,8 +4,8 @@
 #include <fstream>
 #include <sstream>
 
-#include "/home/yl29/3LA/flexnlp-ila/build/sim_model/include/flex_sim.h"
-#include "/home/yl29/3LA/relay-ila/build/sim_model/include/relay_sim.h"
+#include "flex_sim.h"
+#include "relay_sim.h"
 //#include "$FLEX_MODEL_DIR/include/flex_sim.h"
 //#include "$RELAY_MODEL_DIR/include/relay_sim.h"
 // source module of the testbench
