@@ -24,9 +24,13 @@ int main() {
   string temp;
   string mode;
   string addr_in, data_in;
+  string data_format;
 
   long long int addr_in_int;
   long long int addr_out_int;
+  long long int addr_out_int_byte;
+
+  int data_out_int;
 
   long long int addr_base = stoi("0x33000000", nullptr, 16);
   long long int addr_min = stoi("0x33500000", nullptr, 16);
@@ -56,7 +60,7 @@ int main() {
     if ((addr_in_int < addr_min) || (addr_in_int > addr_max)) {
       continue;
     }
-    fout << "t,";
+    // fout << "t,";
 
     group_index = i / group_size;
     addr_flex = i % group_size;
@@ -73,12 +77,23 @@ int main() {
     cout << dec << group_index << '\t' << x_relay << '\t' << y_relay << '\t';
     cout << hex << addr_offset << '\t' << addr_out_int << endl;
 
-
-    if (mode.compare("W") == 0) {
-      fout << "1,2,";
+    // extract the data
+    data_format.clear();
+    if (data_in.length() <= 34) {
+      data_format.append(34 - data_in.length(), '0');
+      data_format.append(data_in.substr(2));
+    } else {
+      data_format.append(data_in.substr(data_in.length()-32));
     }
 
-    fout << hex << addr_out_int << "," << data_in << '\n';
+    for (int j = 0; j < 16; j++) {
+      if (mode.compare("W") == 0) {
+        fout << "t,1,2,";
+      }
+      addr_out_int_byte = addr_out_int + j;
+      // data_out_int = std::stoi(data_format.substr(30-2*j, 2), nullptr, 16);
+      fout << hex << addr_out_int_byte << "," << "0x" << data_format.substr(30-2*j, 2) << '\n';
+    }
     
     i = i+1;
   }
