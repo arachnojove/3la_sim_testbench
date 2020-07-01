@@ -13,3 +13,6 @@
 
 # executable files
 *.out
+
+# unwanted path
+*/.vscode/*
