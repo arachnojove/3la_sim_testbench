@@ -50,15 +50,10 @@ CFLAGS_FLEX = $(INCDIR) $(LIBDIR) -Wall -Wno-unknown-pragmas -Wno-virtual-move-a
 CFLAGS_FLEX+=  -DSC_INCLUDE_DYNAMIC_PROCESSES -DCONNECTIONS_ACCURATE_SIM
 CFLAGS_FLEX+=  -DHLS_CATAPULT
 
-CFLAGS_UF=$(CFLAGS_FLEX) -g -c -o uninterpreted_func.o
-
-
-CFLAGS_T=$(CFLAGS_FLEX) -g -o maxp_testbench.out
-
 LIBS= -lstdc++ -lsystemc -lm -lpthread -lboost_chrono -lboost_system
 
-maxp_testbench.out: uninterpreted_func.o $(FLEX_MODEL_DIR)/*.o $(RELAY_MODEL_DIR)/*.o
-	$(CC) $(CFLAGS_UF) uninterpreted_func.o $(FLEX_MODEL_DIR)/*.o $(RELAY_MODEL_DIR)/*.o -o maxp_testbench.out $(LIBS)
+maxp_testbench.out: uninterpreted_func.o maxpool_sim_main.cc $(FLEX_MODEL_DIR)/*.o $(RELAY_MODEL_DIR)/*.o
+	$(CC) $(CFLAGS_FLEX) maxpool_sim_main.cc uninterpreted_func.o $(FLEX_MODEL_DIR)/*.o $(RELAY_MODEL_DIR)/*.o -o maxp_testbench.out $(LIBS)
 
 uninterpreted_func.o: uninterpreted_func.cc
 	$(CC) $(CFLAGS_FLEX) -c uninterpreted_func.cc -o uninterpreted_func.o $(LIBS)
