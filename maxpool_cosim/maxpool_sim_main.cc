@@ -2,10 +2,10 @@
 #include <iostream>
 #include <string>
 #include <fstream>
+#include <sstream>
 
-#include "../flexnlp_sim/FlexNLP-ila/build/sim_model/flex_sim.h"
-#include "../relay_sim/relay-ila/build/sim_model/relay_sim.h"
-
+#include "flex_sim.h"
+#include "relay_sim.h"
 // source module of the testbench
 // creating signals for flex_sim model
 SC_MODULE(Source) {
@@ -97,10 +97,8 @@ SC_MODULE(Source) {
 
     wait(10, SC_NS);
 
-    fin_relay.open("./test_input_relay.csv", ios::in);
-    fin_flex.open("./test_input_flex.csv", ios::in);
-    cout << "file open relay? " << fin_relay.is_open() << endl;
-    cout << "file open flex? " << fin_flex.is_open() << endl;
+    fin_relay.open("./test_input/test_input_relay.csv", ios::in);
+    fin_flex.open("./test_input/test_input_flex_smallest.csv", ios::in);
 
     char c_relay, c_flex;
     char x;
@@ -364,10 +362,14 @@ SC_MODULE(testbench) {
     bool done = false;
     int stop_addr = 0xdead;
 
+    flex.instr_log.open("./instr_output/instr_out_flex.txt", ofstream::out | ofstream::trunc);
+    relay.instr_log.open("./instr_output/instr_out_relay.txt", ofstream::out | ofstream::trunc);
+
+    std::cout << "before open new output file" << endl;
     std::ofstream fout;
     fout.open("./test_output.txt", ofstream::out | ofstream::trunc);
     
-    wait(10, SC_NS);
+    wait(1000, SC_NS);
     std::cout << "@" << sc_time_stamp() << " ********* simulation start *********" << std::endl;
 
     while (!done) {
@@ -477,6 +479,7 @@ SC_MODULE(testbench) {
 
       fout.close();
       wait(1000, SC_NS);
+
       sc_stop();
     }
 

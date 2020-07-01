@@ -48,5 +48,5 @@ echo $CFLAGS_UF
 g++ $CFLAGS_UF uninterpreted_func.cc $LIBS
 #g++ $CFLAGS_UF_RELAY uninterpreted_func_relay.cc $LIBS
 
-g++ $CFLAGS_T maxpool_sim_main_debug.cc $FLEX_MODEL_DIR/*.o $RELAY_MODEL_DIR/*.o *.o $LIBS
+g++ $CFLAGS_T maxpool_sim_main.cc $FLEX_MODEL_DIR/*.o $RELAY_MODEL_DIR/*.o *.o $LIBS
 

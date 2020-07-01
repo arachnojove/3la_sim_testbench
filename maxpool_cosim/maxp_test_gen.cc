@@ -2,9 +2,18 @@
 #include <string>
 #include <fstream>
 
+#include "json_helper/nlohmann/json.hpp"
+
 using namespace std;
+using json = nlohmann::json;
 
 int main() {
+  // testing for json tool
+  json j;
+  j["test"] = "test";
+  cout << j << endl; 
+
+
   cout << "please input:" << endl;
   cout << "number of timesteps" << endl;
   cout << "number of vectors" << endl;
