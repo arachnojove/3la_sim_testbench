@@ -13,6 +13,9 @@ clean:
 test_gen: maxp_test_gen.cc 
 	$(CC) $(CFLAGS) maxp_test_gen.cc -o maxp_test_gen.out
 
+json_gen: prog_frag_gen.cc
+	$(CC) $(CFLAGS) prog_frag_gen.cc -o json_gen.out
+
 FLEX_SIM_DIR = /home/yl29/3LA/flexnlp-ila/build/sim_model
 FLEX_MODEL_DIR = $(FLEX_SIM_DIR)/build/CMakeFiles/flex_sim.dir/src
 FLEX_APP_DIR = $(FLEX_SIM_DIR)/build/CMakeFiles/flex_sim.dir/app
