@@ -133,17 +133,6 @@ SC_MODULE(Source) {
                 stride_x = stride_x.substr(0,stride_x.length()-1);
             }
 
-            // extract the address
-            //addr_x = data_in_x.substr(data_in_x.length() - 5, 5);
-            //addr_x_format = "0x00" + addr_x;
-            //addr_x_c = addr_x_format.c_str();
-            //addr_x_c = data_in_x.c_str();
-
-            // addr_y = data_in_y.substr(data_in_y.length() - 5, 5);
-            // addr_y_format = "0x00" + addr_y;
-            // addr_y_c = addr_y_format.c_str();
-            //addr_y_c = data_in_y.c_str();
-
             // pass the data to the port
             relay_sim_relay_data_in_in = 0;
             //relay_sim_data_in_y_in = addr_y_c;
@@ -174,10 +163,6 @@ SC_MODULE(Source) {
                 stride_x = stride_x.substr(0, stride_x.length()-1);
             }
 
-            // extract the address
-            //addr_x = data_in_x.substr(data_in_x.length() - 5, 5);
-            //addr_x_format = "0x00" + addr_x;
-            //addr_x_c = addr_x_format.c_str();
             addr_c = data_in_y.c_str();
             //relay_sim_data_in_x_base = addr_c;
             
@@ -187,29 +172,6 @@ SC_MODULE(Source) {
             relay_sim_data_in_y_in = data_in_y.c_str();
             
             wait(10,SC_NS);
-            
-
-            // extract the data
-            // data_format.clear();
-            // if (data_in_y.length() <= 34) {
-            //   data_format.append(34 - data_in_y.length(), '0');
-            //   data_format.append(data_in_y.substr(2));
-            // } else {
-            //   data_format.append(data_in_y.substr(data_in_y.length()-32));
-            // }
-
-            // //cout << "@" << sc_time_stamp() << '\t' << "data format: " << data_format << endl;
-            // std::string data_byte;
-
-            // for (int i = 0; i<16; i++) {
-            //   data_byte = data_format.substr(30-2*i, 2);
-            //   int data_test = std::stoi(data_byte, nullptr, 16);
-
-            // //cout << "relay data in" << '\t' << hex << data_test << endl;
-            //   relay_sim_relay_data_in_in = data_test;
-            //   relay_sim_data_in_x_in = relay_sim_data_in_x_base + i;
-            //   wait(1, SC_NS);
-            // }
             
 
           }// function call for store
@@ -452,7 +414,9 @@ SC_MODULE(testbench) {
         int entry_g_offset_flex = 2 * group_size * (group_index / 2);
         entry_addr_flex = 16*(entry_g_offset_flex + 16*y_flex + x_flex + (group_index % 2) * 8);
         
-        fout << "comparing data at addr: " << hex << 16*j << '\t';
+        // fout << "comparing data at addr: " << hex << 16*j << '\t';
+        fout << "comparing data at: relay: " << entry_addr_relay << '\t';
+        fout << "flexnlp: " << entry_addr_flex << '\n';
         int err = 0;
         for (int k = 0; k < 16; k++) {
             index_relay = entry_addr_relay + 15 - k;
