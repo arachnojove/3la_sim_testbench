@@ -12,11 +12,11 @@ using json = nlohmann::json;
 using namespace std;
 
 int main() {
-  cout << "which program fragment to generate? (f/r) " << endl;
+  cout << "which json file to generate? (f/r/am) " << endl;
   string tmp;
   cin >> tmp;
   
-  std::list<string> type_list{"f", "r"};
+  std::list<string> type_list{"f", "r", "am"};
 
   while (find(begin(type_list), end(type_list), tmp) == end(type_list)) {
     cout << "invalid program fragment type. Please re-enter!" << endl;
@@ -159,6 +159,46 @@ int main() {
     fout.close();
     fin.close();
     
+  }
+  
+  // generate json file for address mapping
+  if (tmp == "am") {
+    while (file_in_path.find("out") == string::npos) {
+      cout << "wrong test_input file given" << endl;
+      cin >> file_in_path;
+    }
+    ifstream fin;
+    fin.open(file_in_path, ios::in);
+
+    json json_out;
+    vector<json> json_object_v;
+
+    string line_in;
+    string relay_addr, flex_addr;
+
+    while(getline(fin, line_in, '\n')) {
+      if ( (line_in.find("relay") == string::npos) ||
+           (line_in.find("flex") == string::npos)) {
+        continue;
+      }
+      int r_idx_l = line_in.find("relay");
+      int r_idx_h = r_idx_l + 7;
+      int f_idx_l = line_in.find("flex");
+      int f_idx_h = f_idx_l + 9;
+
+      relay_addr = line_in.substr(r_idx_h, f_idx_l - r_idx_h - 1);
+      flex_addr = line_in.substr(f_idx_h, 10);
+
+      json addr_pair = { {"relay_addr", relay_addr}, {"flex_addr", flex_addr} };
+      json_object_v.push_back(addr_pair);
+    }
+
+    json_out["address mapping"] = json_object_v;
+    ofstream fout;
+    fout.open("./addr_mapping.json", ios::out | ios::trunc );
+    fout << setw(4) << json_out;
+    fout.close();
+    fin.close();
   }
 
 }
