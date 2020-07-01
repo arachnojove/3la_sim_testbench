@@ -132,22 +132,30 @@ SC_MODULE(Source) {
             }
 
             // extract the address
-            // addr_x = data_in_x.substr(data_in_x.length() - 5, 5);
-            addr_x_format = "0x00" + addr_x;
-            addr_x_c = addr_x_format.c_str();
+            //addr_x = data_in_x.substr(data_in_x.length() - 5, 5);
+            //addr_x_format = "0x00" + addr_x;
+            //addr_x_c = addr_x_format.c_str();
+            //addr_x_c = data_in_x.c_str();
 
             // addr_y = data_in_y.substr(data_in_y.length() - 5, 5);
-            addr_y_format = "0x00" + addr_y;
-            addr_y_c = addr_y_format.c_str();
+            // addr_y_format = "0x00" + addr_y;
+            // addr_y_c = addr_y_format.c_str();
+            //addr_y_c = data_in_y.c_str();
 
             // pass the data to the port
             relay_sim_relay_data_in_in = 0;
-            relay_sim_data_in_y_in = addr_y_c;
-            relay_sim_data_in_x_in = addr_x_c;
+            //relay_sim_data_in_y_in = addr_y_c;
+            relay_sim_data_in_y_in = data_in_y.c_str(); 
+            //relay_sim_data_in_x_in = addr_x_c;
+            relay_sim_data_in_x_in = data_in_x.c_str();
+
+            cout << relay_sim_data_in_y_in << '\t' << relay_sim_data_in_x_in << endl;
             relay_sim_pool_size_y_in = pool_y.c_str();
             relay_sim_pool_size_x_in = pool_x.c_str();
             relay_sim_strides_y_in_in = stride_y.c_str();
             relay_sim_strides_x_in_in = stride_x.c_str();
+
+            wait(10, SC_NS);
           }// function call for maxpooling
 
           else if (func_id.compare("2") == 0) { // function call for store
@@ -161,18 +169,21 @@ SC_MODULE(Source) {
             }
 
             // extract the address
-            // addr_x = data_in_x.substr(data_in_x.length() - 5, 5);
-            addr_x_format = "0x00" + addr_x;
-//            cout << "addr_x_format" << '\t' << addr_x_format << endl;
-            addr_x_c = addr_x_format.c_str();
+            //addr_x = data_in_x.substr(data_in_x.length() - 5, 5);
+            //addr_x_format = "0x00" + addr_x;
+            //addr_x_c = addr_x_format.c_str();
+            addr_x_c = data_in_x.c_str();
             relay_sim_data_in_x_base = addr_x_c;
             
             int data_byte_int = std::stoi(data_in_y, nullptr, 16);
-            cout << "relay data in" << '\t' << hex << data_byte_int << endl;
+            cout << "relay input:" << '\t' << hex; 
+            cout << "addr: " << relay_sim_data_in_x_base << '\t';
+            cout << "data: " << data_byte_int << endl;
             relay_sim_relay_data_in_in = data_byte_int;
-            relay_sim_data_in_x_in = relay_sim_data_in_x_base;
+            //relay_sim_data_in_x_in = relay_sim_data_in_x_base;
+            relay_sim_data_in_x_in = std::stoi(data_in_x, nullptr, 16);
             
-            wait(1,SC_NS);
+            wait(10,SC_NS);
             
 
             // extract the data
@@ -368,7 +379,7 @@ SC_MODULE(testbench) {
   void run() {
     int i = 0;
     bool done = false;
-    int stop_addr = 0xdead;
+    int stop_addr = 0x0dead;
 
     flex.instr_log.open("./instr_output/instr_out_flex.txt", ofstream::out | ofstream::trunc);
     relay.instr_log.open("./instr_output/instr_out_relay.txt", ofstream::out | ofstream::trunc);
@@ -395,6 +406,7 @@ SC_MODULE(testbench) {
       int index_relay, index_flex;
       int tensor_out_y = relay.relay_sim_maxpooling_data_out_height.to_int();
       int tensor_out_x = relay.relay_sim_maxpooling_data_out_width.to_int() / 16;
+      cout << "tensor_out_y: " << dec << tensor_out_y << '\t' << "tensor_out_x: " << tensor_out_x << endl;
       int entry_max_16 = tensor_out_x * tensor_out_y;
       int entry_in_group;
 

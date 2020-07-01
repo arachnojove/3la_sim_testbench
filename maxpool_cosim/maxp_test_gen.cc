@@ -86,10 +86,11 @@ int main() {
 
     addr_offset = (group_index * group_size + y_relay * num_vectors + x_relay) * 16;
 
-    addr_out_int = addr_min + addr_offset;
+    //addr_out_int = addr_min + addr_offset;
+    addr_out_int = addr_offset;
 
-    cout << dec << group_index << '\t' << x_relay << '\t' << y_relay << '\t';
-    cout << hex << addr_offset << '\t' << addr_out_int << endl;
+    //cout << dec << group_index << '\t' << x_relay << '\t' << y_relay << '\t';
+    //cout << hex << addr_offset << '\t' << addr_out_int << endl;
 
     // extract the data
     data_format.clear();
@@ -102,20 +103,22 @@ int main() {
 
     for (int j = 0; j < 16; j++) {
       if (mode.compare("W") == 0) {
-        fout << "t,1,2,";
+        fout << "t,1,2,0x0";
       }
       addr_out_int_byte = addr_out_int + j;
       // data_out_int = std::stoi(data_format.substr(30-2*j, 2), nullptr, 16);
-      fout << hex << addr_out_int_byte << "," << "0x" << data_format.substr(30-2*j, 2) << '\n';
+      fout << hex << addr_out_int_byte << "," << "0x0" << data_format.substr(30-2*j, 2) << '\n';
     }
     
     i = i+1;
   }
   
-  long long int relay_matrix_y = addr_base + num_timesteps;
-  long long int relay_matrix_x = addr_base + num_vectors*16;
+  //long long int relay_matrix_y = addr_base + num_timesteps;
+  //long long int relay_matrix_x = addr_base + num_vectors*16;
+  long long int relay_matrix_y = num_timesteps;
+  long long int relay_matrix_x = num_vectors*16;
 
-  fout << hex << "t,1,1," << relay_matrix_y << "," << relay_matrix_x << ",2,1,2,1" << '\n';
+  fout << hex << "t,1,1,0x0" << relay_matrix_y << ",0x0" << relay_matrix_x << ",2,1,2,1" << '\n';
   fout << "2,0,3,0x0000dead,0x0" << endl;
   }
   
