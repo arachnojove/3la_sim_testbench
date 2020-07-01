@@ -159,29 +159,32 @@ SC_MODULE(Source) {
           }// function call for maxpooling
 
           else if (func_id.compare("2") == 0) { // function call for store
+            std::getline(fin_relay, data_in_y, ',');
             std::getline(fin_relay, data_in_x, ',');
-            std::getline(fin_relay, data_in_y, '\n');
+            std::getline(fin_relay, pool_y, ',');
+            std::getline(fin_relay, pool_x, ',');
+            std::getline(fin_relay, stride_y, ',');
+            std::getline(fin_relay, stride_x, '\n');
 
             // delete the possible /r at the end of the line
-            x = data_in_y[(data_in_y.length()-1)];
+            x = stride_x[(stride_x.length()-1)];
             if (int(x) == 13) {
-                data_in_y = data_in_y.substr(0, data_in_y.length()-1);
+                stride_x = stride_x.substr(0, stride_x.length()-1);
             }
 
             // extract the address
             //addr_x = data_in_x.substr(data_in_x.length() - 5, 5);
             //addr_x_format = "0x00" + addr_x;
             //addr_x_c = addr_x_format.c_str();
-            addr_x_c = data_in_x.c_str();
-            relay_sim_data_in_x_base = addr_x_c;
+            addr_c = data_in_y.c_str();
+            relay_sim_data_in_x_base = addr_c;
             
-            int data_byte_int = std::stoi(data_in_y, nullptr, 16);
+            int data_byte_int = std::stoi(data_in_x, nullptr, 16);
             cout << "relay input:" << '\t' << hex; 
             cout << "addr: " << relay_sim_data_in_x_base << '\t';
             cout << "data: " << data_byte_int << endl;
             relay_sim_relay_data_in_in = data_byte_int;
-            //relay_sim_data_in_x_in = relay_sim_data_in_x_base;
-            relay_sim_data_in_x_in = std::stoi(data_in_x, nullptr, 16);
+            relay_sim_data_in_x_in = relay_sim_data_in_x_base;
             
             wait(10,SC_NS);
             
