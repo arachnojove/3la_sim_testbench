@@ -1,6 +1,9 @@
 #include <iostream>
+#include <sstream>
+#include <iomanip>
 #include <string>
 #include <fstream>
+#include <vector>
 
 #include "json_helper/nlohmann/json.hpp"
 
@@ -8,10 +11,12 @@ using namespace std;
 using json = nlohmann::json;
 
 int main() {
-  // testing for json tool
-  json j;
-  j["test"] = "test";
-  cout << j << endl; 
+  // // testing for json tool
+  // vector<string> test_v = {"test1", "test2", "test3"};
+  // json j;
+  // j["test"] = "test";
+  // j["test_list"] = test_v;
+  // cout << setw(4) << j << endl; 
 
 
   cout << "please input:" << endl;

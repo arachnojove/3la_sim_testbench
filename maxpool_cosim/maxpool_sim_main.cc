@@ -97,7 +97,7 @@ SC_MODULE(Source) {
 
     wait(10, SC_NS);
 
-    fin_relay.open("./test_input/test_input_relay.csv", ios::in);
+    fin_relay.open("./test_input/test_input_relay_smallest.csv", ios::in);
     fin_flex.open("./test_input/test_input_flex_smallest.csv", ios::in);
 
     char c_relay, c_flex;
@@ -132,11 +132,11 @@ SC_MODULE(Source) {
             }
 
             // extract the address
-            addr_x = data_in_x.substr(data_in_x.length() - 5, 5);
+            // addr_x = data_in_x.substr(data_in_x.length() - 5, 5);
             addr_x_format = "0x00" + addr_x;
             addr_x_c = addr_x_format.c_str();
 
-            addr_y = data_in_y.substr(data_in_y.length() - 5, 5);
+            // addr_y = data_in_y.substr(data_in_y.length() - 5, 5);
             addr_y_format = "0x00" + addr_y;
             addr_y_c = addr_y_format.c_str();
 
@@ -161,33 +161,41 @@ SC_MODULE(Source) {
             }
 
             // extract the address
-            addr_x = data_in_x.substr(data_in_x.length() - 5, 5);
+            // addr_x = data_in_x.substr(data_in_x.length() - 5, 5);
             addr_x_format = "0x00" + addr_x;
 //            cout << "addr_x_format" << '\t' << addr_x_format << endl;
             addr_x_c = addr_x_format.c_str();
             relay_sim_data_in_x_base = addr_x_c;
+            
+            int data_byte_int = std::stoi(data_in_y, nullptr, 16);
+            cout << "relay data in" << '\t' << hex << data_byte_int << endl;
+            relay_sim_relay_data_in_in = data_byte_int;
+            relay_sim_data_in_x_in = relay_sim_data_in_x_base;
+            
+            wait(1,SC_NS);
+            
 
             // extract the data
-            data_format.clear();
-            if (data_in_y.length() <= 34) {
-              data_format.append(34 - data_in_y.length(), '0');
-              data_format.append(data_in_y.substr(2));
-            } else {
-              data_format.append(data_in_y.substr(data_in_y.length()-32));
-            }
+            // data_format.clear();
+            // if (data_in_y.length() <= 34) {
+            //   data_format.append(34 - data_in_y.length(), '0');
+            //   data_format.append(data_in_y.substr(2));
+            // } else {
+            //   data_format.append(data_in_y.substr(data_in_y.length()-32));
+            // }
 
-            //cout << "@" << sc_time_stamp() << '\t' << "data format: " << data_format << endl;
-            std::string data_byte;
+            // //cout << "@" << sc_time_stamp() << '\t' << "data format: " << data_format << endl;
+            // std::string data_byte;
 
-            for (int i = 0; i<16; i++) {
-              data_byte = data_format.substr(30-2*i, 2);
-              int data_test = std::stoi(data_byte, nullptr, 16);
+            // for (int i = 0; i<16; i++) {
+            //   data_byte = data_format.substr(30-2*i, 2);
+            //   int data_test = std::stoi(data_byte, nullptr, 16);
 
-            //cout << "relay data in" << '\t' << hex << data_test << endl;
-              relay_sim_relay_data_in_in = data_test;
-              relay_sim_data_in_x_in = relay_sim_data_in_x_base + i;
-              wait(1, SC_NS);
-            }
+            // //cout << "relay data in" << '\t' << hex << data_test << endl;
+            //   relay_sim_relay_data_in_in = data_test;
+            //   relay_sim_data_in_x_in = relay_sim_data_in_x_base + i;
+            //   wait(1, SC_NS);
+            // }
             
 
           }// function call for store
