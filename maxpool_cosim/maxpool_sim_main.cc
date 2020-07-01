@@ -415,8 +415,8 @@ SC_MODULE(testbench) {
         entry_addr_flex = 16*(entry_g_offset_flex + 16*y_flex + x_flex + (group_index % 2) * 8);
         
         // fout << "comparing data at addr: " << hex << 16*j << '\t';
-        fout << "comparing data at: relay: " << entry_addr_relay << '\t';
-        fout << "flexnlp: " << entry_addr_flex << '\n';
+        fout << "comparing data at: relay: 0x" << hex << entry_addr_relay << '\t';
+        fout << "flexnlp: 0x" << hex << entry_addr_flex + 0x33500000 << '\n';
         int err = 0;
         for (int k = 0; k < 16; k++) {
             index_relay = entry_addr_relay + 15 - k;
