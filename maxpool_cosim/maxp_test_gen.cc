@@ -5,10 +5,7 @@
 #include <fstream>
 #include <vector>
 
-#include "json_helper/nlohmann/json.hpp"
-
 using namespace std;
-using json = nlohmann::json;
 
 int main() {
   // // testing for json tool
@@ -107,7 +104,8 @@ int main() {
       }
       addr_out_int_byte = addr_out_int + j;
       // data_out_int = std::stoi(data_format.substr(30-2*j, 2), nullptr, 16);
-      fout << hex << addr_out_int_byte << "," << "0x0" << data_format.substr(30-2*j, 2) << '\n';
+      fout << hex << addr_out_int_byte << "," << "0x0" << data_format.substr(30-2*j, 2);
+      fout << ",0,0,0,0" << '\n';
     }
     
     i = i+1;
@@ -119,7 +117,7 @@ int main() {
   long long int relay_matrix_x = num_vectors*16;
 
   fout << hex << "t,1,1,0x0" << relay_matrix_y << ",0x0" << relay_matrix_x << ",2,1,2,1" << '\n';
-  fout << "2,0,3,0x0000dead,0x0" << endl;
+  fout << "2,0,3,0x0000dead,0x0,0,0,0,0" << endl;
   }
   
 
