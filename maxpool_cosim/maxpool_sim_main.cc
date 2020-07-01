@@ -97,8 +97,10 @@ SC_MODULE(Source) {
 
     wait(10, SC_NS);
 
-    fin_relay.open("./test_input/test_input_relay_smallest.csv", ios::in);
-    fin_flex.open("./test_input/test_input_flex_smallest.csv", ios::in);
+    //fin_relay.open("./test_input/test_input_relay_smallest.csv", ios::in);
+    //fin_flex.open("./test_input/test_input_flex_smallest.csv", ios::in);
+    fin_relay.open("./test_input/test_input_relay_large.csv", ios::in);
+    fin_flex.open("./test_input/test_input_flex_large.csv", ios::in);
 
     char c_relay, c_flex;
     char x;
@@ -177,14 +179,12 @@ SC_MODULE(Source) {
             //addr_x_format = "0x00" + addr_x;
             //addr_x_c = addr_x_format.c_str();
             addr_c = data_in_y.c_str();
-            relay_sim_data_in_x_base = addr_c;
+            //relay_sim_data_in_x_base = addr_c;
             
             int data_byte_int = std::stoi(data_in_x, nullptr, 16);
-            cout << "relay input:" << '\t' << hex; 
-            cout << "addr: " << relay_sim_data_in_x_base << '\t';
-            cout << "data: " << data_byte_int << endl;
             relay_sim_relay_data_in_in = data_byte_int;
-            relay_sim_data_in_x_in = relay_sim_data_in_x_base;
+            //relay_sim_data_in_x_in = relay_sim_data_in_x_base;
+            relay_sim_data_in_y_in = data_in_y.c_str();
             
             wait(10,SC_NS);
             
