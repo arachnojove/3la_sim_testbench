@@ -28,13 +28,18 @@ int main() {
   cout << "please specify the test_input file path" << endl;
   cin >> file_in_path;
 
+  string file_out_path;
+  cout << "please specify the output path with file name" << endl;
+  cin >> file_out_path;
+
   // generate program fragment from flexnlp testbench input
   if (tmp == "f") {
+    /*
     while (file_in_path.find("flex") == string::npos) {
       cout << "wrong test_input file given" << endl;
       cin >> file_in_path;
     }
-
+*/
     int instr_cntr = 0;
     
     ifstream fin;
@@ -50,6 +55,8 @@ int main() {
       getline(fin, addr, ',');
       getline(fin, data, '\n');
 
+      if (addr == "0xdeaddead")
+        break;
       if (stoi(addr, nullptr, 16) == 0x0dead) {
         break;
       }
@@ -74,7 +81,8 @@ int main() {
     json_out["command inputs"] = command_v;
     // cout << setw(4) << json_out;
     ofstream fout;
-    fout.open("./prog_frag/prog_frag_flex.json", ios::out | ios::trunc);
+    //fout.open("./prog_frag/prog_frag_flex.json", ios::out | ios::trunc);
+    fout.open(file_out_path, ios::out | ios::trunc);
     fout << setw(4) << json_out;
     fout.close();
     fin.close();
@@ -82,11 +90,12 @@ int main() {
 
   // generate program fragment from relay testbench input
   if (tmp == "r") {
+    /*
     while (file_in_path.find("relay") == string::npos) {
       cout << "wrong test_input file given" << endl;
       cin >> file_in_path;
     }
-
+*/
     ifstream fin;
     fin.open(file_in_path, ios::in);
 
@@ -154,7 +163,8 @@ int main() {
     json_out["command inputs"] = command_v;
     // cout << setw(4) << json_out;
     ofstream fout;
-    fout.open("./prog_frag/prog_frag_relay.json", ios::out | ios::trunc);
+ //   fout.open("./prog_frag/prog_frag_relay.json", ios::out | ios::trunc);
+    fout.open(file_out_path, ios::out | ios::trunc);
     fout << setw(4) << json_out;
     fout.close();
     fin.close();
@@ -195,7 +205,8 @@ int main() {
 
     json_out["address mapping"] = json_object_v;
     ofstream fout;
-    fout.open("./addr_mapping.json", ios::out | ios::trunc );
+    //fout.open("./addr_mapping.json", ios::out | ios::trunc );
+    fout.open(file_out_path, ios::out | ios::trunc);
     fout << setw(4) << json_out;
     fout.close();
     fin.close();

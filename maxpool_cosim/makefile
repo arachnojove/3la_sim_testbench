@@ -1,7 +1,7 @@
 #simple makefile
 #MACROS
 CC = g++
-CFLAGS = -std=c++11
+CFLAGS = -std=c++11 -g
 
 all: test_gen maxp_testbench.out
 # maxp_test_gen: maxp_test_gen.out
