@@ -9,8 +9,8 @@ clean:
 	rm -f *.out *.o
 
 FLEX_SIM_DIR = /home/yl29/3LA/flexnlp-ila/build/sim_model
-FLEX_MODEL_DIR = $(FLEX_SIM_DIR)/build/CMakeFiles/flex_sim.dir/src
-FLEX_APP_DIR = $(FLEX_SIM_DIR)/build/CMakeFiles/flex_sim.dir/app
+FLEX_MODEL_DIR = $(FLEX_SIM_DIR)/build/CMakeFiles/flex.dir/src
+FLEX_APP_DIR = $(FLEX_SIM_DIR)/build/CMakeFiles/flex.dir/app
 
 SYSTEMC_DIR = /home/yl29/local/systemc-2.3.3
 
@@ -33,7 +33,7 @@ INCDIR+= -I$(FLEX_HOME)
 
 INCDIR+= -I$(FLEX_SIM_DIR)/include 
 
-LIBDIR= -L. -L$(SYSTEMC_HOME)/lib64 -Wl,-rpath=$(SYSTEMC_HOME)/lib64 -L$(BOOST_HOME)/lib
+LIBDIR= -L. -L$(SYSTEMC_HOME)/lib -Wl,-rpath=$(SYSTEMC_HOME)/lib -L$(BOOST_HOME)/lib
 
 CFLAGS_FLEX = $(INCDIR) $(LIBDIR) -Wall -Wno-unknown-pragmas -Wno-virtual-move-assign -Wno-unused-local-typedefs -std=c++11
 CFLAGS_FLEX+=  -DSC_INCLUDE_DYNAMIC_PROCESSES -DCONNECTIONS_ACCURATE_SIM
