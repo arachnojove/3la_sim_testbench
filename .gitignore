@@ -16,3 +16,6 @@
 
 # unwanted path
 */.vscode/*
+
+# test output file
+*/test_output/*
