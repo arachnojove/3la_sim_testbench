@@ -229,14 +229,19 @@ int main() {
       int y_relay_v = x_flex_v;
 
       long long int addr_relay_v = (group_index * group_size + y_relay_v * num_vector + x_relay_v) * 16;
-      stringstream flex_addr_ss, relay_addr_ss;
-      flex_addr_ss.clear();
-      relay_addr_ss.clear();
-      flex_addr_ss << "0x" << hex << flex_addr;
-      relay_addr_ss << "0x" << hex << addr_relay_v;
+      
+      // convert to byte level
+      for (int j = 0; j < 16; j++) {
+        stringstream flex_addr_ss, relay_addr_ss;
+        flex_addr_ss.clear();
+        relay_addr_ss.clear();
+        flex_addr_ss << "0x" << hex << flex_addr + j;
+        relay_addr_ss << "0x" << hex << addr_relay_v + j;
 
-      json addr_pair = { {"relay_addr", relay_addr_ss.str()}, {"flex_addr", flex_addr_ss.str()}};
-      json_object_v.push_back(addr_pair);
+        json addr_pair = { {"relay_addr", relay_addr_ss.str()}, {"flex_addr", flex_addr_ss.str()}};
+        json_object_v.push_back(addr_pair);
+      }
+
     }
 
     json_out["address mapping"] = json_object_v;
