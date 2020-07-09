@@ -173,33 +173,69 @@ int main() {
   
   // generate json file for address mapping
   if (tmp == "am") {
-    while (file_in_path.find("out") == string::npos) {
-      cout << "wrong test_input file given" << endl;
-      cin >> file_in_path;
-    }
-    ifstream fin;
-    fin.open(file_in_path, ios::in);
+    // while (file_in_path.find("out") == string::npos) {
+    //   cout << "wrong test_input file given" << endl;
+    //   cin >> file_in_path;
+    // }
+    // ifstream fin;
+    // fin.open(file_in_path, ios::in);
+
+    // json json_out;
+    // vector<json> json_object_v;
+
+    // string line_in;
+    // string relay_addr, flex_addr;
+
+    // while(getline(fin, line_in, '\n')) {
+    //   if ( (line_in.find("relay") == string::npos) ||
+    //        (line_in.find("flex") == string::npos)) {
+    //     continue;
+    //   }
+    //   int r_idx_l = line_in.find("relay");
+    //   int r_idx_h = r_idx_l + 7;
+    //   int f_idx_l = line_in.find("flex");
+    //   int f_idx_h = f_idx_l + 9;
+
+    //   relay_addr = line_in.substr(r_idx_h, f_idx_l - r_idx_h - 1);
+    //   flex_addr = line_in.substr(f_idx_h, 10);
+
+    //   json addr_pair = { {"relay_addr", relay_addr}, {"flex_addr", flex_addr} };
+    //   json_object_v.push_back(addr_pair);
+    // }
+    cout << "Please specify number of vector in a flexnlp timestep" << endl;
+    int num_vector;
+    cin >> num_vector;
+    cout << "Please specify the upper address in flexnlp gb large buffer for the mapping" << endl;
+    string addr_max_s;
+    cin >> addr_max_s;
+    long long int addr_max = stoi(addr_max_s, nullptr, 16);
 
     json json_out;
     vector<json> json_object_v;
+    long long int flex_addr;
+    long long int flex_addr_offset;
+    int group_size = 16 * num_vector; // vector level (x16 for byte)
+    
+    for (flex_addr = 0x33500000; flex_addr < addr_max; flex_addr += 16) {
+      cout << "current flex_addr: " << hex << flex_addr << "\r" << std::flush;
+      flex_addr_offset = flex_addr - 0x33500000;
+      int i = flex_addr_offset / 16;
+      int group_index = i / group_size;
+      int addr_flex_v = i % group_size;
+      int y_flex_v = addr_flex_v / 16;
+      int x_flex_v = addr_flex_v % 16;
 
-    string line_in;
-    string relay_addr, flex_addr;
+      int x_relay_v = y_flex_v;
+      int y_relay_v = x_flex_v;
 
-    while(getline(fin, line_in, '\n')) {
-      if ( (line_in.find("relay") == string::npos) ||
-           (line_in.find("flex") == string::npos)) {
-        continue;
-      }
-      int r_idx_l = line_in.find("relay");
-      int r_idx_h = r_idx_l + 7;
-      int f_idx_l = line_in.find("flex");
-      int f_idx_h = f_idx_l + 9;
+      long long int addr_relay_v = (group_index * group_size + y_relay_v * num_vector + x_relay_v) * 16;
+      stringstream flex_addr_ss, relay_addr_ss;
+      flex_addr_ss.clear();
+      relay_addr_ss.clear();
+      flex_addr_ss << "0x" << hex << flex_addr;
+      relay_addr_ss << "0x" << hex << addr_relay_v;
 
-      relay_addr = line_in.substr(r_idx_h, f_idx_l - r_idx_h - 1);
-      flex_addr = line_in.substr(f_idx_h, 10);
-
-      json addr_pair = { {"relay_addr", relay_addr}, {"flex_addr", flex_addr} };
+      json addr_pair = { {"relay_addr", relay_addr_ss.str()}, {"flex_addr", flex_addr_ss.str()}};
       json_object_v.push_back(addr_pair);
     }
 
@@ -209,7 +245,7 @@ int main() {
     fout.open(file_out_path, ios::out | ios::trunc);
     fout << setw(4) << json_out;
     fout.close();
-    fin.close();
+    // fin.close();
   }
 
 }
