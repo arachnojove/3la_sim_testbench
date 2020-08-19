@@ -1,6 +1,6 @@
 #simple makefile
 #MACROS
-CC = g++
+CC = /usr/bin/g++
 CFLAGS = -std=c++11
 
 all: maxp_testbench.out attention_testbench.out layernorm_testbench.out gru_testbench.out rnn_testbench.out lstm_testbench.out
