@@ -62,13 +62,16 @@ int main() {
         }
     }
 
-    json_out["command input sequence"] = command_v;
+    json_out["program fragment"] = command_v;
     ofstream fout;
     fout.open(file_out, ios::out | ios::trunc);
     fout << setw(4) << json_out;
     fout.close();
     fin.close();
 
+//    cout << json_out["command input sequence"].size() << endl;
+//    for (auto i = 0; i < 10; i++) 
+//        cout << json_out["command input sequence"][i] << endl;
 
     return 0;
 }

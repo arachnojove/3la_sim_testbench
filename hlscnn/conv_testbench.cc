@@ -46,14 +46,14 @@ SC_MODULE(Source) {
     fin >> cmd_seq;
 
     // pass the command to the ports
-    for (int i = 0; i < cmd_seq[0].size(); i++) {
-      hlscnn_if_rd = cmd_seq[0][i]["is_rd"].get<bool>();
-      hlscnn_if_wr = cmd_seq[0][i]["is_wr"].get<bool>();
+    for (int i = 0; i < cmd_seq["program fragment"].size(); i++) {
+      hlscnn_if_rd = cmd_seq["program fragment"][i]["is_rd"].get<bool>();
+      hlscnn_if_wr = cmd_seq["program fragment"][i]["is_wr"].get<bool>();
       // fetch the address
-      std::string addr = cmd_seq[0][i]["addr"].get<std::string>();
+      std::string addr = cmd_seq["program fragment"][i]["addr"].get<std::string>();
       hlscnn_addr_in = std::stoi(addr, nullptr, 16);
       // extract each data byte from data
-      std::string data = cmd_seq[0][i]["data"].get<std::string>();
+      std::string data = cmd_seq["program fragment"][i]["data"].get<std::string>();
       for (int j = 0; j < 16; j++) {
         hlscnn_data_in[j] = std::stoi(data.substr(30-2*j,2), nullptr, 16);
       }
@@ -115,9 +115,6 @@ SC_MODULE(testbench) {
     hlscnn_inst.hlscnn_top_slave_data_in_14_in(hlscnn_data_signal[14]);
     hlscnn_inst.hlscnn_top_slave_data_in_15_in(hlscnn_data_signal[15]);
 
-    hlscnn_inst.instr_log;
-    
-
 
     SC_THREAD(run);
   }
@@ -125,12 +122,13 @@ SC_MODULE(testbench) {
   void run() {
     hlscnn_inst.instr_log.open("./instr_log_conv.txt", ofstream::out | ofstream::trunc);
 
+    std::cout << "start running" << std::endl;
     wait(10, SC_NS);
     std::cout << "@" << sc_time_stamp() << "*********** simulation start ***********" << std::endl;
     wait(10, SC_NS);
 
     while (input_done == 0) {
-      cout << "current simulation time" << sc_time_stamp() << "\r" << std::flush;
+      std::cout << "current simulation time" << sc_time_stamp() << "\r" << std::flush;
       wait(10, SC_NS);
     }
 
