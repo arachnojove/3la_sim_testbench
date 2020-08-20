@@ -34,9 +34,6 @@ SC_MODULE(Source) {
     }
 
     input_done = 0;
-
-    wait(10, SC_NS);
-
     // read program fragment from file
     std::ifstream fin;
     fin.open("./test_input_conv.json", ios::in);
@@ -47,8 +44,8 @@ SC_MODULE(Source) {
 
     // pass the command to the ports
     for (int i = 0; i < cmd_seq["program fragment"].size(); i++) {
-      hlscnn_if_rd = cmd_seq["program fragment"][i]["is_rd"].get<bool>();
-      hlscnn_if_wr = cmd_seq["program fragment"][i]["is_wr"].get<bool>();
+      hlscnn_if_rd = std::stoi(cmd_seq["program fragment"][i]["is_rd"].get<std::string>(), nullptr, 16);
+      hlscnn_if_wr = std::stoi(cmd_seq["program fragment"][i]["is_wr"].get<std::string>(), nullptr, 16);
       // fetch the address
       std::string addr = cmd_seq["program fragment"][i]["addr"].get<std::string>();
       hlscnn_addr_in = std::stoi(addr, nullptr, 16);
@@ -66,7 +63,7 @@ SC_MODULE(Source) {
 };
 
 SC_MODULE(testbench) {
-  SC_HAS_PROCESS(testbench);
+  // SC_HAS_PROCESS(testbench);
   hlscnn hlscnn_inst;
   Source src;
 
@@ -78,11 +75,10 @@ SC_MODULE(testbench) {
 
   sc_signal< sc_biguint<1> > input_done;
 
-  testbench(sc_module_name name)
-  : sc_module(name),
+  SC_CTOR(testbench) :
     clk("clk", 1, SC_NS),
-    src("source"),
-    hlscnn_inst("hlscnn")
+    hlscnn_inst("hlscnn_inst"),
+    src("source")
   {
     // binding the signals
     src.clk(clk);
@@ -94,7 +90,7 @@ SC_MODULE(testbench) {
     }
     src.input_done(input_done);
 
-    // connecting signals to hlscnn
+    // // connecting signals to hlscnn
     hlscnn_inst.hlscnn_top_slave_if_rd_in(hlscnn_if_rd_signal);
     hlscnn_inst.hlscnn_top_slave_if_wr_in(hlscnn_if_wr_signal);
     hlscnn_inst.hlscnn_top_slave_addr_in_in(hlscnn_addr_signal);
@@ -123,7 +119,6 @@ SC_MODULE(testbench) {
     hlscnn_inst.instr_log.open("./instr_log_conv.txt", ofstream::out | ofstream::trunc);
 
     std::cout << "start running" << std::endl;
-    wait(10, SC_NS);
     std::cout << "@" << sc_time_stamp() << "*********** simulation start ***********" << std::endl;
     wait(10, SC_NS);
 
