@@ -123,7 +123,7 @@ SC_MODULE(testbench) {
     wait(10, SC_NS);
 
     while (input_done == 0) {
-      std::cout << "current simulation time" << sc_time_stamp() << "\r" << std::flush;
+//      std::cout << "current simulation time" << sc_time_stamp() << "\r" << std::flush;
       wait(10, SC_NS);
     }
 
