@@ -1,5 +1,5 @@
 #simple makefile
-CC = g++
+CC = /usr/bin/g++
 CFLAGS = -std=c++11 -g
 
 CUR_DIR = /home/yl20/3LA/testbench/hlscnn
@@ -19,15 +19,31 @@ extract_input: extract_input_seq.cc
 HLSCNN_SIM_DIR = /home/yl29/3LA/hlscnn-ila/build/sim_model
 HLSCNN_MODEL_DIR = $(HLSCNN_SIM_DIR)/build/CMakeFiles/hlscnn.dir/src
 
+HLSCNN_ROOT = /home/yl29/3LA/HLSCNN_Accel
+HLSCNN_HOME = $(HLSCNN_ROOT)/cmod
 BOOST_HOME = /usr/local
 SYSTEMC_HOME = /home/yl29/local/systemc-2.3.3
+
+CATAPULT_HOME = /home/yl29/3LA/MentorGraphics2020/Catapult_Synthesis_10.5a-871028
+MC_SCV_INCLUDE = /home/yl29/3LA/MentorGraphics2020/Catapult_Synthesis_10.5a-871028/Mgc_home/shared/include
+CRT_LIB_DIR = /usr/lib/x86_64-linux-gnu
+STDCXX_LIB_DIR = /usr/lib/gcc/x86_64-linux-gnu
+BOOST_INC_DIR = /home/yl29/local/boost/include
+BOOST_LIB_DIR = /home/yl29/local/boost/lib
+
+export LIBRARY_PATH=$(CRT_LIB_DIR):$LIBRARY_PATH
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$(BOOST_LIB_DIR):$(SYSTEMC)/lib
 
 
 INCDIR+= -I$(SYSTEMC_HOME)/include -I$(BOOST_HOME)/include 
 INCDIR+= -I$(HLSCNN_SIM_DIR)/include
 
+INCDIR+= -I$(MC_SCV_INCLUDE) -I$(BOOST_INC_DIR)
+INCDIR+= -I$(HLSCNN_HOME)/include
+INCDIR+= -I$(HLSCNN_HOME)/harvard/top
 
 LIBDIR = -L. -L$(SYSTEMC_HOME)/lib -Wl,-rpath=$(SYSTEMC_HOME)/lib -L$(BOOST_HOME)/lib
+LIBDIR+= -L$(STDCXX_LIB_DIR)
 
 CFLAGS_HLSCNN = $(INCDIR) $(LIBDIR) -std=c++11 -g
 
