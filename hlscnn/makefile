@@ -8,13 +8,15 @@ INCDIR = -I. -I./json_helper
 
 CFLAGS+= $(INCDIR)
 
-all: extract_input uninterpreted_func.o conv_testbench.out
+all: extract_input extract_sim_result uninterpreted_func.o conv_testbench.out
 
 clean:
 	rm -f *.out *.o
 
-extract_input: extract_input_seq.cc
-	$(CC) $(CFLAGS) extract_input_seq.cc -o extract_input_seq.out
+extract_input: ./tool/extract_input_seq.cc 
+	$(CC) $(CFLAGS) ./tool/extract_input_seq.cc -o extract_input_seq.out
+extract_sim_result: ./tool/extract_sim_result.cc
+	$(CC) $(CFLAGS) ./tool/extract_sim_result.cc -o extract_sim_result.out
 
 HLSCNN_SIM_DIR = /home/yl29/3LA/hlscnn-ila/build/sim_model
 HLSCNN_MODEL_DIR = $(HLSCNN_SIM_DIR)/build/CMakeFiles/hlscnn.dir/src

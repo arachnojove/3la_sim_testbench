@@ -36,7 +36,7 @@ SC_MODULE(Source) {
     input_done = 0;
     // read program fragment from file
     std::ifstream fin;
-    fin.open("./test_input_conv.json", ios::in);
+    fin.open("./sim_info/test_input_conv.json", ios::in);
     
     //parse the json file
     json cmd_seq;
@@ -116,7 +116,7 @@ SC_MODULE(testbench) {
   }
 
   void run() {
-    hlscnn_inst.instr_log.open("./instr_log_conv.txt", ofstream::out | ofstream::trunc);
+    hlscnn_inst.instr_log.open("./sim_info/instr_log_conv.txt", ofstream::out | ofstream::trunc);
 
     std::cout << "start running" << std::endl;
     std::cout << "*********** simulation start ***********" << std::endl;
@@ -132,6 +132,32 @@ SC_MODULE(testbench) {
     std::cout << "************* sc_stop **************" << std::endl;
     hlscnn_inst.instr_log.close();
     std::cout << "SPAD1: result: " << std::endl;
+
+		// validate simulation result
+    int err = 0;
+    json hlscnn_result;
+    std::ifstream result_in;
+    result_in.open("./sim_info/sim_result.json", ios::in);
+		result_in >> hlscnn_result;
+
+    for (int i = 0; i < hlscnn_result["SPAD1 result"].size(); i++) {
+			int sim_addr = hlscnn_result["SPAD1 result"][i]["addr"];
+      int sim_data = hlscnn_result["SPAD1 result"][i]["data"];
+      int ila_addr = sim_addr - 0x24000;
+    //  cout << hlscnn_result["SPAD1 result"][i] << '\t' << sim_addr << '\t' << sim_data << endl;
+      sc_biguint<8> byte_0 = hlscnn_inst.hlscnn_scratch_pad_1[ila_addr];
+      sc_biguint<8> byte_1 = hlscnn_inst.hlscnn_scratch_pad_1[ila_addr+1];
+    	sc_biguint<16> data = byte_1;
+      data = (data << 8) + byte_0;
+      if (data.to_uint() != sim_data) {
+      	err++;
+      	std::cout << "error found: " << std::hex << sim_addr << "::" << ila_addr << '\t' << "sim_data::ila_data" << '\t' << sim_data << "::" << data << std::endl;
+      }
+    }
+
+    if (err == 0)
+        std::cout << "testbench passed" << std::endl;
+/*
     for (int i = 0; i < 0x40; i++) {
     	std::cout << "addr: " << std::hex << 0x24000 + i*0x10 << '\t' << "data: ";
 			for (int j = 0; j < 8; j++) {
@@ -143,6 +169,8 @@ SC_MODULE(testbench) {
       }
       std::cout << std::endl;
     }
+    */
+
     sc_stop();
   }
 };
