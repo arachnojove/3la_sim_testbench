@@ -10,14 +10,17 @@
 using namespace std;
 using json = nlohmann::json;
 
-int main() {
+int main(int argc, char* argv[]) {
 
     string file_path;
-    cout << "please specify the log file path" << endl;
-    cin >> file_path;
-    cout << "please specify output path" << endl;
+//    cout << "please specify the log file path" << endl;
+//    cin >> file_path;
+//    cout << "please specify output path" << endl;
     string file_out;
-    cin >> file_out;
+//    cin >> file_out;
+
+    file_path = argv[1];
+    file_out = argv[2];
 
     ifstream fin;
     fin.open(file_path, ios::in);

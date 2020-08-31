@@ -8,7 +8,7 @@ INCDIR = -I. -I./json_helper
 
 CFLAGS+= $(INCDIR)
 
-all: extract_input
+all: extract_input uninterpreted_func.o conv_testbench.out
 
 clean:
 	rm -f *.out *.o

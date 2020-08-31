@@ -119,17 +119,30 @@ SC_MODULE(testbench) {
     hlscnn_inst.instr_log.open("./instr_log_conv.txt", ofstream::out | ofstream::trunc);
 
     std::cout << "start running" << std::endl;
-    std::cout << "@" << sc_time_stamp() << "*********** simulation start ***********" << std::endl;
+    std::cout << "*********** simulation start ***********" << std::endl;
     wait(10, SC_NS);
 
     while (input_done == 0) {
-//      std::cout << "current simulation time" << sc_time_stamp() << "\r" << std::flush;
+		  std::cout << "current simulation time: " << '\t' << sc_time_stamp() << "\r" << std::flush;
       wait(10, SC_NS);
     }
 
     wait(100000, SC_NS);
+    std::cout << '\n' << std::endl;
     std::cout << "************* sc_stop **************" << std::endl;
     hlscnn_inst.instr_log.close();
+    std::cout << "SPAD1: result: " << std::endl;
+    for (int i = 0; i < 0x40; i++) {
+    	std::cout << "addr: " << std::hex << 0x24000 + i*0x10 << '\t' << "data: ";
+			for (int j = 0; j < 8; j++) {
+      	sc_biguint<8> byte_0 = hlscnn_inst.hlscnn_scratch_pad_1[i*0x10 + 2*j];
+        sc_biguint<8> byte_1 = hlscnn_inst.hlscnn_scratch_pad_1[i*0x10 + 2*j+1];
+      	sc_biguint<16> data = byte_1;
+        data = (data << 8) + byte_0;
+        std::cout << std::hex << data.to_uint() << " ";
+      }
+      std::cout << std::endl;
+    }
     sc_stop();
   }
 };
