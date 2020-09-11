@@ -4,8 +4,8 @@
 #include <fstream>
 #include <sstream>
 
-#include "flex_sim.h"
-#include "relay_sim.h"
+#include "flex.h"
+#include "relay.h"
 // source module of the testbench
 // creating signals for flex_sim model
 SC_MODULE(Source) {
@@ -13,21 +13,21 @@ SC_MODULE(Source) {
   //sc_in<bool> rst;
 
   // relay simulation model ports
-  sc_out< sc_biguint<1> > relay_sim_relay_func_run_in_in;
-  sc_out< sc_biguint<8> > relay_sim_relay_func_id_in;
-  sc_out< sc_biguint<8> > relay_sim_relay_data_in_in;
-  sc_out< sc_biguint<8> > relay_sim_data_in_batch_in;
-  sc_out< sc_biguint<8> > relay_sim_data_in_channel_in;
-  sc_out< sc_biguint<32> > relay_sim_data_in_y_in;
-  sc_out< sc_biguint<32> > relay_sim_data_in_x_in;
-  sc_out< sc_biguint<8> > relay_sim_pool_size_y_in;
-  sc_out< sc_biguint<8> > relay_sim_pool_size_x_in;
-  sc_out< sc_biguint<8> > relay_sim_strides_y_in_in;
-  sc_out< sc_biguint<8> > relay_sim_strides_x_in_in;
-  sc_out< sc_biguint<8> > relay_sim_padding_in_y_in;
-  sc_out< sc_biguint<8> > relay_sim_padding_in_x_in;
-  sc_out< sc_biguint<8> > relay_sim_layout_in_in;
-  sc_out< sc_biguint<8> > relay_sim_ceil_mode_in_in;
+  sc_out< sc_biguint<1> > relay_relay_func_run_in_in;
+  sc_out< sc_biguint<8> > relay_relay_func_id_in;
+  sc_out< sc_biguint<8> > relay_relay_data_in_in;
+  sc_out< sc_biguint<8> > relay_data_in_batch_in;
+  sc_out< sc_biguint<8> > relay_data_in_channel_in;
+  sc_out< sc_biguint<32> > relay_data_in_y_in;
+  sc_out< sc_biguint<32> > relay_data_in_x_in;
+  sc_out< sc_biguint<8> > relay_pool_size_y_in;
+  sc_out< sc_biguint<8> > relay_pool_size_x_in;
+  sc_out< sc_biguint<8> > relay_strides_y_in_in;
+  sc_out< sc_biguint<8> > relay_strides_x_in_in;
+  sc_out< sc_biguint<8> > relay_padding_in_y_in;
+  sc_out< sc_biguint<8> > relay_padding_in_x_in;
+  sc_out< sc_biguint<8> > relay_layout_in_in;
+  sc_out< sc_biguint<8> > relay_ceil_mode_in_in;
 
   // FlexNLP simulation model ports
   sc_out< sc_biguint<1> > flex_wr_in;
@@ -45,21 +45,21 @@ SC_MODULE(Source) {
 
   void source_input() {
     // reset relay signals
-    relay_sim_relay_func_run_in_in = 0;
-    relay_sim_relay_func_id_in = 0;
-    relay_sim_relay_data_in_in = 0;
-    relay_sim_data_in_batch_in = 0;
-    relay_sim_data_in_channel_in = 0;
-    relay_sim_data_in_y_in = 0;
-    relay_sim_data_in_x_in = 0;
-    relay_sim_pool_size_y_in = 0;
-    relay_sim_pool_size_x_in = 0;
-    relay_sim_strides_y_in_in = 0;
-    relay_sim_strides_x_in_in = 0;
-    relay_sim_padding_in_y_in = 0;
-    relay_sim_padding_in_x_in = 0;
-    relay_sim_layout_in_in = 0;
-    relay_sim_ceil_mode_in_in = 0;
+    relay_relay_func_run_in_in = 0;
+    relay_relay_func_id_in = 0;
+    relay_relay_data_in_in = 0;
+    relay_data_in_batch_in = 0;
+    relay_data_in_channel_in = 0;
+    relay_data_in_y_in = 0;
+    relay_data_in_x_in = 0;
+    relay_pool_size_y_in = 0;
+    relay_pool_size_x_in = 0;
+    relay_strides_y_in_in = 0;
+    relay_strides_x_in_in = 0;
+    relay_padding_in_y_in = 0;
+    relay_padding_in_x_in = 0;
+    relay_layout_in_in = 0;
+    relay_ceil_mode_in_in = 0;
 
     // reset flexnlp signals
     flex_wr_in = 0;
@@ -93,7 +93,7 @@ SC_MODULE(Source) {
     const char *addr_x_c, *addr_y_c, *addr_c;
     const char *data_byte_c;
 
-    sc_biguint<32> relay_sim_data_in_x_base;
+    sc_biguint<32> relay_data_in_x_base;
 
     wait(10, SC_NS);
 
@@ -116,8 +116,8 @@ SC_MODULE(Source) {
           std::getline(fin_relay, func_id, ',');
 
 
-          relay_sim_relay_func_run_in_in = func_run.c_str();
-          relay_sim_relay_func_id_in = func_id.c_str();
+          relay_relay_func_run_in_in = func_run.c_str();
+          relay_relay_func_id_in = func_id.c_str();
 
           if (func_id.compare("1") == 0) { // function call for maxpooling
             std::getline(fin_relay, data_in_y, ',');
@@ -134,17 +134,17 @@ SC_MODULE(Source) {
             }
 
             // pass the data to the port
-            relay_sim_relay_data_in_in = 0;
-            //relay_sim_data_in_y_in = addr_y_c;
-            relay_sim_data_in_y_in = data_in_y.c_str(); 
-            //relay_sim_data_in_x_in = addr_x_c;
-            relay_sim_data_in_x_in = data_in_x.c_str();
+            relay_relay_data_in_in = 0;
+            //relay_data_in_y_in = addr_y_c;
+            relay_data_in_y_in = data_in_y.c_str(); 
+            //relay_data_in_x_in = addr_x_c;
+            relay_data_in_x_in = data_in_x.c_str();
 
-            cout << relay_sim_data_in_y_in << '\t' << relay_sim_data_in_x_in << endl;
-            relay_sim_pool_size_y_in = pool_y.c_str();
-            relay_sim_pool_size_x_in = pool_x.c_str();
-            relay_sim_strides_y_in_in = stride_y.c_str();
-            relay_sim_strides_x_in_in = stride_x.c_str();
+            cout << relay_data_in_y_in << '\t' << relay_data_in_x_in << endl;
+            relay_pool_size_y_in = pool_y.c_str();
+            relay_pool_size_x_in = pool_x.c_str();
+            relay_strides_y_in_in = stride_y.c_str();
+            relay_strides_x_in_in = stride_x.c_str();
 
             wait(10, SC_NS);
           }// function call for maxpooling
@@ -164,12 +164,12 @@ SC_MODULE(Source) {
             }
 
             addr_c = data_in_y.c_str();
-            //relay_sim_data_in_x_base = addr_c;
+            //relay_data_in_x_base = addr_c;
             
             int data_byte_int = std::stoi(data_in_x, nullptr, 16);
-            relay_sim_relay_data_in_in = data_byte_int;
-            //relay_sim_data_in_x_in = relay_sim_data_in_x_base;
-            relay_sim_data_in_y_in = data_in_y.c_str();
+            relay_relay_data_in_in = data_byte_int;
+            //relay_data_in_x_in = relay_data_in_x_base;
+            relay_data_in_y_in = data_in_y.c_str();
             
             wait(10,SC_NS);
             
@@ -239,27 +239,27 @@ SC_MODULE(Source) {
 
 SC_MODULE(testbench) {
   SC_HAS_PROCESS(testbench);
-  relay_sim relay;
-  flex_sim flex;
+  relay relay_i;
+  flex flex_i;
   Source src;
 
   sc_clock clk;
   // wire for relay
-  sc_signal< sc_biguint<1> > relay_sim_relay_func_run_in_signal;
-  sc_signal< sc_biguint<8> > relay_sim_relay_func_id_signal;
-  sc_signal< sc_biguint<8> > relay_sim_relay_data_in_signal;
-  sc_signal< sc_biguint<8> > relay_sim_data_in_batch_signal;
-  sc_signal< sc_biguint<8> > relay_sim_data_in_channel_signal;
-  sc_signal< sc_biguint<32> > relay_sim_data_in_y_signal;
-  sc_signal< sc_biguint<32> > relay_sim_data_in_x_signal;
-  sc_signal< sc_biguint<8> > relay_sim_pool_size_y_signal;
-  sc_signal< sc_biguint<8> > relay_sim_pool_size_x_signal;
-  sc_signal< sc_biguint<8> > relay_sim_strides_y_in_signal;
-  sc_signal< sc_biguint<8> > relay_sim_strides_x_in_signal;
-  sc_signal< sc_biguint<8> > relay_sim_padding_in_y_signal;
-  sc_signal< sc_biguint<8> > relay_sim_padding_in_x_signal;
-  sc_signal< sc_biguint<8> > relay_sim_layout_in_signal;
-  sc_signal< sc_biguint<8> > relay_sim_ceil_mode_in_signal;
+  sc_signal< sc_biguint<1> > relay_relay_func_run_in_signal;
+  sc_signal< sc_biguint<8> > relay_relay_func_id_signal;
+  sc_signal< sc_biguint<8> > relay_relay_data_in_signal;
+  sc_signal< sc_biguint<8> > relay_data_in_batch_signal;
+  sc_signal< sc_biguint<8> > relay_data_in_channel_signal;
+  sc_signal< sc_biguint<32> > relay_data_in_y_signal;
+  sc_signal< sc_biguint<32> > relay_data_in_x_signal;
+  sc_signal< sc_biguint<8> > relay_pool_size_y_signal;
+  sc_signal< sc_biguint<8> > relay_pool_size_x_signal;
+  sc_signal< sc_biguint<8> > relay_strides_y_in_signal;
+  sc_signal< sc_biguint<8> > relay_strides_x_in_signal;
+  sc_signal< sc_biguint<8> > relay_padding_in_y_signal;
+  sc_signal< sc_biguint<8> > relay_padding_in_x_signal;
+  sc_signal< sc_biguint<8> > relay_layout_in_signal;
+  sc_signal< sc_biguint<8> > relay_ceil_mode_in_signal;
 
   // wire for FlexNLP
   sc_signal< sc_biguint<1> > flex_wr_signal;
@@ -271,27 +271,27 @@ SC_MODULE(testbench) {
   : sc_module(name),
     clk("clk", 1, SC_NS),
     src("source"),
-    relay("relay"),
-    flex("flex")
+    relay_i("relay"),
+    flex_i("flex")
     {
     // binding the signals from the source
     src.clk(clk);
 
-    src.relay_sim_relay_func_run_in_in(relay_sim_relay_func_run_in_signal);
-    src.relay_sim_relay_func_id_in(relay_sim_relay_func_id_signal);
-    src.relay_sim_relay_data_in_in(relay_sim_relay_data_in_signal);
-    src.relay_sim_data_in_batch_in(relay_sim_data_in_batch_signal);
-    src.relay_sim_data_in_channel_in(relay_sim_data_in_channel_signal);
-    src.relay_sim_data_in_y_in(relay_sim_data_in_y_signal);
-    src.relay_sim_data_in_x_in(relay_sim_data_in_x_signal);
-    src.relay_sim_pool_size_y_in(relay_sim_pool_size_y_signal);
-    src.relay_sim_pool_size_x_in(relay_sim_pool_size_x_signal);
-    src.relay_sim_strides_y_in_in(relay_sim_strides_y_in_signal);
-    src.relay_sim_strides_x_in_in(relay_sim_strides_x_in_signal);
-    src.relay_sim_padding_in_y_in(relay_sim_padding_in_y_signal);
-    src.relay_sim_padding_in_x_in(relay_sim_padding_in_x_signal);
-    src.relay_sim_layout_in_in(relay_sim_layout_in_signal);
-    src.relay_sim_ceil_mode_in_in(relay_sim_ceil_mode_in_signal);
+    src.relay_relay_func_run_in_in(relay_relay_func_run_in_signal);
+    src.relay_relay_func_id_in(relay_relay_func_id_signal);
+    src.relay_relay_data_in_in(relay_relay_data_in_signal);
+    src.relay_data_in_batch_in(relay_data_in_batch_signal);
+    src.relay_data_in_channel_in(relay_data_in_channel_signal);
+    src.relay_data_in_y_in(relay_data_in_y_signal);
+    src.relay_data_in_x_in(relay_data_in_x_signal);
+    src.relay_pool_size_y_in(relay_pool_size_y_signal);
+    src.relay_pool_size_x_in(relay_pool_size_x_signal);
+    src.relay_strides_y_in_in(relay_strides_y_in_signal);
+    src.relay_strides_x_in_in(relay_strides_x_in_signal);
+    src.relay_padding_in_y_in(relay_padding_in_y_signal);
+    src.relay_padding_in_x_in(relay_padding_in_x_signal);
+    src.relay_layout_in_in(relay_layout_in_signal);
+    src.relay_ceil_mode_in_in(relay_ceil_mode_in_signal);
 
     src.flex_wr_in(flex_wr_signal);
     src.flex_rd_in(flex_rd_signal);
@@ -302,41 +302,41 @@ SC_MODULE(testbench) {
 
 
     // binding the signals for the model
-    relay.relay_sim_relay_func_run_in_in(relay_sim_relay_func_run_in_signal);
-    relay.relay_sim_relay_func_id_in(relay_sim_relay_func_id_signal);
-    relay.relay_sim_relay_data_in_in(relay_sim_relay_data_in_signal);
-    relay.relay_sim_data_in_batch_in(relay_sim_data_in_batch_signal);
-    relay.relay_sim_data_in_channel_in(relay_sim_data_in_channel_signal);
-    relay.relay_sim_data_in_y_in(relay_sim_data_in_y_signal);
-    relay.relay_sim_data_in_x_in(relay_sim_data_in_x_signal);
-    relay.relay_sim_pool_size_y_in(relay_sim_pool_size_y_signal);
-    relay.relay_sim_pool_size_x_in(relay_sim_pool_size_x_signal);
-    relay.relay_sim_strides_y_in_in(relay_sim_strides_y_in_signal);
-    relay.relay_sim_strides_x_in_in(relay_sim_strides_x_in_signal);
-    relay.relay_sim_padding_in_y_in(relay_sim_padding_in_y_signal);
-    relay.relay_sim_padding_in_x_in(relay_sim_padding_in_x_signal);
-    relay.relay_sim_layout_in_in(relay_sim_layout_in_signal);
-    relay.relay_sim_ceil_mode_in_in(relay_sim_ceil_mode_in_signal);
+    relay_i.relay_relay_func_run_in_in(relay_relay_func_run_in_signal);
+    relay_i.relay_relay_func_id_in(relay_relay_func_id_signal);
+    relay_i.relay_relay_data_in_in(relay_relay_data_in_signal);
+    relay_i.relay_data_in_batch_in(relay_data_in_batch_signal);
+    relay_i.relay_data_in_channel_in(relay_data_in_channel_signal);
+    relay_i.relay_data_in_y_in(relay_data_in_y_signal);
+    relay_i.relay_data_in_x_in(relay_data_in_x_signal);
+    relay_i.relay_pool_size_y_in(relay_pool_size_y_signal);
+    relay_i.relay_pool_size_x_in(relay_pool_size_x_signal);
+    relay_i.relay_strides_y_in_in(relay_strides_y_in_signal);
+    relay_i.relay_strides_x_in_in(relay_strides_x_in_signal);
+    relay_i.relay_padding_in_y_in(relay_padding_in_y_signal);
+    relay_i.relay_padding_in_x_in(relay_padding_in_x_signal);
+    relay_i.relay_layout_in_in(relay_layout_in_signal);
+    relay_i.relay_ceil_mode_in_in(relay_ceil_mode_in_signal);
 
-    flex.flex_sim_if_axi_rd_in(flex_rd_signal);
-    flex.flex_sim_if_axi_wr_in(flex_wr_signal);
-    flex.flex_sim_addr_in_in(flex_addr_signal);
-    flex.flex_sim_data_in_0_in(flex_data_signal[0]);
-    flex.flex_sim_data_in_1_in(flex_data_signal[1]);
-    flex.flex_sim_data_in_2_in(flex_data_signal[2]);
-    flex.flex_sim_data_in_3_in(flex_data_signal[3]);
-    flex.flex_sim_data_in_4_in(flex_data_signal[4]);
-    flex.flex_sim_data_in_5_in(flex_data_signal[5]);
-    flex.flex_sim_data_in_6_in(flex_data_signal[6]);
-    flex.flex_sim_data_in_7_in(flex_data_signal[7]);
-    flex.flex_sim_data_in_8_in(flex_data_signal[8]);
-    flex.flex_sim_data_in_9_in(flex_data_signal[9]);
-    flex.flex_sim_data_in_10_in(flex_data_signal[10]);
-    flex.flex_sim_data_in_11_in(flex_data_signal[11]);
-    flex.flex_sim_data_in_12_in(flex_data_signal[12]);
-    flex.flex_sim_data_in_13_in(flex_data_signal[13]);
-    flex.flex_sim_data_in_14_in(flex_data_signal[14]);
-    flex.flex_sim_data_in_15_in(flex_data_signal[15]);
+    flex_i.flex_if_axi_rd_in(flex_rd_signal);
+    flex_i.flex_if_axi_wr_in(flex_wr_signal);
+    flex_i.flex_addr_in_in(flex_addr_signal);
+    flex_i.flex_data_in_0_in(flex_data_signal[0]);
+    flex_i.flex_data_in_1_in(flex_data_signal[1]);
+    flex_i.flex_data_in_2_in(flex_data_signal[2]);
+    flex_i.flex_data_in_3_in(flex_data_signal[3]);
+    flex_i.flex_data_in_4_in(flex_data_signal[4]);
+    flex_i.flex_data_in_5_in(flex_data_signal[5]);
+    flex_i.flex_data_in_6_in(flex_data_signal[6]);
+    flex_i.flex_data_in_7_in(flex_data_signal[7]);
+    flex_i.flex_data_in_8_in(flex_data_signal[8]);
+    flex_i.flex_data_in_9_in(flex_data_signal[9]);
+    flex_i.flex_data_in_10_in(flex_data_signal[10]);
+    flex_i.flex_data_in_11_in(flex_data_signal[11]);
+    flex_i.flex_data_in_12_in(flex_data_signal[12]);
+    flex_i.flex_data_in_13_in(flex_data_signal[13]);
+    flex_i.flex_data_in_14_in(flex_data_signal[14]);
+    flex_i.flex_data_in_15_in(flex_data_signal[15]);
 
     SC_THREAD(run);
   }
@@ -346,8 +346,8 @@ SC_MODULE(testbench) {
     bool done = false;
     int stop_addr = 0x0dead;
 
-    flex.instr_log.open("./instr_output/instr_out_flex.txt", ofstream::out | ofstream::trunc);
-    relay.instr_log.open("./instr_output/instr_out_relay.txt", ofstream::out | ofstream::trunc);
+    flex_i.instr_log.open("./instr_output/instr_out_flex.txt", ofstream::out | ofstream::trunc);
+    relay_i.instr_log.open("./instr_output/instr_out_relay.txt", ofstream::out | ofstream::trunc);
 
     std::cout << "before open new output file" << endl;
     std::ofstream fout;
@@ -357,8 +357,8 @@ SC_MODULE(testbench) {
     std::cout << "@" << sc_time_stamp() << " ********* simulation start *********" << std::endl;
 
     while (!done) {
-      if ((relay.relay_sim_relay_func_id.to_int() == 3) &&
-            (flex.flex_sim_addr_in.to_int() == stop_addr)) {
+      if ((relay_i.relay_relay_func_id.to_int() == 3) &&
+            (flex_i.flex_addr_in.to_int() == stop_addr)) {
               done = true;
             }
       
@@ -369,13 +369,13 @@ SC_MODULE(testbench) {
       int entry_addr_relay;
       int entry_addr_flex;
       int index_relay, index_flex;
-      int tensor_out_y = relay.relay_sim_maxpooling_data_out_height.to_int();
-      int tensor_out_x = relay.relay_sim_maxpooling_data_out_width.to_int() / 16;
+      int tensor_out_y = relay_i.relay_maxpooling_data_out_height.to_int();
+      int tensor_out_x = relay_i.relay_maxpooling_data_out_width.to_int() / 16;
       cout << "tensor_out_y: " << dec << tensor_out_y << '\t' << "tensor_out_x: " << tensor_out_x << endl;
       int entry_max_16 = tensor_out_x * tensor_out_y;
       int entry_in_group;
 
-      int num_vectors = flex.flex_sim_gb_layer_reduce_num_vector_1.to_int();
+      int num_vectors = flex_i.flex_gb_layer_reduce_num_vector_1.to_int();
       int group_size = 8 * num_vectors; // group size in entry numbers
       int group_index;
 
@@ -390,11 +390,11 @@ SC_MODULE(testbench) {
       fout << "********* output for tensor memory ***********" << endl;
 
       fout << dec << "input tensor size: " << '\t';
-      fout << "height: " << relay.relay_sim_data_in_y.to_int() << '\t' << "width: " << relay.relay_sim_data_in_x.to_int() << endl;
+      fout << "height: " << relay_i.relay_data_in_y.to_int() << '\t' << "width: " << relay_i.relay_data_in_x.to_int() << endl;
       fout << "pooling: " << '\t';
-      fout << "pool_y: "  << relay.relay_sim_pool_size_y.to_int() << '\t' << "pool_x: " << relay.relay_sim_pool_size_x.to_int() << endl;
+      fout << "pool_y: "  << relay_i.relay_pool_size_y.to_int() << '\t' << "pool_x: " << relay_i.relay_pool_size_x.to_int() << endl;
       fout << "stride: " << '\t';
-      fout << "stride_y: " << relay.relay_sim_strides_y_in.to_int() << '\t' << "stride_x: " << relay.relay_sim_strides_x_in.to_int() << endl; 
+      fout << "stride_y: " << relay_i.relay_strides_y_in.to_int() << '\t' << "stride_x: " << relay_i.relay_strides_x_in.to_int() << endl; 
       fout << endl;
       
       total = error = passed = 0;
@@ -422,8 +422,8 @@ SC_MODULE(testbench) {
             index_relay = entry_addr_relay + 15 - k;
             index_flex = entry_addr_flex + 15 -k;
             //cout << "index of the matrix: " << index << endl;
-            int dat_relay = relay.relay_sim_relay_tensor_mem[index_relay].to_int();
-            int dat_flex = flex.flex_sim_gb_core_large_buffer[index_flex].to_int(); 
+            int dat_relay = relay_i.relay_relay_tensor_mem[index_relay].to_int();
+            int dat_flex = flex_i.flex_gb_core_large_buffer[index_flex].to_int(); 
 
             total += 1;
             if (dat_relay == dat_flex) {
@@ -442,15 +442,15 @@ SC_MODULE(testbench) {
             fout << "data: ";
             for (int k = 0; k < 16; k++) {
                 index_relay = entry_addr_relay + 15 - k;
-                int dat_relay = relay.relay_sim_relay_tensor_mem[index_relay].to_int();
-                fout << relay.relay_sim_relay_tensor_mem[index_relay] << ' ';       
+                int dat_relay = relay_i.relay_relay_tensor_mem[index_relay].to_int();
+                fout << relay_i.relay_relay_tensor_mem[index_relay] << ' ';       
             }
             fout << endl;
             fout << "flex @ addr: " << entry_addr_flex << " ";
             fout << "data: ";
             for (int k = 0; k < 16; k++) {
                 index_flex = entry_addr_flex + 15 -k;
-                int dat_flex = flex.flex_sim_gb_core_large_buffer[index_flex].to_int(); 
+                int dat_flex = flex_i.flex_gb_core_large_buffer[index_flex].to_int(); 
                 fout << dat_flex << ' ';       
             }
             fout << endl;
@@ -465,6 +465,15 @@ SC_MODULE(testbench) {
       fout << "#failed: " << error << endl;
 
       fout.close();
+	
+      std::cout << std::endl;
+      std::cout << "************* result **************" << endl;
+      if (error == 0) {
+	std::cout << "Correct!" << std::endl;
+	} else {
+	std::cout << "Error found!" << std::endl;
+	}
+
       wait(1000, SC_NS);
 
       sc_stop();
