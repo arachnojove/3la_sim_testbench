@@ -37,6 +37,8 @@ SC_MODULE(Source) {
     vta_mem_bias_data_in = 0;
 
     input_done = 0;
+    wait(100, SC_NS);
+
     // read program fragment from file
     std::ifstream fin;
     fin.open("prog_frag.json", ios::in);
@@ -98,7 +100,7 @@ SC_MODULE(testbench) {
     src.vta_mem_bias_data_in(vta_mem_bias_data_in_signal);
 
     src.input_done(input_done);
-  }
+  
 
     vta_inst.vta_vta_top_instr_in_in(vta_instr_in_signal);
     vta_inst.vta_vta_vir_mem_mode_in_in(vta_mem_mode_in_signal);
