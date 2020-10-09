@@ -13,6 +13,8 @@ clean:
 
 input_gen: input_gen.cc
 	$(CC) $(CFLAGS) input_gen.cc -o input_gen.out
+extract_sim_log: extract_sim_log.cc vivado_hls.log
+	$(CC) $(CFLAGS) extract_sim_log.cc -o extract_sim_log.out
 
 VTA_SIM_DIR = /home/leeoh/3la/vta-ila/build/sim_model
 VTA_MODEL_DIR = $(VTA_SIM_DIR)/build/CMakeFiles/vta.dir/src
