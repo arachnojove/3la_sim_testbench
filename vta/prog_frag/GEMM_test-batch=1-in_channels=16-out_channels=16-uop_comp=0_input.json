@@ -1,0 +1,2964 @@
+{
+  "program fragment": [
+    {
+      "instr No.": 0,
+      "instr_in": "0x00",
+      "mem_addr": 0,
+      "mem_bias_in": "0xe9",
+      "mem_inp_in": "0xe9",
+      "mem_mode": 1,
+      "mem_uop_in": "0xe9",
+      "mem_wgt_in": "0xe9"
+    },
+    {
+      "instr No.": 1,
+      "instr_in": "0x00",
+      "mem_addr": 1,
+      "mem_bias_in": "0x8a",
+      "mem_inp_in": "0x8a",
+      "mem_mode": 1,
+      "mem_uop_in": "0x8a",
+      "mem_wgt_in": "0x8a"
+    },
+    {
+      "instr No.": 2,
+      "instr_in": "0x00",
+      "mem_addr": 2,
+      "mem_bias_in": "0xf4",
+      "mem_inp_in": "0xf4",
+      "mem_mode": 1,
+      "mem_uop_in": "0xf4",
+      "mem_wgt_in": "0xf4"
+    },
+    {
+      "instr No.": 3,
+      "instr_in": "0x00",
+      "mem_addr": 3,
+      "mem_bias_in": "0x1f",
+      "mem_inp_in": "0x1f",
+      "mem_mode": 1,
+      "mem_uop_in": "0x1f",
+      "mem_wgt_in": "0x1f"
+    },
+    {
+      "instr No.": 4,
+      "instr_in": "0x00",
+      "mem_addr": 4,
+      "mem_bias_in": "0x0a",
+      "mem_inp_in": "0x0a",
+      "mem_mode": 1,
+      "mem_uop_in": "0x0a",
+      "mem_wgt_in": "0x0a"
+    },
+    {
+      "instr No.": 5,
+      "instr_in": "0x00",
+      "mem_addr": 5,
+      "mem_bias_in": "0xb4",
+      "mem_inp_in": "0xb4",
+      "mem_mode": 1,
+      "mem_uop_in": "0xb4",
+      "mem_wgt_in": "0xb4"
+    },
+    {
+      "instr No.": 6,
+      "instr_in": "0x00",
+      "mem_addr": 6,
+      "mem_bias_in": "0x41",
+      "mem_inp_in": "0x41",
+      "mem_mode": 1,
+      "mem_uop_in": "0x41",
+      "mem_wgt_in": "0x41"
+    },
+    {
+      "instr No.": 7,
+      "instr_in": "0x00",
+      "mem_addr": 7,
+      "mem_bias_in": "0x6c",
+      "mem_inp_in": "0x6c",
+      "mem_mode": 1,
+      "mem_uop_in": "0x6c",
+      "mem_wgt_in": "0x6c"
+    },
+    {
+      "instr No.": 8,
+      "instr_in": "0x00",
+      "mem_addr": 8,
+      "mem_bias_in": "0x89",
+      "mem_inp_in": "0x89",
+      "mem_mode": 1,
+      "mem_uop_in": "0x89",
+      "mem_wgt_in": "0x89"
+    },
+    {
+      "instr No.": 9,
+      "instr_in": "0x00",
+      "mem_addr": 9,
+      "mem_bias_in": "0x4e",
+      "mem_inp_in": "0x4e",
+      "mem_mode": 1,
+      "mem_uop_in": "0x4e",
+      "mem_wgt_in": "0x4e"
+    },
+    {
+      "instr No.": 10,
+      "instr_in": "0x00",
+      "mem_addr": 10,
+      "mem_bias_in": "0x83",
+      "mem_inp_in": "0x83",
+      "mem_mode": 1,
+      "mem_uop_in": "0x83",
+      "mem_wgt_in": "0x83"
+    },
+    {
+      "instr No.": 11,
+      "instr_in": "0x00",
+      "mem_addr": 11,
+      "mem_bias_in": "0x46",
+      "mem_inp_in": "0x46",
+      "mem_mode": 1,
+      "mem_uop_in": "0x46",
+      "mem_wgt_in": "0x46"
+    },
+    {
+      "instr No.": 12,
+      "instr_in": "0x00",
+      "mem_addr": 12,
+      "mem_bias_in": "0x92",
+      "mem_inp_in": "0x92",
+      "mem_mode": 1,
+      "mem_uop_in": "0x92",
+      "mem_wgt_in": "0x92"
+    },
+    {
+      "instr No.": 13,
+      "instr_in": "0x00",
+      "mem_addr": 13,
+      "mem_bias_in": "0x11",
+      "mem_inp_in": "0x11",
+      "mem_mode": 1,
+      "mem_uop_in": "0x11",
+      "mem_wgt_in": "0x11"
+    },
+    {
+      "instr No.": 14,
+      "instr_in": "0x00",
+      "mem_addr": 14,
+      "mem_bias_in": "0x6b",
+      "mem_inp_in": "0x6b",
+      "mem_mode": 1,
+      "mem_uop_in": "0x6b",
+      "mem_wgt_in": "0x6b"
+    },
+    {
+      "instr No.": 15,
+      "instr_in": "0x00",
+      "mem_addr": 15,
+      "mem_bias_in": "0xea",
+      "mem_inp_in": "0xea",
+      "mem_mode": 1,
+      "mem_uop_in": "0xea",
+      "mem_wgt_in": "0xea"
+    },
+    {
+      "instr No.": 16,
+      "instr_in": "0x00",
+      "mem_addr": 0,
+      "mem_bias_in": "0x2a",
+      "mem_inp_in": "0x2a",
+      "mem_mode": 2,
+      "mem_uop_in": "0x2a",
+      "mem_wgt_in": "0x2a"
+    },
+    {
+      "instr No.": 17,
+      "instr_in": "0x00",
+      "mem_addr": 1,
+      "mem_bias_in": "0xaf",
+      "mem_inp_in": "0xaf",
+      "mem_mode": 2,
+      "mem_uop_in": "0xaf",
+      "mem_wgt_in": "0xaf"
+    },
+    {
+      "instr No.": 18,
+      "instr_in": "0x00",
+      "mem_addr": 2,
+      "mem_bias_in": "0xb7",
+      "mem_inp_in": "0xb7",
+      "mem_mode": 2,
+      "mem_uop_in": "0xb7",
+      "mem_wgt_in": "0xb7"
+    },
+    {
+      "instr No.": 19,
+      "instr_in": "0x00",
+      "mem_addr": 3,
+      "mem_bias_in": "0xe4",
+      "mem_inp_in": "0xe4",
+      "mem_mode": 2,
+      "mem_uop_in": "0xe4",
+      "mem_wgt_in": "0xe4"
+    },
+    {
+      "instr No.": 20,
+      "instr_in": "0x00",
+      "mem_addr": 4,
+      "mem_bias_in": "0x03",
+      "mem_inp_in": "0x03",
+      "mem_mode": 2,
+      "mem_uop_in": "0x03",
+      "mem_wgt_in": "0x03"
+    },
+    {
+      "instr No.": 21,
+      "instr_in": "0x00",
+      "mem_addr": 5,
+      "mem_bias_in": "0xb2",
+      "mem_inp_in": "0xb2",
+      "mem_mode": 2,
+      "mem_uop_in": "0xb2",
+      "mem_wgt_in": "0xb2"
+    },
+    {
+      "instr No.": 22,
+      "instr_in": "0x00",
+      "mem_addr": 6,
+      "mem_bias_in": "0x63",
+      "mem_inp_in": "0x63",
+      "mem_mode": 2,
+      "mem_uop_in": "0x63",
+      "mem_wgt_in": "0x63"
+    },
+    {
+      "instr No.": 23,
+      "instr_in": "0x00",
+      "mem_addr": 7,
+      "mem_bias_in": "0xd4",
+      "mem_inp_in": "0xd4",
+      "mem_mode": 2,
+      "mem_uop_in": "0xd4",
+      "mem_wgt_in": "0xd4"
+    },
+    {
+      "instr No.": 24,
+      "instr_in": "0x00",
+      "mem_addr": 8,
+      "mem_bias_in": "0x12",
+      "mem_inp_in": "0x12",
+      "mem_mode": 2,
+      "mem_uop_in": "0x12",
+      "mem_wgt_in": "0x12"
+    },
+    {
+      "instr No.": 25,
+      "instr_in": "0x00",
+      "mem_addr": 9,
+      "mem_bias_in": "0x1e",
+      "mem_inp_in": "0x1e",
+      "mem_mode": 2,
+      "mem_uop_in": "0x1e",
+      "mem_wgt_in": "0x1e"
+    },
+    {
+      "instr No.": 26,
+      "instr_in": "0x00",
+      "mem_addr": 10,
+      "mem_bias_in": "0xa0",
+      "mem_inp_in": "0xa0",
+      "mem_mode": 2,
+      "mem_uop_in": "0xa0",
+      "mem_wgt_in": "0xa0"
+    },
+    {
+      "instr No.": 27,
+      "instr_in": "0x00",
+      "mem_addr": 11,
+      "mem_bias_in": "0xf0",
+      "mem_inp_in": "0xf0",
+      "mem_mode": 2,
+      "mem_uop_in": "0xf0",
+      "mem_wgt_in": "0xf0"
+    },
+    {
+      "instr No.": 28,
+      "instr_in": "0x00",
+      "mem_addr": 12,
+      "mem_bias_in": "0xe0",
+      "mem_inp_in": "0xe0",
+      "mem_mode": 2,
+      "mem_uop_in": "0xe0",
+      "mem_wgt_in": "0xe0"
+    },
+    {
+      "instr No.": 29,
+      "instr_in": "0x00",
+      "mem_addr": 13,
+      "mem_bias_in": "0xdb",
+      "mem_inp_in": "0xdb",
+      "mem_mode": 2,
+      "mem_uop_in": "0xdb",
+      "mem_wgt_in": "0xdb"
+    },
+    {
+      "instr No.": 30,
+      "instr_in": "0x00",
+      "mem_addr": 14,
+      "mem_bias_in": "0x88",
+      "mem_inp_in": "0x88",
+      "mem_mode": 2,
+      "mem_uop_in": "0x88",
+      "mem_wgt_in": "0x88"
+    },
+    {
+      "instr No.": 31,
+      "instr_in": "0x00",
+      "mem_addr": 15,
+      "mem_bias_in": "0x48",
+      "mem_inp_in": "0x48",
+      "mem_mode": 2,
+      "mem_uop_in": "0x48",
+      "mem_wgt_in": "0x48"
+    },
+    {
+      "instr No.": 32,
+      "instr_in": "0x00",
+      "mem_addr": 16,
+      "mem_bias_in": "0xa3",
+      "mem_inp_in": "0xa3",
+      "mem_mode": 2,
+      "mem_uop_in": "0xa3",
+      "mem_wgt_in": "0xa3"
+    },
+    {
+      "instr No.": 33,
+      "instr_in": "0x00",
+      "mem_addr": 17,
+      "mem_bias_in": "0xd5",
+      "mem_inp_in": "0xd5",
+      "mem_mode": 2,
+      "mem_uop_in": "0xd5",
+      "mem_wgt_in": "0xd5"
+    },
+    {
+      "instr No.": 34,
+      "instr_in": "0x00",
+      "mem_addr": 18,
+      "mem_bias_in": "0x8e",
+      "mem_inp_in": "0x8e",
+      "mem_mode": 2,
+      "mem_uop_in": "0x8e",
+      "mem_wgt_in": "0x8e"
+    },
+    {
+      "instr No.": 35,
+      "instr_in": "0x00",
+      "mem_addr": 19,
+      "mem_bias_in": "0xcc",
+      "mem_inp_in": "0xcc",
+      "mem_mode": 2,
+      "mem_uop_in": "0xcc",
+      "mem_wgt_in": "0xcc"
+    },
+    {
+      "instr No.": 36,
+      "instr_in": "0x00",
+      "mem_addr": 20,
+      "mem_bias_in": "0x0b",
+      "mem_inp_in": "0x0b",
+      "mem_mode": 2,
+      "mem_uop_in": "0x0b",
+      "mem_wgt_in": "0x0b"
+    },
+    {
+      "instr No.": 37,
+      "instr_in": "0x00",
+      "mem_addr": 21,
+      "mem_bias_in": "0xdf",
+      "mem_inp_in": "0xdf",
+      "mem_mode": 2,
+      "mem_uop_in": "0xdf",
+      "mem_wgt_in": "0xdf"
+    },
+    {
+      "instr No.": 38,
+      "instr_in": "0x00",
+      "mem_addr": 22,
+      "mem_bias_in": "0xb6",
+      "mem_inp_in": "0xb6",
+      "mem_mode": 2,
+      "mem_uop_in": "0xb6",
+      "mem_wgt_in": "0xb6"
+    },
+    {
+      "instr No.": 39,
+      "instr_in": "0x00",
+      "mem_addr": 23,
+      "mem_bias_in": "0x0d",
+      "mem_inp_in": "0x0d",
+      "mem_mode": 2,
+      "mem_uop_in": "0x0d",
+      "mem_wgt_in": "0x0d"
+    },
+    {
+      "instr No.": 40,
+      "instr_in": "0x00",
+      "mem_addr": 24,
+      "mem_bias_in": "0xdd",
+      "mem_inp_in": "0xdd",
+      "mem_mode": 2,
+      "mem_uop_in": "0xdd",
+      "mem_wgt_in": "0xdd"
+    },
+    {
+      "instr No.": 41,
+      "instr_in": "0x00",
+      "mem_addr": 25,
+      "mem_bias_in": "0x5b",
+      "mem_inp_in": "0x5b",
+      "mem_mode": 2,
+      "mem_uop_in": "0x5b",
+      "mem_wgt_in": "0x5b"
+    },
+    {
+      "instr No.": 42,
+      "instr_in": "0x00",
+      "mem_addr": 26,
+      "mem_bias_in": "0x89",
+      "mem_inp_in": "0x89",
+      "mem_mode": 2,
+      "mem_uop_in": "0x89",
+      "mem_wgt_in": "0x89"
+    },
+    {
+      "instr No.": 43,
+      "instr_in": "0x00",
+      "mem_addr": 27,
+      "mem_bias_in": "0xc5",
+      "mem_inp_in": "0xc5",
+      "mem_mode": 2,
+      "mem_uop_in": "0xc5",
+      "mem_wgt_in": "0xc5"
+    },
+    {
+      "instr No.": 44,
+      "instr_in": "0x00",
+      "mem_addr": 28,
+      "mem_bias_in": "0x41",
+      "mem_inp_in": "0x41",
+      "mem_mode": 2,
+      "mem_uop_in": "0x41",
+      "mem_wgt_in": "0x41"
+    },
+    {
+      "instr No.": 45,
+      "instr_in": "0x00",
+      "mem_addr": 29,
+      "mem_bias_in": "0x9a",
+      "mem_inp_in": "0x9a",
+      "mem_mode": 2,
+      "mem_uop_in": "0x9a",
+      "mem_wgt_in": "0x9a"
+    },
+    {
+      "instr No.": 46,
+      "instr_in": "0x00",
+      "mem_addr": 30,
+      "mem_bias_in": "0xc5",
+      "mem_inp_in": "0xc5",
+      "mem_mode": 2,
+      "mem_uop_in": "0xc5",
+      "mem_wgt_in": "0xc5"
+    },
+    {
+      "instr No.": 47,
+      "instr_in": "0x00",
+      "mem_addr": 31,
+      "mem_bias_in": "0x18",
+      "mem_inp_in": "0x18",
+      "mem_mode": 2,
+      "mem_uop_in": "0x18",
+      "mem_wgt_in": "0x18"
+    },
+    {
+      "instr No.": 48,
+      "instr_in": "0x00",
+      "mem_addr": 32,
+      "mem_bias_in": "0xda",
+      "mem_inp_in": "0xda",
+      "mem_mode": 2,
+      "mem_uop_in": "0xda",
+      "mem_wgt_in": "0xda"
+    },
+    {
+      "instr No.": 49,
+      "instr_in": "0x00",
+      "mem_addr": 33,
+      "mem_bias_in": "0x03",
+      "mem_inp_in": "0x03",
+      "mem_mode": 2,
+      "mem_uop_in": "0x03",
+      "mem_wgt_in": "0x03"
+    },
+    {
+      "instr No.": 50,
+      "instr_in": "0x00",
+      "mem_addr": 34,
+      "mem_bias_in": "0xd7",
+      "mem_inp_in": "0xd7",
+      "mem_mode": 2,
+      "mem_uop_in": "0xd7",
+      "mem_wgt_in": "0xd7"
+    },
+    {
+      "instr No.": 51,
+      "instr_in": "0x00",
+      "mem_addr": 35,
+      "mem_bias_in": "0x97",
+      "mem_inp_in": "0x97",
+      "mem_mode": 2,
+      "mem_uop_in": "0x97",
+      "mem_wgt_in": "0x97"
+    },
+    {
+      "instr No.": 52,
+      "instr_in": "0x00",
+      "mem_addr": 36,
+      "mem_bias_in": "0x99",
+      "mem_inp_in": "0x99",
+      "mem_mode": 2,
+      "mem_uop_in": "0x99",
+      "mem_wgt_in": "0x99"
+    },
+    {
+      "instr No.": 53,
+      "instr_in": "0x00",
+      "mem_addr": 37,
+      "mem_bias_in": "0xf5",
+      "mem_inp_in": "0xf5",
+      "mem_mode": 2,
+      "mem_uop_in": "0xf5",
+      "mem_wgt_in": "0xf5"
+    },
+    {
+      "instr No.": 54,
+      "instr_in": "0x00",
+      "mem_addr": 38,
+      "mem_bias_in": "0x09",
+      "mem_inp_in": "0x09",
+      "mem_mode": 2,
+      "mem_uop_in": "0x09",
+      "mem_wgt_in": "0x09"
+    },
+    {
+      "instr No.": 55,
+      "instr_in": "0x00",
+      "mem_addr": 39,
+      "mem_bias_in": "0x07",
+      "mem_inp_in": "0x07",
+      "mem_mode": 2,
+      "mem_uop_in": "0x07",
+      "mem_wgt_in": "0x07"
+    },
+    {
+      "instr No.": 56,
+      "instr_in": "0x00",
+      "mem_addr": 40,
+      "mem_bias_in": "0x50",
+      "mem_inp_in": "0x50",
+      "mem_mode": 2,
+      "mem_uop_in": "0x50",
+      "mem_wgt_in": "0x50"
+    },
+    {
+      "instr No.": 57,
+      "instr_in": "0x00",
+      "mem_addr": 41,
+      "mem_bias_in": "0x6d",
+      "mem_inp_in": "0x6d",
+      "mem_mode": 2,
+      "mem_uop_in": "0x6d",
+      "mem_wgt_in": "0x6d"
+    },
+    {
+      "instr No.": 58,
+      "instr_in": "0x00",
+      "mem_addr": 42,
+      "mem_bias_in": "0x79",
+      "mem_inp_in": "0x79",
+      "mem_mode": 2,
+      "mem_uop_in": "0x79",
+      "mem_wgt_in": "0x79"
+    },
+    {
+      "instr No.": 59,
+      "instr_in": "0x00",
+      "mem_addr": 43,
+      "mem_bias_in": "0xe6",
+      "mem_inp_in": "0xe6",
+      "mem_mode": 2,
+      "mem_uop_in": "0xe6",
+      "mem_wgt_in": "0xe6"
+    },
+    {
+      "instr No.": 60,
+      "instr_in": "0x00",
+      "mem_addr": 44,
+      "mem_bias_in": "0x08",
+      "mem_inp_in": "0x08",
+      "mem_mode": 2,
+      "mem_uop_in": "0x08",
+      "mem_wgt_in": "0x08"
+    },
+    {
+      "instr No.": 61,
+      "instr_in": "0x00",
+      "mem_addr": 45,
+      "mem_bias_in": "0x66",
+      "mem_inp_in": "0x66",
+      "mem_mode": 2,
+      "mem_uop_in": "0x66",
+      "mem_wgt_in": "0x66"
+    },
+    {
+      "instr No.": 62,
+      "instr_in": "0x00",
+      "mem_addr": 46,
+      "mem_bias_in": "0xd0",
+      "mem_inp_in": "0xd0",
+      "mem_mode": 2,
+      "mem_uop_in": "0xd0",
+      "mem_wgt_in": "0xd0"
+    },
+    {
+      "instr No.": 63,
+      "instr_in": "0x00",
+      "mem_addr": 47,
+      "mem_bias_in": "0xa9",
+      "mem_inp_in": "0xa9",
+      "mem_mode": 2,
+      "mem_uop_in": "0xa9",
+      "mem_wgt_in": "0xa9"
+    },
+    {
+      "instr No.": 64,
+      "instr_in": "0x00",
+      "mem_addr": 48,
+      "mem_bias_in": "0x13",
+      "mem_inp_in": "0x13",
+      "mem_mode": 2,
+      "mem_uop_in": "0x13",
+      "mem_wgt_in": "0x13"
+    },
+    {
+      "instr No.": 65,
+      "instr_in": "0x00",
+      "mem_addr": 49,
+      "mem_bias_in": "0x03",
+      "mem_inp_in": "0x03",
+      "mem_mode": 2,
+      "mem_uop_in": "0x03",
+      "mem_wgt_in": "0x03"
+    },
+    {
+      "instr No.": 66,
+      "instr_in": "0x00",
+      "mem_addr": 50,
+      "mem_bias_in": "0xae",
+      "mem_inp_in": "0xae",
+      "mem_mode": 2,
+      "mem_uop_in": "0xae",
+      "mem_wgt_in": "0xae"
+    },
+    {
+      "instr No.": 67,
+      "instr_in": "0x00",
+      "mem_addr": 51,
+      "mem_bias_in": "0xc6",
+      "mem_inp_in": "0xc6",
+      "mem_mode": 2,
+      "mem_uop_in": "0xc6",
+      "mem_wgt_in": "0xc6"
+    },
+    {
+      "instr No.": 68,
+      "instr_in": "0x00",
+      "mem_addr": 52,
+      "mem_bias_in": "0xe0",
+      "mem_inp_in": "0xe0",
+      "mem_mode": 2,
+      "mem_uop_in": "0xe0",
+      "mem_wgt_in": "0xe0"
+    },
+    {
+      "instr No.": 69,
+      "instr_in": "0x00",
+      "mem_addr": 53,
+      "mem_bias_in": "0x6d",
+      "mem_inp_in": "0x6d",
+      "mem_mode": 2,
+      "mem_uop_in": "0x6d",
+      "mem_wgt_in": "0x6d"
+    },
+    {
+      "instr No.": 70,
+      "instr_in": "0x00",
+      "mem_addr": 54,
+      "mem_bias_in": "0xe7",
+      "mem_inp_in": "0xe7",
+      "mem_mode": 2,
+      "mem_uop_in": "0xe7",
+      "mem_wgt_in": "0xe7"
+    },
+    {
+      "instr No.": 71,
+      "instr_in": "0x00",
+      "mem_addr": 55,
+      "mem_bias_in": "0x74",
+      "mem_inp_in": "0x74",
+      "mem_mode": 2,
+      "mem_uop_in": "0x74",
+      "mem_wgt_in": "0x74"
+    },
+    {
+      "instr No.": 72,
+      "instr_in": "0x00",
+      "mem_addr": 56,
+      "mem_bias_in": "0x90",
+      "mem_inp_in": "0x90",
+      "mem_mode": 2,
+      "mem_uop_in": "0x90",
+      "mem_wgt_in": "0x90"
+    },
+    {
+      "instr No.": 73,
+      "instr_in": "0x00",
+      "mem_addr": 57,
+      "mem_bias_in": "0x7d",
+      "mem_inp_in": "0x7d",
+      "mem_mode": 2,
+      "mem_uop_in": "0x7d",
+      "mem_wgt_in": "0x7d"
+    },
+    {
+      "instr No.": 74,
+      "instr_in": "0x00",
+      "mem_addr": 58,
+      "mem_bias_in": "0x6f",
+      "mem_inp_in": "0x6f",
+      "mem_mode": 2,
+      "mem_uop_in": "0x6f",
+      "mem_wgt_in": "0x6f"
+    },
+    {
+      "instr No.": 75,
+      "instr_in": "0x00",
+      "mem_addr": 59,
+      "mem_bias_in": "0x34",
+      "mem_inp_in": "0x34",
+      "mem_mode": 2,
+      "mem_uop_in": "0x34",
+      "mem_wgt_in": "0x34"
+    },
+    {
+      "instr No.": 76,
+      "instr_in": "0x00",
+      "mem_addr": 60,
+      "mem_bias_in": "0x4c",
+      "mem_inp_in": "0x4c",
+      "mem_mode": 2,
+      "mem_uop_in": "0x4c",
+      "mem_wgt_in": "0x4c"
+    },
+    {
+      "instr No.": 77,
+      "instr_in": "0x00",
+      "mem_addr": 61,
+      "mem_bias_in": "0x18",
+      "mem_inp_in": "0x18",
+      "mem_mode": 2,
+      "mem_uop_in": "0x18",
+      "mem_wgt_in": "0x18"
+    },
+    {
+      "instr No.": 78,
+      "instr_in": "0x00",
+      "mem_addr": 62,
+      "mem_bias_in": "0x15",
+      "mem_inp_in": "0x15",
+      "mem_mode": 2,
+      "mem_uop_in": "0x15",
+      "mem_wgt_in": "0x15"
+    },
+    {
+      "instr No.": 79,
+      "instr_in": "0x00",
+      "mem_addr": 63,
+      "mem_bias_in": "0x0d",
+      "mem_inp_in": "0x0d",
+      "mem_mode": 2,
+      "mem_uop_in": "0x0d",
+      "mem_wgt_in": "0x0d"
+    },
+    {
+      "instr No.": 80,
+      "instr_in": "0x00",
+      "mem_addr": 64,
+      "mem_bias_in": "0x53",
+      "mem_inp_in": "0x53",
+      "mem_mode": 2,
+      "mem_uop_in": "0x53",
+      "mem_wgt_in": "0x53"
+    },
+    {
+      "instr No.": 81,
+      "instr_in": "0x00",
+      "mem_addr": 65,
+      "mem_bias_in": "0x5d",
+      "mem_inp_in": "0x5d",
+      "mem_mode": 2,
+      "mem_uop_in": "0x5d",
+      "mem_wgt_in": "0x5d"
+    },
+    {
+      "instr No.": 82,
+      "instr_in": "0x00",
+      "mem_addr": 66,
+      "mem_bias_in": "0xf1",
+      "mem_inp_in": "0xf1",
+      "mem_mode": 2,
+      "mem_uop_in": "0xf1",
+      "mem_wgt_in": "0xf1"
+    },
+    {
+      "instr No.": 83,
+      "instr_in": "0x00",
+      "mem_addr": 67,
+      "mem_bias_in": "0x9a",
+      "mem_inp_in": "0x9a",
+      "mem_mode": 2,
+      "mem_uop_in": "0x9a",
+      "mem_wgt_in": "0x9a"
+    },
+    {
+      "instr No.": 84,
+      "instr_in": "0x00",
+      "mem_addr": 68,
+      "mem_bias_in": "0xd5",
+      "mem_inp_in": "0xd5",
+      "mem_mode": 2,
+      "mem_uop_in": "0xd5",
+      "mem_wgt_in": "0xd5"
+    },
+    {
+      "instr No.": 85,
+      "instr_in": "0x00",
+      "mem_addr": 69,
+      "mem_bias_in": "0x80",
+      "mem_inp_in": "0x80",
+      "mem_mode": 2,
+      "mem_uop_in": "0x80",
+      "mem_wgt_in": "0x80"
+    },
+    {
+      "instr No.": 86,
+      "instr_in": "0x00",
+      "mem_addr": 70,
+      "mem_bias_in": "0x9e",
+      "mem_inp_in": "0x9e",
+      "mem_mode": 2,
+      "mem_uop_in": "0x9e",
+      "mem_wgt_in": "0x9e"
+    },
+    {
+      "instr No.": 87,
+      "instr_in": "0x00",
+      "mem_addr": 71,
+      "mem_bias_in": "0xc5",
+      "mem_inp_in": "0xc5",
+      "mem_mode": 2,
+      "mem_uop_in": "0xc5",
+      "mem_wgt_in": "0xc5"
+    },
+    {
+      "instr No.": 88,
+      "instr_in": "0x00",
+      "mem_addr": 72,
+      "mem_bias_in": "0x83",
+      "mem_inp_in": "0x83",
+      "mem_mode": 2,
+      "mem_uop_in": "0x83",
+      "mem_wgt_in": "0x83"
+    },
+    {
+      "instr No.": 89,
+      "instr_in": "0x00",
+      "mem_addr": 73,
+      "mem_bias_in": "0x74",
+      "mem_inp_in": "0x74",
+      "mem_mode": 2,
+      "mem_uop_in": "0x74",
+      "mem_wgt_in": "0x74"
+    },
+    {
+      "instr No.": 90,
+      "instr_in": "0x00",
+      "mem_addr": 74,
+      "mem_bias_in": "0x27",
+      "mem_inp_in": "0x27",
+      "mem_mode": 2,
+      "mem_uop_in": "0x27",
+      "mem_wgt_in": "0x27"
+    },
+    {
+      "instr No.": 91,
+      "instr_in": "0x00",
+      "mem_addr": 75,
+      "mem_bias_in": "0x4f",
+      "mem_inp_in": "0x4f",
+      "mem_mode": 2,
+      "mem_uop_in": "0x4f",
+      "mem_wgt_in": "0x4f"
+    },
+    {
+      "instr No.": 92,
+      "instr_in": "0x00",
+      "mem_addr": 76,
+      "mem_bias_in": "0xe1",
+      "mem_inp_in": "0xe1",
+      "mem_mode": 2,
+      "mem_uop_in": "0xe1",
+      "mem_wgt_in": "0xe1"
+    },
+    {
+      "instr No.": 93,
+      "instr_in": "0x00",
+      "mem_addr": 77,
+      "mem_bias_in": "0x4a",
+      "mem_inp_in": "0x4a",
+      "mem_mode": 2,
+      "mem_uop_in": "0x4a",
+      "mem_wgt_in": "0x4a"
+    },
+    {
+      "instr No.": 94,
+      "instr_in": "0x00",
+      "mem_addr": 78,
+      "mem_bias_in": "0xc1",
+      "mem_inp_in": "0xc1",
+      "mem_mode": 2,
+      "mem_uop_in": "0xc1",
+      "mem_wgt_in": "0xc1"
+    },
+    {
+      "instr No.": 95,
+      "instr_in": "0x00",
+      "mem_addr": 79,
+      "mem_bias_in": "0x16",
+      "mem_inp_in": "0x16",
+      "mem_mode": 2,
+      "mem_uop_in": "0x16",
+      "mem_wgt_in": "0x16"
+    },
+    {
+      "instr No.": 96,
+      "instr_in": "0x00",
+      "mem_addr": 80,
+      "mem_bias_in": "0x61",
+      "mem_inp_in": "0x61",
+      "mem_mode": 2,
+      "mem_uop_in": "0x61",
+      "mem_wgt_in": "0x61"
+    },
+    {
+      "instr No.": 97,
+      "instr_in": "0x00",
+      "mem_addr": 81,
+      "mem_bias_in": "0x5b",
+      "mem_inp_in": "0x5b",
+      "mem_mode": 2,
+      "mem_uop_in": "0x5b",
+      "mem_wgt_in": "0x5b"
+    },
+    {
+      "instr No.": 98,
+      "instr_in": "0x00",
+      "mem_addr": 82,
+      "mem_bias_in": "0x3d",
+      "mem_inp_in": "0x3d",
+      "mem_mode": 2,
+      "mem_uop_in": "0x3d",
+      "mem_wgt_in": "0x3d"
+    },
+    {
+      "instr No.": 99,
+      "instr_in": "0x00",
+      "mem_addr": 83,
+      "mem_bias_in": "0x15",
+      "mem_inp_in": "0x15",
+      "mem_mode": 2,
+      "mem_uop_in": "0x15",
+      "mem_wgt_in": "0x15"
+    },
+    {
+      "instr No.": 100,
+      "instr_in": "0x00",
+      "mem_addr": 84,
+      "mem_bias_in": "0x2f",
+      "mem_inp_in": "0x2f",
+      "mem_mode": 2,
+      "mem_uop_in": "0x2f",
+      "mem_wgt_in": "0x2f"
+    },
+    {
+      "instr No.": 101,
+      "instr_in": "0x00",
+      "mem_addr": 85,
+      "mem_bias_in": "0x27",
+      "mem_inp_in": "0x27",
+      "mem_mode": 2,
+      "mem_uop_in": "0x27",
+      "mem_wgt_in": "0x27"
+    },
+    {
+      "instr No.": 102,
+      "instr_in": "0x00",
+      "mem_addr": 86,
+      "mem_bias_in": "0x3b",
+      "mem_inp_in": "0x3b",
+      "mem_mode": 2,
+      "mem_uop_in": "0x3b",
+      "mem_wgt_in": "0x3b"
+    },
+    {
+      "instr No.": 103,
+      "instr_in": "0x00",
+      "mem_addr": 87,
+      "mem_bias_in": "0x29",
+      "mem_inp_in": "0x29",
+      "mem_mode": 2,
+      "mem_uop_in": "0x29",
+      "mem_wgt_in": "0x29"
+    },
+    {
+      "instr No.": 104,
+      "instr_in": "0x00",
+      "mem_addr": 88,
+      "mem_bias_in": "0xcc",
+      "mem_inp_in": "0xcc",
+      "mem_mode": 2,
+      "mem_uop_in": "0xcc",
+      "mem_wgt_in": "0xcc"
+    },
+    {
+      "instr No.": 105,
+      "instr_in": "0x00",
+      "mem_addr": 89,
+      "mem_bias_in": "0xfb",
+      "mem_inp_in": "0xfb",
+      "mem_mode": 2,
+      "mem_uop_in": "0xfb",
+      "mem_wgt_in": "0xfb"
+    },
+    {
+      "instr No.": 106,
+      "instr_in": "0x00",
+      "mem_addr": 90,
+      "mem_bias_in": "0x1e",
+      "mem_inp_in": "0x1e",
+      "mem_mode": 2,
+      "mem_uop_in": "0x1e",
+      "mem_wgt_in": "0x1e"
+    },
+    {
+      "instr No.": 107,
+      "instr_in": "0x00",
+      "mem_addr": 91,
+      "mem_bias_in": "0x99",
+      "mem_inp_in": "0x99",
+      "mem_mode": 2,
+      "mem_uop_in": "0x99",
+      "mem_wgt_in": "0x99"
+    },
+    {
+      "instr No.": 108,
+      "instr_in": "0x00",
+      "mem_addr": 92,
+      "mem_bias_in": "0x5c",
+      "mem_inp_in": "0x5c",
+      "mem_mode": 2,
+      "mem_uop_in": "0x5c",
+      "mem_wgt_in": "0x5c"
+    },
+    {
+      "instr No.": 109,
+      "instr_in": "0x00",
+      "mem_addr": 93,
+      "mem_bias_in": "0x54",
+      "mem_inp_in": "0x54",
+      "mem_mode": 2,
+      "mem_uop_in": "0x54",
+      "mem_wgt_in": "0x54"
+    },
+    {
+      "instr No.": 110,
+      "instr_in": "0x00",
+      "mem_addr": 94,
+      "mem_bias_in": "0xc2",
+      "mem_inp_in": "0xc2",
+      "mem_mode": 2,
+      "mem_uop_in": "0xc2",
+      "mem_wgt_in": "0xc2"
+    },
+    {
+      "instr No.": 111,
+      "instr_in": "0x00",
+      "mem_addr": 95,
+      "mem_bias_in": "0x53",
+      "mem_inp_in": "0x53",
+      "mem_mode": 2,
+      "mem_uop_in": "0x53",
+      "mem_wgt_in": "0x53"
+    },
+    {
+      "instr No.": 112,
+      "instr_in": "0x00",
+      "mem_addr": 96,
+      "mem_bias_in": "0xbf",
+      "mem_inp_in": "0xbf",
+      "mem_mode": 2,
+      "mem_uop_in": "0xbf",
+      "mem_wgt_in": "0xbf"
+    },
+    {
+      "instr No.": 113,
+      "instr_in": "0x00",
+      "mem_addr": 97,
+      "mem_bias_in": "0x06",
+      "mem_inp_in": "0x06",
+      "mem_mode": 2,
+      "mem_uop_in": "0x06",
+      "mem_wgt_in": "0x06"
+    },
+    {
+      "instr No.": 114,
+      "instr_in": "0x00",
+      "mem_addr": 98,
+      "mem_bias_in": "0xee",
+      "mem_inp_in": "0xee",
+      "mem_mode": 2,
+      "mem_uop_in": "0xee",
+      "mem_wgt_in": "0xee"
+    },
+    {
+      "instr No.": 115,
+      "instr_in": "0x00",
+      "mem_addr": 99,
+      "mem_bias_in": "0xf7",
+      "mem_inp_in": "0xf7",
+      "mem_mode": 2,
+      "mem_uop_in": "0xf7",
+      "mem_wgt_in": "0xf7"
+    },
+    {
+      "instr No.": 116,
+      "instr_in": "0x00",
+      "mem_addr": 100,
+      "mem_bias_in": "0x61",
+      "mem_inp_in": "0x61",
+      "mem_mode": 2,
+      "mem_uop_in": "0x61",
+      "mem_wgt_in": "0x61"
+    },
+    {
+      "instr No.": 117,
+      "instr_in": "0x00",
+      "mem_addr": 101,
+      "mem_bias_in": "0x1b",
+      "mem_inp_in": "0x1b",
+      "mem_mode": 2,
+      "mem_uop_in": "0x1b",
+      "mem_wgt_in": "0x1b"
+    },
+    {
+      "instr No.": 118,
+      "instr_in": "0x00",
+      "mem_addr": 102,
+      "mem_bias_in": "0x8a",
+      "mem_inp_in": "0x8a",
+      "mem_mode": 2,
+      "mem_uop_in": "0x8a",
+      "mem_wgt_in": "0x8a"
+    },
+    {
+      "instr No.": 119,
+      "instr_in": "0x00",
+      "mem_addr": 103,
+      "mem_bias_in": "0x94",
+      "mem_inp_in": "0x94",
+      "mem_mode": 2,
+      "mem_uop_in": "0x94",
+      "mem_wgt_in": "0x94"
+    },
+    {
+      "instr No.": 120,
+      "instr_in": "0x00",
+      "mem_addr": 104,
+      "mem_bias_in": "0xd1",
+      "mem_inp_in": "0xd1",
+      "mem_mode": 2,
+      "mem_uop_in": "0xd1",
+      "mem_wgt_in": "0xd1"
+    },
+    {
+      "instr No.": 121,
+      "instr_in": "0x00",
+      "mem_addr": 105,
+      "mem_bias_in": "0x7c",
+      "mem_inp_in": "0x7c",
+      "mem_mode": 2,
+      "mem_uop_in": "0x7c",
+      "mem_wgt_in": "0x7c"
+    },
+    {
+      "instr No.": 122,
+      "instr_in": "0x00",
+      "mem_addr": 106,
+      "mem_bias_in": "0x91",
+      "mem_inp_in": "0x91",
+      "mem_mode": 2,
+      "mem_uop_in": "0x91",
+      "mem_wgt_in": "0x91"
+    },
+    {
+      "instr No.": 123,
+      "instr_in": "0x00",
+      "mem_addr": 107,
+      "mem_bias_in": "0x33",
+      "mem_inp_in": "0x33",
+      "mem_mode": 2,
+      "mem_uop_in": "0x33",
+      "mem_wgt_in": "0x33"
+    },
+    {
+      "instr No.": 124,
+      "instr_in": "0x00",
+      "mem_addr": 108,
+      "mem_bias_in": "0x13",
+      "mem_inp_in": "0x13",
+      "mem_mode": 2,
+      "mem_uop_in": "0x13",
+      "mem_wgt_in": "0x13"
+    },
+    {
+      "instr No.": 125,
+      "instr_in": "0x00",
+      "mem_addr": 109,
+      "mem_bias_in": "0x50",
+      "mem_inp_in": "0x50",
+      "mem_mode": 2,
+      "mem_uop_in": "0x50",
+      "mem_wgt_in": "0x50"
+    },
+    {
+      "instr No.": 126,
+      "instr_in": "0x00",
+      "mem_addr": 110,
+      "mem_bias_in": "0xc4",
+      "mem_inp_in": "0xc4",
+      "mem_mode": 2,
+      "mem_uop_in": "0xc4",
+      "mem_wgt_in": "0xc4"
+    },
+    {
+      "instr No.": 127,
+      "instr_in": "0x00",
+      "mem_addr": 111,
+      "mem_bias_in": "0x17",
+      "mem_inp_in": "0x17",
+      "mem_mode": 2,
+      "mem_uop_in": "0x17",
+      "mem_wgt_in": "0x17"
+    },
+    {
+      "instr No.": 128,
+      "instr_in": "0x00",
+      "mem_addr": 112,
+      "mem_bias_in": "0xb4",
+      "mem_inp_in": "0xb4",
+      "mem_mode": 2,
+      "mem_uop_in": "0xb4",
+      "mem_wgt_in": "0xb4"
+    },
+    {
+      "instr No.": 129,
+      "instr_in": "0x00",
+      "mem_addr": 113,
+      "mem_bias_in": "0x27",
+      "mem_inp_in": "0x27",
+      "mem_mode": 2,
+      "mem_uop_in": "0x27",
+      "mem_wgt_in": "0x27"
+    },
+    {
+      "instr No.": 130,
+      "instr_in": "0x00",
+      "mem_addr": 114,
+      "mem_bias_in": "0x22",
+      "mem_inp_in": "0x22",
+      "mem_mode": 2,
+      "mem_uop_in": "0x22",
+      "mem_wgt_in": "0x22"
+    },
+    {
+      "instr No.": 131,
+      "instr_in": "0x00",
+      "mem_addr": 115,
+      "mem_bias_in": "0xc1",
+      "mem_inp_in": "0xc1",
+      "mem_mode": 2,
+      "mem_uop_in": "0xc1",
+      "mem_wgt_in": "0xc1"
+    },
+    {
+      "instr No.": 132,
+      "instr_in": "0x00",
+      "mem_addr": 116,
+      "mem_bias_in": "0xa1",
+      "mem_inp_in": "0xa1",
+      "mem_mode": 2,
+      "mem_uop_in": "0xa1",
+      "mem_wgt_in": "0xa1"
+    },
+    {
+      "instr No.": 133,
+      "instr_in": "0x00",
+      "mem_addr": 117,
+      "mem_bias_in": "0xd5",
+      "mem_inp_in": "0xd5",
+      "mem_mode": 2,
+      "mem_uop_in": "0xd5",
+      "mem_wgt_in": "0xd5"
+    },
+    {
+      "instr No.": 134,
+      "instr_in": "0x00",
+      "mem_addr": 118,
+      "mem_bias_in": "0x1a",
+      "mem_inp_in": "0x1a",
+      "mem_mode": 2,
+      "mem_uop_in": "0x1a",
+      "mem_wgt_in": "0x1a"
+    },
+    {
+      "instr No.": 135,
+      "instr_in": "0x00",
+      "mem_addr": 119,
+      "mem_bias_in": "0xb5",
+      "mem_inp_in": "0xb5",
+      "mem_mode": 2,
+      "mem_uop_in": "0xb5",
+      "mem_wgt_in": "0xb5"
+    },
+    {
+      "instr No.": 136,
+      "instr_in": "0x00",
+      "mem_addr": 120,
+      "mem_bias_in": "0xb7",
+      "mem_inp_in": "0xb7",
+      "mem_mode": 2,
+      "mem_uop_in": "0xb7",
+      "mem_wgt_in": "0xb7"
+    },
+    {
+      "instr No.": 137,
+      "instr_in": "0x00",
+      "mem_addr": 121,
+      "mem_bias_in": "0x1e",
+      "mem_inp_in": "0x1e",
+      "mem_mode": 2,
+      "mem_uop_in": "0x1e",
+      "mem_wgt_in": "0x1e"
+    },
+    {
+      "instr No.": 138,
+      "instr_in": "0x00",
+      "mem_addr": 122,
+      "mem_bias_in": "0x7d",
+      "mem_inp_in": "0x7d",
+      "mem_mode": 2,
+      "mem_uop_in": "0x7d",
+      "mem_wgt_in": "0x7d"
+    },
+    {
+      "instr No.": 139,
+      "instr_in": "0x00",
+      "mem_addr": 123,
+      "mem_bias_in": "0xfe",
+      "mem_inp_in": "0xfe",
+      "mem_mode": 2,
+      "mem_uop_in": "0xfe",
+      "mem_wgt_in": "0xfe"
+    },
+    {
+      "instr No.": 140,
+      "instr_in": "0x00",
+      "mem_addr": 124,
+      "mem_bias_in": "0x19",
+      "mem_inp_in": "0x19",
+      "mem_mode": 2,
+      "mem_uop_in": "0x19",
+      "mem_wgt_in": "0x19"
+    },
+    {
+      "instr No.": 141,
+      "instr_in": "0x00",
+      "mem_addr": 125,
+      "mem_bias_in": "0x16",
+      "mem_inp_in": "0x16",
+      "mem_mode": 2,
+      "mem_uop_in": "0x16",
+      "mem_wgt_in": "0x16"
+    },
+    {
+      "instr No.": 142,
+      "instr_in": "0x00",
+      "mem_addr": 126,
+      "mem_bias_in": "0x34",
+      "mem_inp_in": "0x34",
+      "mem_mode": 2,
+      "mem_uop_in": "0x34",
+      "mem_wgt_in": "0x34"
+    },
+    {
+      "instr No.": 143,
+      "instr_in": "0x00",
+      "mem_addr": 127,
+      "mem_bias_in": "0x72",
+      "mem_inp_in": "0x72",
+      "mem_mode": 2,
+      "mem_uop_in": "0x72",
+      "mem_wgt_in": "0x72"
+    },
+    {
+      "instr No.": 144,
+      "instr_in": "0x00",
+      "mem_addr": 128,
+      "mem_bias_in": "0x45",
+      "mem_inp_in": "0x45",
+      "mem_mode": 2,
+      "mem_uop_in": "0x45",
+      "mem_wgt_in": "0x45"
+    },
+    {
+      "instr No.": 145,
+      "instr_in": "0x00",
+      "mem_addr": 129,
+      "mem_bias_in": "0x46",
+      "mem_inp_in": "0x46",
+      "mem_mode": 2,
+      "mem_uop_in": "0x46",
+      "mem_wgt_in": "0x46"
+    },
+    {
+      "instr No.": 146,
+      "instr_in": "0x00",
+      "mem_addr": 130,
+      "mem_bias_in": "0xb6",
+      "mem_inp_in": "0xb6",
+      "mem_mode": 2,
+      "mem_uop_in": "0xb6",
+      "mem_wgt_in": "0xb6"
+    },
+    {
+      "instr No.": 147,
+      "instr_in": "0x00",
+      "mem_addr": 131,
+      "mem_bias_in": "0xb4",
+      "mem_inp_in": "0xb4",
+      "mem_mode": 2,
+      "mem_uop_in": "0xb4",
+      "mem_wgt_in": "0xb4"
+    },
+    {
+      "instr No.": 148,
+      "instr_in": "0x00",
+      "mem_addr": 132,
+      "mem_bias_in": "0xe4",
+      "mem_inp_in": "0xe4",
+      "mem_mode": 2,
+      "mem_uop_in": "0xe4",
+      "mem_wgt_in": "0xe4"
+    },
+    {
+      "instr No.": 149,
+      "instr_in": "0x00",
+      "mem_addr": 133,
+      "mem_bias_in": "0x8e",
+      "mem_inp_in": "0x8e",
+      "mem_mode": 2,
+      "mem_uop_in": "0x8e",
+      "mem_wgt_in": "0x8e"
+    },
+    {
+      "instr No.": 150,
+      "instr_in": "0x00",
+      "mem_addr": 134,
+      "mem_bias_in": "0x37",
+      "mem_inp_in": "0x37",
+      "mem_mode": 2,
+      "mem_uop_in": "0x37",
+      "mem_wgt_in": "0x37"
+    },
+    {
+      "instr No.": 151,
+      "instr_in": "0x00",
+      "mem_addr": 135,
+      "mem_bias_in": "0xfd",
+      "mem_inp_in": "0xfd",
+      "mem_mode": 2,
+      "mem_uop_in": "0xfd",
+      "mem_wgt_in": "0xfd"
+    },
+    {
+      "instr No.": 152,
+      "instr_in": "0x00",
+      "mem_addr": 136,
+      "mem_bias_in": "0x63",
+      "mem_inp_in": "0x63",
+      "mem_mode": 2,
+      "mem_uop_in": "0x63",
+      "mem_wgt_in": "0x63"
+    },
+    {
+      "instr No.": 153,
+      "instr_in": "0x00",
+      "mem_addr": 137,
+      "mem_bias_in": "0xcc",
+      "mem_inp_in": "0xcc",
+      "mem_mode": 2,
+      "mem_uop_in": "0xcc",
+      "mem_wgt_in": "0xcc"
+    },
+    {
+      "instr No.": 154,
+      "instr_in": "0x00",
+      "mem_addr": 138,
+      "mem_bias_in": "0x9f",
+      "mem_inp_in": "0x9f",
+      "mem_mode": 2,
+      "mem_uop_in": "0x9f",
+      "mem_wgt_in": "0x9f"
+    },
+    {
+      "instr No.": 155,
+      "instr_in": "0x00",
+      "mem_addr": 139,
+      "mem_bias_in": "0x9a",
+      "mem_inp_in": "0x9a",
+      "mem_mode": 2,
+      "mem_uop_in": "0x9a",
+      "mem_wgt_in": "0x9a"
+    },
+    {
+      "instr No.": 156,
+      "instr_in": "0x00",
+      "mem_addr": 140,
+      "mem_bias_in": "0x45",
+      "mem_inp_in": "0x45",
+      "mem_mode": 2,
+      "mem_uop_in": "0x45",
+      "mem_wgt_in": "0x45"
+    },
+    {
+      "instr No.": 157,
+      "instr_in": "0x00",
+      "mem_addr": 141,
+      "mem_bias_in": "0x40",
+      "mem_inp_in": "0x40",
+      "mem_mode": 2,
+      "mem_uop_in": "0x40",
+      "mem_wgt_in": "0x40"
+    },
+    {
+      "instr No.": 158,
+      "instr_in": "0x00",
+      "mem_addr": 142,
+      "mem_bias_in": "0x40",
+      "mem_inp_in": "0x40",
+      "mem_mode": 2,
+      "mem_uop_in": "0x40",
+      "mem_wgt_in": "0x40"
+    },
+    {
+      "instr No.": 159,
+      "instr_in": "0x00",
+      "mem_addr": 143,
+      "mem_bias_in": "0x34",
+      "mem_inp_in": "0x34",
+      "mem_mode": 2,
+      "mem_uop_in": "0x34",
+      "mem_wgt_in": "0x34"
+    },
+    {
+      "instr No.": 160,
+      "instr_in": "0x00",
+      "mem_addr": 144,
+      "mem_bias_in": "0x36",
+      "mem_inp_in": "0x36",
+      "mem_mode": 2,
+      "mem_uop_in": "0x36",
+      "mem_wgt_in": "0x36"
+    },
+    {
+      "instr No.": 161,
+      "instr_in": "0x00",
+      "mem_addr": 145,
+      "mem_bias_in": "0xac",
+      "mem_inp_in": "0xac",
+      "mem_mode": 2,
+      "mem_uop_in": "0xac",
+      "mem_wgt_in": "0xac"
+    },
+    {
+      "instr No.": 162,
+      "instr_in": "0x00",
+      "mem_addr": 146,
+      "mem_bias_in": "0x46",
+      "mem_inp_in": "0x46",
+      "mem_mode": 2,
+      "mem_uop_in": "0x46",
+      "mem_wgt_in": "0x46"
+    },
+    {
+      "instr No.": 163,
+      "instr_in": "0x00",
+      "mem_addr": 147,
+      "mem_bias_in": "0xd2",
+      "mem_inp_in": "0xd2",
+      "mem_mode": 2,
+      "mem_uop_in": "0xd2",
+      "mem_wgt_in": "0xd2"
+    },
+    {
+      "instr No.": 164,
+      "instr_in": "0x00",
+      "mem_addr": 148,
+      "mem_bias_in": "0xde",
+      "mem_inp_in": "0xde",
+      "mem_mode": 2,
+      "mem_uop_in": "0xde",
+      "mem_wgt_in": "0xde"
+    },
+    {
+      "instr No.": 165,
+      "instr_in": "0x00",
+      "mem_addr": 149,
+      "mem_bias_in": "0x3e",
+      "mem_inp_in": "0x3e",
+      "mem_mode": 2,
+      "mem_uop_in": "0x3e",
+      "mem_wgt_in": "0x3e"
+    },
+    {
+      "instr No.": 166,
+      "instr_in": "0x00",
+      "mem_addr": 150,
+      "mem_bias_in": "0xed",
+      "mem_inp_in": "0xed",
+      "mem_mode": 2,
+      "mem_uop_in": "0xed",
+      "mem_wgt_in": "0xed"
+    },
+    {
+      "instr No.": 167,
+      "instr_in": "0x00",
+      "mem_addr": 151,
+      "mem_bias_in": "0x9e",
+      "mem_inp_in": "0x9e",
+      "mem_mode": 2,
+      "mem_uop_in": "0x9e",
+      "mem_wgt_in": "0x9e"
+    },
+    {
+      "instr No.": 168,
+      "instr_in": "0x00",
+      "mem_addr": 152,
+      "mem_bias_in": "0x7b",
+      "mem_inp_in": "0x7b",
+      "mem_mode": 2,
+      "mem_uop_in": "0x7b",
+      "mem_wgt_in": "0x7b"
+    },
+    {
+      "instr No.": 169,
+      "instr_in": "0x00",
+      "mem_addr": 153,
+      "mem_bias_in": "0x2e",
+      "mem_inp_in": "0x2e",
+      "mem_mode": 2,
+      "mem_uop_in": "0x2e",
+      "mem_wgt_in": "0x2e"
+    },
+    {
+      "instr No.": 170,
+      "instr_in": "0x00",
+      "mem_addr": 154,
+      "mem_bias_in": "0x74",
+      "mem_inp_in": "0x74",
+      "mem_mode": 2,
+      "mem_uop_in": "0x74",
+      "mem_wgt_in": "0x74"
+    },
+    {
+      "instr No.": 171,
+      "instr_in": "0x00",
+      "mem_addr": 155,
+      "mem_bias_in": "0x6a",
+      "mem_inp_in": "0x6a",
+      "mem_mode": 2,
+      "mem_uop_in": "0x6a",
+      "mem_wgt_in": "0x6a"
+    },
+    {
+      "instr No.": 172,
+      "instr_in": "0x00",
+      "mem_addr": 156,
+      "mem_bias_in": "0x2c",
+      "mem_inp_in": "0x2c",
+      "mem_mode": 2,
+      "mem_uop_in": "0x2c",
+      "mem_wgt_in": "0x2c"
+    },
+    {
+      "instr No.": 173,
+      "instr_in": "0x00",
+      "mem_addr": 157,
+      "mem_bias_in": "0x26",
+      "mem_inp_in": "0x26",
+      "mem_mode": 2,
+      "mem_uop_in": "0x26",
+      "mem_wgt_in": "0x26"
+    },
+    {
+      "instr No.": 174,
+      "instr_in": "0x00",
+      "mem_addr": 158,
+      "mem_bias_in": "0xd4",
+      "mem_inp_in": "0xd4",
+      "mem_mode": 2,
+      "mem_uop_in": "0xd4",
+      "mem_wgt_in": "0xd4"
+    },
+    {
+      "instr No.": 175,
+      "instr_in": "0x00",
+      "mem_addr": 159,
+      "mem_bias_in": "0xf0",
+      "mem_inp_in": "0xf0",
+      "mem_mode": 2,
+      "mem_uop_in": "0xf0",
+      "mem_wgt_in": "0xf0"
+    },
+    {
+      "instr No.": 176,
+      "instr_in": "0x00",
+      "mem_addr": 160,
+      "mem_bias_in": "0x0c",
+      "mem_inp_in": "0x0c",
+      "mem_mode": 2,
+      "mem_uop_in": "0x0c",
+      "mem_wgt_in": "0x0c"
+    },
+    {
+      "instr No.": 177,
+      "instr_in": "0x00",
+      "mem_addr": 161,
+      "mem_bias_in": "0x64",
+      "mem_inp_in": "0x64",
+      "mem_mode": 2,
+      "mem_uop_in": "0x64",
+      "mem_wgt_in": "0x64"
+    },
+    {
+      "instr No.": 178,
+      "instr_in": "0x00",
+      "mem_addr": 162,
+      "mem_bias_in": "0x30",
+      "mem_inp_in": "0x30",
+      "mem_mode": 2,
+      "mem_uop_in": "0x30",
+      "mem_wgt_in": "0x30"
+    },
+    {
+      "instr No.": 179,
+      "instr_in": "0x00",
+      "mem_addr": 163,
+      "mem_bias_in": "0xdb",
+      "mem_inp_in": "0xdb",
+      "mem_mode": 2,
+      "mem_uop_in": "0xdb",
+      "mem_wgt_in": "0xdb"
+    },
+    {
+      "instr No.": 180,
+      "instr_in": "0x00",
+      "mem_addr": 164,
+      "mem_bias_in": "0x06",
+      "mem_inp_in": "0x06",
+      "mem_mode": 2,
+      "mem_uop_in": "0x06",
+      "mem_wgt_in": "0x06"
+    },
+    {
+      "instr No.": 181,
+      "instr_in": "0x00",
+      "mem_addr": 165,
+      "mem_bias_in": "0xa0",
+      "mem_inp_in": "0xa0",
+      "mem_mode": 2,
+      "mem_uop_in": "0xa0",
+      "mem_wgt_in": "0xa0"
+    },
+    {
+      "instr No.": 182,
+      "instr_in": "0x00",
+      "mem_addr": 166,
+      "mem_bias_in": "0x0a",
+      "mem_inp_in": "0x0a",
+      "mem_mode": 2,
+      "mem_uop_in": "0x0a",
+      "mem_wgt_in": "0x0a"
+    },
+    {
+      "instr No.": 183,
+      "instr_in": "0x00",
+      "mem_addr": 167,
+      "mem_bias_in": "0x89",
+      "mem_inp_in": "0x89",
+      "mem_mode": 2,
+      "mem_uop_in": "0x89",
+      "mem_wgt_in": "0x89"
+    },
+    {
+      "instr No.": 184,
+      "instr_in": "0x00",
+      "mem_addr": 168,
+      "mem_bias_in": "0x62",
+      "mem_inp_in": "0x62",
+      "mem_mode": 2,
+      "mem_uop_in": "0x62",
+      "mem_wgt_in": "0x62"
+    },
+    {
+      "instr No.": 185,
+      "instr_in": "0x00",
+      "mem_addr": 169,
+      "mem_bias_in": "0xad",
+      "mem_inp_in": "0xad",
+      "mem_mode": 2,
+      "mem_uop_in": "0xad",
+      "mem_wgt_in": "0xad"
+    },
+    {
+      "instr No.": 186,
+      "instr_in": "0x00",
+      "mem_addr": 170,
+      "mem_bias_in": "0x3a",
+      "mem_inp_in": "0x3a",
+      "mem_mode": 2,
+      "mem_uop_in": "0x3a",
+      "mem_wgt_in": "0x3a"
+    },
+    {
+      "instr No.": 187,
+      "instr_in": "0x00",
+      "mem_addr": 171,
+      "mem_bias_in": "0x8d",
+      "mem_inp_in": "0x8d",
+      "mem_mode": 2,
+      "mem_uop_in": "0x8d",
+      "mem_wgt_in": "0x8d"
+    },
+    {
+      "instr No.": 188,
+      "instr_in": "0x00",
+      "mem_addr": 172,
+      "mem_bias_in": "0x21",
+      "mem_inp_in": "0x21",
+      "mem_mode": 2,
+      "mem_uop_in": "0x21",
+      "mem_wgt_in": "0x21"
+    },
+    {
+      "instr No.": 189,
+      "instr_in": "0x00",
+      "mem_addr": 173,
+      "mem_bias_in": "0xe1",
+      "mem_inp_in": "0xe1",
+      "mem_mode": 2,
+      "mem_uop_in": "0xe1",
+      "mem_wgt_in": "0xe1"
+    },
+    {
+      "instr No.": 190,
+      "instr_in": "0x00",
+      "mem_addr": 174,
+      "mem_bias_in": "0x9e",
+      "mem_inp_in": "0x9e",
+      "mem_mode": 2,
+      "mem_uop_in": "0x9e",
+      "mem_wgt_in": "0x9e"
+    },
+    {
+      "instr No.": 191,
+      "instr_in": "0x00",
+      "mem_addr": 175,
+      "mem_bias_in": "0xf6",
+      "mem_inp_in": "0xf6",
+      "mem_mode": 2,
+      "mem_uop_in": "0xf6",
+      "mem_wgt_in": "0xf6"
+    },
+    {
+      "instr No.": 192,
+      "instr_in": "0x00",
+      "mem_addr": 176,
+      "mem_bias_in": "0x0d",
+      "mem_inp_in": "0x0d",
+      "mem_mode": 2,
+      "mem_uop_in": "0x0d",
+      "mem_wgt_in": "0x0d"
+    },
+    {
+      "instr No.": 193,
+      "instr_in": "0x00",
+      "mem_addr": 177,
+      "mem_bias_in": "0x35",
+      "mem_inp_in": "0x35",
+      "mem_mode": 2,
+      "mem_uop_in": "0x35",
+      "mem_wgt_in": "0x35"
+    },
+    {
+      "instr No.": 194,
+      "instr_in": "0x00",
+      "mem_addr": 178,
+      "mem_bias_in": "0x90",
+      "mem_inp_in": "0x90",
+      "mem_mode": 2,
+      "mem_uop_in": "0x90",
+      "mem_wgt_in": "0x90"
+    },
+    {
+      "instr No.": 195,
+      "instr_in": "0x00",
+      "mem_addr": 179,
+      "mem_bias_in": "0x51",
+      "mem_inp_in": "0x51",
+      "mem_mode": 2,
+      "mem_uop_in": "0x51",
+      "mem_wgt_in": "0x51"
+    },
+    {
+      "instr No.": 196,
+      "instr_in": "0x00",
+      "mem_addr": 180,
+      "mem_bias_in": "0x8f",
+      "mem_inp_in": "0x8f",
+      "mem_mode": 2,
+      "mem_uop_in": "0x8f",
+      "mem_wgt_in": "0x8f"
+    },
+    {
+      "instr No.": 197,
+      "instr_in": "0x00",
+      "mem_addr": 181,
+      "mem_bias_in": "0x2b",
+      "mem_inp_in": "0x2b",
+      "mem_mode": 2,
+      "mem_uop_in": "0x2b",
+      "mem_wgt_in": "0x2b"
+    },
+    {
+      "instr No.": 198,
+      "instr_in": "0x00",
+      "mem_addr": 182,
+      "mem_bias_in": "0x1b",
+      "mem_inp_in": "0x1b",
+      "mem_mode": 2,
+      "mem_uop_in": "0x1b",
+      "mem_wgt_in": "0x1b"
+    },
+    {
+      "instr No.": 199,
+      "instr_in": "0x00",
+      "mem_addr": 183,
+      "mem_bias_in": "0x6e",
+      "mem_inp_in": "0x6e",
+      "mem_mode": 2,
+      "mem_uop_in": "0x6e",
+      "mem_wgt_in": "0x6e"
+    },
+    {
+      "instr No.": 200,
+      "instr_in": "0x00",
+      "mem_addr": 184,
+      "mem_bias_in": "0x3e",
+      "mem_inp_in": "0x3e",
+      "mem_mode": 2,
+      "mem_uop_in": "0x3e",
+      "mem_wgt_in": "0x3e"
+    },
+    {
+      "instr No.": 201,
+      "instr_in": "0x00",
+      "mem_addr": 185,
+      "mem_bias_in": "0x73",
+      "mem_inp_in": "0x73",
+      "mem_mode": 2,
+      "mem_uop_in": "0x73",
+      "mem_wgt_in": "0x73"
+    },
+    {
+      "instr No.": 202,
+      "instr_in": "0x00",
+      "mem_addr": 186,
+      "mem_bias_in": "0xec",
+      "mem_inp_in": "0xec",
+      "mem_mode": 2,
+      "mem_uop_in": "0xec",
+      "mem_wgt_in": "0xec"
+    },
+    {
+      "instr No.": 203,
+      "instr_in": "0x00",
+      "mem_addr": 187,
+      "mem_bias_in": "0xe5",
+      "mem_inp_in": "0xe5",
+      "mem_mode": 2,
+      "mem_uop_in": "0xe5",
+      "mem_wgt_in": "0xe5"
+    },
+    {
+      "instr No.": 204,
+      "instr_in": "0x00",
+      "mem_addr": 188,
+      "mem_bias_in": "0x3b",
+      "mem_inp_in": "0x3b",
+      "mem_mode": 2,
+      "mem_uop_in": "0x3b",
+      "mem_wgt_in": "0x3b"
+    },
+    {
+      "instr No.": 205,
+      "instr_in": "0x00",
+      "mem_addr": 189,
+      "mem_bias_in": "0x4b",
+      "mem_inp_in": "0x4b",
+      "mem_mode": 2,
+      "mem_uop_in": "0x4b",
+      "mem_wgt_in": "0x4b"
+    },
+    {
+      "instr No.": 206,
+      "instr_in": "0x00",
+      "mem_addr": 190,
+      "mem_bias_in": "0x0a",
+      "mem_inp_in": "0x0a",
+      "mem_mode": 2,
+      "mem_uop_in": "0x0a",
+      "mem_wgt_in": "0x0a"
+    },
+    {
+      "instr No.": 207,
+      "instr_in": "0x00",
+      "mem_addr": 191,
+      "mem_bias_in": "0x57",
+      "mem_inp_in": "0x57",
+      "mem_mode": 2,
+      "mem_uop_in": "0x57",
+      "mem_wgt_in": "0x57"
+    },
+    {
+      "instr No.": 208,
+      "instr_in": "0x00",
+      "mem_addr": 192,
+      "mem_bias_in": "0x3e",
+      "mem_inp_in": "0x3e",
+      "mem_mode": 2,
+      "mem_uop_in": "0x3e",
+      "mem_wgt_in": "0x3e"
+    },
+    {
+      "instr No.": 209,
+      "instr_in": "0x00",
+      "mem_addr": 193,
+      "mem_bias_in": "0xa9",
+      "mem_inp_in": "0xa9",
+      "mem_mode": 2,
+      "mem_uop_in": "0xa9",
+      "mem_wgt_in": "0xa9"
+    },
+    {
+      "instr No.": 210,
+      "instr_in": "0x00",
+      "mem_addr": 194,
+      "mem_bias_in": "0x44",
+      "mem_inp_in": "0x44",
+      "mem_mode": 2,
+      "mem_uop_in": "0x44",
+      "mem_wgt_in": "0x44"
+    },
+    {
+      "instr No.": 211,
+      "instr_in": "0x00",
+      "mem_addr": 195,
+      "mem_bias_in": "0x73",
+      "mem_inp_in": "0x73",
+      "mem_mode": 2,
+      "mem_uop_in": "0x73",
+      "mem_wgt_in": "0x73"
+    },
+    {
+      "instr No.": 212,
+      "instr_in": "0x00",
+      "mem_addr": 196,
+      "mem_bias_in": "0x6e",
+      "mem_inp_in": "0x6e",
+      "mem_mode": 2,
+      "mem_uop_in": "0x6e",
+      "mem_wgt_in": "0x6e"
+    },
+    {
+      "instr No.": 213,
+      "instr_in": "0x00",
+      "mem_addr": 197,
+      "mem_bias_in": "0x1a",
+      "mem_inp_in": "0x1a",
+      "mem_mode": 2,
+      "mem_uop_in": "0x1a",
+      "mem_wgt_in": "0x1a"
+    },
+    {
+      "instr No.": 214,
+      "instr_in": "0x00",
+      "mem_addr": 198,
+      "mem_bias_in": "0x6d",
+      "mem_inp_in": "0x6d",
+      "mem_mode": 2,
+      "mem_uop_in": "0x6d",
+      "mem_wgt_in": "0x6d"
+    },
+    {
+      "instr No.": 215,
+      "instr_in": "0x00",
+      "mem_addr": 199,
+      "mem_bias_in": "0xbf",
+      "mem_inp_in": "0xbf",
+      "mem_mode": 2,
+      "mem_uop_in": "0xbf",
+      "mem_wgt_in": "0xbf"
+    },
+    {
+      "instr No.": 216,
+      "instr_in": "0x00",
+      "mem_addr": 200,
+      "mem_bias_in": "0xf4",
+      "mem_inp_in": "0xf4",
+      "mem_mode": 2,
+      "mem_uop_in": "0xf4",
+      "mem_wgt_in": "0xf4"
+    },
+    {
+      "instr No.": 217,
+      "instr_in": "0x00",
+      "mem_addr": 201,
+      "mem_bias_in": "0x67",
+      "mem_inp_in": "0x67",
+      "mem_mode": 2,
+      "mem_uop_in": "0x67",
+      "mem_wgt_in": "0x67"
+    },
+    {
+      "instr No.": 218,
+      "instr_in": "0x00",
+      "mem_addr": 202,
+      "mem_bias_in": "0x49",
+      "mem_inp_in": "0x49",
+      "mem_mode": 2,
+      "mem_uop_in": "0x49",
+      "mem_wgt_in": "0x49"
+    },
+    {
+      "instr No.": 219,
+      "instr_in": "0x00",
+      "mem_addr": 203,
+      "mem_bias_in": "0x13",
+      "mem_inp_in": "0x13",
+      "mem_mode": 2,
+      "mem_uop_in": "0x13",
+      "mem_wgt_in": "0x13"
+    },
+    {
+      "instr No.": 220,
+      "instr_in": "0x00",
+      "mem_addr": 204,
+      "mem_bias_in": "0x4e",
+      "mem_inp_in": "0x4e",
+      "mem_mode": 2,
+      "mem_uop_in": "0x4e",
+      "mem_wgt_in": "0x4e"
+    },
+    {
+      "instr No.": 221,
+      "instr_in": "0x00",
+      "mem_addr": 205,
+      "mem_bias_in": "0xfc",
+      "mem_inp_in": "0xfc",
+      "mem_mode": 2,
+      "mem_uop_in": "0xfc",
+      "mem_wgt_in": "0xfc"
+    },
+    {
+      "instr No.": 222,
+      "instr_in": "0x00",
+      "mem_addr": 206,
+      "mem_bias_in": "0x45",
+      "mem_inp_in": "0x45",
+      "mem_mode": 2,
+      "mem_uop_in": "0x45",
+      "mem_wgt_in": "0x45"
+    },
+    {
+      "instr No.": 223,
+      "instr_in": "0x00",
+      "mem_addr": 207,
+      "mem_bias_in": "0xe3",
+      "mem_inp_in": "0xe3",
+      "mem_mode": 2,
+      "mem_uop_in": "0xe3",
+      "mem_wgt_in": "0xe3"
+    },
+    {
+      "instr No.": 224,
+      "instr_in": "0x00",
+      "mem_addr": 208,
+      "mem_bias_in": "0x63",
+      "mem_inp_in": "0x63",
+      "mem_mode": 2,
+      "mem_uop_in": "0x63",
+      "mem_wgt_in": "0x63"
+    },
+    {
+      "instr No.": 225,
+      "instr_in": "0x00",
+      "mem_addr": 209,
+      "mem_bias_in": "0x08",
+      "mem_inp_in": "0x08",
+      "mem_mode": 2,
+      "mem_uop_in": "0x08",
+      "mem_wgt_in": "0x08"
+    },
+    {
+      "instr No.": 226,
+      "instr_in": "0x00",
+      "mem_addr": 210,
+      "mem_bias_in": "0xe9",
+      "mem_inp_in": "0xe9",
+      "mem_mode": 2,
+      "mem_uop_in": "0xe9",
+      "mem_wgt_in": "0xe9"
+    },
+    {
+      "instr No.": 227,
+      "instr_in": "0x00",
+      "mem_addr": 211,
+      "mem_bias_in": "0x45",
+      "mem_inp_in": "0x45",
+      "mem_mode": 2,
+      "mem_uop_in": "0x45",
+      "mem_wgt_in": "0x45"
+    },
+    {
+      "instr No.": 228,
+      "instr_in": "0x00",
+      "mem_addr": 212,
+      "mem_bias_in": "0x5a",
+      "mem_inp_in": "0x5a",
+      "mem_mode": 2,
+      "mem_uop_in": "0x5a",
+      "mem_wgt_in": "0x5a"
+    },
+    {
+      "instr No.": 229,
+      "instr_in": "0x00",
+      "mem_addr": 213,
+      "mem_bias_in": "0x64",
+      "mem_inp_in": "0x64",
+      "mem_mode": 2,
+      "mem_uop_in": "0x64",
+      "mem_wgt_in": "0x64"
+    },
+    {
+      "instr No.": 230,
+      "instr_in": "0x00",
+      "mem_addr": 214,
+      "mem_bias_in": "0x0d",
+      "mem_inp_in": "0x0d",
+      "mem_mode": 2,
+      "mem_uop_in": "0x0d",
+      "mem_wgt_in": "0x0d"
+    },
+    {
+      "instr No.": 231,
+      "instr_in": "0x00",
+      "mem_addr": 215,
+      "mem_bias_in": "0xac",
+      "mem_inp_in": "0xac",
+      "mem_mode": 2,
+      "mem_uop_in": "0xac",
+      "mem_wgt_in": "0xac"
+    },
+    {
+      "instr No.": 232,
+      "instr_in": "0x00",
+      "mem_addr": 216,
+      "mem_bias_in": "0x29",
+      "mem_inp_in": "0x29",
+      "mem_mode": 2,
+      "mem_uop_in": "0x29",
+      "mem_wgt_in": "0x29"
+    },
+    {
+      "instr No.": 233,
+      "instr_in": "0x00",
+      "mem_addr": 217,
+      "mem_bias_in": "0x34",
+      "mem_inp_in": "0x34",
+      "mem_mode": 2,
+      "mem_uop_in": "0x34",
+      "mem_wgt_in": "0x34"
+    },
+    {
+      "instr No.": 234,
+      "instr_in": "0x00",
+      "mem_addr": 218,
+      "mem_bias_in": "0xcd",
+      "mem_inp_in": "0xcd",
+      "mem_mode": 2,
+      "mem_uop_in": "0xcd",
+      "mem_wgt_in": "0xcd"
+    },
+    {
+      "instr No.": 235,
+      "instr_in": "0x00",
+      "mem_addr": 219,
+      "mem_bias_in": "0x77",
+      "mem_inp_in": "0x77",
+      "mem_mode": 2,
+      "mem_uop_in": "0x77",
+      "mem_wgt_in": "0x77"
+    },
+    {
+      "instr No.": 236,
+      "instr_in": "0x00",
+      "mem_addr": 220,
+      "mem_bias_in": "0xef",
+      "mem_inp_in": "0xef",
+      "mem_mode": 2,
+      "mem_uop_in": "0xef",
+      "mem_wgt_in": "0xef"
+    },
+    {
+      "instr No.": 237,
+      "instr_in": "0x00",
+      "mem_addr": 221,
+      "mem_bias_in": "0x4e",
+      "mem_inp_in": "0x4e",
+      "mem_mode": 2,
+      "mem_uop_in": "0x4e",
+      "mem_wgt_in": "0x4e"
+    },
+    {
+      "instr No.": 238,
+      "instr_in": "0x00",
+      "mem_addr": 222,
+      "mem_bias_in": "0x3c",
+      "mem_inp_in": "0x3c",
+      "mem_mode": 2,
+      "mem_uop_in": "0x3c",
+      "mem_wgt_in": "0x3c"
+    },
+    {
+      "instr No.": 239,
+      "instr_in": "0x00",
+      "mem_addr": 223,
+      "mem_bias_in": "0x2d",
+      "mem_inp_in": "0x2d",
+      "mem_mode": 2,
+      "mem_uop_in": "0x2d",
+      "mem_wgt_in": "0x2d"
+    },
+    {
+      "instr No.": 240,
+      "instr_in": "0x00",
+      "mem_addr": 224,
+      "mem_bias_in": "0x01",
+      "mem_inp_in": "0x01",
+      "mem_mode": 2,
+      "mem_uop_in": "0x01",
+      "mem_wgt_in": "0x01"
+    },
+    {
+      "instr No.": 241,
+      "instr_in": "0x00",
+      "mem_addr": 225,
+      "mem_bias_in": "0x5d",
+      "mem_inp_in": "0x5d",
+      "mem_mode": 2,
+      "mem_uop_in": "0x5d",
+      "mem_wgt_in": "0x5d"
+    },
+    {
+      "instr No.": 242,
+      "instr_in": "0x00",
+      "mem_addr": 226,
+      "mem_bias_in": "0xdb",
+      "mem_inp_in": "0xdb",
+      "mem_mode": 2,
+      "mem_uop_in": "0xdb",
+      "mem_wgt_in": "0xdb"
+    },
+    {
+      "instr No.": 243,
+      "instr_in": "0x00",
+      "mem_addr": 227,
+      "mem_bias_in": "0x85",
+      "mem_inp_in": "0x85",
+      "mem_mode": 2,
+      "mem_uop_in": "0x85",
+      "mem_wgt_in": "0x85"
+    },
+    {
+      "instr No.": 244,
+      "instr_in": "0x00",
+      "mem_addr": 228,
+      "mem_bias_in": "0xc6",
+      "mem_inp_in": "0xc6",
+      "mem_mode": 2,
+      "mem_uop_in": "0xc6",
+      "mem_wgt_in": "0xc6"
+    },
+    {
+      "instr No.": 245,
+      "instr_in": "0x00",
+      "mem_addr": 229,
+      "mem_bias_in": "0xc3",
+      "mem_inp_in": "0xc3",
+      "mem_mode": 2,
+      "mem_uop_in": "0xc3",
+      "mem_wgt_in": "0xc3"
+    },
+    {
+      "instr No.": 246,
+      "instr_in": "0x00",
+      "mem_addr": 230,
+      "mem_bias_in": "0xc7",
+      "mem_inp_in": "0xc7",
+      "mem_mode": 2,
+      "mem_uop_in": "0xc7",
+      "mem_wgt_in": "0xc7"
+    },
+    {
+      "instr No.": 247,
+      "instr_in": "0x00",
+      "mem_addr": 231,
+      "mem_bias_in": "0x27",
+      "mem_inp_in": "0x27",
+      "mem_mode": 2,
+      "mem_uop_in": "0x27",
+      "mem_wgt_in": "0x27"
+    },
+    {
+      "instr No.": 248,
+      "instr_in": "0x00",
+      "mem_addr": 232,
+      "mem_bias_in": "0x42",
+      "mem_inp_in": "0x42",
+      "mem_mode": 2,
+      "mem_uop_in": "0x42",
+      "mem_wgt_in": "0x42"
+    },
+    {
+      "instr No.": 249,
+      "instr_in": "0x00",
+      "mem_addr": 233,
+      "mem_bias_in": "0x42",
+      "mem_inp_in": "0x42",
+      "mem_mode": 2,
+      "mem_uop_in": "0x42",
+      "mem_wgt_in": "0x42"
+    },
+    {
+      "instr No.": 250,
+      "instr_in": "0x00",
+      "mem_addr": 234,
+      "mem_bias_in": "0xb5",
+      "mem_inp_in": "0xb5",
+      "mem_mode": 2,
+      "mem_uop_in": "0xb5",
+      "mem_wgt_in": "0xb5"
+    },
+    {
+      "instr No.": 251,
+      "instr_in": "0x00",
+      "mem_addr": 235,
+      "mem_bias_in": "0x34",
+      "mem_inp_in": "0x34",
+      "mem_mode": 2,
+      "mem_uop_in": "0x34",
+      "mem_wgt_in": "0x34"
+    },
+    {
+      "instr No.": 252,
+      "instr_in": "0x00",
+      "mem_addr": 236,
+      "mem_bias_in": "0x73",
+      "mem_inp_in": "0x73",
+      "mem_mode": 2,
+      "mem_uop_in": "0x73",
+      "mem_wgt_in": "0x73"
+    },
+    {
+      "instr No.": 253,
+      "instr_in": "0x00",
+      "mem_addr": 237,
+      "mem_bias_in": "0x59",
+      "mem_inp_in": "0x59",
+      "mem_mode": 2,
+      "mem_uop_in": "0x59",
+      "mem_wgt_in": "0x59"
+    },
+    {
+      "instr No.": 254,
+      "instr_in": "0x00",
+      "mem_addr": 238,
+      "mem_bias_in": "0x9d",
+      "mem_inp_in": "0x9d",
+      "mem_mode": 2,
+      "mem_uop_in": "0x9d",
+      "mem_wgt_in": "0x9d"
+    },
+    {
+      "instr No.": 255,
+      "instr_in": "0x00",
+      "mem_addr": 239,
+      "mem_bias_in": "0x85",
+      "mem_inp_in": "0x85",
+      "mem_mode": 2,
+      "mem_uop_in": "0x85",
+      "mem_wgt_in": "0x85"
+    },
+    {
+      "instr No.": 256,
+      "instr_in": "0x00",
+      "mem_addr": 240,
+      "mem_bias_in": "0x5e",
+      "mem_inp_in": "0x5e",
+      "mem_mode": 2,
+      "mem_uop_in": "0x5e",
+      "mem_wgt_in": "0x5e"
+    },
+    {
+      "instr No.": 257,
+      "instr_in": "0x00",
+      "mem_addr": 241,
+      "mem_bias_in": "0x6e",
+      "mem_inp_in": "0x6e",
+      "mem_mode": 2,
+      "mem_uop_in": "0x6e",
+      "mem_wgt_in": "0x6e"
+    },
+    {
+      "instr No.": 258,
+      "instr_in": "0x00",
+      "mem_addr": 242,
+      "mem_bias_in": "0x38",
+      "mem_inp_in": "0x38",
+      "mem_mode": 2,
+      "mem_uop_in": "0x38",
+      "mem_wgt_in": "0x38"
+    },
+    {
+      "instr No.": 259,
+      "instr_in": "0x00",
+      "mem_addr": 243,
+      "mem_bias_in": "0xb5",
+      "mem_inp_in": "0xb5",
+      "mem_mode": 2,
+      "mem_uop_in": "0xb5",
+      "mem_wgt_in": "0xb5"
+    },
+    {
+      "instr No.": 260,
+      "instr_in": "0x00",
+      "mem_addr": 244,
+      "mem_bias_in": "0xe8",
+      "mem_inp_in": "0xe8",
+      "mem_mode": 2,
+      "mem_uop_in": "0xe8",
+      "mem_wgt_in": "0xe8"
+    },
+    {
+      "instr No.": 261,
+      "instr_in": "0x00",
+      "mem_addr": 245,
+      "mem_bias_in": "0xb0",
+      "mem_inp_in": "0xb0",
+      "mem_mode": 2,
+      "mem_uop_in": "0xb0",
+      "mem_wgt_in": "0xb0"
+    },
+    {
+      "instr No.": 262,
+      "instr_in": "0x00",
+      "mem_addr": 246,
+      "mem_bias_in": "0x2a",
+      "mem_inp_in": "0x2a",
+      "mem_mode": 2,
+      "mem_uop_in": "0x2a",
+      "mem_wgt_in": "0x2a"
+    },
+    {
+      "instr No.": 263,
+      "instr_in": "0x00",
+      "mem_addr": 247,
+      "mem_bias_in": "0xe0",
+      "mem_inp_in": "0xe0",
+      "mem_mode": 2,
+      "mem_uop_in": "0xe0",
+      "mem_wgt_in": "0xe0"
+    },
+    {
+      "instr No.": 264,
+      "instr_in": "0x00",
+      "mem_addr": 248,
+      "mem_bias_in": "0x64",
+      "mem_inp_in": "0x64",
+      "mem_mode": 2,
+      "mem_uop_in": "0x64",
+      "mem_wgt_in": "0x64"
+    },
+    {
+      "instr No.": 265,
+      "instr_in": "0x00",
+      "mem_addr": 249,
+      "mem_bias_in": "0xba",
+      "mem_inp_in": "0xba",
+      "mem_mode": 2,
+      "mem_uop_in": "0xba",
+      "mem_wgt_in": "0xba"
+    },
+    {
+      "instr No.": 266,
+      "instr_in": "0x00",
+      "mem_addr": 250,
+      "mem_bias_in": "0xfe",
+      "mem_inp_in": "0xfe",
+      "mem_mode": 2,
+      "mem_uop_in": "0xfe",
+      "mem_wgt_in": "0xfe"
+    },
+    {
+      "instr No.": 267,
+      "instr_in": "0x00",
+      "mem_addr": 251,
+      "mem_bias_in": "0x29",
+      "mem_inp_in": "0x29",
+      "mem_mode": 2,
+      "mem_uop_in": "0x29",
+      "mem_wgt_in": "0x29"
+    },
+    {
+      "instr No.": 268,
+      "instr_in": "0x00",
+      "mem_addr": 252,
+      "mem_bias_in": "0xf0",
+      "mem_inp_in": "0xf0",
+      "mem_mode": 2,
+      "mem_uop_in": "0xf0",
+      "mem_wgt_in": "0xf0"
+    },
+    {
+      "instr No.": 269,
+      "instr_in": "0x00",
+      "mem_addr": 253,
+      "mem_bias_in": "0xf6",
+      "mem_inp_in": "0xf6",
+      "mem_mode": 2,
+      "mem_uop_in": "0xf6",
+      "mem_wgt_in": "0xf6"
+    },
+    {
+      "instr No.": 270,
+      "instr_in": "0x00",
+      "mem_addr": 254,
+      "mem_bias_in": "0xd5",
+      "mem_inp_in": "0xd5",
+      "mem_mode": 2,
+      "mem_uop_in": "0xd5",
+      "mem_wgt_in": "0xd5"
+    },
+    {
+      "instr No.": 271,
+      "instr_in": "0x00",
+      "mem_addr": 255,
+      "mem_bias_in": "0xfc",
+      "mem_inp_in": "0xfc",
+      "mem_mode": 2,
+      "mem_uop_in": "0xfc",
+      "mem_wgt_in": "0xfc"
+    },
+    {
+      "instr No.": 272,
+      "instr_in": "0x00",
+      "mem_addr": 0,
+      "mem_bias_in": "0x0700527f",
+      "mem_inp_in": "0x0700527f",
+      "mem_mode": 3,
+      "mem_uop_in": "0x0700527f",
+      "mem_wgt_in": "0x0700527f"
+    },
+    {
+      "instr No.": 273,
+      "instr_in": "0x00",
+      "mem_addr": 1,
+      "mem_bias_in": "0x0195f3c7",
+      "mem_inp_in": "0x0195f3c7",
+      "mem_mode": 3,
+      "mem_uop_in": "0x0195f3c7",
+      "mem_wgt_in": "0x0195f3c7"
+    },
+    {
+      "instr No.": 274,
+      "instr_in": "0x00",
+      "mem_addr": 2,
+      "mem_bias_in": "0x28f90fdc",
+      "mem_inp_in": "0x28f90fdc",
+      "mem_mode": 3,
+      "mem_uop_in": "0x28f90fdc",
+      "mem_wgt_in": "0x28f90fdc"
+    },
+    {
+      "instr No.": 275,
+      "instr_in": "0x00",
+      "mem_addr": 3,
+      "mem_bias_in": "0x118f5a17",
+      "mem_inp_in": "0x118f5a17",
+      "mem_mode": 3,
+      "mem_uop_in": "0x118f5a17",
+      "mem_wgt_in": "0x118f5a17"
+    },
+    {
+      "instr No.": 276,
+      "instr_in": "0x00",
+      "mem_addr": 4,
+      "mem_bias_in": "0x642d5cb4",
+      "mem_inp_in": "0x642d5cb4",
+      "mem_mode": 3,
+      "mem_uop_in": "0x642d5cb4",
+      "mem_wgt_in": "0x642d5cb4"
+    },
+    {
+      "instr No.": 277,
+      "instr_in": "0x00",
+      "mem_addr": 5,
+      "mem_bias_in": "0x24009764",
+      "mem_inp_in": "0x24009764",
+      "mem_mode": 3,
+      "mem_uop_in": "0x24009764",
+      "mem_wgt_in": "0x24009764"
+    },
+    {
+      "instr No.": 278,
+      "instr_in": "0x00",
+      "mem_addr": 6,
+      "mem_bias_in": "0x6f7e8a81",
+      "mem_inp_in": "0x6f7e8a81",
+      "mem_mode": 3,
+      "mem_uop_in": "0x6f7e8a81",
+      "mem_wgt_in": "0x6f7e8a81"
+    },
+    {
+      "instr No.": 279,
+      "instr_in": "0x00",
+      "mem_addr": 7,
+      "mem_bias_in": "0x7b63e249",
+      "mem_inp_in": "0x7b63e249",
+      "mem_mode": 3,
+      "mem_uop_in": "0x7b63e249",
+      "mem_wgt_in": "0x7b63e249"
+    },
+    {
+      "instr No.": 280,
+      "instr_in": "0x00",
+      "mem_addr": 8,
+      "mem_bias_in": "0x05249c74",
+      "mem_inp_in": "0x05249c74",
+      "mem_mode": 3,
+      "mem_uop_in": "0x05249c74",
+      "mem_wgt_in": "0x05249c74"
+    },
+    {
+      "instr No.": 281,
+      "instr_in": "0x00",
+      "mem_addr": 9,
+      "mem_bias_in": "0x515b3885",
+      "mem_inp_in": "0x515b3885",
+      "mem_mode": 3,
+      "mem_uop_in": "0x515b3885",
+      "mem_wgt_in": "0x515b3885"
+    },
+    {
+      "instr No.": 282,
+      "instr_in": "0x00",
+      "mem_addr": 10,
+      "mem_bias_in": "0x72b08565",
+      "mem_inp_in": "0x72b08565",
+      "mem_mode": 3,
+      "mem_uop_in": "0x72b08565",
+      "mem_wgt_in": "0x72b08565"
+    },
+    {
+      "instr No.": 283,
+      "instr_in": "0x00",
+      "mem_addr": 11,
+      "mem_bias_in": "0x4d94edf8",
+      "mem_inp_in": "0x4d94edf8",
+      "mem_mode": 3,
+      "mem_uop_in": "0x4d94edf8",
+      "mem_wgt_in": "0x4d94edf8"
+    },
+    {
+      "instr No.": 284,
+      "instr_in": "0x00",
+      "mem_addr": 12,
+      "mem_bias_in": "0x5799d53a",
+      "mem_inp_in": "0x5799d53a",
+      "mem_mode": 3,
+      "mem_uop_in": "0x5799d53a",
+      "mem_wgt_in": "0x5799d53a"
+    },
+    {
+      "instr No.": 285,
+      "instr_in": "0x00",
+      "mem_addr": 13,
+      "mem_bias_in": "0x377776bf",
+      "mem_inp_in": "0x377776bf",
+      "mem_mode": 3,
+      "mem_uop_in": "0x377776bf",
+      "mem_wgt_in": "0x377776bf"
+    },
+    {
+      "instr No.": 286,
+      "instr_in": "0x00",
+      "mem_addr": 14,
+      "mem_bias_in": "0x215a020f",
+      "mem_inp_in": "0x215a020f",
+      "mem_mode": 3,
+      "mem_uop_in": "0x215a020f",
+      "mem_wgt_in": "0x215a020f"
+    },
+    {
+      "instr No.": 287,
+      "instr_in": "0x00",
+      "mem_addr": 15,
+      "mem_bias_in": "0x0c0aab63",
+      "mem_inp_in": "0x0c0aab63",
+      "mem_mode": 3,
+      "mem_uop_in": "0x0c0aab63",
+      "mem_wgt_in": "0x0c0aab63"
+    },
+    {
+      "instr No.": 288,
+      "instr_in": "0x000000001000100010000000000000000",
+      "mem_addr": 0,
+      "mem_bias_in": "0",
+      "mem_inp_in": "0",
+      "mem_mode": 0,
+      "mem_uop_in": "0",
+      "mem_wgt_in": "0"
+    },
+    {
+      "instr No.": 289,
+      "instr_in": "0x0000000010001000100000000000001a0",
+      "mem_addr": 0,
+      "mem_bias_in": "0",
+      "mem_inp_in": "0",
+      "mem_mode": 0,
+      "mem_uop_in": "0",
+      "mem_wgt_in": "0"
+    },
+    {
+      "instr No.": 290,
+      "instr_in": "0x000000001000100010000000000000090",
+      "mem_addr": 0,
+      "mem_bias_in": "0",
+      "mem_inp_in": "0",
+      "mem_mode": 0,
+      "mem_uop_in": "0",
+      "mem_wgt_in": "0"
+    },
+    {
+      "instr No.": 291,
+      "instr_in": "0x000000001000100010000000000000140",
+      "mem_addr": 0,
+      "mem_bias_in": "0",
+      "mem_inp_in": "0",
+      "mem_mode": 0,
+      "mem_uop_in": "0",
+      "mem_wgt_in": "0"
+    },
+    {
+      "instr No.": 292,
+      "instr_in": "0x00000000000000000000200080020004a",
+      "mem_addr": 0,
+      "mem_bias_in": "0",
+      "mem_inp_in": "0",
+      "mem_mode": 0,
+      "mem_uop_in": "0",
+      "mem_wgt_in": "0"
+    },
+    {
+      "instr No.": 293,
+      "instr_in": "0x000000001000100010000000000000029",
+      "mem_addr": 0,
+      "mem_bias_in": "0",
+      "mem_inp_in": "0",
+      "mem_mode": 0,
+      "mem_uop_in": "0",
+      "mem_wgt_in": "0"
+    },
+    {
+      "instr No.": 294,
+      "instr_in": "0x000000000000000000000000000000013",
+      "mem_addr": 0,
+      "mem_bias_in": "0",
+      "mem_inp_in": "0",
+      "mem_mode": 0,
+      "mem_uop_in": "0",
+      "mem_wgt_in": "0"
+    },
+    {
+      "instr No.": 295,
+      "instr_in": "0x00",
+      "mem_addr": 0,
+      "mem_bias_in": "0x0000000000000000",
+      "mem_inp_in": "0x0000000000000000",
+      "mem_mode": 4,
+      "mem_uop_in": "0x0000000000000000",
+      "mem_wgt_in": "0x0000000000000000"
+    }
+  ]
+}
