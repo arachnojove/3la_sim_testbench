@@ -6,7 +6,6 @@ CURDIR = $(shell pwd)
 
 CFLAGS += $(INCDIR)
 
-all: input_gen 
 
 clean:
 	rm -rf *.out *.o

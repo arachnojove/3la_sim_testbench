@@ -8,6 +8,9 @@
 
 using json = nlohmann::json;
 
+std::string prog_frag_path;
+std::string ref_out_path;
+
 SC_MODULE(Source) {
   sc_in<bool> clk{"clk"};
 
@@ -41,6 +44,7 @@ SC_MODULE(Source) {
 
     // read program fragment from file
     std::ifstream fin;
+    fin.open(prog_frag_path);
     // fin.open("prog_frag.json", ios::in);
     // fin.open("./prog_frag/ALU_test_of_add imm-batch=16-vector_size=128-uop_compression=0_input.json");
     // fin.open("./prog_frag/ALU_test_of_add imm-batch=16-vector_size=128-uop_compression=1_input.json");
@@ -49,7 +53,7 @@ SC_MODULE(Source) {
     // fin.open("./prog_frag/ALU_test_of_max imm-batch=16-vector_size=128-uop_compression=0_input.json");
     // fin.open("./prog_frag/ALU_test_of_max imm-batch=16-vector_size=128-uop_compression=1_input.json");
     // fin.open("./prog_frag/Blocked_GEMM_test-batch=16-channels=16-block=16-uop_comp=0-vt=1_input.json");
-    fin.open("./prog_frag/Blocked_GEMM_test-batch=256-channels=256-block=64-uop_comp=0-vt=1_input.json");
+    // fin.open("./prog_frag/Blocked_GEMM_test-batch=256-channels=256-block=64-uop_comp=0-vt=1_input.json");
     // fin.open("./prog_frag/GEMM_test-batch=1-in_channels=16-out_channels=16-uop_comp=0_input.json");
     // fin.open("./prog_frag/GEMM_test-batch=4-in_channels=64-out_channels=64-uop_comp=0_input.json");
     //parse the json file
@@ -136,6 +140,7 @@ SC_MODULE(testbench) {
 
     wait(1000, SC_NS);
     std::ifstream ref_out_file;
+    ref_out_file.open(ref_out_path);
     // ref_out_file.open("./vivado_test_output/ALU_test_of_add imm-batch=16-vector_size=128-uop_compression=0_out.json");
     // ref_out_file.open("./vivado_test_output/ALU_test_of_add imm-batch=16-vector_size=128-uop_compression=1_out.json");
     // ref_out_file.open("./vivado_test_output/ALU_test_of_add-batch=16-vector_size=128-uop_compression=0_out.json");
@@ -143,7 +148,7 @@ SC_MODULE(testbench) {
     // ref_out_file.open("./vivado_test_output/ALU_test_of_max imm-batch=16-vector_size=128-uop_compression=0_out.json");
     // ref_out_file.open("./vivado_test_output/ALU_test_of_max imm-batch=16-vector_size=128-uop_compression=1_out.json");
     // ref_out_file.open("./vivado_test_output/Blocked_GEMM_test-batch=16-channels=16-block=16-uop_comp=0-vt=1_out.json");
-    ref_out_file.open("./vivado_test_output/Blocked_GEMM_test-batch=256-channels=256-block=64-uop_comp=0-vt=1_out.json");
+    // ref_out_file.open("./vivado_test_output/Blocked_GEMM_test-batch=256-channels=256-block=64-uop_comp=0-vt=1_out.json");
     // ref_out_file.open("./vivado_test_output/GEMM_test-batch=1-in_channels=16-out_channels=16-uop_comp=0_out.json");
     // ref_out_file.open("./vivado_test_output/GEMM_test-batch=4-in_channels=64-out_channels=64-uop_comp=0_out.json");
 
@@ -177,9 +182,19 @@ SC_MODULE(testbench) {
 };
 
 int sc_main(int argc, char* argv[]) {
-  std::cout << "test start" << std::endl;
+
+  std::string file_name;
+  file_name = argv[1];
+  prog_frag_path = "./prog_frag/" + file_name + "_input.json";
+  ref_out_path = "./vivado_test_output/" + file_name + "_out.json";
+  std::cout << prog_frag_path << '\t' << ref_out_path << std::endl;
+  std::cout << "test start for " << file_name << std::endl;
   testbench tb("tb");
   sc_start();
+
+  // std::cout << "test start" << std::endl;
+  // testbench tb("tb");
+  // sc_start();
 
   return 0;
 }

@@ -1,9 +1,9 @@
-ALU_test_of_min imm-batch=16-vector_size=128-uop_compression=1
-ALU_test_of_min imm-batch=16-vector_size=128-uop_compression=0
-ALU_test_of_max imm-batch=16-vector_size=128-uop_compression=1
-ALU_test_of_max imm-batch=16-vector_size=128-uop_compression=0
-ALU_test_of_add imm-batch=16-vector_size=128-uop_compression=1
-ALU_test_of_add imm-batch=16-vector_size=128-uop_compression=0
+ALU_test_of_min-imm-batch=16-vector_size=128-uop_compression=1
+ALU_test_of_min-imm-batch=16-vector_size=128-uop_compression=0
+ALU_test_of_max-imm-batch=16-vector_size=128-uop_compression=1
+ALU_test_of_max-imm-batch=16-vector_size=128-uop_compression=0
+ALU_test_of_add-imm-batch=16-vector_size=128-uop_compression=1
+ALU_test_of_add-imm-batch=16-vector_size=128-uop_compression=0
 ALU_test_of_shr-batch=16-vector_size=128-uop_compression=1
 ALU_test_of_shr-batch=16-vector_size=128-uop_compression=0
 ALU_test_of_min-batch=16-vector_size=128-uop_compression=1
