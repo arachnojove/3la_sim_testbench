@@ -8,6 +8,7 @@ sc_biguint<8> vta::Acc2Out(sc_biguint<32> in) {
   ap_int<8> out = src.range(7,0);
   sc_bigint<8> result_s = out.to_int();
   sc_biguint<8> result = result_s;
+  // std::cout << std::hex << "Acc2Out: in: " << src << '\t' << "out: " << out << '\t' << "raw: " << result << std::endl;
   return result;
 }
 
@@ -16,9 +17,9 @@ sc_biguint<32> vta::AccAdd(sc_biguint<32> in_0, sc_biguint<32> in_1) {
   sc_bigint<32> in_1_s = in_1;
   ap_int<32> src_0 = in_0_s.to_int();
   ap_int<32> src_1 = in_1_s.to_int();
-  std::cout << "AccAdd: src0: " << src_0 << '\t' << "src1: " << src_1 << '\t';
+  // std::cout << std::hex << "AccAdd: src0: " << src_0 << '\t' << "src1: " << src_1 << '\t';
   ap_int<32> add_val = src_0 + src_1;
-  std::cout << "out: " << add_val << std::endl;
+  // std::cout << std::hex << "out: " << add_val << std::endl;
   sc_bigint<32> result_s = add_val.to_int();
   sc_bigint<32> result = result_s;
   return result;
@@ -64,6 +65,8 @@ sc_biguint<8> vta::Accum2Out(sc_biguint<32> accum_in) {
   ap_int<8> out = (ap_int<8>) accum.range(7, 0);
   sc_bigint<8> result_s = out.to_int();
   sc_biguint<8> result = result_s;
+  // std::cout << "Accum2Out: "  << "in: " << std::hex << accum_in << '\t';
+  // std::cout << "out: " << std::hex << result << std::endl;
   return result;
 }
 
@@ -71,10 +74,13 @@ sc_biguint<32> vta::AccumAddSum(sc_biguint<32> accum_in, sc_biguint<21> sum_in) 
   sc_bigint<32> accum_in_s = accum_in;
   sc_bigint<21> sum_in_s = sum_in;
   ap_int<32> accum = accum_in_s.to_int();
+  // std::cout << "AccumAddSum: " << std::hex << accum << '\t';
   ap_int<21> tmp = sum_in_s.to_int();
   accum = accum + (ap_int<32>)tmp;
   sc_bigint<32> result_s = accum.to_int();
   sc_biguint<32> result = result_s;
+  // std::cout << tmp << '\t' << accum << std::endl;
+  // std::cout << "raw: " << std::hex << accum_in << '\t' << sum_in << '\t' << result << std::endl;
   return result;
 }
 
@@ -89,6 +95,7 @@ sc_biguint<21> vta::GemmMac(sc_biguint<21> sum_in, sc_biguint<8> wgt_in, sc_bigu
   sum = sum + (ap_int<21>)prod_dsp;
   sc_bigint<21> result_s = sum.to_int();
   sc_biguint<21> result = result_s;
+  // std::cout << "GemmMac: " << std::hex << sum_in << '\t' << wgt_in << '\t' << inp_in << '\t' << result << std::endl;
   return result;
 }
 

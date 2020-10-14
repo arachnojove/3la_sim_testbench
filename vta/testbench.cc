@@ -41,8 +41,17 @@ SC_MODULE(Source) {
 
     // read program fragment from file
     std::ifstream fin;
-    fin.open("prog_frag.json", ios::in);
-    
+    // fin.open("prog_frag.json", ios::in);
+    // fin.open("./prog_frag/ALU_test_of_add imm-batch=16-vector_size=128-uop_compression=0_input.json");
+    // fin.open("./prog_frag/ALU_test_of_add imm-batch=16-vector_size=128-uop_compression=1_input.json");
+    // fin.open("./prog_frag/ALU_test_of_add-batch=16-vector_size=128-uop_compression=0_input.json");
+    // fin.open("./prog_frag/ALU_test_of_add-batch=16-vector_size=128-uop_compression=1_input.json");
+    // fin.open("./prog_frag/ALU_test_of_max imm-batch=16-vector_size=128-uop_compression=0_input.json");
+    // fin.open("./prog_frag/ALU_test_of_max imm-batch=16-vector_size=128-uop_compression=1_input.json");
+    // fin.open("./prog_frag/Blocked_GEMM_test-batch=16-channels=16-block=16-uop_comp=0-vt=1_input.json");
+    fin.open("./prog_frag/Blocked_GEMM_test-batch=256-channels=256-block=64-uop_comp=0-vt=1_input.json");
+    // fin.open("./prog_frag/GEMM_test-batch=1-in_channels=16-out_channels=16-uop_comp=0_input.json");
+    // fin.open("./prog_frag/GEMM_test-batch=4-in_channels=64-out_channels=64-uop_comp=0_input.json");
     //parse the json file
     json cmd_seq;
     fin >> cmd_seq;
@@ -124,6 +133,39 @@ SC_MODULE(testbench) {
       std::cout << "current simulation time: " << '\t' << sc_time_stamp() << "\r" << std::flush;
       wait(10, SC_NS);
     }
+
+    wait(1000, SC_NS);
+    std::ifstream ref_out_file;
+    // ref_out_file.open("./vivado_test_output/ALU_test_of_add imm-batch=16-vector_size=128-uop_compression=0_out.json");
+    // ref_out_file.open("./vivado_test_output/ALU_test_of_add imm-batch=16-vector_size=128-uop_compression=1_out.json");
+    // ref_out_file.open("./vivado_test_output/ALU_test_of_add-batch=16-vector_size=128-uop_compression=0_out.json");
+    // ref_out_file.open("./vivado_test_output/ALU_test_of_add-batch=16-vector_size=128-uop_compression=1_out.json");
+    // ref_out_file.open("./vivado_test_output/ALU_test_of_max imm-batch=16-vector_size=128-uop_compression=0_out.json");
+    // ref_out_file.open("./vivado_test_output/ALU_test_of_max imm-batch=16-vector_size=128-uop_compression=1_out.json");
+    // ref_out_file.open("./vivado_test_output/Blocked_GEMM_test-batch=16-channels=16-block=16-uop_comp=0-vt=1_out.json");
+    ref_out_file.open("./vivado_test_output/Blocked_GEMM_test-batch=256-channels=256-block=64-uop_comp=0-vt=1_out.json");
+    // ref_out_file.open("./vivado_test_output/GEMM_test-batch=1-in_channels=16-out_channels=16-uop_comp=0_out.json");
+    // ref_out_file.open("./vivado_test_output/GEMM_test-batch=4-in_channels=64-out_channels=64-uop_comp=0_out.json");
+
+    json ref_out_json;
+    ref_out_file >> ref_out_json;
+    std::cout << '\n' << std::endl;
+
+    int cnt = 0;
+    int err = 0;
+    for (int i = 0; i < ref_out_json["sim result"].size(); i++) {
+      int out_addr = ref_out_json["sim result"][i]["output_addr"].get<int>();
+      sc_biguint<8> ref_data = 
+        (ref_out_json["sim result"][i]["output_data"].get<std::string>()).c_str();
+      if (vta_inst.vta_vta_virtual_dram_out[out_addr] != ref_data) {
+        err++;
+        std::cout << std::dec << "error found at output mem address: " << out_addr << '\t';
+        std::cout << std::hex << "ref_data: " << ref_data << '\t';
+        std::cout << std::hex << "model_data: " << vta_inst.vta_vta_virtual_dram_out[out_addr] << std::endl;
+      }
+    }
+    if (err == 0)
+      std::cout << "testbench pass!" << std::endl;
 
     wait(100000, SC_NS);
     std::cout << '\n' << std::endl;

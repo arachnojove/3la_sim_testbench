@@ -2882,6 +2882,16 @@
     },
     {
       "instr No.": 288,
+      "instr_in": "0x00",
+      "mem_addr": 0,
+      "mem_bias_in": "0x0000000000000000",
+      "mem_inp_in": "0x0000000000000000",
+      "mem_mode": 4,
+      "mem_uop_in": "0x0000000000000000",
+      "mem_wgt_in": "0x0000000000000000"
+    },
+    {
+      "instr No.": 289,
       "instr_in": "0x000000001000100010000000000000000",
       "mem_addr": 0,
       "mem_bias_in": "0",
@@ -2891,7 +2901,7 @@
       "mem_wgt_in": "0"
     },
     {
-      "instr No.": 289,
+      "instr No.": 290,
       "instr_in": "0x0000000010001000100000000000001a0",
       "mem_addr": 0,
       "mem_bias_in": "0",
@@ -2901,7 +2911,7 @@
       "mem_wgt_in": "0"
     },
     {
-      "instr No.": 290,
+      "instr No.": 291,
       "instr_in": "0x000000001000100010000000000000090",
       "mem_addr": 0,
       "mem_bias_in": "0",
@@ -2911,7 +2921,7 @@
       "mem_wgt_in": "0"
     },
     {
-      "instr No.": 291,
+      "instr No.": 292,
       "instr_in": "0x000000001000100010000000000000140",
       "mem_addr": 0,
       "mem_bias_in": "0",
@@ -2921,7 +2931,7 @@
       "mem_wgt_in": "0"
     },
     {
-      "instr No.": 292,
+      "instr No.": 293,
       "instr_in": "0x00000000000000000000200080020004a",
       "mem_addr": 0,
       "mem_bias_in": "0",
@@ -2931,7 +2941,7 @@
       "mem_wgt_in": "0"
     },
     {
-      "instr No.": 293,
+      "instr No.": 294,
       "instr_in": "0x000000001000100010000000000000029",
       "mem_addr": 0,
       "mem_bias_in": "0",
@@ -2941,7 +2951,7 @@
       "mem_wgt_in": "0"
     },
     {
-      "instr No.": 294,
+      "instr No.": 295,
       "instr_in": "0x000000000000000000000000000000013",
       "mem_addr": 0,
       "mem_bias_in": "0",
@@ -2949,16 +2959,6 @@
       "mem_mode": 0,
       "mem_uop_in": "0",
       "mem_wgt_in": "0"
-    },
-    {
-      "instr No.": 295,
-      "instr_in": "0x00",
-      "mem_addr": 0,
-      "mem_bias_in": "0x0000000000000000",
-      "mem_inp_in": "0x0000000000000000",
-      "mem_mode": 4,
-      "mem_uop_in": "0x0000000000000000",
-      "mem_wgt_in": "0x0000000000000000"
     }
   ]
 }
