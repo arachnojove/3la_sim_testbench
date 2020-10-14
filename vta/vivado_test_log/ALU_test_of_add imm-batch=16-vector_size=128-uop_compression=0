@@ -4094,7 +4094,7 @@
  alu_test result out_buf[2045]: 0000005c
  alu_test result out_buf[2046]: 0000008d
  alu_test result out_buf[2047]: 00000098
- uop No.0 	 info: 0000000001c04000
+ uop No.0 	 info: 0000000002004000
  uop No.1 	 info: 0000000000004801
  uop No.2 	 info: 000000003c405002
  uop No.3 	 info: 000000006c405803
