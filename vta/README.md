@@ -2,8 +2,8 @@
 This file contains testbenches for simulation validation of vta-ila against VTA vivado-hls implementation.
 
 ## Related repo
--[vta-ila](https://github.com/LeeOHzzZ/vta-ila)
--[VTA HLS Design](https://github.com/apache/incubator-tvm-vta/tree/master/hardware/xilinx)
+- [vta-ila](https://github.com/LeeOHzzZ/vta-ila)
+- [VTA HLS Design](https://github.com/apache/incubator-tvm-vta/tree/master/hardware/xilinx)
 
 ## testbench workflow
 - Run VTA HLS simulation with provided test cases/test libs, and dump simulation log (see vivado_hls.log)
