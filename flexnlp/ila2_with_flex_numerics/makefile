@@ -33,6 +33,7 @@ INCDIR+= -I$(RAPIDJSON_HOME)/include
 INCDIR+= -I$(MATCHLIB_HOME)/include 
 INCDIR+= -I$(FLEX_HOME)/include 
 INCDIR+= -I$(FLEX_HOME) 
+INCDIR+= -I./json_helper
 
 INCDIR+= -I$(FLEX_SIM_DIR)/include 
 
