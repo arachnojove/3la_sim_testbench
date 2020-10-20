@@ -5,6 +5,9 @@
 #include <sstream>
 
 #include "flex.h"
+
+#include "nlohmann/json.hpp"
+using json = nlohmann::json;
 // source module of the testbench
 // creating signals for flex model
 SC_MODULE(Source) {
@@ -46,19 +49,16 @@ SC_MODULE(Source) {
 
     wait(10, SC_NS);
 
-    //fin.open("./lstm_testbench_input.txt", ios::in);
-    //fin.open("./testbench_input/axi_commands_1_LSTM_timesteps_clustered_weights_with_read_commands.txt", ios::in);
-    //fin.open("./testbench_input/axi_commands_for_kmeans_clustering_for_LSTM_4_timesteps_zero_first_enabled_4PEs.csv", ios::in);
-    //fin.open("./testbench_input/axi_commands_for_2_lstm_64x64.txt", ios::in);
-    fin.open("./testbench_input/axi_commands_for_RNN64x64_8bits_1_timestep_4PEs.csv", ios::in);
+    fin.open("./prog_frag/axi_commands_for_RNN64x64_8bits_1_timestep_4PEs.csv_input.json", ios::in);
+    json cmd_seq; 
+    fin >> cmd_seq;
 
-    while(std::getline(fin, temp, ',')) {
-      std::getline(fin, mode, ',');
-      std::getline(fin, addr, ',');
-      std::getline(fin, data, '\n');
+    for (int i = 0; i < cmd_seq["program fragment"].size(); i++) {
+      mode = cmd_seq["program fragment"][i]["mode"].get<std::string>();
+      addr = cmd_seq["program fragment"][i]["addr"].get<std::string>();
+      data = cmd_seq["program fragment"][i]["data"].get<std::string>();
 
-      // cout << mode << '\t' << addr << '\t' << data << endl;
-      // set the WR/RD mode
+       // set the WR/RD mode
       if (mode.compare("W") == 0) {
         flex_wr_in = 1;
         flex_rd_in = 0;
@@ -102,6 +102,7 @@ SC_MODULE(Source) {
 
       wait(10, SC_NS);
     }
+
 
     // cout << "source created for testbench" << endl;
   }

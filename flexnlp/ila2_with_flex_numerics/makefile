@@ -5,6 +5,9 @@ CFLAGS = -std=c++11
 
 all: maxp_testbench.out attention_testbench.out layernorm_testbench.out gru_testbench.out rnn_testbench.out lstm_testbench.out
 
+extract_input: ./tool/extract_prog_frag.cc
+	g++ -std=c++11 -I. -I./json_helper ./tool/extract_prog_frag.cc -o extract_prog_frag.out
+
 clean:
 	rm -f *.out *.o
 
@@ -30,6 +33,7 @@ INCDIR+= -I$(RAPIDJSON_HOME)/include
 INCDIR+= -I$(MATCHLIB_HOME)/include 
 INCDIR+= -I$(FLEX_HOME)/include 
 INCDIR+= -I$(FLEX_HOME) 
+INCDIR+= -I./json_helper
 
 INCDIR+= -I$(FLEX_SIM_DIR)/include 
 
